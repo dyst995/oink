@@ -1,0 +1,60 @@
+.index-page {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  min-height: calc(100dvh - 56px);
+  padding: 32px 24px 48px;
+}
+
+.index-page h1 {
+  margin: 0;
+  font-size: clamp(40px, 8vw, 72px);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.index-page p {
+  max-width: 36ch;
+  margin: 0;
+  color: var(--text);
+  font-size: 18px;
+}
+
+.index-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.index-links a {
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-h);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.index-links a:hover {
+  border-color: var(--accent-border);
+  background: var(--accent-bg);
+}
+
+.index-links a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (max-width: 720px) {
+  .index-page {
+    padding: 24px 16px 40px;
+  }
+
+  .index-page p {
+    font-size: 16px;
+  }
+}

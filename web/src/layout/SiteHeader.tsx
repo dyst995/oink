@@ -1,5 +1,5 @@
 import { useEffect, useId, useRef, useState } from 'react'
-import { NavLink, useLocation } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import { groupTopicsByUnit } from '../modules/theory-module/groupTopics.ts'
 import { isTheoryTopicOpenable } from '../modules/theory-module/openTopics.ts'
 import { THEORY_TOPICS } from '../modules/theory-module/topics.ts'
@@ -43,7 +43,9 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <div className="site-header-inner">
-        <p className="site-brand">musical</p>
+        <Link className="site-brand" to="/">
+          musical
+        </Link>
 
         <nav className="site-nav site-nav-desktop" aria-label="Primary">
           {TABS.map((item) => (
