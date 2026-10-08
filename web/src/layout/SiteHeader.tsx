@@ -1,10 +1,11 @@
 import type { KeyboardEvent } from 'react'
 
-export type SiteTab = 'fretboard' | 'theory'
+export type SiteTab = 'fretboard' | 'theory' | 'flashcards'
 
 const TABS: { id: SiteTab; label: string }[] = [
   { id: 'fretboard', label: 'fretboard' },
   { id: 'theory', label: 'Theory' },
+  { id: 'flashcards', label: 'flashcards' },
 ]
 
 type SiteHeaderProps = {

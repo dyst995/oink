@@ -1,0 +1,43 @@
+{
+  "id": "pitch-octave-pitch-class",
+  "title": "Pitch, octave, and pitch class",
+  "description": "Lesson 1 review. Flip, then mark Again or Known.",
+  "cards": [
+    {
+      "id": "pitch",
+      "front": "What is pitch?",
+      "back": "How high or low a sound is.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "octave",
+      "front": "What is an octave?",
+      "back": "The distance from a pitch to the next matching “same note” above or below it. The higher pitch vibrates twice as fast.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "pitch-class",
+      "front": "What is a pitch class?",
+      "back": "The name shared by all pitches an octave apart. Every A in every octave is pitch class A.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "same-class-different-pitch",
+      "front": "Open low E and the 12th fret on that string: same pitch, or same pitch class?",
+      "back": "Same pitch class (E), different pitches — one octave apart.",
+      "tags": ["guitar"]
+    },
+    {
+      "id": "why-it-matters",
+      "front": "Why do scales and chords use pitch classes?",
+      "back": "They are built from a small set of names. Octaves only place those classes higher or lower on the instrument.",
+      "tags": ["concept"]
+    },
+    {
+      "id": "open-high-e",
+      "front": "Open low E and open high E: same pitch class?",
+      "back": "Yes — both are E. Different octaves, so different pitches.",
+      "tags": ["guitar"]
+    }
+  ]
+}
