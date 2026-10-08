@@ -87,7 +87,7 @@ First inversion `14 12 13` has the root `C` on string 2, fret 13. The same shape
 ## Exercises
 
 1. Write root position, first, and second inversions for `F` major, `A` minor, `D` major, and `B♭` major. Expected for `F`: `F A C`, `A C F`, `C F A`. Expected for `A` minor: `A C E`, `C E A`, `E A C`.
-2. Name the chord and inversion: `B D G` (bass `B`); `A D F` (bass `A`); `E♭ G C` (bass `E♭`); `D F♯ A` (bass `D`). Expected: `G` major first inversion; `D` minor first inversion; `C` minor first inversion; `D` major root position.
+2. Name the chord and inversion: `B D G` (bass `B`); `A D F` (bass `A`); `E♭ G C` (bass `E♭`); `D F♯ A` (bass `D`). Expected: `G` major first inversion; `D` minor second inversion (bass is the fifth); `C` minor first inversion; `D` major root position.
 3. Write the slash name for each, low to high: `E G C`; `G C E`; `D F♯ B`; `A D F♯`. Expected: `C/E`, `C/G`, `Bm/D`, `D/A`.
 4. On strings 4–3–2, play `G` major in all three inversions using the table. Say aloud the bass note and the root of each.
 5. Slide the second-inversion shape `0 0 0` up to `3 3 3`. Name the notes and the chord. Expected: `F B♭ D`, which is `B♭` major in second inversion (the bass `F` is its fifth, and the root `B♭` is the middle note).

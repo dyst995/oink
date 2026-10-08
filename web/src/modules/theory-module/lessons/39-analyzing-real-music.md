@@ -57,14 +57,20 @@ Analysis turns songs you like into knowledge you can reuse. If you see `I vi ii 
 
 ### Finding chords on the neck by ear
 
-1. Hum or find the tonic on a string, then find the bass note of each chord (usually on strings 6 to 4).
-2. Test major or minor by finding the third: if the note a major third above the bass fits, the chord is major; a minor third means minor.
-3. Check for a seventh by listening to whether the chord wants to move.
-4. Play it with a shape you know and compare with the recording.
+Do **not** decide major/minor from a third above the bass alone. Inversions break that shortcut: `C/E` has bass `E` and notes `E G C`, but the chord is still **C major**, not an E-rooted triad.
+
+Use this order instead:
+
+1. **Collect pitch classes** you hear (or can match on the neck) — usually three or four notes, not only the bass.
+2. **Propose a root** that makes a clear triad or seventh stack (stacked thirds / known formulas). Check alternatives when the set is ambiguous (`Am7` vs `C6`, etc.).
+3. **Name the quality** from the interval structure above that root (`1 3 5`, `1 ♭3 5`, `1 3 5 ♭7`, …), then confirm with harmonic context (what comes before/after, where it resolves).
+4. **Treat the bass separately:** if the lowest note is not the root, write a slash chord (`C/E`) — bass ≠ root.
+5. **Sevenths:** identify an added chord tone a third above the fifth (or a 7th above the root): maj7 vs ♭7 vs diminished 7th by interval size and spelling. Context explains function (does this `7` chord act as `V7`, blues `I7`, secondary dominant, etc.). A vague feeling that the chord “wants to move” is **not** a reliable test for whether a seventh is present.
+6. Compare your reading with a known grip only after the notes and root are settled.
 
 ### Melody check
 
-Play a four-chord loop and sing or play only the chord tones (roots and thirds) as a melody. Then add passing notes and say which melody notes land on chord tones.
+Play a four-chord loop and sing or play chord tones of each **root-quality** chord (not “thirds above the bass”). Then add passing notes and label strong-beat melody notes as chord tones or non-chord tones.
 
 ## Exercises
 
@@ -80,6 +86,6 @@ Play a four-chord loop and sing or play only the chord tones (roots and thirds) 
 - **Conceptual:** list the steps of an analysis and say why the lowest note and the chord symbol alone do not give function.
 - **Written:** produce Roman numerals for an eight-bar progression and explain each chord as diatonic, secondary dominant, borrowed, or other.
 - **Written:** label strong-beat melody notes against chords as chord tones or non-chord tones.
-- **Fretboard:** find the chords of a simple unfamiliar progression by ear on the neck, using roots and thirds.
+- **Fretboard:** find the chords of a simple unfamiliar progression by ear on the neck by collecting pitch classes, naming a root/quality, and separating bass from root.
 - **Aural:** identify the tonic by ear and hear whether a progression resolves or stays open.
 - **Application:** analyze a piece you chose and use the analysis to plan an improvisation over it.

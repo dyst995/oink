@@ -5,93 +5,105 @@
 
 ## Concept
 
-A **string set** is the group of strings a voicing uses. For three-note triads, the practical sets are four groups of adjacent strings:
+A **string set** is the group of strings a voicing uses. For close three-note triads, start with **one set of three adjacent strings**, place the three chord tones by counting from the open notes, and only later move that method to other sets.
 
-| Set | Strings | Open notes | Gaps between open strings |
-| --- | --- | --- | --- |
-| Low | 6–5–4 | `E A D` | P4, P4 |
-| Lower-middle | 5–4–3 | `A D G` | P4, P4 |
-| Upper-middle | 4–3–2 | `D G B` | P4, M3 |
-| High | 3–2–1 | `G B E` | M3, P4 |
-
-On each set there are three inversions of each triad, so each triad has three adjacent-string shapes per set, twelve in total. They are not twelve things to memorize. They are the same three pitch classes found by the same method on strings with a few different spacings.
+This lesson’s goal is **construction on the neck**, not memorizing twelve shapes.
 
 ## Underlying logic
 
-**One method, every set.** To place a triad on a set:
+Standard tuning open notes, low to high: `E A D G B E` (strings 6→1). One fret = one half step.
+
+To place a triad on a chosen set:
 
 1. Spell the triad (root, third, fifth).
-2. On each of the three strings, find where each of the three notes falls.
-3. Choose one note per string, so that the three strings play three different chord tones, within a span of about four frets.
+2. On each string of the set, find frets that produce those pitch classes.
+3. Pick one note per string so you hear all three chord tones in a compact span.
+4. Name the inversion from the **lowest sounding** note (bass), not from the shape’s nickname.
 
-The three notes you choose define the inversion: the lowest-sounding note is the bass.
-
-**Why shapes repeat or change.** Fret distances between strings come from the tuning gaps. A gap of 5 half steps (P4) means the same fret on the next string is 5 half steps higher. The `G→B` gap is only 4 (M3), so the pattern shifts by one fret when it crosses strings 3–2. Therefore:
-
-- Sets 6–5–4 and 5–4–3 have identical spacing (P4, P4), so they use identical shapes.
-- Sets 4–3–2 and 3–2–1 have a major-third gap in different places, so each has its own shapes.
-
-**Fret patterns (major triad, three inversions).** Let `r` be the fret of the root, and `x` a reference fret.
-
-| Set | Root position | First inversion | Second inversion |
-| --- | --- | --- | --- |
-| 6–5–4 and 5–4–3 | `r, r−1, r−3` (root on lowest string) | `x, x−2, x−2` (root on top string) | `x, x, x−1` (root on middle string) |
-| 4–3–2 | `r, r−1, r−2` (root lowest) | `x, x−2, x−1` (root top) | `x, x, x` (root middle) |
-| 3–2–1 | `r, r, r−2` (root lowest) | `x, x−1, x−1` (root top) | `x, x+1, x` (root middle) |
-
-With the root-location notes in parentheses, the table lets you check any shape. Lower the third by one fret (on its own string) to make any of these minor.
-
-The patterns are derived, not memorized: the third must be 4 half steps above the root and the fifth 7 half steps above, and the string gaps tell you which fret satisfies that.
+String gaps matter: most adjacent opens are a perfect 4th (5 frets), but **G→B** (strings 3→2) is a major 3rd (4 frets). That is why a pattern that works on `D–G–B` is not a blind copy on `G–B–E`.
 
 ## Musical significance
 
-Different sets sound different. The low sets (6–5–4, 5–4–3) are thick and are suited to heavier or accompanying parts, but close intervals in the low register get muddy. The high sets (4–3–2, 3–2–1) sound clearer and are used in funk, soul, pop, and ballad guitar for comping and fills.
-
-Because there are several places for each triad, you can choose the region of the neck that suits the melody, stay near a previous chord (next lessons), or avoid a note that clashes with the bass.
+Three-string triads give clear harmony without large barre grips. Once you can build them from notes, you can voice-lead, match a melody note on top, or stay near a previous chord — without treating diagrams as the definition of the chord.
 
 ## Guitar application
 
-**`C` major (`C E G`) on every set, all three inversions.**
+### Step 1 — One chord, one set: `C` major on strings 4–3–2
 
-| Set | Root position | First inversion | Second inversion |
+Open notes on that set: string 4 = `D`, string 3 = `G`, string 2 = `B`.
+
+`C` major = `C E G`.
+
+Find each pitch class on those strings (frets 0–14):
+
+| Pitch class | String 4 (`D`) | String 3 (`G`) | String 2 (`B`) |
 | --- | --- | --- | --- |
-| 6–5–4 | `8 7 5` (`C E G`) | `12 10 10` (`E G C`) | `3 3 2` (`G C E`) |
-| 5–4–3 | `3 2 0` (`C E G`) | `7 5 5` (`E G C`) | `10 10 9` (`G C E`) |
-| 4–3–2 | `10 9 8` (`C E G`) | `14 12 13` (`E G C`) | `5 5 5` (`G C E`) |
-| 3–2–1 | `5 5 3` (`C E G`) | `9 8 8` (`E G C`) | `12 13 12` (`G C E`) |
+| `C` | fret 10 | fret 5 | fret 1 / 13 |
+| `E` | fret 2 / 14 | fret 9 | fret 5 |
+| `G` | fret 5 | fret 0 / 12 | fret 8 |
 
-Check one by hand: set 5–4–3, first inversion `7 5 5`. String 5 fret 7 is `E` (`A`+7). String 4 fret 5 is `G` (`D`+5). String 3 fret 5 is `C` (`G`+5). Low to high: `E G C`, the third in the bass, so first inversion.
+Compact voicings (one note per string):
 
-Also open-position: `3 3 2` on 6–5–4 is `G C E`. `0 1 0` on 3–2–1 (open `G`, `B` string fret 1, open `E`) is `G C E`, the top of an open `C` chord.
+| Inversion | Frets (4–3–2) | Notes low→high | Why |
+| --- | --- | --- | --- |
+| Root position | `10 9 8` | `C E G` | Bass is root `C` |
+| First inversion | `14 12 13` (or `2 0 1`) | `E G C` | Bass is third `E` |
+| Second inversion | `5 5 5` | `G C E` | Bass is fifth `G` |
 
-**Reading a shape to find R, 3, 5.** Take `5 5 3` on 3–2–1. String 3 fret 5 is `C`, string 2 fret 5 is `E`, string 1 fret 3 is `G`. Lowest is `C`, so root position. Root is the lowest note. Third is the next note up, fifth the top.
+Check root position by counting: `D`+10=`C`, `G`+9=`E`, `B`+8=`G`.
 
-**A second example in another key.** `A` major (`A C♯ E`) with the patterns:
+### Step 2 — Same set, second chord: `G` major
 
-- 6–5–4: root `5 4 2`; first `9 7 7`; second `12 12 11`.
-- 5–4–3: root `12 11 9`; first `4 2 2`; second `7 7 6`.
-- 4–3–2: root `7 6 5`; first `11 9 10`; second `2 2 2`.
-- 3–2–1: root `2 2 0`; first `6 5 5`; second `9 10 9`.
+`G` major = `G B D`. On the same set:
 
-Minor: lower the third by one fret. `A` minor (`A C E`) on 3–2–1 in root position is `2 1 0`. On 4–3–2 in root position it is `7 5 5`.
+| Inversion | Frets (4–3–2) | Notes low→high |
+| --- | --- | --- |
+| Root position | `5 4 3` | `G B D` |
+| First inversion | `9 7 8` | `B D G` |
+| Second inversion | `0 0 0` (or `12 12 12`) | `D G B` |
 
-**Non-adjacent sets.** Skipping a string (for example strings 6, 4, 3, or 5, 3, 2) gives a more open sound. It is the same method with a larger gap; learn adjacent sets first, because they make inversions easy to see.
+You derived these the same way: locate `G`, `B`, and `D`, then choose which chord tone sits lowest.
+
+### Step 3 — Minor by lowering the third
+
+`C` minor = `C E♭ G`. On strings 4–3–2, start from the `C` major grips and lower only the string that carries the third:
+
+| Inversion | `C` major | Lower the 3rd | `C` minor notes |
+| --- | --- | --- | --- |
+| Root | `10 9 8` (`E` on string 3) | `10 8 8` | `C E♭ G` |
+| First | `14 12 13` (`E` on string 4) | `13 12 13` | `E♭ G C` |
+| Second | `5 5 5` (`E` on string 2) | `5 5 4` | `G C E♭` |
+
+### Step 4 — One more set (after the method is solid)
+
+Strings 5–4–3 open as `A D G` (both gaps are P4s). `C` major again:
+
+| Inversion | Frets (5–4–3) | Notes |
+| --- | --- | --- |
+| Root | `3 2 0` | `C E G` |
+| First | `7 5 5` | `E G C` |
+| Second | `10 10 9` | `G C E` |
+
+Verify first inversion: `A`+7=`E`, `D`+5=`G`, `G`+5=`C`.
+
+Sets 6–5–4 use the same spacing as 5–4–3, so the **relative** fret pattern matches when the root is placed on the lowest string of that set. Sets 3–2–1 cross the G–B major-third break, so rebuild from notes — do not copy frets blindly from 4–3–2.
+
+Generalized “twelve shapes” tables are optional references after you can derive; they are not the learning target.
 
 ## Exercises
 
-1. Without looking, name the three open-string notes of each set. Expected: `E A D`, `A D G`, `D G B`, `G B E`.
-2. Use the method to place `G` major (`G B D`) on set 4–3–2 in all three inversions. Expected: `5 4 3`, `9 7 8`, `0 0 0` (or `12 12 12`).
-3. Place `D` major (`D F♯ A`) on set 3–2–1 in all three inversions. Expected: `7 7 5` (`D F♯ A`), `11 10 10` (`F♯ A D`), `2 3 2` (`A D F♯`).
-4. Place `A` major on set 5–4–3 in root position and first inversion using the patterns. Expected: `12 11 9` and `4 2 2`.
-5. Lower the third by one fret in each `C` major shape on 4–3–2 to make `C` minor. Expected: root position `10 8 8` (`C E♭ G`), first inversion `13 12 13` (`E♭ G C`), second inversion `5 5 4` (`G C E♭`).
-6. Read these shapes and name the chord and inversion: set 5–4–3 `3 2 0`; set 4–3–2 `9 7 8`; set 3–2–1 `7 8 7`. Expected: `C` major root position (`C E G`); `G` major first inversion (`B D G`); `G` major second inversion (`D G B`).
-7. Play `C` major in all four sets, lowest register to highest: `8 7 5` on 6–5–4, `3 2 0` on 5–4–3, `10 9 8` on 4–3–2, `5 5 3` on 3–2–1. Describe how the sound brightens.
-8. A melody note is `G`. Find `C` major shapes that have `G` as the top (highest) note. Hint: `G` is on top only when it is the fifth, which means root position. Expected: `8 7 5` on 6–5–4 (top `G` on string 4, fret 5); `3 2 0` on 5–4–3 (top `G` on string 3, open); `10 9 8` on 4–3–2 (top `G` on string 2, fret 8); `5 5 3` on 3–2–1 (top `G` on string 1, fret 3).
+1. On strings 4–3–2, derive all three inversions of `C` major from the note table (do not recite a memorized grid). Expected: `10 9 8`, `14 12 13` (or `2 0 1`), `5 5 5`.
+2. Derive `G` major on the same set. Expected: `5 4 3`, `9 7 8`, `0 0 0` (or `12 12 12`).
+3. From each `C` major grip on 4–3–2, make `C` minor by lowering only the third. Expected: `10 8 8`, `13 12 13`, `5 5 4`.
+4. On strings 5–4–3, derive root position and first inversion of `C` major by counting from open `A D G`. Expected: `3 2 0` and `7 5 5`.
+5. Place `D` major (`D F♯ A`) on strings 3–2–1 in all three inversions by finding the notes (watch the G–B gap). Expected: `7 7 5`, `11 10 10`, `2 3 2`.
+6. Read these shapes and name chord + inversion: `3 2 0` on 5–4–3; `9 7 8` on 4–3–2; `7 8 7` on 3–2–1. Expected: `C` major root; `G` major first; `G` major second (`D G B`).
+7. Melody note is `G` on top. Which `C` major inversion on 4–3–2 puts `G` highest? Expected: root position `10 9 8` (top string fret 8 = `G`).
+8. Explain in one sentence why copying `5 5 5` from strings 4–3–2 onto strings 3–2–1 does **not** automatically give the same chord quality/inversion. Expected: the open-string intervals differ (G–B is a major 3rd), so same frets are different pitch-class stacks.
 
 ## Mastery criteria
 
-- **Conceptual:** Explain why sets 6–5–4 and 5–4–3 share shapes and why the 3–2 gap changes the pattern.
-- **Written:** Spell a triad and list, for each set, which inversion has which chord tone in the bass.
-- **Fretboard:** Place any major or minor triad on all four sets in all three inversions, naming root, third, and fifth in each.
-- **Aural:** Hear the same triad on different sets as one harmony with a different weight and register.
-- **Application:** Choose a set and inversion to fit a given bass note or melody note.
+- **Conceptual:** Explain inversion from the bass note; explain why the G–B tuning break changes frets across sets.
+- **Fretboard:** Derive all three inversions of a major triad on one string set from pitch classes, then repeat for a second chord.
+- **Practical:** Convert a major triad to minor on that set by lowering only the third.
+- **Application:** Choose a voicing so a given pitch class is on top or in the bass — by construction, not by hunting a memorized diagram.

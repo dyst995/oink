@@ -58,7 +58,16 @@ Total motion: 2 + 1 + 6 + 3 = 12 half steps across four changes, with the hand s
 
 Compare with root position at every change: `C 10 9 8`, `Am 7 5 5`, `F 3 2 1`, `G 5 4 3`, `C 10 9 8`. The moves are 10, 11, 6, and 15 half steps, for a total of 42. Same harmony, much more hand travel.
 
-In the smooth path, the bass note (string 4) goes `C C C B C`: it holds, then dips to `B`. The top voice goes `G A A G G`: a smooth melodic line. Choosing a different inversion for `G` (`D G B` at `12 12 12`) would keep the same total motion (6) but change the top note to `B` and the bass to `D`.
+In the smooth path, the bass note (string 4) goes `C C C B C`: it holds, then dips to `B`. The top voice goes `G A A G G`: a smooth melodic line.
+
+Compare two ways to go from the same `C` (`10 9 8`, notes `C E G`) straight to `G` on this set:
+
+| Path | Target frets | Notes | Per-string motion | Total |
+| --- | --- | --- | --- | --- |
+| Nearby first inversion | `9 7 8` | `B D G` | `C→B` 1, `E→D` 2, `G→G` 0 | **3** |
+| Higher second inversion | `12 12 12` | `D G B` | `C→D` 2, `E→G` 3, `G→B` 4 | **9** |
+
+The first path is smoother: it keeps `G` as a common tone and moves the other voices by small steps. The second path reaches a valid `G` triad but travels farther.
 
 **Minor-key example,** `Am – Dm – E – Am`, strings 4–3–2:
 
@@ -77,7 +86,7 @@ Checking a shape by ear is possible too: hold the common tones lightly and liste
 
 1. State the common tones: `C` to `Em`; `G` to `Em`; `F` to `Dm`; `C` to `Dm`. Expected: `E G`; `G B`; `F A`; none.
 2. In `G` major, connect `G – Em – C – D – G` on strings 4–3–2, starting with `G` as `B D G` (`9 7 8`). Expected one smooth path: `Em` as `B E G` (`9 9 8`), `C` as `C E G` (`10 9 8`), `D` as `A D F♯` (`7 7 7`), then `G` as `B D G` (`9 7 8`). Motion per change: 2, 1, 6, 3.
-3. Voice-lead `C` to `G` two ways: `C E G` (`10 9 8`) to `B D G` (`9 7 8`), and to `D G B` (`12 12 12`). Count the half steps each. Expected: 6 and 6.
+3. Voice-lead `C` to `G` two ways: `C E G` (`10 9 8`) to `B D G` (`9 7 8`), and to `D G B` (`12 12 12`). Count the half steps on each string and total them. Expected: **3** (`1 + 2 + 0`) and **9** (`2 + 3 + 4`).
 4. Find the smoothest `F` triad after `C E G` (`10 9 8`) on strings 4–3–2. Expected: `C F A` (`10 10 10`), total motion 3.
 5. Play the `C – Am – F – G – C` path from the table slowly. Say the common tones before each change.
 6. Play the same progression with root position at each chord (`10 9 8`, `7 5 5`, `3 2 1`, `5 4 3`, `10 9 8`). Compare how connected each sounds and how far your hand travels.
