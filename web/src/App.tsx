@@ -7,22 +7,30 @@ import './layout/site-header.css'
 
 function App() {
   const [tab, setTab] = useState<SiteTab>('fretboard')
+  const [theoryTopicId, setTheoryTopicId] = useState<string | null>(null)
+
+  function onTabChange(next: SiteTab) {
+    setTab(next)
+    if (next !== 'theory') setTheoryTopicId(null)
+  }
 
   return (
-    <>
-      <SiteHeader tab={tab} onChange={setTab} />
-      {tab === 'fretboard' ? (
-        <div id="panel-fretboard" role="tabpanel" aria-labelledby="tab-fretboard">
-          <FretboardModule />
-        </div>
-      ) : tab === 'theory' ? (
-        <TheoryModule />
-      ) : (
-        <div id="panel-flashcards" role="tabpanel" aria-labelledby="tab-flashcards">
-          <FlashcardsPage />
-        </div>
-      )}
-    </>
+    <div className="app-shell">
+      <SiteHeader tab={tab} onTabChange={onTabChange} />
+      <main className="app-main">
+        {tab === 'fretboard' ? (
+          <div id="panel-fretboard">
+            <FretboardModule />
+          </div>
+        ) : tab === 'theory' ? (
+          <TheoryModule topicId={theoryTopicId} onTopicChange={setTheoryTopicId} />
+        ) : (
+          <div id="panel-flashcards">
+            <FlashcardsPage />
+          </div>
+        )}
+      </main>
+    </div>
   )
 }
 

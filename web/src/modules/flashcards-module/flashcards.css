@@ -134,10 +134,51 @@
 
 @media (max-width: 720px) {
   .flashcards {
-    padding: 16px 16px 36px;
+    gap: 14px;
+    padding: 16px 12px 32px;
+  }
+
+  .flashcards-header h1 {
+    font-size: 22px;
+  }
+
+  .flashcards-header p,
+  .flashcards-progress {
+    font-size: 13px;
+  }
+
+  .flashcard {
+    min-height: 200px;
+    padding: 20px 16px;
+    border-radius: 12px;
   }
 
   .flashcard-text {
     font-size: 18px;
+  }
+
+  .flashcard-hint {
+    font-size: 12px;
+  }
+
+  .flashcards-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .flashcards-actions button,
+  .flashcards-primary {
+    width: 100%;
+    min-height: 44px;
+    padding: 12px 14px;
+  }
+
+  .flashcards-summary {
+    width: 100%;
+  }
+
+  .flashcards-summary p {
+    font-size: 16px;
   }
 }

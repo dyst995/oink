@@ -118,6 +118,8 @@
   min-width: 0;
   overflow-x: auto;
   padding-bottom: 6px;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
 }
 
 .fretboard {
@@ -315,14 +317,68 @@
 
 @media (max-width: 720px) {
   .fretboard-module {
-    padding: 20px 16px 36px;
-  }
-
-  .fretboard-module h1 {
-    font-size: 32px;
+    --label-w: 28px;
+    --open-w: 44px;
+    --fret-w: 48px;
+    --row-h: 40px;
+    --board-pad: 10px;
+    gap: 14px;
+    padding: 16px 12px 32px;
   }
 
   .controls {
     grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .field input,
+  .field select {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .hint {
+    font-size: 12px;
+  }
+
+  .presets {
+    gap: 6px;
+  }
+
+  .preset {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .status {
+    font-size: 14px;
+  }
+
+  .note {
+    min-width: 26px;
+    height: 26px;
+    padding: 0 4px;
+    font-size: 11px;
+  }
+
+  .inlay {
+    width: 10px;
+    height: 10px;
+  }
+
+  .string-label {
+    font-size: 12px;
+  }
+
+  .fret-numbers {
+    font-size: 11px;
+  }
+
+  .legend {
+    gap: 8px 12px;
+  }
+
+  .legend li {
+    font-size: 13px;
   }
 }

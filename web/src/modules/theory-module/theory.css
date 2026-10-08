@@ -12,10 +12,16 @@
   font-size: 15px;
 }
 
-.theory-map {
+.theory-map,
+.theory-unit-topics {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.theory-unit-group {
+  margin: 0;
+  padding: 0;
 }
 
 .theory-topic {
@@ -315,6 +321,44 @@
 
 @media (max-width: 720px) {
   .theory-module {
-    padding: 4px 16px 36px;
+    padding: 8px 12px 32px;
+  }
+
+  .theory-curriculum-lede {
+    font-size: 14px;
+  }
+
+  .theory-topic {
+    grid-template-columns: 1.4rem minmax(0, 1fr);
+    gap: 6px 10px;
+    padding: 14px 0;
+  }
+
+  .theory-topic h2 {
+    font-size: 16px;
+  }
+
+  .theory-topic p,
+  .theory-lesson p {
+    font-size: 15px;
+  }
+
+  .theory-lesson-title,
+  .fretboard-memorization-intro h2 {
+    font-size: 22px;
+  }
+
+  .theory-lesson table {
+    font-size: 13px;
+  }
+
+  .filter-chip {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .fretboard-memorization .flashcards {
+    margin-inline: -12px;
+    padding-inline: 12px;
   }
 }

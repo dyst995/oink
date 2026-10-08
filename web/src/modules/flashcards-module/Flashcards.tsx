@@ -159,7 +159,7 @@ function FlashcardsSession({ deck, shuffle, hideHeader }: SessionProps) {
       >
         <span className="flashcard-side-label">{flipped ? 'Answer' : 'Prompt'}</span>
         <span className="flashcard-text">{flipped ? card.back : card.front}</span>
-        <span className="flashcard-hint">{flipped ? 'Grade below' : 'Click or press Space to flip'}</span>
+        <span className="flashcard-hint">{flipped ? 'Grade below' : 'Tap to flip'}</span>
       </button>
 
       <div className="flashcards-actions">
