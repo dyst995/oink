@@ -37,6 +37,15 @@ export const THEORY_TOPICS: TheoryTopic[] = [
     objectives: 'Measure distances in half steps. Locate the B–C and E–F adjacencies.',
   },
   {
+    id: 'fretboard-memorization',
+    title: 'Fretboard memorization',
+    unit: 'A — The pitch language',
+    scope: 'Name the pitch class at any string and fret (0–12). Filter by string and/or note.',
+    prerequisites: 'The twelve pitch classes; half steps and whole steps.',
+    objectives:
+      'Given a string and fret, name the pitch class. Drill chosen strings and notes until recall is immediate.',
+  },
+  {
     id: 'major-scale-construction',
     title: 'Constructing the major scale',
     unit: 'B — Building the major scale and keys',

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import pitchLesson from './lessons/01-pitch-octave-pitch-class.md?raw'
+import { FretboardMemorization } from './FretboardMemorization.tsx'
 import { Lesson } from './Lesson.tsx'
 import { THEORY_TOPICS, getTopic } from './topics.ts'
 import './theory.css'
@@ -8,18 +9,25 @@ const LESSONS: Record<string, string> = {
   'pitch-octave-pitch-class': pitchLesson,
 }
 
+const PRACTICES = new Set(['fretboard-memorization'])
+
 export function TheoryModule() {
   const [topicId, setTopicId] = useState<string | null>(null)
   const active = topicId ? getTopic(topicId) : null
   const lessonSource = topicId ? LESSONS[topicId] : undefined
+  const isPractice = topicId ? PRACTICES.has(topicId) : false
 
-  if (active && lessonSource) {
+  if (active && (lessonSource || isPractice)) {
     return (
       <section className="theory-module" id="panel-theory" role="tabpanel" aria-labelledby="tab-theory">
         <button className="theory-back" type="button" onClick={() => setTopicId(null)}>
           Curriculum
         </button>
-        <Lesson source={lessonSource} />
+        {topicId === 'fretboard-memorization' ? (
+          <FretboardMemorization />
+        ) : lessonSource ? (
+          <Lesson source={lessonSource} />
+        ) : null}
       </section>
     )
   }
@@ -36,7 +44,7 @@ export function TheoryModule() {
         {THEORY_TOPICS.map((topic, index) => {
           const showUnit = topic.unit !== lastUnit
           lastUnit = topic.unit
-          const openable = Boolean(LESSONS[topic.id])
+          const openable = Boolean(LESSONS[topic.id]) || PRACTICES.has(topic.id)
 
           return (
             <li className="theory-topic" key={topic.id}>

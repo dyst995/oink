@@ -1,4 +1,4 @@
-import type { Flashcard, FlashcardDeck, FlashcardDeckJson } from './types.ts'
+import type { Flashcard, FlashcardDeck, FlashcardDeckJson, FlashcardMeta } from './types.ts'
 
 function asString(value: unknown, field: string): string {
   if (typeof value !== 'string' || value.trim() === '') {
@@ -25,6 +25,23 @@ function asTags(value: unknown, cardIndex: number): string[] | undefined {
   return tags.length > 0 ? tags : undefined
 }
 
+function asMeta(value: unknown, cardIndex: number): FlashcardMeta | undefined {
+  if (value === undefined || value === null) return undefined
+  if (!value || typeof value !== 'object' || Array.isArray(value)) {
+    throw new Error(`Card ${cardIndex + 1}: “meta” must be an object.`)
+  }
+
+  const meta: FlashcardMeta = {}
+  for (const [key, entry] of Object.entries(value as Record<string, unknown>)) {
+    if (typeof entry === 'string' || typeof entry === 'number') {
+      meta[key] = entry
+      continue
+    }
+    throw new Error(`Card ${cardIndex + 1}: meta.“${key}” must be a string or number.`)
+  }
+  return Object.keys(meta).length > 0 ? meta : undefined
+}
+
 function parseCard(raw: unknown, index: number): Flashcard {
   if (!raw || typeof raw !== 'object' || Array.isArray(raw)) {
     throw new Error(`Card ${index + 1} must be an object.`)
@@ -43,6 +60,7 @@ function parseCard(raw: unknown, index: number): Flashcard {
     front,
     back,
     tags: asTags(card.tags, index),
+    meta: asMeta(card.meta, index),
   }
 }
 

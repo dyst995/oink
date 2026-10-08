@@ -8,6 +8,8 @@ export type FlashcardsProps = {
   deck: FlashcardDeck | string | unknown
   /** Start with a shuffled order. Default true. */
   shuffle?: boolean
+  /** Hide the deck title block when hosted inside another page. Default false. */
+  hideHeader?: boolean
 }
 
 type SessionCard = Flashcard & { order: number }
@@ -28,9 +30,10 @@ function orderedCards(cards: Flashcard[]): SessionCard[] {
 type SessionProps = {
   deck: FlashcardDeck
   shuffle: boolean
+  hideHeader: boolean
 }
 
-function FlashcardsSession({ deck, shuffle }: SessionProps) {
+function FlashcardsSession({ deck, shuffle, hideHeader }: SessionProps) {
   const [queue, setQueue] = useState<SessionCard[]>(() =>
     shuffle ? shuffleCards(deck.cards) : orderedCards(deck.cards),
   )
@@ -114,10 +117,12 @@ function FlashcardsSession({ deck, shuffle }: SessionProps) {
   if (finished) {
     return (
       <section className="flashcards" aria-label={deck.title}>
-        <header className="flashcards-header">
-          <h1>{deck.title}</h1>
-          {deck.description ? <p>{deck.description}</p> : null}
-        </header>
+        {hideHeader ? null : (
+          <header className="flashcards-header">
+            <h1>{deck.title}</h1>
+            {deck.description ? <p>{deck.description}</p> : null}
+          </header>
+        )}
         <div className="flashcards-summary">
           <p>
             Done. {known} known, {again} again, out of {total}.
@@ -132,13 +137,19 @@ function FlashcardsSession({ deck, shuffle }: SessionProps) {
 
   return (
     <section className="flashcards" aria-label={deck.title}>
-      <header className="flashcards-header">
-        <h1>{deck.title}</h1>
-        {deck.description ? <p>{deck.description}</p> : null}
+      {hideHeader ? (
         <p className="flashcards-progress" aria-live="polite">
           Card {index + 1} of {total} · {remaining} left · {known} known · {again} again
         </p>
-      </header>
+      ) : (
+        <header className="flashcards-header">
+          <h1>{deck.title}</h1>
+          {deck.description ? <p>{deck.description}</p> : null}
+          <p className="flashcards-progress" aria-live="polite">
+            Card {index + 1} of {total} · {remaining} left · {known} known · {again} again
+          </p>
+        </header>
+      )}
 
       <button
         type="button"
@@ -173,9 +184,20 @@ function FlashcardsSession({ deck, shuffle }: SessionProps) {
   )
 }
 
-export function Flashcards({ deck: deckInput, shuffle = true }: FlashcardsProps) {
+export function Flashcards({
+  deck: deckInput,
+  shuffle = true,
+  hideHeader = false,
+}: FlashcardsProps) {
   const deck = useMemo(() => parseFlashcardDeck(deckInput), [deckInput])
   const sessionKey = `${deck.id}:${shuffle}:${deck.cards.map((card) => card.id).join(',')}`
 
-  return <FlashcardsSession key={sessionKey} deck={deck} shuffle={shuffle} />
+  return (
+    <FlashcardsSession
+      key={sessionKey}
+      deck={deck}
+      shuffle={shuffle}
+      hideHeader={hideHeader}
+    />
+  )
 }

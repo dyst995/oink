@@ -1,0 +1,1255 @@
+{
+  "id": "fretboard-memorization",
+  "title": "Fretboard memorization",
+  "description": "Name the pitch class at a string and fret. Standard tuning, frets 0–12.",
+  "cards": [
+    {
+      "id": "s1-f0",
+      "front": "1st string (e), open",
+      "back": "E",
+      "tags": [
+        "string:1",
+        "note:E",
+        "fret:0"
+      ],
+      "meta": {
+        "string": 1,
+        "stringLabel": "e",
+        "fret": 0,
+        "note": "E"
+      }
+    },
+    {
+      "id": "s1-f1",
+      "front": "1st string (e), fret 1",
+      "back": "F",
+      "tags": [
+        "string:1",
+        "note:F",
+        "fret:1"
+      ],
+      "meta": {
+        "string": 1,
+        "stringLabel": "e",
+        "fret": 1,
+        "note": "F"
+      }
+    },
+    {
+      "id": "s1-f2",
+      "front": "1st string (e), fret 2",
+      "back": "F♯",
+      "tags": [
+        "string:1",
+        "note:F♯",
+        "fret:2"
+      ],
+      "meta": {
+        "string": 1,
+        "stringLabel": "e",
+        "fret": 2,
+        "note": "F♯"
+      }
+    },
+    {
+      "id": "s1-f3",
+      "front": "1st string (e), fret 3",
+      "back": "G",
+      "tags": [
+        "string:1",
+        "note:G",
+        "fret:3"
+      ],
+      "meta": {
+        "string": 1,
+        "stringLabel": "e",
+        "fret": 3,
+        "note": "G"
+      }
+    },
+    {
+      "id": "s1-f4",
+      "front": "1st string (e), fret 4",
+      "back": "G♯",
+      "tags": [
+        "string:1",
+        "note:G♯",
+        "fret:4"
+      ],
+      "meta": {
+        "string": 1,
+        "stringLabel": "e",
+        "fret": 4,
+        "note": "G♯"
+      }
+    },
+    {
+      "id": "s1-f5",
+      "front": "1st string (e), fret 5",
+      "back": "A",
+      "tags": [
+        "string:1",
+        "note:A",
+        "fret:5"
+      ],
+      "meta": {
+        "string": 1,
+        "stringLabel": "e",
+        "fret": 5,
+        "note": "A"
+      }
+    },
+    {
+      "id": "s1-f6",
+      "front": "1st string (e), fret 6",
+      "back": "A♯",
+      "tags": [
+        "string:1",
+        "note:A♯",
+        "fret:6"
+      ],
+      "meta": {
+        "string": 1,
+        "stringLabel": "e",
+        "fret": 6,
+        "note": "A♯"
+      }
+    },
+    {
+      "id": "s1-f7",
+      "front": "1st string (e), fret 7",
+      "back": "B",
+      "tags": [
+        "string:1",
+        "note:B",
+        "fret:7"
+      ],
+      "meta": {
+        "string": 1,
+        "stringLabel": "e",
+        "fret": 7,
+        "note": "B"
+      }
+    },
+    {
+      "id": "s1-f8",
+      "front": "1st string (e), fret 8",
+      "back": "C",
+      "tags": [
+        "string:1",
+        "note:C",
+        "fret:8"
+      ],
+      "meta": {
+        "string": 1,
+        "stringLabel": "e",
+        "fret": 8,
+        "note": "C"
+      }
+    },
+    {
+      "id": "s1-f9",
+      "front": "1st string (e), fret 9",
+      "back": "C♯",
+      "tags": [
+        "string:1",
+        "note:C♯",
+        "fret:9"
+      ],
+      "meta": {
+        "string": 1,
+        "stringLabel": "e",
+        "fret": 9,
+        "note": "C♯"
+      }
+    },
+    {
+      "id": "s1-f10",
+      "front": "1st string (e), fret 10",
+      "back": "D",
+      "tags": [
+        "string:1",
+        "note:D",
+        "fret:10"
+      ],
+      "meta": {
+        "string": 1,
+        "stringLabel": "e",
+        "fret": 10,
+        "note": "D"
+      }
+    },
+    {
+      "id": "s1-f11",
+      "front": "1st string (e), fret 11",
+      "back": "D♯",
+      "tags": [
+        "string:1",
+        "note:D♯",
+        "fret:11"
+      ],
+      "meta": {
+        "string": 1,
+        "stringLabel": "e",
+        "fret": 11,
+        "note": "D♯"
+      }
+    },
+    {
+      "id": "s1-f12",
+      "front": "1st string (e), fret 12",
+      "back": "E",
+      "tags": [
+        "string:1",
+        "note:E",
+        "fret:12"
+      ],
+      "meta": {
+        "string": 1,
+        "stringLabel": "e",
+        "fret": 12,
+        "note": "E"
+      }
+    },
+    {
+      "id": "s2-f0",
+      "front": "2nd string (B), open",
+      "back": "B",
+      "tags": [
+        "string:2",
+        "note:B",
+        "fret:0"
+      ],
+      "meta": {
+        "string": 2,
+        "stringLabel": "B",
+        "fret": 0,
+        "note": "B"
+      }
+    },
+    {
+      "id": "s2-f1",
+      "front": "2nd string (B), fret 1",
+      "back": "C",
+      "tags": [
+        "string:2",
+        "note:C",
+        "fret:1"
+      ],
+      "meta": {
+        "string": 2,
+        "stringLabel": "B",
+        "fret": 1,
+        "note": "C"
+      }
+    },
+    {
+      "id": "s2-f2",
+      "front": "2nd string (B), fret 2",
+      "back": "C♯",
+      "tags": [
+        "string:2",
+        "note:C♯",
+        "fret:2"
+      ],
+      "meta": {
+        "string": 2,
+        "stringLabel": "B",
+        "fret": 2,
+        "note": "C♯"
+      }
+    },
+    {
+      "id": "s2-f3",
+      "front": "2nd string (B), fret 3",
+      "back": "D",
+      "tags": [
+        "string:2",
+        "note:D",
+        "fret:3"
+      ],
+      "meta": {
+        "string": 2,
+        "stringLabel": "B",
+        "fret": 3,
+        "note": "D"
+      }
+    },
+    {
+      "id": "s2-f4",
+      "front": "2nd string (B), fret 4",
+      "back": "D♯",
+      "tags": [
+        "string:2",
+        "note:D♯",
+        "fret:4"
+      ],
+      "meta": {
+        "string": 2,
+        "stringLabel": "B",
+        "fret": 4,
+        "note": "D♯"
+      }
+    },
+    {
+      "id": "s2-f5",
+      "front": "2nd string (B), fret 5",
+      "back": "E",
+      "tags": [
+        "string:2",
+        "note:E",
+        "fret:5"
+      ],
+      "meta": {
+        "string": 2,
+        "stringLabel": "B",
+        "fret": 5,
+        "note": "E"
+      }
+    },
+    {
+      "id": "s2-f6",
+      "front": "2nd string (B), fret 6",
+      "back": "F",
+      "tags": [
+        "string:2",
+        "note:F",
+        "fret:6"
+      ],
+      "meta": {
+        "string": 2,
+        "stringLabel": "B",
+        "fret": 6,
+        "note": "F"
+      }
+    },
+    {
+      "id": "s2-f7",
+      "front": "2nd string (B), fret 7",
+      "back": "F♯",
+      "tags": [
+        "string:2",
+        "note:F♯",
+        "fret:7"
+      ],
+      "meta": {
+        "string": 2,
+        "stringLabel": "B",
+        "fret": 7,
+        "note": "F♯"
+      }
+    },
+    {
+      "id": "s2-f8",
+      "front": "2nd string (B), fret 8",
+      "back": "G",
+      "tags": [
+        "string:2",
+        "note:G",
+        "fret:8"
+      ],
+      "meta": {
+        "string": 2,
+        "stringLabel": "B",
+        "fret": 8,
+        "note": "G"
+      }
+    },
+    {
+      "id": "s2-f9",
+      "front": "2nd string (B), fret 9",
+      "back": "G♯",
+      "tags": [
+        "string:2",
+        "note:G♯",
+        "fret:9"
+      ],
+      "meta": {
+        "string": 2,
+        "stringLabel": "B",
+        "fret": 9,
+        "note": "G♯"
+      }
+    },
+    {
+      "id": "s2-f10",
+      "front": "2nd string (B), fret 10",
+      "back": "A",
+      "tags": [
+        "string:2",
+        "note:A",
+        "fret:10"
+      ],
+      "meta": {
+        "string": 2,
+        "stringLabel": "B",
+        "fret": 10,
+        "note": "A"
+      }
+    },
+    {
+      "id": "s2-f11",
+      "front": "2nd string (B), fret 11",
+      "back": "A♯",
+      "tags": [
+        "string:2",
+        "note:A♯",
+        "fret:11"
+      ],
+      "meta": {
+        "string": 2,
+        "stringLabel": "B",
+        "fret": 11,
+        "note": "A♯"
+      }
+    },
+    {
+      "id": "s2-f12",
+      "front": "2nd string (B), fret 12",
+      "back": "B",
+      "tags": [
+        "string:2",
+        "note:B",
+        "fret:12"
+      ],
+      "meta": {
+        "string": 2,
+        "stringLabel": "B",
+        "fret": 12,
+        "note": "B"
+      }
+    },
+    {
+      "id": "s3-f0",
+      "front": "3rd string (G), open",
+      "back": "G",
+      "tags": [
+        "string:3",
+        "note:G",
+        "fret:0"
+      ],
+      "meta": {
+        "string": 3,
+        "stringLabel": "G",
+        "fret": 0,
+        "note": "G"
+      }
+    },
+    {
+      "id": "s3-f1",
+      "front": "3rd string (G), fret 1",
+      "back": "G♯",
+      "tags": [
+        "string:3",
+        "note:G♯",
+        "fret:1"
+      ],
+      "meta": {
+        "string": 3,
+        "stringLabel": "G",
+        "fret": 1,
+        "note": "G♯"
+      }
+    },
+    {
+      "id": "s3-f2",
+      "front": "3rd string (G), fret 2",
+      "back": "A",
+      "tags": [
+        "string:3",
+        "note:A",
+        "fret:2"
+      ],
+      "meta": {
+        "string": 3,
+        "stringLabel": "G",
+        "fret": 2,
+        "note": "A"
+      }
+    },
+    {
+      "id": "s3-f3",
+      "front": "3rd string (G), fret 3",
+      "back": "A♯",
+      "tags": [
+        "string:3",
+        "note:A♯",
+        "fret:3"
+      ],
+      "meta": {
+        "string": 3,
+        "stringLabel": "G",
+        "fret": 3,
+        "note": "A♯"
+      }
+    },
+    {
+      "id": "s3-f4",
+      "front": "3rd string (G), fret 4",
+      "back": "B",
+      "tags": [
+        "string:3",
+        "note:B",
+        "fret:4"
+      ],
+      "meta": {
+        "string": 3,
+        "stringLabel": "G",
+        "fret": 4,
+        "note": "B"
+      }
+    },
+    {
+      "id": "s3-f5",
+      "front": "3rd string (G), fret 5",
+      "back": "C",
+      "tags": [
+        "string:3",
+        "note:C",
+        "fret:5"
+      ],
+      "meta": {
+        "string": 3,
+        "stringLabel": "G",
+        "fret": 5,
+        "note": "C"
+      }
+    },
+    {
+      "id": "s3-f6",
+      "front": "3rd string (G), fret 6",
+      "back": "C♯",
+      "tags": [
+        "string:3",
+        "note:C♯",
+        "fret:6"
+      ],
+      "meta": {
+        "string": 3,
+        "stringLabel": "G",
+        "fret": 6,
+        "note": "C♯"
+      }
+    },
+    {
+      "id": "s3-f7",
+      "front": "3rd string (G), fret 7",
+      "back": "D",
+      "tags": [
+        "string:3",
+        "note:D",
+        "fret:7"
+      ],
+      "meta": {
+        "string": 3,
+        "stringLabel": "G",
+        "fret": 7,
+        "note": "D"
+      }
+    },
+    {
+      "id": "s3-f8",
+      "front": "3rd string (G), fret 8",
+      "back": "D♯",
+      "tags": [
+        "string:3",
+        "note:D♯",
+        "fret:8"
+      ],
+      "meta": {
+        "string": 3,
+        "stringLabel": "G",
+        "fret": 8,
+        "note": "D♯"
+      }
+    },
+    {
+      "id": "s3-f9",
+      "front": "3rd string (G), fret 9",
+      "back": "E",
+      "tags": [
+        "string:3",
+        "note:E",
+        "fret:9"
+      ],
+      "meta": {
+        "string": 3,
+        "stringLabel": "G",
+        "fret": 9,
+        "note": "E"
+      }
+    },
+    {
+      "id": "s3-f10",
+      "front": "3rd string (G), fret 10",
+      "back": "F",
+      "tags": [
+        "string:3",
+        "note:F",
+        "fret:10"
+      ],
+      "meta": {
+        "string": 3,
+        "stringLabel": "G",
+        "fret": 10,
+        "note": "F"
+      }
+    },
+    {
+      "id": "s3-f11",
+      "front": "3rd string (G), fret 11",
+      "back": "F♯",
+      "tags": [
+        "string:3",
+        "note:F♯",
+        "fret:11"
+      ],
+      "meta": {
+        "string": 3,
+        "stringLabel": "G",
+        "fret": 11,
+        "note": "F♯"
+      }
+    },
+    {
+      "id": "s3-f12",
+      "front": "3rd string (G), fret 12",
+      "back": "G",
+      "tags": [
+        "string:3",
+        "note:G",
+        "fret:12"
+      ],
+      "meta": {
+        "string": 3,
+        "stringLabel": "G",
+        "fret": 12,
+        "note": "G"
+      }
+    },
+    {
+      "id": "s4-f0",
+      "front": "4th string (D), open",
+      "back": "D",
+      "tags": [
+        "string:4",
+        "note:D",
+        "fret:0"
+      ],
+      "meta": {
+        "string": 4,
+        "stringLabel": "D",
+        "fret": 0,
+        "note": "D"
+      }
+    },
+    {
+      "id": "s4-f1",
+      "front": "4th string (D), fret 1",
+      "back": "D♯",
+      "tags": [
+        "string:4",
+        "note:D♯",
+        "fret:1"
+      ],
+      "meta": {
+        "string": 4,
+        "stringLabel": "D",
+        "fret": 1,
+        "note": "D♯"
+      }
+    },
+    {
+      "id": "s4-f2",
+      "front": "4th string (D), fret 2",
+      "back": "E",
+      "tags": [
+        "string:4",
+        "note:E",
+        "fret:2"
+      ],
+      "meta": {
+        "string": 4,
+        "stringLabel": "D",
+        "fret": 2,
+        "note": "E"
+      }
+    },
+    {
+      "id": "s4-f3",
+      "front": "4th string (D), fret 3",
+      "back": "F",
+      "tags": [
+        "string:4",
+        "note:F",
+        "fret:3"
+      ],
+      "meta": {
+        "string": 4,
+        "stringLabel": "D",
+        "fret": 3,
+        "note": "F"
+      }
+    },
+    {
+      "id": "s4-f4",
+      "front": "4th string (D), fret 4",
+      "back": "F♯",
+      "tags": [
+        "string:4",
+        "note:F♯",
+        "fret:4"
+      ],
+      "meta": {
+        "string": 4,
+        "stringLabel": "D",
+        "fret": 4,
+        "note": "F♯"
+      }
+    },
+    {
+      "id": "s4-f5",
+      "front": "4th string (D), fret 5",
+      "back": "G",
+      "tags": [
+        "string:4",
+        "note:G",
+        "fret:5"
+      ],
+      "meta": {
+        "string": 4,
+        "stringLabel": "D",
+        "fret": 5,
+        "note": "G"
+      }
+    },
+    {
+      "id": "s4-f6",
+      "front": "4th string (D), fret 6",
+      "back": "G♯",
+      "tags": [
+        "string:4",
+        "note:G♯",
+        "fret:6"
+      ],
+      "meta": {
+        "string": 4,
+        "stringLabel": "D",
+        "fret": 6,
+        "note": "G♯"
+      }
+    },
+    {
+      "id": "s4-f7",
+      "front": "4th string (D), fret 7",
+      "back": "A",
+      "tags": [
+        "string:4",
+        "note:A",
+        "fret:7"
+      ],
+      "meta": {
+        "string": 4,
+        "stringLabel": "D",
+        "fret": 7,
+        "note": "A"
+      }
+    },
+    {
+      "id": "s4-f8",
+      "front": "4th string (D), fret 8",
+      "back": "A♯",
+      "tags": [
+        "string:4",
+        "note:A♯",
+        "fret:8"
+      ],
+      "meta": {
+        "string": 4,
+        "stringLabel": "D",
+        "fret": 8,
+        "note": "A♯"
+      }
+    },
+    {
+      "id": "s4-f9",
+      "front": "4th string (D), fret 9",
+      "back": "B",
+      "tags": [
+        "string:4",
+        "note:B",
+        "fret:9"
+      ],
+      "meta": {
+        "string": 4,
+        "stringLabel": "D",
+        "fret": 9,
+        "note": "B"
+      }
+    },
+    {
+      "id": "s4-f10",
+      "front": "4th string (D), fret 10",
+      "back": "C",
+      "tags": [
+        "string:4",
+        "note:C",
+        "fret:10"
+      ],
+      "meta": {
+        "string": 4,
+        "stringLabel": "D",
+        "fret": 10,
+        "note": "C"
+      }
+    },
+    {
+      "id": "s4-f11",
+      "front": "4th string (D), fret 11",
+      "back": "C♯",
+      "tags": [
+        "string:4",
+        "note:C♯",
+        "fret:11"
+      ],
+      "meta": {
+        "string": 4,
+        "stringLabel": "D",
+        "fret": 11,
+        "note": "C♯"
+      }
+    },
+    {
+      "id": "s4-f12",
+      "front": "4th string (D), fret 12",
+      "back": "D",
+      "tags": [
+        "string:4",
+        "note:D",
+        "fret:12"
+      ],
+      "meta": {
+        "string": 4,
+        "stringLabel": "D",
+        "fret": 12,
+        "note": "D"
+      }
+    },
+    {
+      "id": "s5-f0",
+      "front": "5th string (A), open",
+      "back": "A",
+      "tags": [
+        "string:5",
+        "note:A",
+        "fret:0"
+      ],
+      "meta": {
+        "string": 5,
+        "stringLabel": "A",
+        "fret": 0,
+        "note": "A"
+      }
+    },
+    {
+      "id": "s5-f1",
+      "front": "5th string (A), fret 1",
+      "back": "A♯",
+      "tags": [
+        "string:5",
+        "note:A♯",
+        "fret:1"
+      ],
+      "meta": {
+        "string": 5,
+        "stringLabel": "A",
+        "fret": 1,
+        "note": "A♯"
+      }
+    },
+    {
+      "id": "s5-f2",
+      "front": "5th string (A), fret 2",
+      "back": "B",
+      "tags": [
+        "string:5",
+        "note:B",
+        "fret:2"
+      ],
+      "meta": {
+        "string": 5,
+        "stringLabel": "A",
+        "fret": 2,
+        "note": "B"
+      }
+    },
+    {
+      "id": "s5-f3",
+      "front": "5th string (A), fret 3",
+      "back": "C",
+      "tags": [
+        "string:5",
+        "note:C",
+        "fret:3"
+      ],
+      "meta": {
+        "string": 5,
+        "stringLabel": "A",
+        "fret": 3,
+        "note": "C"
+      }
+    },
+    {
+      "id": "s5-f4",
+      "front": "5th string (A), fret 4",
+      "back": "C♯",
+      "tags": [
+        "string:5",
+        "note:C♯",
+        "fret:4"
+      ],
+      "meta": {
+        "string": 5,
+        "stringLabel": "A",
+        "fret": 4,
+        "note": "C♯"
+      }
+    },
+    {
+      "id": "s5-f5",
+      "front": "5th string (A), fret 5",
+      "back": "D",
+      "tags": [
+        "string:5",
+        "note:D",
+        "fret:5"
+      ],
+      "meta": {
+        "string": 5,
+        "stringLabel": "A",
+        "fret": 5,
+        "note": "D"
+      }
+    },
+    {
+      "id": "s5-f6",
+      "front": "5th string (A), fret 6",
+      "back": "D♯",
+      "tags": [
+        "string:5",
+        "note:D♯",
+        "fret:6"
+      ],
+      "meta": {
+        "string": 5,
+        "stringLabel": "A",
+        "fret": 6,
+        "note": "D♯"
+      }
+    },
+    {
+      "id": "s5-f7",
+      "front": "5th string (A), fret 7",
+      "back": "E",
+      "tags": [
+        "string:5",
+        "note:E",
+        "fret:7"
+      ],
+      "meta": {
+        "string": 5,
+        "stringLabel": "A",
+        "fret": 7,
+        "note": "E"
+      }
+    },
+    {
+      "id": "s5-f8",
+      "front": "5th string (A), fret 8",
+      "back": "F",
+      "tags": [
+        "string:5",
+        "note:F",
+        "fret:8"
+      ],
+      "meta": {
+        "string": 5,
+        "stringLabel": "A",
+        "fret": 8,
+        "note": "F"
+      }
+    },
+    {
+      "id": "s5-f9",
+      "front": "5th string (A), fret 9",
+      "back": "F♯",
+      "tags": [
+        "string:5",
+        "note:F♯",
+        "fret:9"
+      ],
+      "meta": {
+        "string": 5,
+        "stringLabel": "A",
+        "fret": 9,
+        "note": "F♯"
+      }
+    },
+    {
+      "id": "s5-f10",
+      "front": "5th string (A), fret 10",
+      "back": "G",
+      "tags": [
+        "string:5",
+        "note:G",
+        "fret:10"
+      ],
+      "meta": {
+        "string": 5,
+        "stringLabel": "A",
+        "fret": 10,
+        "note": "G"
+      }
+    },
+    {
+      "id": "s5-f11",
+      "front": "5th string (A), fret 11",
+      "back": "G♯",
+      "tags": [
+        "string:5",
+        "note:G♯",
+        "fret:11"
+      ],
+      "meta": {
+        "string": 5,
+        "stringLabel": "A",
+        "fret": 11,
+        "note": "G♯"
+      }
+    },
+    {
+      "id": "s5-f12",
+      "front": "5th string (A), fret 12",
+      "back": "A",
+      "tags": [
+        "string:5",
+        "note:A",
+        "fret:12"
+      ],
+      "meta": {
+        "string": 5,
+        "stringLabel": "A",
+        "fret": 12,
+        "note": "A"
+      }
+    },
+    {
+      "id": "s6-f0",
+      "front": "6th string (E), open",
+      "back": "E",
+      "tags": [
+        "string:6",
+        "note:E",
+        "fret:0"
+      ],
+      "meta": {
+        "string": 6,
+        "stringLabel": "E",
+        "fret": 0,
+        "note": "E"
+      }
+    },
+    {
+      "id": "s6-f1",
+      "front": "6th string (E), fret 1",
+      "back": "F",
+      "tags": [
+        "string:6",
+        "note:F",
+        "fret:1"
+      ],
+      "meta": {
+        "string": 6,
+        "stringLabel": "E",
+        "fret": 1,
+        "note": "F"
+      }
+    },
+    {
+      "id": "s6-f2",
+      "front": "6th string (E), fret 2",
+      "back": "F♯",
+      "tags": [
+        "string:6",
+        "note:F♯",
+        "fret:2"
+      ],
+      "meta": {
+        "string": 6,
+        "stringLabel": "E",
+        "fret": 2,
+        "note": "F♯"
+      }
+    },
+    {
+      "id": "s6-f3",
+      "front": "6th string (E), fret 3",
+      "back": "G",
+      "tags": [
+        "string:6",
+        "note:G",
+        "fret:3"
+      ],
+      "meta": {
+        "string": 6,
+        "stringLabel": "E",
+        "fret": 3,
+        "note": "G"
+      }
+    },
+    {
+      "id": "s6-f4",
+      "front": "6th string (E), fret 4",
+      "back": "G♯",
+      "tags": [
+        "string:6",
+        "note:G♯",
+        "fret:4"
+      ],
+      "meta": {
+        "string": 6,
+        "stringLabel": "E",
+        "fret": 4,
+        "note": "G♯"
+      }
+    },
+    {
+      "id": "s6-f5",
+      "front": "6th string (E), fret 5",
+      "back": "A",
+      "tags": [
+        "string:6",
+        "note:A",
+        "fret:5"
+      ],
+      "meta": {
+        "string": 6,
+        "stringLabel": "E",
+        "fret": 5,
+        "note": "A"
+      }
+    },
+    {
+      "id": "s6-f6",
+      "front": "6th string (E), fret 6",
+      "back": "A♯",
+      "tags": [
+        "string:6",
+        "note:A♯",
+        "fret:6"
+      ],
+      "meta": {
+        "string": 6,
+        "stringLabel": "E",
+        "fret": 6,
+        "note": "A♯"
+      }
+    },
+    {
+      "id": "s6-f7",
+      "front": "6th string (E), fret 7",
+      "back": "B",
+      "tags": [
+        "string:6",
+        "note:B",
+        "fret:7"
+      ],
+      "meta": {
+        "string": 6,
+        "stringLabel": "E",
+        "fret": 7,
+        "note": "B"
+      }
+    },
+    {
+      "id": "s6-f8",
+      "front": "6th string (E), fret 8",
+      "back": "C",
+      "tags": [
+        "string:6",
+        "note:C",
+        "fret:8"
+      ],
+      "meta": {
+        "string": 6,
+        "stringLabel": "E",
+        "fret": 8,
+        "note": "C"
+      }
+    },
+    {
+      "id": "s6-f9",
+      "front": "6th string (E), fret 9",
+      "back": "C♯",
+      "tags": [
+        "string:6",
+        "note:C♯",
+        "fret:9"
+      ],
+      "meta": {
+        "string": 6,
+        "stringLabel": "E",
+        "fret": 9,
+        "note": "C♯"
+      }
+    },
+    {
+      "id": "s6-f10",
+      "front": "6th string (E), fret 10",
+      "back": "D",
+      "tags": [
+        "string:6",
+        "note:D",
+        "fret:10"
+      ],
+      "meta": {
+        "string": 6,
+        "stringLabel": "E",
+        "fret": 10,
+        "note": "D"
+      }
+    },
+    {
+      "id": "s6-f11",
+      "front": "6th string (E), fret 11",
+      "back": "D♯",
+      "tags": [
+        "string:6",
+        "note:D♯",
+        "fret:11"
+      ],
+      "meta": {
+        "string": 6,
+        "stringLabel": "E",
+        "fret": 11,
+        "note": "D♯"
+      }
+    },
+    {
+      "id": "s6-f12",
+      "front": "6th string (E), fret 12",
+      "back": "E",
+      "tags": [
+        "string:6",
+        "note:E",
+        "fret:12"
+      ],
+      "meta": {
+        "string": 6,
+        "stringLabel": "E",
+        "fret": 12,
+        "note": "E"
+      }
+    }
+  ]
+}
