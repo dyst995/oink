@@ -1,0 +1,28 @@
+.theory-module {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  padding: 28px 24px 48px;
+}
+
+.theory-module h1 {
+  margin: 0 0 8px;
+  font-size: 40px;
+  letter-spacing: -1px;
+}
+
+.theory-intro p {
+  max-width: 62ch;
+  margin: 0;
+  color: var(--text);
+}
+
+@media (max-width: 720px) {
+  .theory-module {
+    padding: 20px 16px 36px;
+  }
+
+  .theory-module h1 {
+    font-size: 32px;
+  }
+}

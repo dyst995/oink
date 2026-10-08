@@ -1,7 +1,24 @@
+import { useState } from 'react'
+import { SiteHeader, type SiteTab } from './layout/SiteHeader.tsx'
 import { FretboardModule } from './modules/fretboard-module/index.ts'
+import { TheoryModule } from './modules/theory-module/index.ts'
+import './layout/site-header.css'
 
 function App() {
-  return <FretboardModule />
+  const [tab, setTab] = useState<SiteTab>('fretboard')
+
+  return (
+    <>
+      <SiteHeader tab={tab} onChange={setTab} />
+      {tab === 'fretboard' ? (
+        <div id="panel-fretboard" role="tabpanel" aria-labelledby="tab-fretboard">
+          <FretboardModule />
+        </div>
+      ) : (
+        <TheoryModule />
+      )}
+    </>
+  )
 }
 
 export default App

@@ -32,14 +32,6 @@ export function FretboardModule() {
 
   return (
     <section className="fretboard-module">
-      <header className="intro">
-        <h1>Fretboard</h1>
-        <p>
-          Pick a key and an interval formula. Every fret is a note, and the board lights the ones
-          that formula contains.
-        </p>
-      </header>
-
       <div className="panel">
         <div className="controls">
           <label className="field">

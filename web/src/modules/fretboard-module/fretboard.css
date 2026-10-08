@@ -16,21 +16,10 @@
   text-align: left;
 }
 
-.fretboard-module h1 {
-  margin: 0 0 8px;
-  font-size: 40px;
-  letter-spacing: -1px;
-}
-
-.intro p,
 .tuning,
 .hint,
 .status {
   color: var(--text);
-}
-
-.intro p {
-  max-width: 62ch;
 }
 
 .panel {
