@@ -3,6 +3,7 @@ import type { ReactNode } from 'react'
 type Block =
   | { type: 'h1' | 'h2' | 'h3' | 'p'; text: string }
   | { type: 'ul'; items: string[] }
+  | { type: 'ol'; items: string[] }
   | { type: 'table'; headers: string[]; rows: string[][] }
 
 function inline(text: string): ReactNode[] {
@@ -34,6 +35,8 @@ function tableCells(line: string): string[] {
     .slice(1, -1)
     .map((cell) => cell.trim())
 }
+
+const ORDERED_ITEM = /^(\d+)\.\s+(.*)$/
 
 function parseMarkdown(source: string): Block[] {
   const lines = source.replace(/\r\n/g, '\n').split('\n')
@@ -88,13 +91,24 @@ function parseMarkdown(source: string): Block[] {
       continue
     }
 
+    if (ORDERED_ITEM.test(line)) {
+      const items: string[] = []
+      while (index < lines.length && ORDERED_ITEM.test(lines[index])) {
+        items.push(lines[index].replace(ORDERED_ITEM, '$2'))
+        index += 1
+      }
+      blocks.push({ type: 'ol', items })
+      continue
+    }
+
     const paragraph: string[] = []
     while (
       index < lines.length &&
       lines[index].trim() !== '' &&
       !lines[index].startsWith('#') &&
       !lines[index].startsWith('|') &&
-      !lines[index].startsWith('- ')
+      !lines[index].startsWith('- ') &&
+      !ORDERED_ITEM.test(lines[index])
     ) {
       paragraph.push(lines[index])
       index += 1
@@ -132,6 +146,15 @@ export function Markdown({ source, omitTitle = false }: MarkdownProps) {
                 <li key={item}>{inline(item)}</li>
               ))}
             </ul>
+          )
+        }
+        if (block.type === 'ol') {
+          return (
+            <ol key={index}>
+              {block.items.map((item) => (
+                <li key={item}>{inline(item)}</li>
+              ))}
+            </ol>
           )
         }
         if (block.type === 'table') {

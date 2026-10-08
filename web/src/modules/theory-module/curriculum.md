@@ -1,171 +1,263 @@
 # Guitar theory curriculum
 
-Goal: understand music well enough to build scales, chords, progressions, melodies, and improvisations anywhere on the fretboard — from first principles, not from memorized shapes alone.
+Goal: build genuine understanding of how music works on the guitar — pitch fluency, harmonic awareness, ear, and deliberate playing — not a pile of memorized shapes or isolated terminology.
 
-Teaching order: introduce one topic at a time. Guitar-specific mapping comes after the underlying pitch language exists, so fretboard work is applied theory, not a separate bag of tricks.
+Audience: intermediate technical guitarists with theory gaps. Playing ability is not the same as theoretical understanding.
+
+Principle: **theory and guitar application develop together.** After each core idea, apply it on the neck before stacking more abstraction.
 
 ---
 
-## Unit A — The pitch language
+## Unit 1 — Pitch on the guitar
 
 ### 1. Pitch, octave, and pitch class
-- **Scope:** What a pitch is; how octaves relate; what a pitch class is.
+- **Scope:** Pitch vs octave vs pitch class.
 - **Prerequisites:** none
-- **Objectives:** Distinguish pitch from pitch class. Explain why `A` on different octaves is “the same note” in naming but not the same sound. State why guitar frets and piano keys both step through the same system.
+- **Objectives:** Distinguish pitch from pitch class; explain same letter / different sound.
 
 ### 2. The twelve pitch classes
-- **Scope:** The closed set of twelve names used in equal temperament; natural letters; sharps and flats; enharmonic equivalents.
+- **Scope:** Musical alphabet; sharps/flats; enharmonic spelling.
 - **Prerequisites:** 1
-- **Objectives:** List the twelve pitch classes. Explain why seven letter names are not enough. Explain what enharmonic means (same pitch class, different spelling) and why spelling will matter once scales and keys appear. Do **not** memorize the fretboard here.
+- **Objectives:** List twelve classes; explain why spelling will matter for scales and chords.
 
 ### 3. Half steps and whole steps
-- **Scope:** The half step as the smallest common step; the whole step as two half steps.
+- **Scope:** Semitone/whole tone; one fret = one half step.
 - **Prerequisites:** 2
-- **Objectives:** Measure distances in half steps. Identify where B–C and E–F are adjacent. Use steps as the unit that will build scales next.
+- **Objectives:** Measure distances; locate B–C and E–F; use frets as the measuring tool.
 
-### 4. Fretboard memorization
-- **Scope:** Name the pitch class at a string and fret (standard tuning, frets 0–12). Drill by selected strings and/or notes.
+### 4. Tuning and the open strings
+- **Scope:** Standard tuning; open strings as anchors.
 - **Prerequisites:** 2, 3
-- **Objectives:** Given a string and fret, name the pitch class. Use filters to isolate weak strings or notes. This is applied recall of pitch classes on the instrument, not a substitute for Units B–D.
+- **Objectives:** Name open strings; count frets from open as half steps.
+
+### 5. Locating pitch classes on the neck
+- **Scope:** One class in many places (frets 0–12).
+- **Prerequisites:** 3, 4
+- **Objectives:** Find several locations for any class; treat duplicates as octaves/unisons.
+
+### 6. Octave relationships on the neck
+- **Scope:** Twelve frets up; cross-string octave geometry as a tool, not an axiom.
+- **Prerequisites:** 1, 5
+- **Objectives:** Move a known class to another octave location on purpose.
+
+### 7. Fretboard memorization (practice)
+- **Scope:** Drill pitch-class recall by string/note filters.
+- **Prerequisites:** 2, 3, 4
+- **Objectives:** Immediate naming of pitch class at string + fret (0–12).
 
 ---
 
-## Unit B — Building the major scale and keys
-
-### 5. Constructing the major scale
-- **Scope:** The W–W–H–W–W–W–H pattern as a recipe from any starting pitch class.
-- **Prerequisites:** 3
-- **Objectives:** Build a major scale from a given root by steps alone. Explain why that pattern yields seven named degrees with unique letter names when spelled correctly.
-
-### 6. Keys and tonality
-- **Scope:** A key as a major (or later minor) collection organized around a tonic; same pattern, different root.
-- **Prerequisites:** 5
-- **Objectives:** Build major scales in several keys. State what “in the key of X” means for available pitch classes. Introduce why spelling (sharps vs flats) follows the key.
-
-### 7. Scale degrees and formulas
-- **Scope:** Degrees 1–7; writing collections as formulas (`1 2 3 4 5 6 7`).
-- **Prerequisites:** 6
-- **Objectives:** Name degrees of a major scale. Translate between note names and degree formulas. Treat formulas as reusable descriptions of any key.
-
----
-
-## Unit C — Intervals
+## Unit 2 — Intervals
 
 ### 8. Interval names and quality
-- **Scope:** Named distances (2nds through octaves); major/minor/perfect/diminished/augmented quality; mapping to half-step counts.
-- **Prerequisites:** 3, 7
-- **Objectives:** Name the interval between two notes. Spell intervals with correct letter names. Explain quality as alteration of the diatonic size.
+- **Scope:** Numbers; major/minor/perfect/dim/aug; half-step sizes.
+- **Prerequisites:** 3
+- **Objectives:** Name intervals; map quality to half-step count.
 
-### 9. Intervals in music
-- **Scope:** Consonance/dissonance as musical tendency (not mysticism); melodic vs harmonic intervals; inversion at a practical level.
+### 9. Interval spelling and inversion
+- **Scope:** Correct letter spelling; compound intervals; inversion.
 - **Prerequisites:** 8
-- **Objectives:** Hear and describe common intervals. Explain why thirds and fifths become chord material next.
+- **Objectives:** Spell intervals; invert simple intervals; handle compounds.
 
----
-
-## Unit D — Harmony
-
-### 10. Triads
-- **Scope:** Stacking thirds; major, minor, diminished, augmented; chord symbols.
+### 10. Intervals in music
+- **Scope:** Melodic vs harmonic; ear; context-dependent tendency (not fixed “emotions”).
 - **Prerequisites:** 8, 9
-- **Objectives:** Build any triad from a root. Spell it. Relate `1 3 5` / `1 ♭3 5` formulas to interval stacks.
+- **Objectives:** Hear and use common intervals; explain how they build scales/chords.
 
-### 11. Seventh chords
-- **Scope:** Adding the seventh; maj7, m7, dominant 7, m7♭5, dim7 at a working level.
-- **Prerequisites:** 10
-- **Objectives:** Build common seventh chords from formulas. Hear dominant 7 as the tension chord of tonal music.
+### 11. Intervals on the neck
+- **Scope:** One-string and cross-string fingerings.
+- **Prerequisites:** 5, 8
+- **Objectives:** Play a named interval from a root in more than one fingering.
 
-### 12. Diatonic harmony
-- **Scope:** Harmonizing the major scale; I–vii° quality pattern; Roman numerals.
-- **Prerequisites:** 7, 10, 11
-- **Objectives:** Derive the diatonic seventh-chord set of a key. Label chords with Roman numerals.
+---
 
-### 13. Functional progressions
-- **Scope:** Tonic / predominant / dominant roles; common progressions (I–IV–V, ii–V–I, vi–IV–I–V, blues I–IV–V).
+## Unit 3 — Scales and tonality
+
+### 12. Constructing the major scale
+- **Scope:** W–W–H–W–W–W–H; unique letter names.
+- **Prerequisites:** 3
+- **Objectives:** Build any major scale by steps with correct spelling.
+
+### 13. Scale degrees and formulas
+- **Scope:** Degrees 1–7; formula notation.
 - **Prerequisites:** 12
-- **Objectives:** Explain why V pulls to I. Build and analyze short progressions in a key.
+- **Objectives:** Translate notes ↔ degrees; reuse formulas across keys.
+
+### 14. Keys, signatures, and the circle of fifths
+- **Scope:** Tonality; key signatures; circle as organization of keys.
+- **Prerequisites:** 12, 13
+- **Objectives:** State what “in the key of X” means; use signatures/circle practically.
+
+### 15. The major scale on the neck
+- **Scope:** Construct and connect major scales across the neck.
+- **Prerequisites:** 5, 11, 12, 13
+- **Objectives:** Play major while naming degrees; link positions by shared classes.
+
+### 16. Natural minor; relative and parallel keys
+- **Scope:** Natural minor; relative/parallel relationships.
+- **Prerequisites:** 14, 15
+- **Objectives:** Build natural minor; relate relative and parallel major/minor.
+
+### 17. Harmonic and melodic minor
+- **Scope:** Raised 7; raised 6+7 ascending (context of classical vs modern use).
+- **Prerequisites:** 16
+- **Objectives:** Build both; explain the leading-tone problem natural minor leaves open.
+
+### 18. Pentatonic and blues
+- **Scope:** Major/minor pentatonic as subsets; blues ♭5 as color.
+- **Prerequisites:** 13, 15, 16
+- **Objectives:** Derive formulas; use knowingly against chords (scale ≠ automatic fit).
+
+### 19. Modes in context
+- **Scope:** Rotations / characteristic degrees; modal vs functional situations.
+- **Prerequisites:** 13, 15, 16
+- **Objectives:** Build a mode for a clear musical situation; avoid treating modes as seven disconnected boxes.
+
+*Teaching note:* Full functional harmony is Unit 5. This lesson emphasizes characteristic degrees and vamp context; revisit after progressions.
 
 ---
 
-## Unit E — The fretboard as a map of the same language
+## Unit 4 — Triads (core)
 
-Guitar topics start here. Earlier units may use a single string as an example, but this unit is where the instrument becomes the main workspace.
+### 20. Triad construction
+- **Scope:** Stacking thirds; M/m/dim/aug; spelling and symbols.
+- **Prerequisites:** 8, 9, 13
+- **Objectives:** Build and spell all four qualities from any root.
 
-### 14. Tuning and the open strings
-- **Scope:** Standard tuning; open strings as fixed pitch-class anchors.
-- **Prerequisites:** 2
-- **Objectives:** Name the open strings low to high. Count frets as half steps from the open pitch class. (Unit A topic 4 already drills pitch-class recall on the neck.)
+### 21. Triad inversions
+- **Scope:** Root position, 1st, 2nd; bass note vs root; inversion ≠ voicing density.
+- **Prerequisites:** 20
+- **Objectives:** Identify inversion from bass; write all inversions of a triad.
 
-### 15. Locating pitch classes on the neck
-- **Scope:** Finding one pitch class in multiple places on purpose; linking copies across strings.
-- **Prerequisites:** 2, 3, 4, 14
-- **Objectives:** Given a pitch class, find several occurrences between frets 0–12. Explain duplicates as octaves and unisons of the same class.
+### 22. Triads on guitar string sets
+- **Scope:** Close triads on string sets (e.g. D–G–B, G–B–E); locate R/3/5.
+- **Prerequisites:** 11, 20, 21
+- **Objectives:** Play all inversions of a triad on a chosen string set in a fret range.
 
-### 16. Octave relationships on the neck
-- **Scope:** Same pitch class twelve frets up; common cross-string octave shapes as **geometry**, not as theory axioms.
-- **Prerequisites:** 1, 15
-- **Objectives:** Move any known pitch class to another octave location deliberately. Separate “useful shape” from “musical definition.”
+### 23. Diatonic triads
+- **Scope:** Harmonize major (and natural minor); Roman numerals for triads.
+- **Prerequisites:** 14, 20
+- **Objectives:** Derive I–vii° qualities; label diatonic triads in a key.
 
-### 17. Intervals on the neck
-- **Scope:** Horizontal (one string) and vertical (across strings) interval shapes.
-- **Prerequisites:** 8, 15
-- **Objectives:** Play a named interval from a chosen root in more than one fingering. Prefer accuracy of spelling and count over collecting shapes.
+### 24. Triad voice leading
+- **Scope:** Connect nearby inversions; common tones; minimal motion.
+- **Prerequisites:** 21, 22, 23
+- **Objectives:** Voice-lead a short triad progression on one string set.
 
-### 18. Scales across the neck
-- **Scope:** Major (then minor) laid out by construction, not by isolated box memorization first.
-- **Prerequisites:** 5, 7, 15, 17
-- **Objectives:** Play a major scale in a key across a useful range of the neck while naming degrees. Connect adjacent positions by shared pitch classes.
-
-### 19. Chord shapes as interval stacks
-- **Scope:** Common grips as arrangements of chord tones; movable shapes.
-- **Prerequisites:** 10, 11, 17
-- **Objectives:** Look at a shape and name root, third, fifth (and seventh). Move a shape and keep the chord quality.
-
-### 20. Arpeggios and chord-tone targeting
-- **Scope:** Chord tones as lines; relating a line to the chord of the moment.
-- **Prerequisites:** 13, 19
-- **Objectives:** Outline a progression with arpeggios. Land on chord tones on strong beats in a simple improvisation.
-
-### 21. Pentatonic and blues as subsets
-- **Scope:** Major/minor pentatonic derived from parent scales; ♭5 as chromatic color, not a new universe.
-- **Prerequisites:** 7, 18
-- **Objectives:** Derive pentatonic formulas from major/minor. Use them knowingly against a progression.
-
-### 22. Modes in context
-- **Scope:** Modes as rotations / characteristic degrees relative to a tonal center; when a vamp is modal vs functional.
-- **Prerequisites:** 7, 13, 18
-- **Objectives:** Build a mode from a parent major scale or from a formula. Choose Mixolydian vs Ionian (etc.) for a clear harmonic situation.
-
-### 23. Fretboard harmony and voice leading
-- **Scope:** Connecting chords with minimal motion; guide tones; shell voicings.
-- **Prerequisites:** 13, 19, 20
-- **Objectives:** Voice-lead a short progression on the neck. Prefer connected parts over jumping grips.
+### 25. Triads in progressions and improvisation
+- **Scope:** Rhythm guitar; outlining; melodic use of R/3/5.
+- **Prerequisites:** 23, 24
+- **Objectives:** Use triads for changes and simple chord-tone lines.
 
 ---
 
-## Unit F — Time (parallel track)
+## Unit 5 — Seventh chords and functional harmony
 
-Rhythm can run beside Units D–E once pitch literacy is underway.
+### 26. Seventh chords
+- **Scope:** maj7, m7, dominant 7, m7♭5, dim7.
+- **Prerequisites:** 20
+- **Objectives:** Build common sevenths from formulas; hear dominant tension in context.
 
-### 24. Pulse, subdivision, and feel
-- **Scope:** Beat, bar, eighths/sixteenths/triplets; straight vs swing.
-- **Prerequisites:** none musical beyond basic counting
-- **Objectives:** Play and count common subdivisions. Match a groove without changing harmonic choices.
+### 27. Sevenths on the guitar
+- **Scope:** Shells; inversions; finding 3 and 7.
+- **Prerequisites:** 22, 26
+- **Objectives:** Play shell voicings; name guide tones inside a grip.
+
+### 28. Diatonic harmony
+- **Scope:** Diatonic seventh sets; Roman numerals; minor overview.
+- **Prerequisites:** 23, 26
+- **Objectives:** Derive diatonic chords of a major key; label progressions.
+
+### 29. Functional progressions
+- **Scope:** Tonic / predominant / dominant; common progressions; style examples.
+- **Prerequisites:** 28
+- **Objectives:** Explain V→I; build and analyze short progressions.
+
+### 30. Secondary dominants
+- **Scope:** V/x and temporary tonicization.
+- **Prerequisites:** 29
+- **Objectives:** Spot and build secondary dominants in major keys.
+
+### 31. Borrowed chords and modal interchange
+- **Scope:** Common borrows (♭VII, ♭VI, iv, etc.).
+- **Prerequisites:** 29, 16
+- **Objectives:** Explain and apply frequent interchange chords.
+
+### 32. Chord substitutions
+- **Scope:** Relative subs; practical dominant substitutes (incl. careful tritone-sub intro).
+- **Prerequisites:** 29, 30
+- **Objectives:** Substitute with harmonic reason, not random swaps.
+
+### 33. Voice leading and guide tones
+- **Scope:** Guide-tone lines; shells; connecting seventh chords on the neck.
+- **Prerequisites:** 24, 27, 29
+- **Objectives:** Voice-lead ii–V–I (and similar) with clear 3/7 motion.
 
 ---
 
-## Deliberately later
+## Unit 6 — Fretboard systems and improvisation
 
-Extended tertian harmony (9, 11, 13), altered dominants, secondary dominants / borrowed chords, melodic and harmonic minor systems, and advanced chromaticism come after Unit D is solid and Unit E can express it on the instrument.
+### 34. CAGED as navigation
+- **Scope:** Overlapping chord/scale maps; orientation tool, not dogma.
+- **Prerequisites:** 15, 22, 27
+- **Objectives:** Locate a chord/scale area via CAGED without treating shapes as the theory.
+
+### 35. Three-notes-per-string scales
+- **Scope:** 3NPS as organization for horizontal movement.
+- **Prerequisites:** 15
+- **Objectives:** Connect major (then minor) 3NPS positions by shared degrees.
+
+### 36. Arpeggios and chord-tone targeting
+- **Scope:** Chord tones as lines; strong-beat targeting.
+- **Prerequisites:** 25, 27, 29
+- **Objectives:** Outline a progression; land chord tones deliberately.
+
+### 37. Improvising through chord changes
+- **Scope:** Chord tones first; approaches; scales as resources.
+- **Prerequisites:** 18, 36, 29
+- **Objectives:** Improvise a short chorus with audible change awareness.
 
 ---
 
-## How lessons will be taught
+## Unit 7 — Time, melody, and musical independence
 
-Each lesson uses the same shape:
+### 38. Pulse, subdivision, and feel
+- **Scope:** Beat, bar, common subdivisions; straight vs swing.
+- **Prerequisites:** basic counting
+- **Objectives:** Lock subdivisions to a pulse; change feel without changing harmony.
 
-1. **Concept** — what it is and why it exists
-2. **Examples** — concrete pitch or guitar illustrations that only use prior topics
-3. **Exercises** — specific problems with a clear success check
+### 39. Melody, motif, and phrasing
+- **Scope:** Motifs; development; articulation; tension/release in lines.
+- **Prerequisites:** 10, 36, 38
+- **Objectives:** Build a short motif-based phrase that respects underlying chords.
 
-No lesson dumps the next unit’s material as a “memorization tip.”
+### 40. Analyzing real music
+- **Scope:** Independent analysis workflow for unfamiliar progressions/melodies.
+- **Prerequisites:** 28, 29, 36
+- **Objectives:** Key, RN, functions, chord tones in a melody — without a teacher feeding answers.
+
+### 41. Transposition and musical creation
+- **Scope:** Transpose; compose/improvise using the full toolkit.
+- **Prerequisites:** 14, 29, 37, 39
+- **Objectives:** Move material across keys; create a short original progression + line.
+
+---
+
+## How lessons are taught
+
+Each lesson uses:
+
+1. **Concept** — precise definition
+2. **Underlying logic** — why it works; link to prior material
+3. **Musical significance** — what problem it solves in real music
+4. **Guitar application** — frets, strings, note names; observe/hear
+5. **Exercises** — construct, identify, hear, analyze, apply
+6. **Mastery criteria** — what to demonstrate before advancing
+
+No lesson presents a memorization shortcut as a universal musical law.
+
+---
+
+## Practice tool
+
+**Fretboard memorization** (after Unit 1 topics 4–6) remains an interactive drill inside the app. It supports Unit 1; it does not replace Units 2–7.
