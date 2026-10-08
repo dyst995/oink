@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "validate:theory": "node src/modules/theory-module/scripts/validate-fretboard.mjs"
+    "validate:theory": "node src/modules/theory-module/scripts/validate-fretboard.mjs",
+    "validate:fretboard": "node src/modules/fretboard-module/scripts/validate-theory.mjs"
   },
   "dependencies": {
     "react": "^19.2.8",

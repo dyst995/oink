@@ -2,35 +2,88 @@ import {
   FRET_COUNT,
   GUITAR_STRINGS,
   INLAY_FRETS,
+  isChordToneDegree,
   pitchClassAt,
   type FormulaTone,
 } from './theory.ts'
+import type { FocusMode, LabelMode } from './FretboardControls.tsx'
+import type { SelectedNote } from './NoteInspector.tsx'
 
 const STRING_GAUGES = [1, 1.5, 2, 2.4, 2.8, 3.4]
 
 type FretboardProps = {
   tones: readonly FormulaTone[]
+  labelMode: LabelMode
+  showRoots: boolean
+  showLabels: boolean
+  showFretNumbers: boolean
+  showNonPattern: boolean
+  focusMode: FocusMode
+  focusDegree: string
+  focusInterval: number
+  selected: SelectedNote | null
+  onSelect: (note: SelectedNote) => void
 }
 
 function inlayLeft(fret: number): string {
   return `calc(var(--open-w) + ${(fret - 0.5)} * var(--fret-w))`
 }
 
-export function Fretboard({ tones }: FretboardProps) {
+function labelFor(tone: FormulaTone, labelMode: LabelMode): string {
+  if (labelMode === 'degrees') return tone.degreeLabel
+  if (labelMode === 'intervals') return tone.intervalShort
+  if (labelMode === 'chord-tones') {
+    if (tone.role === 'root') return 'R'
+    if (tone.role === 'third') return '3'
+    if (tone.role === 'fifth') return '5'
+    if (tone.role === 'seventh') return '7'
+    return '·'
+  }
+  return tone.name
+}
+
+function isFocused(
+  tone: FormulaTone,
+  focusMode: FocusMode,
+  focusDegree: string,
+  focusInterval: number,
+): boolean {
+  if (focusMode === 'all') return true
+  if (focusMode === 'chord-tones') return isChordToneDegree(tone.degreeLabel)
+  if (focusMode === 'degree') return tone.degreeLabel === focusDegree
+  if (focusMode === 'interval') return tone.semitones === focusInterval
+  return true
+}
+
+export function Fretboard({
+  tones,
+  labelMode,
+  showRoots,
+  showLabels,
+  showFretNumbers,
+  showNonPattern,
+  focusMode,
+  focusDegree,
+  focusInterval,
+  selected,
+  onSelect,
+}: FretboardProps) {
   const toneByPitchClass = new Map(tones.map((tone) => [tone.pitchClass, tone]))
   const frets = Array.from({ length: FRET_COUNT + 1 }, (_, fret) => fret)
 
   return (
     <div className="board-scroll">
-      <div className="fretboard">
-        <div className="fret-numbers" aria-hidden="true">
-          <span className="fret-number" />
-          {frets.map((fret) => (
-            <span key={fret} className="fret-number">
-              {fret}
-            </span>
-          ))}
-        </div>
+      <div className="fretboard" role="group" aria-label="Guitar fretboard">
+        {showFretNumbers ? (
+          <div className="fret-numbers" aria-hidden="true">
+            <span className="fret-number" />
+            {frets.map((fret) => (
+              <span key={fret} className="fret-number">
+                {fret}
+              </span>
+            ))}
+          </div>
+        ) : null}
 
         <div className="board-body">
           <div className="headstock">
@@ -57,24 +110,69 @@ export function Fretboard({ tones }: FretboardProps) {
               <div className="string-row" key={string.id}>
                 <div className="string-line" style={{ height: STRING_GAUGES[index] }} />
                 {frets.map((fret) => {
-                  const tone = toneByPitchClass.get(pitchClassAt(string.openPitchClass, fret))
+                  const pitchClass = pitchClassAt(string.openPitchClass, fret)
+                  const tone = toneByPitchClass.get(pitchClass) ?? null
+                  const focused = tone
+                    ? isFocused(tone, focusMode, focusDegree, focusInterval)
+                    : false
+                  const isSelected =
+                    selected?.string.id === string.id && selected.fret === fret
+                  const showPatternNote = Boolean(tone && focused)
+                  const showGhost = showNonPattern && !tone
+
                   return (
                     <div key={fret} className={fret === 0 ? 'fret fret-open' : 'fret'}>
-                      {tone ? (
-                        <span
-                          className={tone.isRoot ? 'note note-root' : 'note'}
+                      {showPatternNote && tone ? (
+                        <button
+                          type="button"
+                          className={[
+                            'note',
+                            `note-${tone.role}`,
+                            showRoots && tone.isRoot ? 'note-root' : '',
+                            isSelected ? 'is-selected' : '',
+                            !showLabels ? 'is-unlabeled' : '',
+                          ]
+                            .filter(Boolean)
+                            .join(' ')}
                           data-string={string.label}
                           data-fret={fret}
                           data-note={tone.name}
                           data-degree={tone.degreeLabel}
-                          title={`${tone.degreeLabel} · ${tone.name}`}
+                          aria-pressed={isSelected}
+                          aria-label={`${string.label} string, fret ${fret}, ${tone.degreeLabel}, ${tone.name}, ${tone.intervalName}`}
+                          onClick={() =>
+                            onSelect({ string, fret, tone, pitchClass })
+                          }
                         >
-                          <span className="sr-only">
-                            {string.label} string, fret {fret}, {tone.degreeLabel},{' '}
-                          </span>
-                          {tone.name}
-                        </span>
-                      ) : null}
+                          {showLabels ? labelFor(tone, labelMode) : null}
+                        </button>
+                      ) : showGhost || (tone && !focused) ? (
+                        <button
+                          type="button"
+                          className={[
+                            'note note-ghost',
+                            isSelected ? 'is-selected' : '',
+                          ]
+                            .filter(Boolean)
+                            .join(' ')}
+                          aria-pressed={isSelected}
+                          aria-label={`${string.label} string, fret ${fret}${tone ? `, ${tone.name} (dimmed)` : ', outside pattern'}`}
+                          onClick={() =>
+                            onSelect({ string, fret, tone, pitchClass })
+                          }
+                        />
+                      ) : (
+                        <button
+                          type="button"
+                          className={['note-hit', isSelected ? 'is-selected' : '']
+                            .filter(Boolean)
+                            .join(' ')}
+                          aria-label={`${string.label} string, fret ${fret}, empty`}
+                          onClick={() =>
+                            onSelect({ string, fret, tone: null, pitchClass })
+                          }
+                        />
+                      )}
                     </div>
                   )
                 })}
