@@ -1,16 +1,17 @@
 .fretboard-module {
-  --label-w: 36px;
-  --open-w: 56px;
-  --fret-w: min(72px, 7.2vw);
-  --row-h: 48px;
-  --board-pad: 14px;
-  --wood-edge: #2a1812;
+  --label-w: 40px;
+  --open-w: 52px;
+  --fret-min: 48px;
+  --row-h: 52px;
+  --board-pad: 16px;
+  --wood-edge: #241510;
   --note-root: #e8b23a;
   --note-third: #5fbfb0;
   --note-fifth: #f3ebe0;
   --note-seventh: #e89a7a;
   --note-other: #d9cfc0;
   --note-ink: #1c120c;
+  --note-size: clamp(28px, 2.4vw, 36px);
 
   box-sizing: border-box;
   display: flex;
@@ -299,26 +300,28 @@
   width: 100%;
   min-width: 0;
   overflow-x: auto;
-  padding-bottom: 8px;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-x: contain;
   border: 1px solid var(--border);
-  border-radius: var(--radius-md, 12px);
-  background: color-mix(in srgb, var(--bg-muted, #eee) 55%, transparent);
+  border-radius: 14px;
+  background: var(--bg-soft, color-mix(in srgb, var(--bg-muted, #eee) 55%, transparent));
 }
 
 .fretboard {
-  width: max-content;
-  min-width: 100%;
-  padding: 14px 16px 18px;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: calc(var(--label-w) + var(--open-w) + 12 * var(--fret-min));
+  padding: 12px 12px 14px;
 }
 
 .fret-numbers {
   display: grid;
-  grid-template-columns: var(--label-w) var(--open-w) repeat(12, var(--fret-w));
-  margin: 0 0 6px;
+  grid-template-columns: var(--label-w) var(--open-w) repeat(12, minmax(var(--fret-min), 1fr));
+  width: 100%;
+  margin: 0 0 8px;
   color: var(--text-muted, var(--text));
   font-size: 12px;
+  font-weight: 600;
   font-variant-numeric: tabular-nums;
 }
 
@@ -328,27 +331,35 @@
 
 .board-body {
   display: flex;
+  width: 100%;
   overflow: hidden;
-  border-radius: 0 14px 14px 0;
+  border-radius: 12px;
   background:
-    radial-gradient(120% 90% at 0% 0%, rgba(255, 214, 170, 0.14), transparent 36%),
-    linear-gradient(180deg, #73462d 0%, #4e2d1d 22%, #3a2116 58%, #2b1811 100%);
+    linear-gradient(90deg, rgba(0, 0, 0, 0.22), transparent 18%),
+    radial-gradient(120% 90% at 0% 0%, rgba(255, 214, 170, 0.12), transparent 40%),
+    linear-gradient(180deg, #6d422a 0%, #4a2a1b 28%, #342014 62%, #241510 100%);
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.16),
-    0 18px 40px rgba(0, 0, 0, 0.28);
+    inset 0 1px 0 rgba(255, 255, 255, 0.14),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.35),
+    0 14px 32px rgba(0, 0, 0, 0.22);
 }
 
 .headstock {
   display: flex;
+  flex: none;
   flex-direction: column;
   width: var(--label-w);
   padding: var(--board-pad) 0;
-  background: var(--wood-edge);
+  background:
+    linear-gradient(180deg, #2c1a13 0%, var(--wood-edge) 100%);
+  box-shadow: inset -1px 0 0 rgba(255, 255, 255, 0.06);
 }
 
 .neck {
   position: relative;
-  flex: 1;
+  flex: 1 1 auto;
+  width: 100%;
+  min-width: 0;
   padding: var(--board-pad) 0;
 }
 
@@ -362,14 +373,15 @@
 .inlay {
   position: absolute;
   top: calc(var(--board-pad) + 3 * var(--row-h));
-  width: 13px;
-  height: 13px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background: radial-gradient(circle at 35% 30%, #fff, #efe8dc 42%, #b7b0a4 78%);
   box-shadow:
     inset 0 0 0 1px rgba(255, 255, 255, 0.45),
     0 1px 1px rgba(0, 0, 0, 0.28);
   transform: translate(-50%, -50%);
+  opacity: 0.85;
 }
 
 .inlay-high {
@@ -384,7 +396,8 @@
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: var(--open-w) repeat(12, var(--fret-w));
+  grid-template-columns: var(--open-w) repeat(12, minmax(var(--fret-min), 1fr));
+  width: 100%;
   height: var(--row-h);
 }
 
@@ -392,7 +405,7 @@
   display: grid;
   height: var(--row-h);
   place-items: center;
-  color: #f6ecdf;
+  color: #f4ebdf;
   font-size: 13px;
   font-weight: 700;
 }
@@ -415,14 +428,19 @@
   z-index: 2;
   display: grid;
   place-items: center;
-  border-right: 3px solid rgba(232, 226, 216, 0.92);
-  box-shadow: inset -1px 0 0 rgba(255, 255, 255, 0.28);
+  min-width: 0;
+  border-right: 2px solid rgba(236, 230, 220, 0.88);
+  box-shadow: inset -1px 0 0 rgba(255, 255, 255, 0.22);
+}
+
+.fret:last-child {
+  border-right: 0;
 }
 
 .fret-open {
-  border-right: 9px solid #f4efe4;
+  border-right: 8px solid #f2ebe0;
   box-shadow:
-    inset -2px 0 0 #ddd4c6,
+    inset -2px 0 0 #d8cfbf,
     inset 0 0 0 1px rgba(0, 0, 0, 0.04);
 }
 
@@ -451,13 +469,13 @@
 }
 
 .note {
-  min-width: 32px;
-  height: 32px;
-  padding: 0 6px;
+  min-width: var(--note-size);
+  height: var(--note-size);
+  padding: 0 5px;
   border-radius: 999px;
   background: var(--note-other);
   color: var(--note-ink);
-  font-size: 12px;
+  font-size: clamp(11px, 1.05vw, 13px);
   font-weight: 700;
   line-height: 1;
   box-shadow:
@@ -705,7 +723,9 @@
 
 @media (min-width: 1080px) {
   .fretboard-module {
-    --fret-w: 76px;
+    --fret-min: 56px;
+    --row-h: 54px;
+    --note-size: clamp(30px, 2.2vw, 38px);
   }
 }
 
@@ -723,11 +743,12 @@
 
 @media (max-width: 720px) {
   .fretboard-module {
-    --label-w: 28px;
+    --label-w: 30px;
     --open-w: 44px;
-    --fret-w: 52px;
-    --row-h: 42px;
-    --board-pad: 10px;
+    --fret-min: 48px;
+    --row-h: 44px;
+    --board-pad: 12px;
+    --note-size: 28px;
     gap: 16px;
     padding: 16px 12px 36px;
   }

@@ -26,7 +26,8 @@ type FretboardProps = {
 }
 
 function inlayLeft(fret: number): string {
-  return `calc(var(--open-w) + ${(fret - 0.5)} * var(--fret-w))`
+  // Center of fret column N inside the neck (open column + 12 equal frets).
+  return `calc(var(--open-w) + (100% - var(--open-w)) * ${(fret - 0.5) / 12})`
 }
 
 function labelFor(tone: FormulaTone, labelMode: LabelMode): string {
