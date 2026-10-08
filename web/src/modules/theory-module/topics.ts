@@ -27,6 +27,7 @@ export const THEORY_TOPICS: TheoryTopic[] = [
     prerequisites: 'Pitch, octave, and pitch class.',
     objectives:
       'List the twelve pitch classes. Explain why seven letters are not enough, and what enharmonic spelling means.',
+    lesson: '02-twelve-pitch-classes.md',
   },
   {
     id: 'half-and-whole-steps',
@@ -35,6 +36,7 @@ export const THEORY_TOPICS: TheoryTopic[] = [
     scope: 'The half step as the smallest common step; the whole step as two half steps.',
     prerequisites: 'The twelve pitch classes.',
     objectives: 'Measure distances in half steps. Locate the B–C and E–F adjacencies.',
+    lesson: '03-half-and-whole-steps.md',
   },
   {
     id: 'fretboard-memorization',
@@ -52,6 +54,7 @@ export const THEORY_TOPICS: TheoryTopic[] = [
     scope: 'The W–W–H–W–W–W–H pattern from any starting pitch class.',
     prerequisites: 'Half steps and whole steps.',
     objectives: 'Build a major scale from a given root by steps alone.',
+    lesson: '04-major-scale-construction.md',
   },
   {
     id: 'keys-and-tonality',
@@ -60,6 +63,7 @@ export const THEORY_TOPICS: TheoryTopic[] = [
     scope: 'A key as a collection organized around a tonic; same pattern, different root.',
     prerequisites: 'Constructing the major scale.',
     objectives: 'State what “in the key of X” means. Build the major collection in several keys.',
+    lesson: '05-keys-and-tonality.md',
   },
   {
     id: 'scale-degrees-and-formulas',
@@ -68,6 +72,7 @@ export const THEORY_TOPICS: TheoryTopic[] = [
     scope: 'Degrees 1–7; writing collections as formulas.',
     prerequisites: 'Keys and tonality.',
     objectives: 'Translate between note names and degree formulas in a key.',
+    lesson: '06-scale-degrees-and-formulas.md',
   },
   {
     id: 'interval-names-and-quality',
@@ -76,6 +81,7 @@ export const THEORY_TOPICS: TheoryTopic[] = [
     scope: 'Named distances; major/minor/perfect quality; half-step counts.',
     prerequisites: 'Half steps and whole steps; scale degrees and formulas.',
     objectives: 'Name and spell the interval between two notes.',
+    lesson: '07-interval-names-and-quality.md',
   },
   {
     id: 'intervals-in-music',
@@ -84,6 +90,7 @@ export const THEORY_TOPICS: TheoryTopic[] = [
     scope: 'Tendency and use; melodic vs harmonic; basic inversion.',
     prerequisites: 'Interval names and quality.',
     objectives: 'Describe why thirds and fifths become chord material.',
+    lesson: '08-intervals-in-music.md',
   },
   {
     id: 'triads',
@@ -92,6 +99,7 @@ export const THEORY_TOPICS: TheoryTopic[] = [
     scope: 'Stacking thirds; major, minor, diminished, augmented.',
     prerequisites: 'Intervals in music.',
     objectives: 'Build and spell any triad from a root; relate it to a formula.',
+    lesson: '09-triads.md',
   },
   {
     id: 'seventh-chords',
@@ -100,6 +108,7 @@ export const THEORY_TOPICS: TheoryTopic[] = [
     scope: 'Adding the seventh; common seventh types.',
     prerequisites: 'Triads.',
     objectives: 'Build maj7, m7, and dominant 7 from formulas.',
+    lesson: '10-seventh-chords.md',
   },
   {
     id: 'diatonic-harmony',
@@ -108,6 +117,7 @@ export const THEORY_TOPICS: TheoryTopic[] = [
     scope: 'Harmonizing the major scale; Roman numerals.',
     prerequisites: 'Scale degrees; seventh chords.',
     objectives: 'Derive the diatonic chord set of a major key.',
+    lesson: '11-diatonic-harmony.md',
   },
   {
     id: 'functional-progressions',
@@ -116,6 +126,7 @@ export const THEORY_TOPICS: TheoryTopic[] = [
     scope: 'Tonic, predominant, dominant; common progressions.',
     prerequisites: 'Diatonic harmony.',
     objectives: 'Explain V→I and build short progressions in a key.',
+    lesson: '12-functional-progressions.md',
   },
   {
     id: 'tuning-and-open-strings',
@@ -124,6 +135,7 @@ export const THEORY_TOPICS: TheoryTopic[] = [
     scope: 'Standard tuning; open strings as pitch-class anchors.',
     prerequisites: 'The twelve pitch classes.',
     objectives: 'Name the open strings; count frets as half steps from open.',
+    lesson: '13-tuning-and-open-strings.md',
   },
   {
     id: 'locating-pitch-classes',
@@ -132,6 +144,7 @@ export const THEORY_TOPICS: TheoryTopic[] = [
     scope: 'Finding one pitch class in multiple places.',
     prerequisites: 'Twelve pitch classes; half steps; tuning.',
     objectives: 'Find several occurrences of a given pitch class on frets 0–12.',
+    lesson: '14-locating-pitch-classes.md',
   },
   {
     id: 'octaves-on-the-neck',
@@ -140,6 +153,7 @@ export const THEORY_TOPICS: TheoryTopic[] = [
     scope: 'Twelve frets up; cross-string octave geometry as a tool, not an axiom.',
     prerequisites: 'Pitch/octave/pitch class; locating pitch classes.',
     objectives: 'Move a known pitch class to another octave location on purpose.',
+    lesson: '15-octaves-on-the-neck.md',
   },
   {
     id: 'intervals-on-the-neck',
@@ -148,6 +162,7 @@ export const THEORY_TOPICS: TheoryTopic[] = [
     scope: 'Horizontal and across-string interval fingerings.',
     prerequisites: 'Interval names; locating pitch classes.',
     objectives: 'Play a named interval from a chosen root in more than one fingering.',
+    lesson: '16-intervals-on-the-neck.md',
   },
   {
     id: 'scales-across-the-neck',
@@ -156,6 +171,7 @@ export const THEORY_TOPICS: TheoryTopic[] = [
     scope: 'Major (then minor) by construction across the neck.',
     prerequisites: 'Major scale; formulas; intervals on the neck.',
     objectives: 'Play a major scale while naming degrees across a useful range.',
+    lesson: '17-scales-across-the-neck.md',
   },
   {
     id: 'chord-shapes-as-stacks',
@@ -164,6 +180,7 @@ export const THEORY_TOPICS: TheoryTopic[] = [
     scope: 'Grips as arrangements of chord tones; movable shapes.',
     prerequisites: 'Triads; sevenths; intervals on the neck.',
     objectives: 'Name root, third, and fifth (and seventh) inside a shape.',
+    lesson: '18-chord-shapes-as-stacks.md',
   },
   {
     id: 'arpeggios-and-chord-tones',
@@ -172,6 +189,7 @@ export const THEORY_TOPICS: TheoryTopic[] = [
     scope: 'Chord tones as lines against a progression.',
     prerequisites: 'Functional progressions; chord shapes.',
     objectives: 'Outline a progression with arpeggios; land chord tones on strong beats.',
+    lesson: '19-arpeggios-and-chord-tones.md',
   },
   {
     id: 'pentatonic-as-subset',
@@ -180,6 +198,7 @@ export const THEORY_TOPICS: TheoryTopic[] = [
     scope: 'Pentatonic derived from parent scales; ♭5 as color.',
     prerequisites: 'Scale degrees; scales across the neck.',
     objectives: 'Derive pentatonic formulas from major/minor and use them knowingly.',
+    lesson: '20-pentatonic-as-subset.md',
   },
   {
     id: 'modes-in-context',
@@ -188,6 +207,7 @@ export const THEORY_TOPICS: TheoryTopic[] = [
     scope: 'Modes as rotations / characteristic degrees; modal vs functional situations.',
     prerequisites: 'Formulas; functional progressions; scales across the neck.',
     objectives: 'Build a mode from parent scale or formula for a clear musical situation.',
+    lesson: '21-modes-in-context.md',
   },
   {
     id: 'fretboard-harmony',
@@ -196,6 +216,7 @@ export const THEORY_TOPICS: TheoryTopic[] = [
     scope: 'Connecting chords with minimal motion; guide tones; shells.',
     prerequisites: 'Progressions; chord shapes; arpeggios.',
     objectives: 'Voice-lead a short progression on the neck.',
+    lesson: '22-fretboard-harmony.md',
   },
   {
     id: 'pulse-and-feel',
@@ -204,6 +225,7 @@ export const THEORY_TOPICS: TheoryTopic[] = [
     scope: 'Beat, bar, common subdivisions; straight vs swing.',
     prerequisites: 'Basic counting.',
     objectives: 'Play and count common subdivisions against a steady pulse.',
+    lesson: '23-pulse-and-feel.md',
   },
 ]
 

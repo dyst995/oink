@@ -1,5 +1,27 @@
 import { Link, Navigate, useParams } from 'react-router-dom'
 import pitchLesson from './lessons/01-pitch-octave-pitch-class.md?raw'
+import twelvePitchClassesLesson from './lessons/02-twelve-pitch-classes.md?raw'
+import halfAndWholeStepsLesson from './lessons/03-half-and-whole-steps.md?raw'
+import majorScaleConstructionLesson from './lessons/04-major-scale-construction.md?raw'
+import keysAndTonalityLesson from './lessons/05-keys-and-tonality.md?raw'
+import scaleDegreesAndFormulasLesson from './lessons/06-scale-degrees-and-formulas.md?raw'
+import intervalNamesAndQualityLesson from './lessons/07-interval-names-and-quality.md?raw'
+import intervalsInMusicLesson from './lessons/08-intervals-in-music.md?raw'
+import triadsLesson from './lessons/09-triads.md?raw'
+import seventhChordsLesson from './lessons/10-seventh-chords.md?raw'
+import diatonicHarmonyLesson from './lessons/11-diatonic-harmony.md?raw'
+import functionalProgressionsLesson from './lessons/12-functional-progressions.md?raw'
+import tuningAndOpenStringsLesson from './lessons/13-tuning-and-open-strings.md?raw'
+import locatingPitchClassesLesson from './lessons/14-locating-pitch-classes.md?raw'
+import octavesOnTheNeckLesson from './lessons/15-octaves-on-the-neck.md?raw'
+import intervalsOnTheNeckLesson from './lessons/16-intervals-on-the-neck.md?raw'
+import scalesAcrossTheNeckLesson from './lessons/17-scales-across-the-neck.md?raw'
+import chordShapesAsStacksLesson from './lessons/18-chord-shapes-as-stacks.md?raw'
+import arpeggiosAndChordTonesLesson from './lessons/19-arpeggios-and-chord-tones.md?raw'
+import pentatonicAsSubsetLesson from './lessons/20-pentatonic-as-subset.md?raw'
+import modesInContextLesson from './lessons/21-modes-in-context.md?raw'
+import fretboardHarmonyLesson from './lessons/22-fretboard-harmony.md?raw'
+import pulseAndFeelLesson from './lessons/23-pulse-and-feel.md?raw'
 import { FretboardMemorization } from './FretboardMemorization.tsx'
 import { groupTopicsByUnit } from './groupTopics.ts'
 import { Lesson } from './Lesson.tsx'
@@ -9,6 +31,28 @@ import './theory.css'
 
 const LESSONS: Record<string, string> = {
   'pitch-octave-pitch-class': pitchLesson,
+  'twelve-pitch-classes': twelvePitchClassesLesson,
+  'half-and-whole-steps': halfAndWholeStepsLesson,
+  'major-scale-construction': majorScaleConstructionLesson,
+  'keys-and-tonality': keysAndTonalityLesson,
+  'scale-degrees-and-formulas': scaleDegreesAndFormulasLesson,
+  'interval-names-and-quality': intervalNamesAndQualityLesson,
+  'intervals-in-music': intervalsInMusicLesson,
+  triads: triadsLesson,
+  'seventh-chords': seventhChordsLesson,
+  'diatonic-harmony': diatonicHarmonyLesson,
+  'functional-progressions': functionalProgressionsLesson,
+  'tuning-and-open-strings': tuningAndOpenStringsLesson,
+  'locating-pitch-classes': locatingPitchClassesLesson,
+  'octaves-on-the-neck': octavesOnTheNeckLesson,
+  'intervals-on-the-neck': intervalsOnTheNeckLesson,
+  'scales-across-the-neck': scalesAcrossTheNeckLesson,
+  'chord-shapes-as-stacks': chordShapesAsStacksLesson,
+  'arpeggios-and-chord-tones': arpeggiosAndChordTonesLesson,
+  'pentatonic-as-subset': pentatonicAsSubsetLesson,
+  'modes-in-context': modesInContextLesson,
+  'fretboard-harmony': fretboardHarmonyLesson,
+  'pulse-and-feel': pulseAndFeelLesson,
 }
 
 export function TheoryModule() {
