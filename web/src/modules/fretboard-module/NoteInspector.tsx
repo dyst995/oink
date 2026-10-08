@@ -1,3 +1,4 @@
+import type { ScaleShape } from './shapes.ts'
 import type { FormulaTone, GuitarString } from './theory.ts'
 
 export type SelectedNote = {
@@ -5,6 +6,7 @@ export type SelectedNote = {
   fret: number
   tone: FormulaTone | null
   pitchClass: number
+  shapes?: ScaleShape[]
 }
 
 type NoteInspectorProps = {
@@ -37,7 +39,7 @@ export function NoteInspector({ selected, keyName, patternLabel, onClear }: Note
     )
   }
 
-  const { string, fret, tone, pitchClass } = selected
+  const { string, fret, tone, pitchClass, shapes = [] } = selected
   const noteName = pitchClassName(pitchClass, tone)
 
   return (
@@ -91,6 +93,21 @@ export function NoteInspector({ selected, keyName, patternLabel, onClear }: Note
             <dd>No — outside the current formula</dd>
           </div>
         )}
+        {shapes.length > 0 ? (
+          <div className="fx-dl-wide">
+            <dt>Shapes covering this fret</dt>
+            <dd>
+              <ul className="fx-shape-coverage">
+                {shapes.map((shape) => (
+                  <li key={shape.id}>
+                    <span className={`fx-shape-swatch fx-shape-${shape.id}`} aria-hidden="true" />
+                    {shape.label} · {shape.positionLabel}
+                  </li>
+                ))}
+              </ul>
+            </dd>
+          </div>
+        ) : null}
       </dl>
     </div>
   )

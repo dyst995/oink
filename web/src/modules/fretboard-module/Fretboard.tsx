@@ -1,3 +1,4 @@
+import type { CSSProperties } from 'react'
 import {
   FRET_COUNT,
   GUITAR_STRINGS,
@@ -6,6 +7,13 @@ import {
   pitchClassAt,
   type FormulaTone,
 } from './theory.ts'
+import {
+  fretColumnLeft,
+  fretColumnWidth,
+  shapeRegions,
+  shapesContainingFret,
+  type ScaleShape,
+} from './shapes.ts'
 import type { FocusMode, LabelMode } from './FretboardControls.tsx'
 import type { SelectedNote } from './NoteInspector.tsx'
 
@@ -18,6 +26,8 @@ type FretboardProps = {
   showLabels: boolean
   showFretNumbers: boolean
   showNonPattern: boolean
+  showShapes: boolean
+  shapes: readonly ScaleShape[]
   focusMode: FocusMode
   focusDegree: string
   focusInterval: number
@@ -26,8 +36,7 @@ type FretboardProps = {
 }
 
 function inlayLeft(fret: number): string {
-  // Center of fret column N inside the neck (open column + 12 equal frets).
-  return `calc(var(--open-w) + (100% - var(--open-w)) * ${(fret - 0.5) / 12})`
+  return `calc(var(--open-w) + (100% - var(--open-w)) * ${(fret - 0.5) / FRET_COUNT})`
 }
 
 function labelFor(tone: FormulaTone, labelMode: LabelMode): string {
@@ -63,6 +72,8 @@ export function Fretboard({
   showLabels,
   showFretNumbers,
   showNonPattern,
+  showShapes,
+  shapes,
   focusMode,
   focusDegree,
   focusInterval,
@@ -74,7 +85,11 @@ export function Fretboard({
 
   return (
     <div className="board-scroll">
-      <div className="fretboard" role="group" aria-label="Guitar fretboard">
+      <div
+        className={showShapes ? 'fretboard has-shapes' : 'fretboard'}
+        role="group"
+        aria-label="Guitar fretboard"
+      >
         {showFretNumbers ? (
           <div className="fret-numbers" aria-hidden="true">
             <span className="fret-number" />
@@ -107,6 +122,37 @@ export function Fretboard({
               <span className="inlay inlay-low" style={{ left: inlayLeft(INLAY_FRETS.double) }} />
             </div>
 
+            {showShapes ? (
+              <div className="shape-overlays" aria-hidden="true">
+                {shapes.map((shape) =>
+                  shapeRegions(shape.frets).map((region, regionIndex) => (
+                    <div
+                      key={`${shape.id}-${region.from}-${region.to}`}
+                      className={`shape-box shape-box-${shape.id}`}
+                      style={
+                        {
+                          '--shape-left': fretColumnLeft(region.from),
+                          '--shape-width': fretColumnWidth(region.from, region.to),
+                        } as CSSProperties
+                      }
+                      data-shape={shape.id}
+                    >
+                      {regionIndex === 0 ? (
+                        <span className="shape-box-label">
+                          <span className="shape-box-label-num">{shape.id}</span>
+                          <span className="shape-box-label-text">{shape.caged}</span>
+                        </span>
+                      ) : (
+                        <span className="shape-box-label is-continued">
+                          <span className="shape-box-label-num">{shape.id}</span>
+                        </span>
+                      )}
+                    </div>
+                  )),
+                )}
+              </div>
+            ) : null}
+
             {GUITAR_STRINGS.map((string, index) => (
               <div className="string-row" key={string.id}>
                 <div className="string-line" style={{ height: STRING_GAUGES[index] }} />
@@ -120,6 +166,7 @@ export function Fretboard({
                     selected?.string.id === string.id && selected.fret === fret
                   const showPatternNote = Boolean(tone && focused)
                   const showGhost = showNonPattern && !tone
+                  const containing = showShapes ? shapesContainingFret(fret, shapes) : []
 
                   return (
                     <div key={fret} className={fret === 0 ? 'fret fret-open' : 'fret'}>
@@ -140,9 +187,15 @@ export function Fretboard({
                           data-note={tone.name}
                           data-degree={tone.degreeLabel}
                           aria-pressed={isSelected}
-                          aria-label={`${string.label} string, fret ${fret}, ${tone.degreeLabel}, ${tone.name}, ${tone.intervalName}`}
+                          aria-label={`${string.label} string, fret ${fret}, ${tone.degreeLabel}, ${tone.name}, ${tone.intervalName}${containing.length ? `, shapes ${containing.map((s) => s.id).join(', ')}` : ''}`}
                           onClick={() =>
-                            onSelect({ string, fret, tone, pitchClass })
+                            onSelect({
+                              string,
+                              fret,
+                              tone,
+                              pitchClass,
+                              shapes: containing,
+                            })
                           }
                         >
                           {showLabels ? labelFor(tone, labelMode) : null}
@@ -159,7 +212,13 @@ export function Fretboard({
                           aria-pressed={isSelected}
                           aria-label={`${string.label} string, fret ${fret}${tone ? `, ${tone.name} (dimmed)` : ', outside pattern'}`}
                           onClick={() =>
-                            onSelect({ string, fret, tone, pitchClass })
+                            onSelect({
+                              string,
+                              fret,
+                              tone,
+                              pitchClass,
+                              shapes: containing,
+                            })
                           }
                         />
                       ) : (
@@ -170,7 +229,13 @@ export function Fretboard({
                             .join(' ')}
                           aria-label={`${string.label} string, fret ${fret}, empty`}
                           onClick={() =>
-                            onSelect({ string, fret, tone: null, pitchClass })
+                            onSelect({
+                              string,
+                              fret,
+                              tone: null,
+                              pitchClass,
+                              shapes: containing,
+                            })
                           }
                         />
                       )}

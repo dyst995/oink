@@ -9,6 +9,7 @@ import {
 import { NoteInspector, type SelectedNote } from './NoteInspector.tsx'
 import { PatternSelector } from './PatternSelector.tsx'
 import { TheoryInspector } from './TheoryInspector.tsx'
+import { buildScaleShapes, shapeRegions, shapesContainingFret } from './shapes.ts'
 import {
   KEY_OPTIONS,
   findPresetByFormula,
@@ -32,6 +33,7 @@ export function FretboardModule() {
   const [showLabels, setShowLabels] = useState(true)
   const [showFretNumbers, setShowFretNumbers] = useState(true)
   const [showNonPattern, setShowNonPattern] = useState(false)
+  const [showShapes, setShowShapes] = useState(false)
   const [focusMode, setFocusMode] = useState<FocusMode>('all')
   const [focusDegree, setFocusDegree] = useState('1')
   const [focusInterval, setFocusInterval] = useState(0)
@@ -49,6 +51,11 @@ export function FretboardModule() {
   }, [formula, formulaKind, keyId])
 
   const tones = parsed.result?.tones ?? []
+  const rootPitchClass = parsed.key?.pitchClass
+  const shapes = useMemo(
+    () => (rootPitchClass === undefined ? [] : buildScaleShapes(rootPitchClass)),
+    [rootPitchClass],
+  )
   const pattern = findPresetByFormula(formula)
   const patternLabel = pattern?.label ?? 'Custom formula'
   const activeFocusDegree = tones.some((tone) => tone.degreeLabel === focusDegree)
@@ -61,6 +68,7 @@ export function FretboardModule() {
     ? {
         ...selected,
         tone: tones.find((item) => item.pitchClass === selected.pitchClass) ?? null,
+        shapes: showShapes ? shapesContainingFret(selected.fret, shapes) : [],
       }
     : null
 
@@ -127,6 +135,8 @@ export function FretboardModule() {
           onShowFretNumbersChange={setShowFretNumbers}
           showNonPattern={showNonPattern}
           onShowNonPatternChange={setShowNonPattern}
+          showShapes={showShapes}
+          onShowShapesChange={setShowShapes}
           focusMode={focusMode}
           onFocusModeChange={setFocusMode}
           focusDegree={activeFocusDegree}
@@ -145,6 +155,8 @@ export function FretboardModule() {
           showLabels={showLabels}
           showFretNumbers={showFretNumbers}
           showNonPattern={showNonPattern}
+          showShapes={showShapes}
+          shapes={shapes}
           focusMode={focusMode}
           focusDegree={activeFocusDegree}
           focusInterval={activeFocusInterval}
@@ -173,6 +185,32 @@ export function FretboardModule() {
             <span className="fx-role-dot fx-role-other" aria-hidden="true" /> Other
           </li>
         </ul>
+
+        {showShapes ? (
+          <ul className="fx-shape-legend" aria-label="Shape box legend">
+            {shapes.map((shape) => (
+              <li key={shape.id} className={`fx-shape-item fx-shape-item-${shape.id}`}>
+                <span className={`fx-shape-swatch fx-shape-${shape.id}`} aria-hidden="true" />
+                <span>
+                  <strong>
+                    {shape.label}
+                    <span className="fx-shape-form"> {shape.caged}</span>
+                  </strong>
+                  <span className="fx-muted fx-shape-meta">
+                    {shape.positionLabel} · frets{' '}
+                    {shapeRegions(shape.frets)
+                      .map((region) =>
+                        region.from === region.to
+                          ? `${region.from}`
+                          : `${region.from}–${region.to}`,
+                      )
+                      .join(', ')}
+                  </span>
+                </span>
+              </li>
+            ))}
+          </ul>
+        ) : null}
 
         <NoteInspector
           selected={resolvedSelected}

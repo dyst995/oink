@@ -14,6 +14,8 @@ type FretboardControlsProps = {
   onShowFretNumbersChange: (value: boolean) => void
   showNonPattern: boolean
   onShowNonPatternChange: (value: boolean) => void
+  showShapes: boolean
+  onShowShapesChange: (value: boolean) => void
   focusMode: FocusMode
   onFocusModeChange: (mode: FocusMode) => void
   focusDegree: string
@@ -41,6 +43,8 @@ export function FretboardControls({
   onShowFretNumbersChange,
   showNonPattern,
   onShowNonPatternChange,
+  showShapes,
+  onShowShapesChange,
   focusMode,
   onFocusModeChange,
   focusDegree,
@@ -98,6 +102,14 @@ export function FretboardControls({
               onChange={(event) => onShowNonPatternChange(event.target.checked)}
             />
             Non-pattern notes
+          </label>
+          <label className="fx-toggle">
+            <input
+              type="checkbox"
+              checked={showShapes}
+              onChange={(event) => onShowShapesChange(event.target.checked)}
+            />
+            Shapes
           </label>
         </div>
       </fieldset>

@@ -241,9 +241,10 @@ export const GUITAR_STRINGS: readonly GuitarString[] = [
   { id: '6', label: 'E', number: 6, openPitchClass: 4 },
 ]
 
-export const FRET_COUNT = 12
+/** Frets shown on the explorer neck (0 = open). Extended past 12 so wrapping shapes stay continuous. */
+export const FRET_COUNT = 15
 
-const SINGLE_INLAY_FRETS = [3, 5, 7, 9] as const
+const SINGLE_INLAY_FRETS = [3, 5, 7, 9, 15] as const
 
 export const INLAY_FRETS = {
   single: SINGLE_INLAY_FRETS,

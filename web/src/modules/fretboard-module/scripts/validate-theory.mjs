@@ -108,4 +108,43 @@ assert(dom7.join(',') === '0,4,7,10', 'dominant 7')
 
 assert(normalizeFormula('1  2, b3') === '1 2 b3', 'normalize spacing')
 
+// C major shapes (root on low E at fret 8) — guitarscale-style positions
+function buildShapes(rootPitchClass) {
+  const lowE = 4
+  const rootOnE = mod12(rootPitchClass - lowE)
+  const offsets = [-1, 2, 4, -6, -4]
+  return offsets.map((delta, index) => {
+    const raw = rootOnE + delta
+    const wrapped = mod12(raw)
+    return {
+      id: index + 1,
+      start: wrapped === 0 && raw !== 0 ? 12 : wrapped,
+    }
+  })
+}
+
+const cShapes = buildShapes(0)
+assert(
+  cShapes.map((shape) => shape.start).join(',') === '7,10,12,2,4',
+  `C major shape starts expected 7,10,12,2,4 got ${cShapes.map((s) => s.start)}`,
+)
+
+// A major: A-form starts at 11 and should stay contiguous past 12 (11–14), not wrap to 1–2
+const aShape4Start = buildShapes(9).find((shape) => shape.id === 4)?.start
+assert(aShape4Start === 11, `A major shape 4 start expected 11 got ${aShape4Start}`)
+
+function fretsForWindow(startFret, span = 4, fretCount = 15) {
+  const frets = []
+  for (let offset = 0; offset < span; offset += 1) {
+    const absolute = startFret + offset
+    if (absolute <= fretCount) frets.push(absolute)
+  }
+  return frets
+}
+
+assert(
+  fretsForWindow(11).join(',') === '11,12,13,14',
+  'shape window past octave must stay contiguous',
+)
+
 console.log('fretboard theory validation: ok')
