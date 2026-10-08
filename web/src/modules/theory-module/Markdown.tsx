@@ -2,8 +2,7 @@ import type { ReactNode } from 'react'
 
 type Block =
   | { type: 'h1' | 'h2' | 'h3' | 'p'; text: string }
-  | { type: 'ul'; items: string[] }
-  | { type: 'ol'; items: string[] }
+  | { type: 'ul' | 'ol'; items: string[] }
   | { type: 'table'; headers: string[]; rows: string[][] }
 
 function inline(text: string): ReactNode[] {
@@ -127,64 +126,65 @@ type MarkdownProps = {
 export function Markdown({ source, omitTitle = false }: MarkdownProps) {
   const blocks = parseMarkdown(source).filter((block) => !(omitTitle && block.type === 'h1'))
 
-  return (
-    <div className="theory-lesson">
-      {blocks.map((block, index) => {
-        if (block.type === 'h1') {
-          return (
-            <h2 className="theory-lesson-title" key={index}>
-              {inline(block.text)}
-            </h2>
-          )
-        }
-        if (block.type === 'h2') return <h3 key={index}>{inline(block.text)}</h3>
-        if (block.type === 'h3') return <h4 key={index}>{inline(block.text)}</h4>
-        if (block.type === 'ul') {
-          return (
-            <ul key={index}>
-              {block.items.map((item) => (
-                <li key={item}>{inline(item)}</li>
+  return <div className="theory-lesson">{blocks.map((block, index) => renderBlock(block, index))}</div>
+}
+
+function renderBlock(block: Block, index: number) {
+  if (block.type === 'h1') {
+    return (
+      <h2 className="theory-lesson-title" key={index}>
+        {inline(block.text)}
+      </h2>
+    )
+  }
+  if (block.type === 'h2') return <h3 key={index}>{inline(block.text)}</h3>
+  if (block.type === 'h3') return <h4 key={index}>{inline(block.text)}</h4>
+  if (block.type === 'ul') {
+    return (
+      <ul key={index}>
+        {block.items.map((item) => (
+          <li key={item}>{inline(item)}</li>
+        ))}
+      </ul>
+    )
+  }
+  if (block.type === 'ol') {
+    return (
+      <ol key={index}>
+        {block.items.map((item) => (
+          <li key={item}>{inline(item)}</li>
+        ))}
+      </ol>
+    )
+  }
+  if (block.type === 'table') {
+    return (
+      <div className="theory-table-wrap" key={index}>
+        <table>
+          <thead>
+            <tr>
+              {block.headers.map((header) => (
+                <th key={header} scope="col">
+                  {inline(header)}
+                </th>
               ))}
-            </ul>
-          )
-        }
-        if (block.type === 'ol') {
-          return (
-            <ol key={index}>
-              {block.items.map((item) => (
-                <li key={item}>{inline(item)}</li>
-              ))}
-            </ol>
-          )
-        }
-        if (block.type === 'table') {
-          return (
-            <div className="theory-table-wrap" key={index}>
-              <table>
-                <thead>
-                  <tr>
-                    {block.headers.map((header) => (
-                      <th key={header} scope="col">
-                        {inline(header)}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {block.rows.map((row) => (
-                    <tr key={row.join('|')}>
-                      {row.map((cell, cellIndex) => (
-                        <td key={`${cell}-${cellIndex}`}>{inline(cell)}</td>
-                      ))}
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          )
-        }
-        return <p key={index}>{inline(block.text)}</p>
-      })}
-    </div>
-  )
+            </tr>
+          </thead>
+          <tbody>
+            {block.rows.map((row) => (
+              <tr key={row.join('|')}>
+                {row.map((cell, cellIndex) => (
+                  <td key={`${cell}-${cellIndex}`}>{inline(cell)}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    )
+  }
+  if (block.type === 'p') {
+    return <p key={index}>{inline(block.text)}</p>
+  }
+  return null
 }

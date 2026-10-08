@@ -12,8 +12,16 @@
   gap: 18px;
   width: 100%;
   min-width: 0;
-  padding: 28px 24px 48px;
+  padding: 20px 16px 40px;
   text-align: left;
+}
+
+.practice-panel .fretboard-module {
+  padding: 0 0 12px;
+}
+
+.practice-panel .controls {
+  grid-template-columns: 1fr;
 }
 
 .tuning,
