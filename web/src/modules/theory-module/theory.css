@@ -85,6 +85,7 @@
   border: 0;
   background: none;
   font: inherit;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -99,6 +100,7 @@
 }
 
 .theory-back {
+  display: inline-block;
   margin-bottom: 16px;
   color: var(--text);
   font-size: 14px;

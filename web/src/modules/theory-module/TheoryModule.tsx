@@ -1,3 +1,4 @@
+import { Link, Navigate, useParams } from 'react-router-dom'
 import pitchLesson from './lessons/01-pitch-octave-pitch-class.md?raw'
 import { FretboardMemorization } from './FretboardMemorization.tsx'
 import { groupTopicsByUnit } from './groupTopics.ts'
@@ -10,22 +11,26 @@ const LESSONS: Record<string, string> = {
   'pitch-octave-pitch-class': pitchLesson,
 }
 
-type TheoryModuleProps = {
-  topicId: string | null
-  onTopicChange: (topicId: string | null) => void
-}
-
-export function TheoryModule({ topicId, onTopicChange }: TheoryModuleProps) {
+export function TheoryModule() {
+  const { topicId } = useParams<{ topicId?: string }>()
   const active = topicId ? getTopic(topicId) : null
   const lessonSource = topicId ? LESSONS[topicId] : undefined
   const isPractice = topicId ? isTheoryPractice(topicId) : false
 
+  if (topicId && !active) {
+    return <Navigate to="/theory" replace />
+  }
+
+  if (topicId && active && !lessonSource && !isPractice) {
+    return <Navigate to="/theory" replace />
+  }
+
   if (active && (lessonSource || isPractice)) {
     return (
       <section className="theory-module" id="panel-theory" aria-label="Theory">
-        <button className="theory-back" type="button" onClick={() => onTopicChange(null)}>
+        <Link className="theory-back" to="/theory">
           Curriculum
-        </button>
+        </Link>
         {topicId === 'fretboard-memorization' ? (
           <FretboardMemorization />
         ) : lessonSource ? (
@@ -58,13 +63,9 @@ export function TheoryModule({ topicId, onTopicChange }: TheoryModuleProps) {
                     <div>
                       <h2>
                         {openable ? (
-                          <button
-                            className="theory-topic-link"
-                            type="button"
-                            onClick={() => onTopicChange(topic.id)}
-                          >
+                          <Link className="theory-topic-link" to={`/theory/${topic.id}`}>
                             {topic.title}
-                          </button>
+                          </Link>
                         ) : (
                           topic.title
                         )}

@@ -51,6 +51,7 @@
   font: inherit;
   font-size: 15px;
   font-weight: 600;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -72,6 +73,10 @@
   flex: 1;
   min-width: 0;
   padding-bottom: env(safe-area-inset-bottom);
+}
+
+.app-body .app-main {
+  overflow-x: clip;
 }
 
 @media (max-width: 720px) {

@@ -1,8 +1,8 @@
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 
-// Relative base works for GitHub project Pages and local preview.
+// Local: /. GitHub Pages: set VITE_BASE=/oink/ in the deploy workflow.
 export default defineConfig({
   plugins: [react()],
-  base: './',
+  base: process.env.VITE_BASE || '/',
 })
