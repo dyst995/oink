@@ -5,6 +5,13 @@
   padding: 8px 24px 48px;
 }
 
+.theory-curriculum-lede {
+  max-width: 68ch;
+  margin: 12px 0 8px;
+  color: var(--text);
+  font-size: 15px;
+}
+
 .theory-map {
   margin: 0;
   padding: 0;
@@ -19,6 +26,28 @@
   border-bottom: 1px solid var(--border);
 }
 
+.theory-unit {
+  grid-column: 1 / -1;
+  margin-top: 8px;
+  color: var(--text-h);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.theory-meta-label {
+  color: var(--text-h);
+  font-weight: 600;
+}
+
+.theory-pending {
+  margin-top: 8px;
+  color: var(--text);
+  font-size: 14px;
+  font-style: italic;
+}
+
 .theory-index {
   padding-top: 2px;
   color: var(--text);
@@ -27,10 +56,117 @@
   font-weight: 600;
 }
 
+.theory-topic > div {
+  min-width: 0;
+}
+
 .theory-topic h2 {
   margin: 0 0 6px;
   font-size: 18px;
   letter-spacing: -0.2px;
+}
+
+.theory-lesson {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.theory-topic-link,
+.theory-back {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+.theory-topic-link {
+  color: inherit;
+  text-align: left;
+}
+
+.theory-topic-link:hover,
+.theory-back:hover {
+  color: var(--accent);
+}
+
+.theory-back {
+  margin-bottom: 16px;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.theory-lesson-title {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: -0.4px;
+}
+
+.theory-lesson h3,
+.theory-lesson h4 {
+  margin: 8px 0 0;
+  color: var(--text-h);
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.theory-lesson h3 {
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+.theory-lesson h4 {
+  font-size: 15px;
+}
+
+.theory-lesson p {
+  max-width: 68ch;
+  margin: 0;
+  color: var(--text);
+  font-size: 16px;
+}
+
+.theory-lesson ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.theory-lesson li {
+  margin: 0;
+  padding: 2px 0;
+}
+
+.theory-lesson code {
+  font-size: 14px;
+}
+
+.theory-table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.theory-lesson table {
+  width: max-content;
+  min-width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  color: var(--text-h);
+}
+
+.theory-lesson th,
+.theory-lesson td {
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.theory-lesson th {
+  color: var(--text);
+  font-weight: 600;
 }
 
 .theory-topic p,
