@@ -2,27 +2,81 @@
   box-sizing: border-box;
   width: 100%;
   min-width: 0;
-  padding: 28px 24px 48px;
+  padding: 8px 24px 48px;
 }
 
-.theory-module h1 {
-  margin: 0 0 8px;
-  font-size: 40px;
-  letter-spacing: -1px;
+.theory-map {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.theory-intro p {
-  max-width: 62ch;
+.theory-topic {
+  display: grid;
+  grid-template-columns: 1.75rem minmax(0, 1fr);
+  gap: 8px 14px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.theory-index {
+  padding-top: 2px;
+  color: var(--text);
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.theory-topic h2 {
+  margin: 0 0 6px;
+  font-size: 18px;
+  letter-spacing: -0.2px;
+}
+
+.theory-topic p,
+.theory-later {
+  max-width: 68ch;
   margin: 0;
   color: var(--text);
+  font-size: 16px;
+}
+
+.theory-formulas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.theory-formulas li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px 4px 10px;
+  border-radius: 999px;
+  background: var(--code-bg);
+  color: var(--text-h);
+  font-size: 13px;
+}
+
+.theory-formula-label {
+  font-weight: 600;
+}
+
+.theory-formulas code {
+  padding: 0;
+  background: transparent;
+  font-size: 13px;
+}
+
+.theory-later {
+  margin-top: 18px;
 }
 
 @media (max-width: 720px) {
   .theory-module {
-    padding: 20px 16px 36px;
-  }
-
-  .theory-module h1 {
-    font-size: 32px;
+    padding: 4px 16px 36px;
   }
 }
