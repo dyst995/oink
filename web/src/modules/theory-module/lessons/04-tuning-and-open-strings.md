@@ -1,5 +1,8 @@
 # Tuning and open strings
 
+**Prerequisites:** Half steps and whole steps  
+**Next:** Locating pitch classes on the neck
+
 **Prerequisites:** Half steps and whole steps
 
 **Next:** Locating pitch classes on the fretboard

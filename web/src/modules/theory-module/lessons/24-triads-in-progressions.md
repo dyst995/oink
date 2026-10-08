@@ -1,7 +1,7 @@
 # Triads in progressions
 
-**Prerequisites:** Triad voice leading; functional progressions  
-**Next:** Seventh chords
+**Prerequisites:** Cadences; triad voice leading  
+**Next:** CAGED as navigation
 
 ## Concept
 

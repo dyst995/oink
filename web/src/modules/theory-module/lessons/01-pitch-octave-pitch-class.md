@@ -1,5 +1,8 @@
 # Pitch, octave, and pitch class
 
+**Prerequisites:** None  
+**Next:** The twelve pitch classes
+
 **Prerequisites:** None
 
 **Next:** The twelve pitch classes

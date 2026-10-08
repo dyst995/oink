@@ -1,5 +1,8 @@
 # Locating pitch classes on the fretboard
 
+**Prerequisites:** Tuning and the open strings  
+**Next:** Octave relationships on the neck
+
 **Prerequisites:** Tuning and open strings; half steps and whole steps
 
 **Next:** Octaves on the neck
@@ -25,7 +28,7 @@ Sharps and flats sit on the frets **between** the naturals. For example on strin
 
 The table is not something to memorize in isolation. It follows from two facts you already have:
 
-- One fret is one half step (lesson 3).
+- One fret is one half step (half steps and whole steps).
 - The natural notes follow the pattern whole, whole, half, whole, whole, whole, half going `C D E F G A B C`, with the two half steps at `E`-`F` and `B`-`C` (lessons 2 and 3).
 
 So on string 6 starting from `E`: `E` to `F` is a half step (fret 1); `F` to `G` is whole (fret 3); `G` to `A` whole (fret 5); `A` to `B` whole (fret 7); `B` to `C` half (fret 8); `C` to `D` whole (fret 10); `D` to `E` whole (fret 12). The fret numbers come from adding 1 or 2 each time.

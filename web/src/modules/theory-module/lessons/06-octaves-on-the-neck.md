@@ -1,5 +1,8 @@
 # Octaves on the neck
 
+**Prerequisites:** Locating pitch classes  
+**Next:** Pulse, meter, and rhythmic notation
+
 **Prerequisites:** Locating pitch classes on the fretboard; pitch, octave, and pitch class
 
 **Next:** Fretboard memorization

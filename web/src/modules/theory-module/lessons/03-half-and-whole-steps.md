@@ -1,5 +1,8 @@
 # Half steps and whole steps
 
+**Prerequisites:** The twelve pitch classes  
+**Next:** Tuning and the open strings
+
 **Prerequisites:** The twelve pitch classes
 
 **Next:** Tuning and open strings

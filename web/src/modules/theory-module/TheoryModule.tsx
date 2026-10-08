@@ -52,8 +52,9 @@ export function TheoryModule() {
   return (
     <section className="theory-module" id="panel-theory" aria-label="Theory">
       <p className="theory-curriculum-lede">
-        Progressive guitar theory: foundations and the neck develop together. Open a topic when
-        its prerequisites are solid. Full plan: <code>curriculum.md</code>.
+        Twelve-stage path from foundations and rhythm through harmony, fretboard fluency, and
+        musical independence. Open a topic when its prerequisites are solid. Full plan:{' '}
+        <code>curriculum.md</code>.
       </p>
       <ol className="theory-map">
         {units.map((group) => (

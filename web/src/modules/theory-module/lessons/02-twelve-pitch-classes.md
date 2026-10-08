@@ -1,5 +1,8 @@
 # The twelve pitch classes
 
+**Prerequisites:** Pitch, octave, and pitch class  
+**Next:** Half steps and whole steps
+
 **Prerequisites:** Pitch, octave, and pitch class
 
 **Next:** Half steps and whole steps
