@@ -568,3 +568,145 @@
     display: none;
   }
 }
+
+/* Fretboard memorization practice */
+.fretboard-memorization {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 0;
+}
+
+.fretboard-memorization-intro h2 {
+  margin: 0 0 8px;
+  color: var(--text-h);
+  font-size: 1.35rem;
+}
+
+.fretboard-memorization-intro p {
+  margin: 0;
+  max-width: 58ch;
+  color: var(--text);
+  line-height: 1.55;
+}
+
+.fretboard-filters {
+  display: grid;
+  gap: 14px;
+}
+
+.fretboard-filters fieldset {
+  margin: 0;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md, 12px);
+  background: var(--bg-elevated);
+  min-width: 0;
+}
+
+.fretboard-filters legend {
+  padding: 0 6px;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.fretboard-filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-chip {
+  appearance: none;
+  margin: 0;
+  min-height: 36px;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg-soft, var(--bg-muted));
+  color: var(--text-h);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 140ms ease,
+    border-color 140ms ease,
+    color 140ms ease,
+    box-shadow 140ms ease;
+}
+
+.filter-chip:hover {
+  border-color: var(--accent-border, var(--accent));
+  background: var(--bg-muted);
+}
+
+.filter-chip.is-selected {
+  border-color: var(--accent-border, var(--accent));
+  background: var(--accent-soft, var(--accent-bg));
+  color: var(--text-h);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) 35%, transparent);
+}
+
+.filter-chip:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+}
+
+.fretboard-filter-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.filter-tool,
+.fretboard-restart {
+  appearance: none;
+  margin: 0;
+  min-height: 34px;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-h);
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.filter-tool:hover,
+.fretboard-restart:hover:not(:disabled) {
+  background: var(--bg-muted);
+}
+
+.filter-tool:focus-visible,
+.fretboard-restart:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+}
+
+.fretboard-restart:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.fretboard-filter-count {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.fretboard-memorization .flashcards {
+  padding: 0;
+}
+
+@media (min-width: 800px) {
+  .fretboard-filters {
+    grid-template-columns: 1fr 1fr;
+  }
+}
