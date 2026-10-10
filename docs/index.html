@@ -8,8 +8,16 @@
       content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     />
     <title>Unfret — Guitar theory</title>
-    <script type="module" crossorigin src="/oink/assets/index-DO2mwFxi.js"></script>
-    <link rel="stylesheet" crossorigin href="/oink/assets/index-DdfEosIE.css">
+    <script>
+      try {
+        var theme = localStorage.getItem('unfret-theme')
+        if (theme === 'light' || theme === 'dark') {
+          document.documentElement.setAttribute('data-theme', theme)
+        }
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="/oink/assets/index-CIF0hURW.js"></script>
+    <link rel="stylesheet" crossorigin href="/oink/assets/index-BY2pedYL.css">
   </head>
   <body>
     <div id="root"></div>
