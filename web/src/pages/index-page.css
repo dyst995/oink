@@ -64,12 +64,12 @@
 
 .home-btn-primary {
   background: var(--accent);
-  color: #fff;
+  color: var(--on-accent);
 }
 
 .home-btn-primary:hover {
   background: var(--accent-hover);
-  color: #fff;
+  color: var(--on-accent);
 }
 
 .home-btn-secondary {

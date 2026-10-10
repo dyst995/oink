@@ -96,8 +96,8 @@
   margin: 0;
   padding: 10px 12px;
   border-radius: 8px;
-  color: #9f1c14;
-  background: rgba(180, 35, 24, 0.1);
+  color: var(--danger);
+  background: var(--danger-soft);
 }
 
 .trainer-actions {
@@ -363,7 +363,7 @@
 
 .trainer-fret.is-selected .trainer-dot {
   background: var(--accent);
-  color: #fff;
+  color: var(--on-accent);
 }
 
 .trainer-fret.is-locked .trainer-dot {
@@ -386,7 +386,3 @@
   }
 }
 
-[data-theme='dark'] .trainer-error {
-  color: #ffb4ab;
-  background: rgba(255, 180, 171, 0.12);
-}

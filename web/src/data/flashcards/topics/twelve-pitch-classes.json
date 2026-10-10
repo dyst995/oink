@@ -1,0 +1,117 @@
+{
+  "id": "twelve-pitch-classes",
+  "title": "The twelve pitch classes",
+  "description": "Drill the twelve classes, accidentals, enharmonics, and the one-string chromatic layout.",
+  "cards": [
+    {
+      "id": "naturals",
+      "front": "What are the seven natural pitch classes?",
+      "back": "A B C D E F G."
+    },
+    {
+      "id": "why-twelve",
+      "front": "Why are there twelve pitch classes?",
+      "back": "The octave is split into twelve equal steps (twelve-tone equal temperament). Seven letters name the diatonic naturals; accidentals name the other five."
+    },
+    {
+      "id": "why-five-accidentals",
+      "front": "Why do only five of the twelve classes need accidentals?",
+      "back": "B–C and E–F have no class between them. The other five neighboring natural pairs each have one in-between class. 7 + 5 = 12."
+    },
+    {
+      "id": "sharp-flat",
+      "front": "What does a sharp do? What does a flat do?",
+      "back": "A sharp (♯) raises a note by one half step (one fret). A flat (♭) lowers a note by one half step."
+    },
+    {
+      "id": "enharmonic-def",
+      "front": "What does enharmonic mean? Give one pair.",
+      "back": "Two names for the same pitch class. Example: C♯ and D♭ — same fret, different spelling."
+    },
+    {
+      "id": "no-between",
+      "front": "Which neighboring naturals have no pitch class between them?",
+      "back": "B to C, and E to F."
+    },
+    {
+      "id": "pairs-with-between",
+      "front": "Which natural pairs have one class between them?",
+      "back": "C–D, D–E, F–G, G–A, and A–B."
+    },
+    {
+      "id": "chromatic-from-c",
+      "front": "List the twelve pitch classes from C, showing both names where they exist.",
+      "back": "C · C♯/D♭ · D · D♯/E♭ · E · F · F♯/G♭ · G · G♯/A♭ · A · A♯/B♭ · B."
+    },
+    {
+      "id": "after-b",
+      "front": "What comes after B in the chromatic cycle?",
+      "back": "C again, one octave higher. The twelve-class cycle repeats."
+    },
+    {
+      "id": "chromatic-from-a-sharps",
+      "front": "List the twelve classes starting from A, using sharps.",
+      "back": "A A♯ B C C♯ D D♯ E F F♯ G G♯."
+    },
+    {
+      "id": "chromatic-from-a-flats",
+      "front": "List the twelve classes starting from A, using flats.",
+      "back": "A B♭ B C D♭ D E♭ E F G♭ G A♭."
+    },
+    {
+      "id": "enharmonic-drill",
+      "front": "Give an enharmonic name for G♯, E♭, F♯, B♭, and D♯.",
+      "back": "A♭, D♯, G♭, A♯, E♭."
+    },
+    {
+      "id": "rare-spellings",
+      "front": "What are E♯, F♭, B♯, and C♭ as everyday names?",
+      "back": "E♯ = F, F♭ = E, B♯ = C, C♭ = B. Double sharps and double flats also exist."
+    },
+    {
+      "id": "spelling-context",
+      "front": "When is C♯ the right spelling, and when must it be D♭?",
+      "back": "It depends on context: the key, the chord, and the interval you are naming. Same guitar fret, different harmonic role."
+    },
+    {
+      "id": "chromatic-convention",
+      "front": "Is “sharps going up, flats going down” a law of spelling?",
+      "back": "No. It is a common convention for writing a chromatic run, not a rule of theory."
+    },
+    {
+      "id": "string6-chromatic",
+      "front": "On string 6, name frets 0 through 12 starting from open E (sharps).",
+      "back": "E F F♯ G G♯ A A♯ B C C♯ D D♯ E."
+    },
+    {
+      "id": "string5-chromatic",
+      "front": "On string 5, name frets 0 through 12 starting from open A (sharps).",
+      "back": "A A♯ B C C♯ D D♯ E F F♯ G G♯ A."
+    },
+    {
+      "id": "ef-bc-frets",
+      "front": "Where can you see the E–F and B–C half steps on the neck?",
+      "back": "E–F: string 6 frets 0–1. B–C: string 6 frets 7–8, and string 5 frets 2–3."
+    },
+    {
+      "id": "twelve-frets-cycle",
+      "front": "What happens twelve frets above any note on one string?",
+      "back": "You land on the same pitch class one octave higher. Frets 0–12 show each class at least once per string."
+    },
+    {
+      "id": "count-distances",
+      "front": "What pitch class is 7 half steps above D? 5 above B? 3 below C?",
+      "back": "A, E, and A."
+    },
+    {
+      "id": "seven-above-e",
+      "front": "Seven classes above E is which class? Three below A?",
+      "back": "Seven above E is B. Three below A is F♯."
+    },
+    {
+      "id": "guitar-one-sound",
+      "front": "On a fretted guitar in equal temperament, can you hear C♯ as different from D♭?",
+      "back": "No. They are the same fret and the same sound. Notation still needs the right spelling for the harmonic role."
+    }
+  ]
+}

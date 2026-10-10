@@ -251,8 +251,8 @@
   margin: 0;
   padding: 8px 12px;
   border-radius: 8px;
-  color: #9f1c14;
-  background: rgba(180, 35, 24, 0.1);
+  color: var(--danger);
+  background: var(--danger-soft);
   font-size: 0.9rem;
 }
 

@@ -1,0 +1,127 @@
+{
+  "id": "tuning-and-open-strings",
+  "title": "Tuning and the open strings",
+  "description": "Lock in standard-tuning names, the 5-5-5-4-5 gaps, and the fret-matching method.",
+  "cards": [
+    {
+      "id": "tuning-def",
+      "front": "What is tuning?",
+      "back": "The set of pitches your open strings produce."
+    },
+    {
+      "id": "open-names",
+      "front": "Name the six open strings from string 6 to string 1.",
+      "back": "E A D G B E."
+    },
+    {
+      "id": "open-octaves",
+      "front": "Give the sounding octave number for each open string, 6 to 1.",
+      "back": "E2, A2, D3, G3, B3, E4."
+    },
+    {
+      "id": "anchors",
+      "front": "Why are the open strings called anchors?",
+      "back": "They are six notes you can name with no counting. Every fretted note is found by counting half steps from one of them."
+    },
+    {
+      "id": "gaps",
+      "front": "What is the half-step spacing between neighboring open strings, 6→5→4→3→2→1?",
+      "back": "5-5-5-4-5. Four perfect fourths and one major third (strings 3 to 2)."
+    },
+    {
+      "id": "gap-intervals",
+      "front": "Name the interval between each neighboring open-string pair.",
+      "back": "6–5 P4, 5–4 P4, 4–3 P4, 3–2 M3, 2–1 P4."
+    },
+    {
+      "id": "why-major-third",
+      "front": "Why is there a major third between strings 3 and 2?",
+      "back": "Standard tuning is mostly fourths so chords and scales fit under the hand. The G-to-B major third (4 half steps) keeps the highest strings within easy reach of the lower ones."
+    },
+    {
+      "id": "convention",
+      "front": "Is standard tuning a law of music?",
+      "back": "No. It is a convention. Drop D, open G, DADGAD and others rearrange the gaps, and every shape shifts."
+    },
+    {
+      "id": "mnemonic-limit",
+      "front": "What does “Eddie Ate Dynamite…” not tell you?",
+      "back": "It only recalls the six names. It says nothing about the 5-5-5-4-5 spacing you use to navigate between strings."
+    },
+    {
+      "id": "same-fret-next-string",
+      "front": "Same fret, next higher string (lower number): how many half steps up?",
+      "back": "5 half steps, except strings 3 to 2, which is 4."
+    },
+    {
+      "id": "five-frets-lower",
+      "front": "A note on string 6 matches the next thinner string how many frets lower?",
+      "back": "Five frets lower (string 6 fret 5 = open string 5), except across G to B, where it is four frets lower."
+    },
+    {
+      "id": "match-6-5",
+      "front": "Which fret on string 6 matches open string 5?",
+      "back": "Fret 5. Both are A."
+    },
+    {
+      "id": "match-5-4",
+      "front": "Which fret on string 5 matches open string 4?",
+      "back": "Fret 5. Both are D."
+    },
+    {
+      "id": "match-4-3",
+      "front": "Which fret on string 4 matches open string 3?",
+      "back": "Fret 5. Both are G."
+    },
+    {
+      "id": "string3-exception",
+      "front": "Which fret on string 3 matches open string 2? Why is it not 5?",
+      "back": "Fret 4. Strings 3 to 2 are a major third (4 half steps), not a fourth."
+    },
+    {
+      "id": "match-2-1",
+      "front": "Which fret on string 2 matches open string 1?",
+      "back": "Fret 5. Both are E."
+    },
+    {
+      "id": "two-octaves",
+      "front": "Add the five open-string gaps. Why must the total be 24?",
+      "back": "5 + 5 + 5 + 4 + 5 = 24 half steps = two octaves, from open string 6 (E2) to open string 1 (E4)."
+    },
+    {
+      "id": "beating",
+      "front": "What is beating when you tune two strings together?",
+      "back": "A slow wobble when two pitches are close but not equal. The slower the beats, the closer the match. Beats vanish when the pitches match."
+    },
+    {
+      "id": "a440",
+      "front": "What is the standard reference pitch, and why does “in tune with itself” still matter?",
+      "back": "A4 = 440 Hz. A guitar can be in tune with itself but still flat or sharp against a piano or recording, so you tune to an external reference, then check strings against each other."
+    },
+    {
+      "id": "open-freqs",
+      "front": "Approximate frequencies of the six open strings?",
+      "back": "E2 82.4 Hz, A2 110 Hz, D3 146.8 Hz, G3 196 Hz, B3 246.9 Hz, E4 329.6 Hz."
+    },
+    {
+      "id": "hear-p4-m3",
+      "front": "What interval do you hear between open 5 and 4? Between open 3 and 2?",
+      "back": "Open 5 to 4 is a perfect fourth. Open 3 to 2 is a major third — slightly narrower, the audible 4-half-step gap."
+    },
+    {
+      "id": "find-a",
+      "front": "Find A on strings 6, 5, 4, and 3 using only frets 0–7.",
+      "back": "String 6 fret 5, open string 5, string 4 fret 7, string 3 fret 2."
+    },
+    {
+      "id": "key-of-a",
+      "front": "In the key of A, which open strings are the root, fourth, and fifth?",
+      "back": "Open A is the root, open D is the fourth, open E is the fifth."
+    },
+    {
+      "id": "idiomatic-keys",
+      "front": "Why do keys such as E, A, D, and G feel idiomatic on guitar?",
+      "back": "Their open strings double as roots, fifths, and other chord tones, so open-position chords ring fully."
+    }
+  ]
+}

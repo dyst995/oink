@@ -1,0 +1,112 @@
+{
+  "id": "octaves-on-the-neck",
+  "title": "Octave relationships on the neck",
+  "description": "Memorize the 12-fret rule and the cross-string octave shapes, and be able to derive them.",
+  "cards": [
+    {
+      "id": "octave-size",
+      "front": "How many half steps is an octave?",
+      "back": "12. On one string that is 12 frets up."
+    },
+    {
+      "id": "one-string",
+      "front": "How do you find the same pitch class one octave higher on the same string?",
+      "back": "Go up 12 frets. Example: string 5 fret 0 (A2) to string 5 fret 12 (A3)."
+    },
+    {
+      "id": "shapes",
+      "front": "State the four one-octave-up shapes (from string → to string, fret change).",
+      "back": "6→4 +2; 5→3 +2; 4→2 +3; 3→1 +3."
+    },
+    {
+      "id": "shape-6-4",
+      "front": "Octave up from string 6: which string, and how many frets?",
+      "back": "String 4, plus 2 frets."
+    },
+    {
+      "id": "shape-5-3",
+      "front": "Octave up from string 5: which string, and how many frets?",
+      "back": "String 3, plus 2 frets."
+    },
+    {
+      "id": "shape-4-2",
+      "front": "Octave up from string 4: which string, and how many frets?",
+      "back": "String 2, plus 3 frets."
+    },
+    {
+      "id": "shape-3-1",
+      "front": "Octave up from string 3: which string, and how many frets?",
+      "back": "String 1, plus 3 frets."
+    },
+    {
+      "id": "why-plus-2",
+      "front": "Why is the octave from string 6 to 4 (or 5 to 3) plus 2 frets?",
+      "back": "Those pairs differ by 5 + 5 = 10 half steps at the same fret. 12 − 10 = +2 frets."
+    },
+    {
+      "id": "why-plus-3",
+      "front": "Why is the octave from string 4 to 2 (or 3 to 1) plus 3 frets?",
+      "back": "Those pairs cross the G–B gap: 5 + 4 = 9 (or 4 + 5 = 9). 12 − 9 = +3 frets."
+    },
+    {
+      "id": "derive-rule",
+      "front": "What is the general rule for any octave shape?",
+      "back": "Octave = 12 minus the half steps between the open strings of that pair. If you forget a shape, recompute it."
+    },
+    {
+      "id": "derive-4-2",
+      "front": "Derive the octave shape from strings 4 to 2 using only open-string pitches.",
+      "back": "Open string 4 is D3. D4 is string 2 fret 3, so the shape is +3."
+    },
+    {
+      "id": "not-only-location",
+      "front": "Does an octave shape give the only location of that pitch?",
+      "back": "No. It gives one correct location. The same pitch class is often available in several places."
+    },
+    {
+      "id": "below-zero",
+      "front": "What if the octave shape would land below fret 0?",
+      "back": "Use the same shape in the other direction, or a different string pair."
+    },
+    {
+      "id": "g-example",
+      "front": "G2 is string 6 fret 3. Where is G3 using the 6→4 shape? Where is open G?",
+      "back": "String 4 fret 5 (+2). That is also string 3 fret 0, the open G."
+    },
+    {
+      "id": "g4",
+      "front": "Where is G4 from that G3 (open string 3)?",
+      "back": "String 1 fret 3 (3→1 is +3)."
+    },
+    {
+      "id": "a-registers",
+      "front": "From string 6 fret 5 (A), find A one octave up on strings 4, 2, and 1.",
+      "back": "String 4 fret 7; string 2 fret 10; string 1 fret 5 (same pitch as string 2 fret 10)."
+    },
+    {
+      "id": "c-octave",
+      "front": "C is at string 5 fret 3. Where is the octave above on string 3?",
+      "back": "String 3 fret 5 (+2)."
+    },
+    {
+      "id": "dyad",
+      "front": "How do you play an octave dyad on strings 6 and 4?",
+      "back": "Play fret n and fret n+2 together and mute the string in between. Example: frets 3 and 5 for G2 and G3."
+    },
+    {
+      "id": "harmonic",
+      "front": "How does the 12th-fret harmonic check an octave?",
+      "back": "Lightly touch over the 12th-fret wire and pick. The harmonic matches the fretted 12th-fret note, one octave above the open string."
+    },
+    {
+      "id": "chord-identity",
+      "front": "If a root appears on string 5 and again on string 3, is that still one chord?",
+      "back": "Yes. Pitch class, not register, determines the chord’s identity. Octave doubling does not change the chord name."
+    },
+    {
+      "id": "retune",
+      "front": "If string 2 is retuned down a half step to B♭, what is the octave shape from string 4 to 2?",
+      "back": "+4 frets. D3 to B♭3 is 8 half steps, so 12 − 8 = 4. String 4 fret 0 (D3) matches string 2 fret 4 (D4)."
+    }
+  ]
+}

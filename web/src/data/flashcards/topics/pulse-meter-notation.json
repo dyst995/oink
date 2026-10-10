@@ -1,0 +1,82 @@
+{
+  "id": "pulse-meter-notation",
+  "title": "Pulse, meter, and rhythmic notation",
+  "description": "Retain pulse, tempo, meter, time signatures, and basic note values.",
+  "cards": [
+    {
+      "id": "pulse",
+      "front": "What is pulse?",
+      "back": "The steady tap (beat) under the music."
+    },
+    {
+      "id": "tempo",
+      "front": "What is tempo?",
+      "back": "How fast the pulse moves, often marked in BPM (beats per minute)."
+    },
+    {
+      "id": "meter",
+      "front": "What is meter?",
+      "back": "The grouping of beats into bars (measures)."
+    },
+    {
+      "id": "time-sig",
+      "front": "What does a time signature like 4/4 or 3/4 tell you?",
+      "back": "The top number is how many beats per bar. The bottom number names which duration gets one beat (4 = quarter note). 4/4 = four quarter-note beats; 3/4 = three."
+    },
+    {
+      "id": "bottom-number",
+      "front": "In a time signature, what does the bottom number 4 mean?",
+      "back": "The quarter note gets one beat."
+    },
+    {
+      "id": "durations-44",
+      "front": "In 4/4, how many beats are a whole, half, quarter, eighth, and sixteenth note?",
+      "back": "Whole = 4, half = 2, quarter = 1, eighth = 1/2, sixteenth = 1/4."
+    },
+    {
+      "id": "dot",
+      "front": "What does a dot after a note do?",
+      "back": "It adds half of that note’s value. A dotted quarter = 1.5 quarters."
+    },
+    {
+      "id": "dotted-pattern",
+      "front": "How do you play a dotted quarter plus an eighth in 4/4?",
+      "back": "Hold 1½ beats, then play the remaining half beat (count 1  2 &)."
+    },
+    {
+      "id": "tie",
+      "front": "What is a tie?",
+      "back": "It joins two notes of the same pitch into one sustained duration."
+    },
+    {
+      "id": "tie-vs-slur",
+      "front": "What is the difference between a tie and a slur?",
+      "back": "A tie is same pitch, one sound (duration math). A slur connects different pitches — articulation, not duration math."
+    },
+    {
+      "id": "rhythm-independent",
+      "front": "How is rhythm related to pitch?",
+      "back": "Rhythm is independent of pitch. The same chord progression can use different meters and note values."
+    },
+    {
+      "id": "tab-duration",
+      "front": "Why is rhythmic notation useful even if you mostly read tab?",
+      "back": "Tab often hides duration. Note values let you communicate and practice rhythm precisely against a pulse."
+    },
+    {
+      "id": "count-pattern",
+      "front": "How do you count a bar of quarter, two eighths, quarter, quarter in 4/4?",
+      "back": "1  2 &  3  4."
+    },
+    {
+      "id": "half-on-1-and-3",
+      "front": "In 4/4, on which beats do you attack half notes?",
+      "back": "Beats 1 and 3."
+    },
+    {
+      "id": "34-trap",
+      "front": "In 3/4, what must you not do when playing quarter notes?",
+      "back": "Do not insert a fourth beat. The bar is only three quarter-note beats."
+    }
+  ]
+}

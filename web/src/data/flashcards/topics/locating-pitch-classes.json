@@ -1,0 +1,127 @@
+{
+  "id": "locating-pitch-classes",
+  "title": "Locating pitch classes on the neck",
+  "description": "Practice deriving any note from the open string and the E–F / B–C half steps.",
+  "cards": [
+    {
+      "id": "method",
+      "front": "How do you locate a pitch class on a given string?",
+      "back": "Start from the open string, count half steps (frets) up, and use the E–F and B–C half-step pairs to know where accidentals do and do not occur."
+    },
+    {
+      "id": "once-per-string",
+      "front": "On one string, how often does each pitch class appear in frets 0–11? What about fret 12?",
+      "back": "Exactly once in frets 0–11. Fret 12 repeats the open string’s class, one octave higher."
+    },
+    {
+      "id": "derivation-facts",
+      "front": "The natural-fret table comes from which two facts you already know?",
+      "back": "One fret is one half step, and the naturals run W W H W W W H (half steps at E–F and B–C)."
+    },
+    {
+      "id": "string6-derivation",
+      "front": "Derive the natural frets on string 6 from open E.",
+      "back": "E0, F1 (H), G3 (W), A5 (W), B7 (W), C8 (H), D10 (W), E12 (W)."
+    },
+    {
+      "id": "string6-naturals",
+      "front": "Name the naturals and frets on string 6 (open E).",
+      "back": "E 0, F 1, G 3, A 5, B 7, C 8, D 10, E 12."
+    },
+    {
+      "id": "string5-naturals",
+      "front": "Name the naturals and frets on string 5 (open A).",
+      "back": "A 0, B 2, C 3, D 5, E 7, F 8, G 10, A 12."
+    },
+    {
+      "id": "string4-naturals",
+      "front": "Name the naturals and frets on string 4 (open D).",
+      "back": "D 0, E 2, F 3, G 5, A 7, B 9, C 10, D 12."
+    },
+    {
+      "id": "string3-naturals",
+      "front": "Name the naturals and frets on string 3 (open G).",
+      "back": "G 0, A 2, B 4, C 5, D 7, E 9, F 10, G 12."
+    },
+    {
+      "id": "string2-naturals",
+      "front": "Name the naturals and frets on string 2 (open B).",
+      "back": "B 0, C 1, D 3, E 5, F 6, G 8, A 10, B 12."
+    },
+    {
+      "id": "string1-same",
+      "front": "What is the note layout of string 1 compared with string 6?",
+      "back": "Identical classes (both E strings), two octaves apart: E 0, F 1, G 3, and so on."
+    },
+    {
+      "id": "sharps-between",
+      "front": "Where do sharps and flats sit relative to the naturals?",
+      "back": "On the frets between the naturals. On string 5, C♯/D♭ is fret 4 (between C at 3 and D at 5)."
+    },
+    {
+      "id": "fs-on-4",
+      "front": "Find F♯ on string 4 by counting from the open string.",
+      "back": "Open D (0), E (2), F (3), then one fret above F → fret 4."
+    },
+    {
+      "id": "cross-check-fs",
+      "front": "String 5 fret 9 is F♯. Where is that same F♯ on string 4?",
+      "back": "Five frets lower: fret 4. The five-frets-lower rule holds for every adjacent pair except 3 to 2 (four frets)."
+    },
+    {
+      "id": "landmarks",
+      "front": "Name the main landmarks that speed up note finding.",
+      "back": "Fret 5 matches the next thinner open string (fret 4 on string 3). Fret 12 repeats the open class. After E or B, the next fret is a natural (F or C). Strings 6 and 1 share a layout."
+    },
+    {
+      "id": "eb-next-fret",
+      "front": "If you are on E or B, what is the next fret up?",
+      "back": "A natural: F after E, C after B — not a sharp."
+    },
+    {
+      "id": "name-s6-f3",
+      "front": "What note is string 6 fret 3?",
+      "back": "G."
+    },
+    {
+      "id": "name-s5-f7",
+      "front": "What note is string 5 fret 7?",
+      "back": "E."
+    },
+    {
+      "id": "name-s4-f9",
+      "front": "What note is string 4 fret 9?",
+      "back": "B."
+    },
+    {
+      "id": "name-s3-f4",
+      "front": "What note is string 3 fret 4?",
+      "back": "B (matches open string 2)."
+    },
+    {
+      "id": "name-s2-f6",
+      "front": "What note is string 2 fret 6?",
+      "back": "F."
+    },
+    {
+      "id": "every-c",
+      "front": "Find every C in frets 0–12 on all six strings.",
+      "back": "6/8, 5/3, 4/10, 3/5, 2/1, 1/8."
+    },
+    {
+      "id": "every-a",
+      "front": "Find every A in frets 0–12 on all six strings.",
+      "back": "6/5, 5/0 and 5/12, 4/7, 3/2, 2/10, 1/5."
+    },
+    {
+      "id": "every-fs",
+      "front": "Find F♯ on each string within frets 0–12.",
+      "back": "6/2, 5/9, 4/4, 3/11, 2/7, 1/2."
+    },
+    {
+      "id": "counting-vs-recall",
+      "front": "If you cannot recall a fret instantly, what should you do?",
+      "back": "Run the derivation from the open string. Counting is slower than recall but always correct, and it trains the structure until recall is automatic."
+    }
+  ]
+}

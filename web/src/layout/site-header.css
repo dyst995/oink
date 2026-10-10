@@ -86,7 +86,8 @@
   background: var(--bg-muted);
 }
 
-.site-nav-link.is-active {
+.site-nav-link.is-active,
+.site-tool-btn.is-theme-on {
   color: var(--text-h);
   background: var(--accent-soft);
 }

@@ -1,0 +1,77 @@
+{
+  "id": "subdivisions-syncopation-feel",
+  "title": "Subdivisions, syncopation, and feel",
+  "description": "Lock counting grids, syncopation, and straight vs swing.",
+  "cards": [
+    {
+      "id": "subdivision-def",
+      "front": "What is a subdivision?",
+      "back": "Splitting each beat into equal parts without changing the pulse."
+    },
+    {
+      "id": "quarter-count",
+      "front": "How do you count a quarter (the beat itself)?",
+      "back": "1 — one part, the pulse."
+    },
+    {
+      "id": "eighth-count",
+      "front": "How do you count eighths against one beat?",
+      "back": "1 &  — two equal parts."
+    },
+    {
+      "id": "triplet-count",
+      "front": "How do you count triplets against one beat?",
+      "back": "1-trip-let — three equal parts."
+    },
+    {
+      "id": "sixteenth-count",
+      "front": "How do you count sixteenths against one beat?",
+      "back": "1 e & a — four equal parts."
+    },
+    {
+      "id": "pulse-stays",
+      "front": "When you switch from eighths to sixteenths, what stays constant?",
+      "back": "The pulse. Only the grid density (and often the accent pattern) changes."
+    },
+    {
+      "id": "syncopation",
+      "front": "What is syncopation?",
+      "back": "Accenting weak parts of the beat or bar (the & of 2, beat 4 into 1, etc.) so the rhythm pushes against the expected strong beats."
+    },
+    {
+      "id": "syncopation-needs-pulse",
+      "front": "Why does syncopation need a clear pulse underneath?",
+      "back": "Without a pulse, “offbeat” has nothing to be off. Syncopation is accent against expected strong beats."
+    },
+    {
+      "id": "straight",
+      "front": "What are straight eighths?",
+      "back": "Even eighths — both parts of the beat are equal."
+    },
+    {
+      "id": "swing",
+      "front": "What is swing feel on eighths?",
+      "back": "The first of an eighth pair is lengthened and the second is shortened, often near a long–short triplet feel. Harmony does not change."
+    },
+    {
+      "id": "feel-vs-harmony",
+      "front": "Does switching straight to swing change the chords?",
+      "back": "No. Feel is weighting of the grid, not a change of chords. Style identity can change instantly on the same pitches."
+    },
+    {
+      "id": "accent-ands",
+      "front": "How do you practice syncopation on muted strums for 4 bars?",
+      "back": "Play eighths but accent only the &s. The pulse stays on 1 2 3 4; the accents sit off the beat."
+    },
+    {
+      "id": "avoid-beat-1",
+      "front": "What makes a 1-bar 4/4 eighth pattern syncopated in the exercise sense?",
+      "back": "It avoids attacking on beat 1 and sits on weak parts of the grid."
+    },
+    {
+      "id": "practice-rule",
+      "front": "When you later practice scales or triads, what rhythmic habit should you keep?",
+      "back": "Assign a subdivision (for example eighths) and keep it honest to the click."
+    }
+  ]
+}

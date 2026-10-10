@@ -1,0 +1,97 @@
+{
+  "id": "pitch-octave-pitch-class",
+  "title": "Pitch, octave, and pitch class",
+  "description": "Retain the difference between pitch, octave, and pitch class, plus the guitar facts from this lesson.",
+  "cards": [
+    {
+      "id": "pitch-def",
+      "front": "What is pitch?",
+      "back": "How high or low a note sounds. It corresponds to frequency, measured in hertz (Hz)."
+    },
+    {
+      "id": "octave-def",
+      "front": "What is an octave?",
+      "back": "The distance between a pitch and the pitch with double its frequency (a 2:1 ratio). Different pitches, same letter name."
+    },
+    {
+      "id": "pitch-class-def",
+      "front": "What is a pitch class?",
+      "back": "The name shared by every pitch that is a whole number of octaves apart. A is a class; A2, A3, and A4 are three pitches in that class."
+    },
+    {
+      "id": "class-vs-where",
+      "front": "What does the class tell you, and what does the octave number tell you?",
+      "back": "The class tells you what note. The octave number tells you where (which pitch)."
+    },
+    {
+      "id": "log-hearing",
+      "front": "Why is an octave defined by doubling frequency, not by adding a fixed number of hertz?",
+      "back": "Hearing is roughly logarithmic. 110→220 Hz sounds like the same step as 220→440 Hz, even though the second gap is twice as large in hertz."
+    },
+    {
+      "id": "same-class-not-same-sound",
+      "front": "Does the same pitch class mean the same sound?",
+      "back": "No. E2 and E4 are clearly different pitches. They are the “same note” only in the naming system."
+    },
+    {
+      "id": "a4-freq",
+      "front": "What is the frequency of A4? Of A5? Of A3?",
+      "back": "A4 = 440 Hz. A5 = 880 Hz. A3 = 220 Hz. Each octave doubles or halves the frequency."
+    },
+    {
+      "id": "a2-a3-a4",
+      "front": "Name the pitch class and approximate frequency of A2, A3, and A4.",
+      "back": "All are pitch class A. A2 ≈ 110 Hz, A3 ≈ 220 Hz, A4 ≈ 440 Hz."
+    },
+    {
+      "id": "group-classes",
+      "front": "Name the pitch class of C3, C5, G2, and G4. Which of each pair is higher?",
+      "back": "Classes: C, C, G, G. Higher pitches: C5 over C3, G4 over G2."
+    },
+    {
+      "id": "open-strings-octaves",
+      "front": "Name the open strings from 6 to 1, with octave numbers.",
+      "back": "E2, A2, D3, G3, B3, E4. Strings 6 and 1 are both E, two octaves (24 semitones) apart."
+    },
+    {
+      "id": "12th-fret-octave",
+      "front": "Why does the 12th fret sound one octave above the open string?",
+      "back": "It sits at half the string’s vibrating length, which doubles the frequency. Open A2 → 12th-fret A3."
+    },
+    {
+      "id": "string5-a-change",
+      "front": "Play open string 5 (A2), then string 5 fret 12 (A3). What changed, and what stayed the same?",
+      "back": "The pitch is higher (A3 vs A2). The pitch class is still A."
+    },
+    {
+      "id": "guitar-written-octave",
+      "front": "Guitar music is usually written how, relative to sounding pitch?",
+      "back": "One octave higher than it sounds. A written E3 sounds as E2. Octave numbers in these lessons are sounding pitch (A4 = 440 Hz, middle C = C4)."
+    },
+    {
+      "id": "e-locations",
+      "front": "Using frets 0–5, where does E occur on strings 6, 4, 2, and 1?",
+      "back": "String 6 fret 0 (E2), string 4 fret 2 (E3), string 2 fret 5 (E4), string 1 fret 0 (E4). The last two are the same pitch."
+    },
+    {
+      "id": "which-question",
+      "front": "“Which note is this?” vs “Which of those two Es is higher?” — which is pitch class, which is pitch?",
+      "back": "“Which note?” is pitch class. “Which E is higher?” is pitch. Chord and scale theory mostly ask the first; voicing and melody ask both."
+    },
+    {
+      "id": "octave-doubling-use",
+      "front": "What does doubling a part an octave higher or lower do to the harmony?",
+      "back": "It thickens the sound without adding a new harmony. Scales and chords keep the same name across octaves."
+    },
+    {
+      "id": "e2-e4-application",
+      "front": "Why do E2 and E4 count as one pitch class but are not interchangeable in a part?",
+      "back": "They share a name, but they are different pitches (two octaves apart). Register matters for voicing, melody, and which string you choose."
+    },
+    {
+      "id": "sing-octave-check",
+      "front": "How can you check a sung octave above a note on string 6?",
+      "back": "Play two strings up and two frets higher (string 6 fret n to string 4 fret n+2). That shape is exactly one octave up."
+    }
+  ]
+}

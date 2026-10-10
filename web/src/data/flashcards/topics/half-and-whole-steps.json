@@ -1,0 +1,97 @@
+{
+  "id": "half-and-whole-steps",
+  "title": "Half steps and whole steps",
+  "description": "Memorize step sizes, the natural-note map, and the one-fret rule.",
+  "cards": [
+    {
+      "id": "half-def",
+      "front": "What is a half step (semitone)?",
+      "back": "The distance from one pitch class to the next in the twelve-class chromatic set. The smallest step in ordinary Western music."
+    },
+    {
+      "id": "whole-def",
+      "front": "What is a whole step?",
+      "back": "Two half steps: skip one pitch class and land on the next."
+    },
+    {
+      "id": "fret-rule",
+      "front": "On guitar, how many frets are a half step? A whole step?",
+      "back": "One fret = one half step. Two frets = one whole step. This holds on any single string, anywhere on the neck."
+    },
+    {
+      "id": "natural-halves",
+      "front": "Which two pairs of neighboring naturals are only a half step apart?",
+      "back": "E to F, and B to C."
+    },
+    {
+      "id": "natural-map",
+      "front": "For each natural pair C–D, D–E, E–F, F–G, G–A, A–B, B–C, is it a whole step or a half step?",
+      "back": "C–D whole, D–E whole, E–F half, F–G whole, G–A whole, A–B whole, B–C half."
+    },
+    {
+      "id": "physical-vs-step",
+      "front": "Frets get closer toward the body. Does that change the step size?",
+      "back": "No. Each fret still raises pitch by one half step. The step is a frequency ratio (~5.9%), not a length on the neck."
+    },
+    {
+      "id": "measure-not-name",
+      "front": "Is counting half steps the same as naming an interval?",
+      "back": "No. Half steps measure pitch distance. Two different intervals can span the same number of half steps."
+    },
+    {
+      "id": "enharmonic-semitone",
+      "front": "Are C→C♯ and C→D♭ both one semitone?",
+      "back": "Yes. Both are one half step, even though they will later have different interval names."
+    },
+    {
+      "id": "half-up-naturals",
+      "front": "Name one half step up from each natural: C D E F G A B.",
+      "back": "C♯, D♯, F, F♯, G♯, A♯, C. E up and B up land on naturals."
+    },
+    {
+      "id": "half-down-naturals",
+      "front": "Name one half step down from each natural: C D E F G A B.",
+      "back": "B, C♯, D♯, E, F♯, G♯, A♯. F down and C down land on naturals (E and B)."
+    },
+    {
+      "id": "same-letter-half",
+      "front": "Is G to G♯ a half step even though the letter stays the same?",
+      "back": "Yes. A half step is a pitch distance, not a letter-name neighbor."
+    },
+    {
+      "id": "string6-examples",
+      "front": "From open string 6 (E): what is one fret up? Two frets up?",
+      "back": "Fret 1 is F (half step). Fret 2 is F♯ (whole step)."
+    },
+    {
+      "id": "string5-examples",
+      "front": "On string 5, fret 2 is B. What is fret 3? What is fret 5 from fret 3?",
+      "back": "Fret 3 is C (half step from B). Fret 5 is D (whole step from C)."
+    },
+    {
+      "id": "string1-same-as-6",
+      "front": "Open string 1 to fret 1 is which step, and why does that match string 6?",
+      "back": "E to F, a half step — the same relationship as open string 6 to fret 1. Both strings are E strings."
+    },
+    {
+      "id": "cross-string",
+      "front": "Why is “same fret, next string” not a half step?",
+      "back": "The one-fret rule is for a single string. Adjacent strings are tuned a fourth apart (a major third for G to B), so same-fret neighbors are much larger than a half step."
+    },
+    {
+      "id": "string4-steps",
+      "front": "On string 4 (open D), play half step up, then whole step up, then half step up. Name the notes.",
+      "back": "D♯, then F, then F♯ — each step counted from the previous note."
+    },
+    {
+      "id": "three-wholes",
+      "front": "From string 3 open G, move up three whole steps on that string. Fret and note?",
+      "back": "Fret 6, C♯ or D♭ (3 × 2 frets = 6)."
+    },
+    {
+      "id": "formulas-use-steps",
+      "front": "Why do scale and chord formulas become usable in any key once steps are solid?",
+      "back": "They are recipes in whole and half steps from a root. If you can count frets, you can apply the formula instead of memorizing one shape per key."
+    }
+  ]
+}

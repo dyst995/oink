@@ -10,6 +10,12 @@ const TABS = [
   { to: '/fretboard', label: 'Fretboard' },
 ] as const
 
+const THEME_LABEL: Record<ThemePreference, string> = {
+  system: 'Auto',
+  light: 'Light',
+  dark: 'Dark',
+}
+
 export function SiteHeader() {
   const [open, setOpen] = useState(false)
   const [theme, setThemeState] = useState<ThemePreference>(getTheme)
@@ -71,12 +77,12 @@ export function SiteHeader() {
         <div className="site-header-actions">
           <button
             type="button"
-            className="site-tool-btn"
+            className={theme === 'dark' ? 'site-tool-btn is-theme-on' : 'site-tool-btn'}
             onClick={cycleTheme}
             aria-label={`Theme: ${theme}. Click to change.`}
-            title={`Theme: ${theme}`}
+            title={`Theme: ${theme}. Click to cycle Auto, Light, Dark.`}
           >
-            Theme
+            {THEME_LABEL[theme]}
           </button>
           <button
             type="button"

@@ -1,12 +1,14 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { getStudyMode, setStudyMode, subscribeStudyMode } from '../../lib/studyMode.ts'
+import { Flashcards } from '../flashcards-module/index.ts'
 import { FretboardMemorization } from './FretboardMemorization.tsx'
 import { CurriculumNav } from './CurriculumNav.tsx'
 import { groupTopicsByUnit } from './groupTopics.ts'
 import { Lesson } from './Lesson.tsx'
 import { PracticePanel } from './PracticePanel.tsx'
 import { isTheoryPractice, isTheoryTopicOpenable } from './openTopics.ts'
+import { getTopicFlashcardDeck } from './topicFlashcards.ts'
 import { THEORY_TOPICS, getTopic } from './topics.ts'
 import './theory.css'
 
@@ -40,8 +42,10 @@ export function TheoryModule() {
   const isPractice = topicId ? isTheoryPractice(topicId) : false
   const [navOpen, setNavOpen] = useState(false)
   const [practiceOpen, setPracticeOpen] = useState(false)
+  const [cardsOpen, setCardsOpen] = useState(false)
   const [studyMode, setStudyModeState] = useState(getStudyMode)
   const [collapsedOverrides, setCollapsedOverrides] = useState<Record<string, boolean>>({})
+  const flashcardDeck = topicId ? getTopicFlashcardDeck(topicId) : null
 
   const neighbors = topicId ? adjacentTopics(topicId) : null
   const units = useMemo(() => groupTopicsByUnit(THEORY_TOPICS), [])
@@ -56,6 +60,10 @@ export function TheoryModule() {
   }, [active, collapsedOverrides, units])
 
   useEffect(() => subscribeStudyMode(() => setStudyModeState(getStudyMode())), [])
+
+  useEffect(() => {
+    setCardsOpen(false)
+  }, [topicId])
 
   if (topicId && !active) {
     return <Navigate to="/theory" replace />
@@ -138,6 +146,16 @@ export function TheoryModule() {
               >
                 {studyMode ? 'Exit study' : 'Study'}
               </button>
+              {flashcardDeck ? (
+                <button
+                  type="button"
+                  className="ui-btn ui-btn-ghost"
+                  aria-pressed={cardsOpen}
+                  onClick={() => setCardsOpen((value) => !value)}
+                >
+                  {cardsOpen ? 'Lesson' : 'Flashcards'}
+                </button>
+              ) : null}
               <button
                 type="button"
                 className="ui-btn ui-btn-ghost"
@@ -169,12 +187,20 @@ export function TheoryModule() {
               </div>
             </header>
 
-            {isPractice ? (
+            {cardsOpen && flashcardDeck ? (
+              <div className="lesson-flashcards">
+                <p className="lesson-flashcards-lede">
+                  Retention drill for this topic. Flip the card, then mark whether you recalled it.
+                </p>
+                <Flashcards deck={flashcardDeck} hideHeader />
+              </div>
+            ) : isPractice ? (
               <FretboardMemorization />
             ) : lessonSource ? (
               <Lesson source={lessonSource} omitTitle />
             ) : null}
 
+            {cardsOpen ? null : (
             <nav className="lesson-pager" aria-label="Lesson pager">
               {neighbors?.prev ? (
                 <Link
@@ -208,6 +234,7 @@ export function TheoryModule() {
                 </Link>
               )}
             </nav>
+            )}
           </article>
         </div>
 
