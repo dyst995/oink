@@ -1,0 +1,92 @@
+{
+  "id": "minor-key-harmony",
+  "title": "Minor-key harmony",
+  "description": "Drill natural-minor RN, harmonic V/V7, and v vs V7 cadences on guitar.",
+  "cards": [
+    {
+      "id": "more-than-one-scale",
+      "front": "Why is minor-key harmony not one fixed scale?",
+      "back": "Natural minor supplies the diatonic set; harmonic minor (raised 7) creates major V / V7 and a leading tone; melodic minor (raised 6 and 7) appears in lines and some chord colors."
+    },
+    {
+      "id": "a-natural-rn",
+      "front": "List the natural-minor diatonic triads of A minor with Roman numerals.",
+      "back": "i Am, ii° B°, ♭III C, iv Dm, v Em, ♭VI F, ♭VII G."
+    },
+    {
+      "id": "harmonic-changes",
+      "front": "In A minor, what does raising G to G♯ change on degrees 5 and 7?",
+      "back": "v becomes V (E) or V7 (E7). vii° becomes sharper leading-tone material (G♯°)."
+    },
+    {
+      "id": "e7-conclusive",
+      "front": "Why does E7 → Am feel conclusive?",
+      "back": "E7 comes from harmonic minor. Its G♯ is the leading tone and pulls to A."
+    },
+    {
+      "id": "why-v-weak",
+      "front": "Why does natural minor’s ♭7 make v a weak pull to i?",
+      "back": "♭7 keeps the chord on 5 minor (Em in A minor). There is no leading tone into the tonic."
+    },
+    {
+      "id": "raised-6-iv",
+      "front": "What harmonic color can raised 6 (melodic minor) add in minor?",
+      "back": "It smooths motion into the leading tone and can yield major IV color."
+    },
+    {
+      "id": "rn-v-vs-v",
+      "front": "What must Roman numerals in minor make clear about degree 5?",
+      "back": "Whether you assume natural minor (v) or include harmonic-minor chords (V / V7)."
+    },
+    {
+      "id": "common-minor-progressions",
+      "front": "Name three common minor-key mixes of these resources.",
+      "back": "i–iv–V7–i; i–♭VII–♭VI–V; Aeolian rock loops with ♭VII. Classical minor uses raised leading tones."
+    },
+    {
+      "id": "which-6-and-7",
+      "front": "What does analysis ask first in a minor progression?",
+      "back": "Which 6 and 7 are in play — natural, raised, or mixed."
+    },
+    {
+      "id": "v-vs-v7-guitar",
+      "front": "In A minor, compare | Am | Dm | Em | Am | with | Am | Dm | E7 | Am |.",
+      "back": "The first keeps natural v. The second uses harmonic V7; hear G♯ pull to A."
+    },
+    {
+      "id": "e7-shell-resolve",
+      "front": "When voice-leading E7 into Am, which two notes resolve, and where?",
+      "back": "G♯ → A (leading tone up) and D → C (seventh down)."
+    },
+    {
+      "id": "cadences-weight",
+      "front": "What is a typical authentic verse Aeolian close in minor?",
+      "back": "Authentic is often V7 → i. Aeolian closes may use ♭VII → i, with different weight."
+    },
+    {
+      "id": "e-minor-natural-triads",
+      "front": "Write the natural-minor diatonic triads of E minor with RN.",
+      "back": "i Em, ii° F♯°, ♭III G, iv Am, v Bm, ♭VI C, ♭VII D."
+    },
+    {
+      "id": "d-minor-natural-triads",
+      "front": "Write the natural-minor diatonic triads of D minor with RN.",
+      "back": "i Dm, ii° E°, ♭III F, iv Gm, v Am, ♭VI B♭, ♭VII C."
+    },
+    {
+      "id": "am-v7-resolve-notes",
+      "front": "Spell V7 of A minor from harmonic minor. Show the leading tone resolving in note names.",
+      "back": "E7 is E G♯ B D. G♯ resolves to A."
+    },
+    {
+      "id": "analyze-am-f-g-e7",
+      "front": "Analyze | Am | F | G | E7 | Am | with RN. Which chord needs raised 7?",
+      "back": "i – ♭VI – ♭VII – V7 – i. E7 needs raised 7 (G♯)."
+    },
+    {
+      "id": "build-bvii-and-v7",
+      "front": "A 4-bar minor phrase uses ♭VII and ends V7–i. In A minor, what chords is that?",
+      "back": "G is ♭VII; the cadence is E7 → Am. Example shape: start on Am, pass through G, end E7–Am."
+    }
+  ]
+}

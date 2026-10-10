@@ -1,0 +1,112 @@
+{
+  "id": "scale-degrees-and-formulas",
+  "title": "Scale degrees and formulas",
+  "description": "Drill degree numbers, alterations against major, functional names, and string-6 relative locations.",
+  "cards": [
+    {
+      "id": "degree-vs-formula",
+      "front": "What is a scale degree? What is a formula?",
+      "back": "A degree is a note’s position in the scale from the root: 1 2 3 4 5 6 7. A formula is a list of degrees, often with alterations, that describes a structure without naming any root."
+    },
+    {
+      "id": "major-is-reference",
+      "front": "What is the major scale’s formula, and how are other structures described?",
+      "back": "1 2 3 4 5 6 7. Everything else is how it differs from that reference: ♭3 lowers degree 3 of the major scale by a half step; ♯4 raises degree 4; ♭7 lowers degree 7."
+    },
+    {
+      "id": "alter-vs-major",
+      "front": "Are alterations measured against the previous note or against the major scale?",
+      "back": "Always against the major scale on the same root. In A, degree 3 is C♯ so ♭3 is C; degree 7 is G♯ so ♭7 is G."
+    },
+    {
+      "id": "structure-vs-pitch",
+      "front": "Why does a formula hold for any root while a note name holds for only one?",
+      "back": "Formulas separate structure from pitch. 1 3 5 is root, major third, fifth in every key. Build the major scale from the chosen root, then pick or alter degrees."
+    },
+    {
+      "id": "degree-is-interval",
+      "front": "How is a degree number also an interval from the root?",
+      "back": "Degree 3 is a third above, degree 5 a fifth above. Quality comes from the half steps the major scale gives, then from any alteration. A formula can be read as scale positions or as intervals."
+    },
+    {
+      "id": "functional-names",
+      "front": "Name degrees 1–7 by their functional names.",
+      "back": "1 tonic, 2 supertonic, 3 mediant, 4 subdominant, 5 dominant, 6 submediant, 7 leading tone."
+    },
+    {
+      "id": "functional-roles",
+      "front": "What is the role of tonic, mediant, subdominant, dominant, submediant, and leading tone?",
+      "back": "Tonic: home, rest. Mediant: halfway to the fifth; sets major or minor. Subdominant: leans down toward 3. Dominant: strongest support for the tonic. Submediant: relative minor lives here. Leading tone: half step under tonic in major."
+    },
+    {
+      "id": "chord-formulas",
+      "front": "Give the degree formulas for a major triad, minor triad, and dominant seventh.",
+      "back": "Major 1 3 5. Minor 1 ♭3 5. Dominant seventh 1 3 5 ♭7."
+    },
+    {
+      "id": "string6-relatives",
+      "front": "Root on string 6 at fret r (r at least 1). Where are degrees 3, ♭3, 4, 5, and the octave?",
+      "back": "3: string 5, fret r−1. ♭3: string 5, fret r−2. 4: string 5, fret r (same fret). 5: string 5, fret r+2. Octave: string 4, fret r+2."
+    },
+    {
+      "id": "g-relative-check",
+      "front": "From G on string 6 fret 3, locate degrees 3, 4, 5, and the octave.",
+      "back": "3 is B at string 5 fret 2. 4 is C at string 5 fret 3. 5 is D at string 5 fret 5. Octave G is string 4 fret 5. All match G major (G A B C D E F♯)."
+    },
+    {
+      "id": "translate-135",
+      "front": "Translate 1 3 5 in C, G, D, and F.",
+      "back": "C E G. G B D. D F♯ A. F A C."
+    },
+    {
+      "id": "translate-flat3",
+      "front": "Translate 1 ♭3 5 in C, G, D, and F.",
+      "back": "C E♭ G. G B♭ D. D F A. F A♭ C."
+    },
+    {
+      "id": "translate-1235",
+      "front": "Translate 1 2 3 5 in C, G, D, and F.",
+      "back": "C D E G. G A B D. D E F♯ A. F G A C."
+    },
+    {
+      "id": "sharp4-in-f",
+      "front": "Translate 1 3 ♯4 5 in C, G, D, and F. Why is ♯4 B in F?",
+      "back": "C E F♯ G. G B C♯ D. D F♯ G♯ A. F A B C. In F the fourth is B♭, so ♯4 is a half step above that: B."
+    },
+    {
+      "id": "degrees-g-and-f",
+      "front": "Write degrees 1–7 for G major and F major.",
+      "back": "G A B C D E F♯. F G A B♭ C D E."
+    },
+    {
+      "id": "degree5-four-keys",
+      "front": "What is degree 5 in E, A♭, B♭, and F♯?",
+      "back": "B, E♭, F, C♯."
+    },
+    {
+      "id": "a-flat3-flat7",
+      "front": "In A, name 1 ♭3 5 ♭7.",
+      "back": "A C E G."
+    },
+    {
+      "id": "e-pentachord",
+      "front": "In E, name 1 2 ♭3 4 5.",
+      "back": "E F♯ G A B."
+    },
+    {
+      "id": "which-degree-7",
+      "front": "Which degree of D major is C♯? Which degree of B♭ major is A?",
+      "back": "Both are degree 7."
+    },
+    {
+      "id": "c-fret8-relatives",
+      "front": "Root C on string 6 fret 8. Find and name degree 3, 5, and the octave.",
+      "back": "String 5 fret 7 (E), string 5 fret 10 (G), string 4 fret 10 (C)."
+    },
+    {
+      "id": "flat7-of-e",
+      "front": "What is ♭7 of E, and where is it on string 6?",
+      "back": "D, string 6 fret 10."
+    }
+  ]
+}

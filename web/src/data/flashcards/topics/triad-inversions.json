@@ -1,0 +1,137 @@
+{
+  "id": "triad-inversions",
+  "title": "Triad inversions",
+  "description": "Root vs bass vs voicing, slash names, and the three inversions on strings 4–3–2.",
+  "cards": [
+    {
+      "id": "inversion-def",
+      "front": "What does an inversion name?",
+      "back": "Which chord tone is the lowest sounding note — the bass."
+    },
+    {
+      "id": "three-inversions",
+      "front": "Name the three inversions of a triad and which tone is in the bass.",
+      "back": "Root position: root in the bass. First inversion: third. Second inversion: fifth."
+    },
+    {
+      "id": "c-stacks",
+      "front": "Write C major low to high in root position, first, and second inversion. Give the slash names.",
+      "back": "C E G = C. E G C = C/E. G C E = C/G."
+    },
+    {
+      "id": "root-vs-bass",
+      "front": "What is the difference between the root and the bass?",
+      "back": "The root is the note the chord is named and built from. It does not change when you invert. The bass is the lowest note actually sounding."
+    },
+    {
+      "id": "voicing-vs-inversion",
+      "front": "How is voicing different from inversion?",
+      "back": "Voicing is the full arrangement: which strings, octaves, doublings, and omissions. Inversion only tells you which chord tone is lowest."
+    },
+    {
+      "id": "slash-meaning",
+      "front": "What does the letter after the slash mean in C/E?",
+      "back": "The bass note, never a new root. C/E is still a C major chord with E in the bass."
+    },
+    {
+      "id": "why-three",
+      "front": "Why does a triad have exactly three inversions?",
+      "back": "It has three pitch classes, so there are exactly three possible bass notes."
+    },
+    {
+      "id": "rotate-stack",
+      "front": "How do you get the next inversion by rotating the stack?",
+      "back": "Move the lowest note to the top, an octave higher. C E G becomes E G C, then G C E."
+    },
+    {
+      "id": "major-gaps",
+      "front": "What are the neighbor gaps in a major triad in each inversion?",
+      "back": "Root: M3 then m3. First: m3 then P4. Second: P4 then M3."
+    },
+    {
+      "id": "minor-gaps",
+      "front": "What are the neighbor gaps in a minor triad in each inversion?",
+      "back": "Root: m3 then M3. First: M3 then P4. Second: P4 then m3."
+    },
+    {
+      "id": "cm-first-check",
+      "front": "Check C minor first inversion E♭ G C. Name the two neighbor intervals.",
+      "back": "E♭ to G is a major third. G to C is a perfect fourth."
+    },
+    {
+      "id": "same-harmony",
+      "front": "Does inverting C major change the harmony?",
+      "back": "No. The pitch classes stay C E G. What changes is the bass, how settled it sounds, and which notes sit nearby."
+    },
+    {
+      "id": "whole-band-bass",
+      "front": "You play E G C on the top strings while a bassist plays C. What inversion is sounding?",
+      "back": "Root position. Inversion is about the lowest sounding note of the whole sound, not your shape’s nickname."
+    },
+    {
+      "id": "stability",
+      "front": "Which inversion is most stable, and how does second inversion often feel?",
+      "back": "Root position is most stable. Second inversion often sounds unsettled and appears as a passing chord or a cadential tonic approaching V."
+    },
+    {
+      "id": "slash-read",
+      "front": "What bass notes do D/F♯ and G/B ask for? What stays the root?",
+      "back": "Bass F♯ and B. Roots stay D and G."
+    },
+    {
+      "id": "g-major-432",
+      "front": "Give G major on strings 4–3–2 in all three inversions (frets and notes).",
+      "back": "Root 5 4 3 = G B D. First 9 7 8 = B D G. Second 0 0 0 = D G B."
+    },
+    {
+      "id": "slide-000",
+      "front": "Slide the second-inversion shape 0 0 0 to 5 5 5 and to 7 7 7. Name the chords.",
+      "back": "5 5 5 is G C E = C major second inversion. 7 7 7 is A D F♯ = D major second inversion."
+    },
+    {
+      "id": "g-minor-432",
+      "front": "Give G minor on strings 4–3–2 in all three inversions.",
+      "back": "Root 5 3 3 = G B♭ D. First 8 7 8 = B♭ D G. Second 12 12 11 = D G B♭."
+    },
+    {
+      "id": "find-root-in-shape",
+      "front": "On strings 4–3–2, where is the root in each inversion?",
+      "back": "Root position: lowest note (string 4). First inversion: top note (string 2). Second inversion: middle note (string 3)."
+    },
+    {
+      "id": "c-major-432",
+      "front": "Give C major on strings 4–3–2 in all three inversions.",
+      "back": "Root 10 9 8 = C E G. First 14 12 13 (or 2 0 1) = E G C. Second 5 5 5 = G C E."
+    },
+    {
+      "id": "name-stacks",
+      "front": "Name chord and inversion: B D G (bass B); A D F (bass A); E♭ G C (bass E♭); D F♯ A (bass D).",
+      "back": "G major first inversion; D minor second inversion; C minor first inversion; D major root position."
+    },
+    {
+      "id": "slash-from-stacks",
+      "front": "Write slash names: E G C; G C E; D F♯ B; A D F♯.",
+      "back": "C/E, C/G, Bm/D, D/A."
+    },
+    {
+      "id": "333-chord",
+      "front": "Slide 0 0 0 to 3 3 3. Name the notes and the chord.",
+      "back": "F B♭ D. B♭ major in second inversion — bass F is the fifth, root B♭ is the middle note."
+    },
+    {
+      "id": "d-first-432",
+      "front": "Find first-inversion D major (F♯ A D) on strings 4–3–2.",
+      "back": "4 2 3: string 4 fret 4 F♯, string 3 fret 2 A, string 2 fret 3 D."
+    },
+    {
+      "id": "still-g-not-bm",
+      "front": "Why is a G chord with B in the bass still G and not Bm?",
+      "back": "The pitch classes are still G B D. A B minor chord needs B D F♯."
+    },
+    {
+      "id": "f-am-inversions",
+      "front": "Write all three inversions of F major and A minor.",
+      "back": "F: F A C, A C F, C F A. Am: A C E, C E A, E A C."
+    }
+  ]
+}

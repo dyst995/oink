@@ -1,0 +1,87 @@
+{
+  "id": "improvising-through-changes",
+  "title": "Improvising through changes",
+  "description": "Memorize the three layers — chord tones, approach notes, scale as resource — and the guitar targets that make changes audible.",
+  "cards": [
+    {
+      "id": "three-layers",
+      "front": "What are the three layers of improvising through changes in this lesson?",
+      "back": "1. Chord tones first, especially on strong beats. 2. Approach notes that step into a target. 3. Scale as a resource that fills space between targets, not a rule that tells you what to play."
+    },
+    {
+      "id": "strong-weak",
+      "front": "In 4/4, where should chord tones go, and what does a non-chord tone on a strong beat do?",
+      "back": "Beats 1 and 3 are usually stronger than 2 and 4, and a beat is stronger than its off-beat. Put chord tones on strong beats. A non-chord tone on a strong beat creates tension that needs to resolve."
+    },
+    {
+      "id": "approach-def",
+      "front": "What is an approach note?",
+      "back": "A non-chord note that leads by step into a chord tone (the target)."
+    },
+    {
+      "id": "approach-types",
+      "front": "Name the four approach types toward target E.",
+      "back": "Chromatic below: D♯ to E. Chromatic above: F to E. Diatonic: D to E or F to E in C major. Enclosure: one from above and one from below, then the target — F then D♯ then E."
+    },
+    {
+      "id": "enclosure-b-string",
+      "front": "On string 2, what frets play the enclosure of E, and why is it clear?",
+      "back": "F fret 6, D♯ fret 4, E fret 5: 6 4 5. Both neighbors are a half step from the target. Enclosures can also use a scale step on one side."
+    },
+    {
+      "id": "no-single-scale",
+      "front": "Is there one scale that always “goes with” a chord?",
+      "back": "No. Ask which key you are in, which notes the chord alters, and which scale tones are unstable. Treat chord-scale pairings as suggestions about available notes and color, not laws."
+    },
+    {
+      "id": "key-question",
+      "front": "In a ii V I in C, why can C major supply the scale resource?",
+      "back": "The C major scale contains every chord tone of Dm7, G7, and Cmaj7."
+    },
+    {
+      "id": "blue-note",
+      "front": "On A7 in a blues in A, what clash is idiomatic rather than a mistake?",
+      "back": "The third is C♯; many blues players also use the minor third C as a deliberate “blue” note against it."
+    },
+    {
+      "id": "unstable-f",
+      "front": "Over Cmaj7, why is F risky as a held note?",
+      "back": "F is the fourth, a half step above the third E. It works as a passing note and is riskier when held."
+    },
+    {
+      "id": "why-changes-audible",
+      "front": "When do the changes become audible in a solo?",
+      "back": "When strong beats carry chord tones. Running a single scale can still sound musical on simple harmony, but outlining needs those targets."
+    },
+    {
+      "id": "stepwise-method",
+      "front": "State the five-step guitar method from looping two chords to playing freely.",
+      "back": "Loop two chords and play only roots, then only thirds, on beat 1. Add arpeggios in the first two beats, then scale fill. Add approaches (below, above, enclosure). Repeat one short rhythm across the chords. Then play freely, listening for the target at each change."
+    },
+    {
+      "id": "target-b-g7",
+      "front": "Over Dm7 to G7, how do you approach B (third of G7) on string 1?",
+      "back": "B is fret 7, B♭ fret 6, C fret 8. From below: 6 to 7. From above: 8 to 7 (C is also the seventh of Dm7, the guide-tone step). Enclosure: 8, 6, 7."
+    },
+    {
+      "id": "target-e-cmaj7",
+      "front": "Over G7 to Cmaj7, what enclosure targets E on the B string?",
+      "back": "F (6), D♯ (4), E (5)."
+    },
+    {
+      "id": "blues-targets-a",
+      "front": "In a blues in A, what thirds are the targets at A7, D7, and E7?",
+      "back": "A7: C♯ (string 2 fret 2). D7: F♯ (string 1 fret 2). E7: G♯ (string 1 fret 4). Between them, A minor pentatonic A C D E G can fill; choose when you want C versus C♯."
+    },
+    {
+      "id": "am7-d7-g-targets",
+      "front": "Over Am7 D7 Gmaj7, name a third to target at each change.",
+      "back": "Am7 third C; D7 third F♯; Gmaj7 third B."
+    },
+    {
+      "id": "tones-vs-scale-chorus",
+      "front": "What should you hear if one chorus uses only chord tones and the next uses only scale notes with no chord tone on any downbeat?",
+      "back": "Chord-tone downbeats make the changes clear. Scale-only downbeats hide or blur the harmony."
+    }
+  ]
+}

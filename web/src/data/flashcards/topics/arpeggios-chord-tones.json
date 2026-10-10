@@ -1,0 +1,87 @@
+{
+  "id": "arpeggios-chord-tones",
+  "title": "Arpeggios and chord tones",
+  "description": "Memorize chord-tone roles, common seventh-chord tones, and how to connect arpeggios at the change.",
+  "cards": [
+    {
+      "id": "arpeggio-def",
+      "front": "What is an arpeggio in lead playing, and what does outlining the changes mean?",
+      "back": "An arpeggio is a chord played one note at a time. Outlining the changes means playing each chord’s tones as the harmony passes, so the listener hears the chords inside the melody even without a rhythm guitar."
+    },
+    {
+      "id": "targeting-def",
+      "front": "What is targeting?",
+      "back": "Arriving on a chosen chord tone at a chord change, often the third or seventh, so the line points clearly at the harmony."
+    },
+    {
+      "id": "third-seventh",
+      "front": "Which chord tones carry quality, and what do root and fifth do?",
+      "back": "The third and seventh decide the quality, so landing on them states the chord most clearly. The root restates the center; the fifth adds stability."
+    },
+    {
+      "id": "strong-beat-tones",
+      "front": "Where should chord tones go for clear outlining?",
+      "back": "On strong beats. A non-chord note on a strong beat creates tension, which is a different effect. Let other notes lead into the chord tones."
+    },
+    {
+      "id": "common-tones",
+      "front": "Spell the tones of Dm7, G7, Cmaj7, A7, D7, and E7.",
+      "back": "Dm7 D F A C; G7 G B D F; Cmaj7 C E G B; A7 A C♯ E G; D7 D F♯ A C; E7 E G♯ B D."
+    },
+    {
+      "id": "closest-connection",
+      "front": "At a chord change, how do you connect arpeggios?",
+      "back": "Find the closest chord tone of the new chord to where the line currently ends. The best connection is usually one fret or one scale step."
+    },
+    {
+      "id": "ii-v-shared",
+      "front": "In a ii V I, which Dm7 tones already sit next to G7?",
+      "back": "The seventh of Dm7 (C) is a half step above B, the third of G7. The third of Dm7 (F) is the seventh of G7."
+    },
+    {
+      "id": "subset-of-scale",
+      "front": "Are arpeggio shapes separate licks?",
+      "back": "No. Each is a subset of the scale pattern you are already in: the tones of a seventh chord are every other note of its scale."
+    },
+    {
+      "id": "top-two-dm7",
+      "front": "On strings 2 and 1, what one-bar Dm7 outline uses D F A C, and what are the roles?",
+      "back": "String/fret 2/3, 2/6, 1/5, 1/8. Root, 3rd, 5th, 7th."
+    },
+    {
+      "id": "top-two-g7-c",
+      "front": "Continue that C-major line: G7 notes B G F D, then the Cmaj7 target.",
+      "back": "G7: 1/7, 1/3, 2/6, 2/3 (3rd, root, 7th, 5th). Cmaj7 target: E at 2/5 (3rd)."
+    },
+    {
+      "id": "targets-in-line",
+      "front": "In that top-two-string ii V I, what are the two targeting moves?",
+      "back": "Last Dm7 note C (1/8) steps down a half step to B (1/7), the third of G7. The G7 line ends on D (2/3), which steps up a whole step to E (2/5), the third of Cmaj7."
+    },
+    {
+      "id": "blues-a7-d7",
+      "front": "Over A7 to D7, which one-fret move targets the new third on string 1?",
+      "back": "End the A7 idea on G (the seventh, fret 3) and step to F♯ (the third of D7, fret 2)."
+    },
+    {
+      "id": "blues-d7-e7",
+      "front": "From D7 to E7 on string 1, what one-fret move targets the new third?",
+      "back": "End the D7 idea on A (its fifth, fret 5) and step down a half step to G♯ (the third of E7, fret 4). Same idea: one fret toward the new chord’s third."
+    },
+    {
+      "id": "practice-order",
+      "front": "What is the four-step practice order for arpeggios through changes?",
+      "back": "One chord, ascending and descending in one position. Two chords, connecting closest tones. A whole progression, one chord per bar, steady pulse. Then rest between arpeggios and play each as a phrase."
+    },
+    {
+      "id": "am7-d7-gmaj7",
+      "front": "For Am7 D7 Gmaj7, name a one-fret or one-step connection at each change.",
+      "back": "Am7’s seventh G sits a half step above F♯, the third of D7. D7’s seventh C then steps down to B, the third of Gmaj7."
+    },
+    {
+      "id": "thirds-only",
+      "front": "Over ii V I in C, what are the thirds if you play only one third per chord?",
+      "back": "F (Dm7), B (G7), E (Cmaj7)."
+    }
+  ]
+}

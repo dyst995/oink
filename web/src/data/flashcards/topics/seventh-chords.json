@@ -1,0 +1,122 @@
+{
+  "id": "seventh-chords",
+  "title": "Seventh chords",
+  "description": "Memorize the five seventh qualities, the V7 tritone, and dim7 symmetry.",
+  "cards": [
+    {
+      "id": "seventh-def",
+      "front": "What is a seventh chord?",
+      "back": "A triad plus a fourth note a third above the fifth. Four chord tones: root, third, fifth, seventh."
+    },
+    {
+      "id": "five-formulas",
+      "front": "Give the formulas for maj7, dominant 7, m7, m7♭5, and dim7.",
+      "back": "maj7: 1 3 5 7. Dominant 7: 1 3 5 ♭7. m7: 1 ♭3 5 ♭7. m7♭5: 1 ♭3 ♭5 ♭7. dim7: 1 ♭3 ♭5 ♭♭7."
+    },
+    {
+      "id": "semitone-stacks",
+      "front": "From the root, what semitone sets are Cmaj7, C7, Cm7, Cm7♭5, and Cdim7?",
+      "back": "maj7 0 4 7 11; 7 0 4 7 10; m7 0 3 7 10; m7♭5 0 3 6 10; dim7 0 3 6 9."
+    },
+    {
+      "id": "stacked-thirds",
+      "front": "Bottom to top, what thirds stack in each of the five qualities?",
+      "back": "maj7: major, minor, major. 7: major, minor, minor. m7: minor, major, minor. m7♭5: minor, minor, major. dim7: minor, minor, minor."
+    },
+    {
+      "id": "two-step-spell",
+      "front": "How do you spell a seventh chord in two steps?",
+      "back": "Stack letter names in thirds (C E G B), then apply accidentals to match the formula."
+    },
+    {
+      "id": "dim7-letter",
+      "front": "In Cdim7, why is the seventh B♭♭ and not A?",
+      "back": "B♭♭ sounds like A, but the letter B keeps the stack in thirds: C E♭ G♭ B♭♭."
+    },
+    {
+      "id": "quality-vs-function",
+      "front": "Does “dominant 7” always mean the chord has dominant function?",
+      "back": "No. It names a sound: major triad plus minor seventh. Function depends on the key. G7 in C is V7; A7 in a 12-bar blues can be I7, a color, not a chord waiting to resolve."
+    },
+    {
+      "id": "triad-plus-seventh",
+      "front": "Each seventh is which triad plus which interval above the root?",
+      "back": "Major triad + major 7th (11) = maj7. Major + minor 7th (10) = dominant 7. Minor + minor 7th (10) = m7. Diminished + minor 7th (10) = m7♭5. Diminished + diminished 7th (9) = dim7."
+    },
+    {
+      "id": "g7-tritone",
+      "front": "In G7 (G B D F), which two notes form the tritone, and how many semitones is it?",
+      "back": "The third B and the seventh F. Six semitones."
+    },
+    {
+      "id": "tritone-resolve",
+      "front": "How does the G7 tritone resolve most smoothly, and why toward C?",
+      "back": "Each note moves a half step in opposite directions: B up to C, F down to E. Those are the root and third of C."
+    },
+    {
+      "id": "d7-e7-tritones",
+      "front": "Name the tritone (third to seventh) in D7 and in E7.",
+      "back": "D7: F♯ to C. E7: G♯ to D. Each is six semitones."
+    },
+    {
+      "id": "maj7-character",
+      "front": "What gives Cmaj7 its bright, slightly rubbing sound?",
+      "back": "B sits a half step below the root’s octave. That is color at home, not a pull to somewhere else."
+    },
+    {
+      "id": "dim7-symmetry",
+      "front": "Why are there only three distinct dim7 chords?",
+      "back": "All three stacked thirds are minor thirds, so the chord divides the octave into four equal parts. Each set of four pitch classes can be named from any of its notes."
+    },
+    {
+      "id": "three-dim7-families",
+      "front": "Name the three dim7 pitch-class families.",
+      "back": "C E♭ G♭ A; C♯ E G B♭; D F A♭ B."
+    },
+    {
+      "id": "dim7-root-context",
+      "front": "Why is “lowest note equals root” unreliable for dim7?",
+      "back": "The root is decided by context, not by the notes alone. The same four pitch classes have four possible names."
+    },
+    {
+      "id": "quality-jobs",
+      "front": "Where do maj7, m7, 7, m7♭5, and dim7 usually function?",
+      "back": "maj7: I or IV in major, a softer tonic. m7: ii, iii, vi in major; i or iv in minor. 7: strongest as V7; also I7/IV7 in blues as color. m7♭5: ii in minor, vii in major (often a stand-in for V7). dim7: chromatic connector, often resolving by half step."
+    },
+    {
+      "id": "open-voicings",
+      "front": "Give frets 6 to 1 for Cmaj7, G7, Am7, and Dm7.",
+      "back": "Cmaj7 x32000 (C E G B E). G7 320001 (G B D G B F). Am7 x02010 (A E G C E). Dm7 xx0211 (D A C F)."
+    },
+    {
+      "id": "em7-half-dim-dim",
+      "front": "Give frets 6 to 1 for Em7, Bm7♭5, and Bdim7, and their notes.",
+      "back": "Em7 022030: E B E G D E. Bm7♭5 x2323x: B F A D. Bdim7 x2313x: B F A♭ D."
+    },
+    {
+      "id": "dim7-slide-three",
+      "front": "Slide Bdim7 (x2313x) up three frets. What chord do you get, and what happens to the pitch classes?",
+      "back": "x5646x is Ddim7. Same four pitch classes as Bdim7. Any multiple of three frets keeps the same chord with a different bass note."
+    },
+    {
+      "id": "cmaj7-rub",
+      "front": "In Cmaj7 (x32000), where do you hear the major-7th rub?",
+      "back": "The half step between open B (string 2) and C on string 5, fret 3."
+    },
+    {
+      "id": "spell-a-and-eb",
+      "front": "Spell maj7, 7, and m7 on A and on E♭.",
+      "back": "Amaj7 A C♯ E G♯; A7 A C♯ E G; Am7 A C E G. E♭maj7 E♭ G B♭ D; E♭7 E♭ G B♭ D♭; E♭m7 E♭ G♭ B♭ D♭."
+    },
+    {
+      "id": "g-same-root-compare",
+      "front": "Gmaj7 is 320002, G7 is 320001, Gm7 is 353333. What one note differs between each pair?",
+      "back": "Gmaj7 vs G7: F♯ vs F (the seventh). G7 vs Gm7: B vs B♭ (the third). Gmaj7 vs Gm7 differs in both of those notes."
+    },
+    {
+      "id": "g7-to-cmaj7-voices",
+      "front": "Play G7 (320001) into Cmaj7 (x32000). Where do B and F move?",
+      "back": "B moves to C; F moves to E. That is the tritone resolution on the neck."
+    }
+  ]
+}

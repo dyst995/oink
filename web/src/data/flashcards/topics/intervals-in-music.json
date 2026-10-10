@@ -1,0 +1,102 @@
+{
+  "id": "intervals-in-music",
+  "title": "Intervals in music",
+  "description": "Memorize scale and chord interval recipes, melodic vs harmonic hearing, and open-chord breakdowns.",
+  "cards": [
+    {
+      "id": "melodic-vs-harmonic",
+      "front": "What is a melodic interval? A harmonic interval?",
+      "back": "Melodic: two notes one after the other; the ear follows motion up or down. Harmonic: two notes sounded together; the ear hears a blend."
+    },
+    {
+      "id": "same-both-ways",
+      "front": "How can the same interval appear both melodically and harmonically?",
+      "back": "A chord is a harmonic stack; an arpeggio plays the same chord melodically. A scale is a sequence of melodic intervals from a tonic."
+    },
+    {
+      "id": "major-scale-intervals",
+      "front": "What intervals above the tonic make a major scale?",
+      "back": "M2, M3, P4, P5, M6, M7."
+    },
+    {
+      "id": "natural-minor-intervals",
+      "front": "What intervals above the tonic make a natural minor scale?",
+      "back": "M2, m3, P4, P5, m6, m7."
+    },
+    {
+      "id": "triad-interval-sets",
+      "front": "Give the intervals above the root for major, minor, diminished, and augmented triads.",
+      "back": "Major: M3, P5. Minor: m3, P5. Diminished: m3, d5. Augmented: M3, A5."
+    },
+    {
+      "id": "dom7-intervals",
+      "front": "What intervals above the root make a dominant 7th chord?",
+      "back": "M3, P5, m7."
+    },
+    {
+      "id": "adjacent-thirds",
+      "front": "How are major and minor triads built as stacks of adjacent thirds?",
+      "back": "Major: M3 then m3. Minor: m3 then M3."
+    },
+    {
+      "id": "no-fixed-emotion",
+      "front": "Does an interval have a fixed emotion, such as “bright” for a major 3rd?",
+      "back": "No. Mood words are common associations in a style, not properties of the interval. A major chord can sound ominous; a minor chord can sound cheerful. Train size, not feelings."
+    },
+    {
+      "id": "consonance-convention",
+      "front": "Which intervals does traditional Western theory treat as stable vs tense?",
+      "back": "Stable: unisons, P5s, P4s (depending on context), 3rds, 6ths, octaves. Tense: 2nds, 7ths, and the tritone. Stability in practice still depends on what the music does with the interval."
+    },
+    {
+      "id": "direction-matters",
+      "front": "Do an ascending P5 and a descending P5 sound the same?",
+      "back": "Same size, different sound and feel. A P4 up and a P4 down likewise differ. Direction matters."
+    },
+    {
+      "id": "third-and-fifth-color",
+      "front": "How do the 3rd and 5th give a triad its color?",
+      "back": "The 3rd decides major or minor. The 5th provides stability; a d5 makes a diminished sound, an A5 an augmented sound."
+    },
+    {
+      "id": "g7-tritone",
+      "front": "In G7 (G B D F), which notes form a tritone, and how does traditional tonal music often resolve it toward C?",
+      "back": "B and F form a d5. That tension often resolves inward: B up to C, F down to E (a major 3rd), which is part of why G7 pulls toward C. A learned convention; many styles treat the chord differently."
+    },
+    {
+      "id": "reference-tunes",
+      "front": "What interval starts “Twinkle, Twinkle, Little Star”? The “Jaws” motif?",
+      "back": "Twinkle (C C G G) is a perfect 5th up. Jaws (E to F) is a minor 2nd up. Useful aids, not the only way to hear size."
+    },
+    {
+      "id": "open-a-major",
+      "front": "In open A major, name each note from low to high and its interval above A2.",
+      "back": "String 5 open A2 unison; string 4 fret 2 E3 P5; string 3 fret 2 A3 P8; string 2 fret 2 C♯4 M10 (M3 plus an octave); string 1 open E4 P12 (P5 plus an octave)."
+    },
+    {
+      "id": "a-to-am-one-change",
+      "front": "In open A major, what happens if you move string 2 from fret 2 to fret 1?",
+      "back": "C♯ becomes C♮. The M3 becomes a m3 and the chord changes from A major to A minor. Every other interval stays the same."
+    },
+    {
+      "id": "a-major-stack",
+      "front": "For A C♯ E, give the intervals above A and the interval between C♯ and E.",
+      "back": "Above A: M3 and P5. C♯ to E is a minor 3rd (the upper adjacent third of a major triad)."
+    },
+    {
+      "id": "d-minor-build",
+      "front": "Build a minor triad on D by intervals (root, m3, P5).",
+      "back": "D F A."
+    },
+    {
+      "id": "b-diminished",
+      "front": "Name the intervals in a diminished triad on B: B D F.",
+      "back": "B to D is a minor 3rd; D to F is a minor 3rd; B to F is a diminished 5th."
+    },
+    {
+      "id": "open-e-minor",
+      "front": "Open E minor notes E B E G B E (strings 6 to 1). Give each interval above E2.",
+      "back": "Unison, P5, P8, m10, P12, two octaves (P15)."
+    }
+  ]
+}

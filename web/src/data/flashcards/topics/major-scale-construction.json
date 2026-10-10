@@ -1,0 +1,102 @@
+{
+  "id": "major-scale-construction",
+  "title": "Major scale construction",
+  "description": "Memorize the WWHWWWH recipe, the letter-once rule, and one-string fret counts.",
+  "cards": [
+    {
+      "id": "wwh-recipe",
+      "front": "What is the major-scale step recipe, and how many half steps does it span?",
+      "back": "W W H W W W H. W = 2 half steps, H = 1. The eighth note is the root an octave higher. 2+2+1+2+2+2+1 = 12."
+    },
+    {
+      "id": "two-rules",
+      "front": "What two rules must both be applied when you build a major scale?",
+      "back": "Distance: each note the correct number of half steps from the previous one. Letter: each degree uses the next letter (A B C D E F G), seven different letters, each once. Distance picks the sound; letter picks the spelling."
+    },
+    {
+      "id": "why-e-sharp",
+      "front": "Why does F♯ major contain E♯, not F?",
+      "back": "The fret is the same as F natural, but the scale already used F for the root, so degree 7 takes the letter E. Adjust the letter with an accidental rather than switching letters."
+    },
+    {
+      "id": "tetrachords",
+      "front": "How does the major-scale recipe split into tetrachords?",
+      "back": "Two identical halves: W W H + W + W W H. Each half is a four-note tetrachord joined by a whole step in the middle. That split is why keys are related by fifths."
+    },
+    {
+      "id": "half-step-degrees",
+      "front": "Between which degrees do the two half steps fall, and why does C major need no accidentals?",
+      "back": "Between 3–4 and 7–8. Naturals already have half steps at E–F and B–C, which match 3–4 and 7–8 in C major."
+    },
+    {
+      "id": "pull-of-7-and-4",
+      "front": "Which degrees lean, and toward what?",
+      "back": "Degree 7 sits one half step under the tonic and leans up into it. Degree 4 leans down toward 3. Those two half steps give the scale its pull."
+    },
+    {
+      "id": "one-string-formula",
+      "front": "From a root fret r on one string, what are the major-scale frets?",
+      "back": "r, r+2, r+4, r+5, r+7, r+9, r+11, r+12. W = two frets, H = one fret."
+    },
+    {
+      "id": "e-major-string6",
+      "front": "Play E major on string 6 from the open string. Frets and notes?",
+      "back": "Frets 0 2 4 5 7 9 11 12: E F♯ G♯ A B C♯ D♯ E."
+    },
+    {
+      "id": "c-major-string5",
+      "front": "Play C major on string 5 from fret 3. Frets and notes?",
+      "back": "Frets 3 5 7 8 10 12 14 15: C D E F G A B C."
+    },
+    {
+      "id": "d-major-string4",
+      "front": "Play D major on string 4 from the open string. Frets and notes?",
+      "back": "Frets 0 2 4 5 7 9 11 12: D E F♯ G A B C♯ D."
+    },
+    {
+      "id": "fret-cannot-spell",
+      "front": "Fret 4 on string 6 is which note in E major? Why might it be A♭ instead?",
+      "back": "G♯ in E major. The same fret would be A♭ in a flat key. Fret numbers cannot tell you the letter; the letter rule does."
+    },
+    {
+      "id": "sharp-keys-spell",
+      "front": "Spell C, G, D, A, and E major, and list their accidentals.",
+      "back": "C D E F G A B (none). G A B C D E F♯ (F♯). D E F♯ G A B C♯ (F♯ C♯). A B C♯ D E F♯ G♯ (C♯ F♯ G♯). E F♯ G♯ A B C♯ D♯ (four sharps)."
+    },
+    {
+      "id": "flat-keys-spell",
+      "front": "Spell F, B♭, and E♭ major, and list their accidentals.",
+      "back": "F G A B♭ C D E (B♭). B♭ C D E♭ F G A (B♭ E♭). E♭ F G A♭ B♭ C D (E♭ A♭ B♭)."
+    },
+    {
+      "id": "f-needs-bb",
+      "front": "Why does F major need B♭, not A♯? Name the two tetrachords.",
+      "back": "After A comes the letter B. Tetrachords: F G A B♭ (W W H) and C D E F (W W H), joined by the whole step B♭–C."
+    },
+    {
+      "id": "fsharp-major-spell",
+      "front": "Spell F♯ major and name how many sharps it has.",
+      "back": "F♯ G♯ A♯ B C♯ D♯ E♯ — six sharps, including E♯."
+    },
+    {
+      "id": "build-d-bb-ab",
+      "front": "Spell D major, B♭ major, and A♭ major.",
+      "back": "D E F♯ G A B C♯. B♭ C D E♭ F G A (not A♯; no repeated letter). A♭ B♭ C D♭ E♭ F G."
+    },
+    {
+      "id": "g-major-error",
+      "front": "Find the error: G A B C D E G♭. What is the correct degree 7?",
+      "back": "The letter F is missing and G repeats. Degree 7 is F♯."
+    },
+    {
+      "id": "string5-d-recipe",
+      "front": "On string 5, start at fret 5 (D) and play the major-scale recipe by fret count. Name the notes.",
+      "back": "Frets 5 7 9 10 12 14 16 17 give D E F♯ G A B C♯ D."
+    },
+    {
+      "id": "open-b-major",
+      "front": "Play the major-scale recipe on open string 2 (B). Frets and notes?",
+      "back": "Frets 0 2 4 5 7 9 11 12 give B C♯ D♯ E F♯ G♯ A♯ B."
+    }
+  ]
+}

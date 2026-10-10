@@ -1,0 +1,112 @@
+{
+  "id": "sevenths-on-guitar",
+  "title": "Sevenths on the guitar",
+  "description": "Memorize shells, string-6/5 offsets for 3 and 7, and G7–Cmaj7 voice leading.",
+  "cards": [
+    {
+      "id": "shell-def",
+      "front": "What three notes make a shell voicing, and why is that enough?",
+      "back": "Root, third, and seventh. The third and seventh are the guide tones: they tell you major, minor, or dominant."
+    },
+    {
+      "id": "omit-fifth",
+      "front": "Why is the fifth the most expendable chord tone?",
+      "back": "It rarely changes the chord’s identity. Guitar often cannot play all four notes comfortably, and often does not need to."
+    },
+    {
+      "id": "inversions-slash",
+      "front": "Name the three inversions of a seventh chord, and what Cmaj7/E means.",
+      "back": "First inversion: third lowest. Second: fifth lowest. Third: seventh lowest. Cmaj7/E is Cmaj7 with E in the bass."
+    },
+    {
+      "id": "distances-from-root",
+      "front": "From a root, how far are b3, 3, b7, and 7? Also give each as a distance below the root’s octave.",
+      "back": "♭3: 3 up / 9 below the octave. 3: 4 up / 8 below. ♭7: 10 up / a whole step below the octave. 7: 11 up / a half step below the octave."
+    },
+    {
+      "id": "string6-seventh",
+      "front": "Root on string 6 at fret r. Where is the octave, the ♭7, and the maj7?",
+      "back": "Octave: string 4, fret r+2. ♭7: string 4, fret r. Maj7: string 4, fret r+1. Go back two frets from the octave for ♭7, one fret for maj7."
+    },
+    {
+      "id": "string6-third",
+      "front": "Root on string 6 at fret r. Where are the minor third and the major third?",
+      "back": "Minor third: string 3 at fret r. Major third: string 3 at fret r+1. Open string 3 is 15 semitones above open string 6."
+    },
+    {
+      "id": "string5-seventh",
+      "front": "Root on string 5 at fret r. Where are ♭7 and maj7?",
+      "back": "♭7: string 3 at fret r. Maj7: string 3 at fret r+1. Open string 3 is 10 semitones above open string 5."
+    },
+    {
+      "id": "string5-third",
+      "front": "Root on string 5 at fret r. Where are the minor third and the major third?",
+      "back": "Minor third: string 2 at fret r+1. Major third: string 2 at fret r+2. Open string 2 is 14 semitones above open string 5."
+    },
+    {
+      "id": "string-pair-limits",
+      "front": "Do those fret offsets work on every string pair?",
+      "back": "No. Only the pairs stated. Other pairs differ because G to B is a major third and the other adjacent strings are fourths."
+    },
+    {
+      "id": "shells-movable",
+      "front": "Why can a closed-position shell slide to any key?",
+      "back": "No open strings. Move it up one fret and every chord tone rises one half step. The reliable facts are the chord-tone relationships."
+    },
+    {
+      "id": "am7-equals-c6",
+      "front": "Am7 and C6 share pitch classes. What decides the name?",
+      "back": "Context and the bass. If the bass plays A you hear Am7; if it plays C you hear C6. Lowest note of a voicing is not always the root."
+    },
+    {
+      "id": "g-shells-string6",
+      "front": "Give the string-6 shells for Gmaj7, G7, and Gm7 (frets 6 to 1) and their notes.",
+      "back": "Gmaj7 3x44xx: G, F♯, B. G7 3x34xx: G, F, B. Gm7 3x33xx: G, F, B♭. One fret changes the 7th (string 4) or the 3rd (string 3)."
+    },
+    {
+      "id": "c-shells-string5",
+      "front": "Give the string-5 shells for Cmaj7, C7, and Cm7 and their notes.",
+      "back": "Cmaj7 x3x45x: C, B, E. C7 x3x35x: C, B♭, E. Cm7 x3x34x: C, B♭, E♭."
+    },
+    {
+      "id": "full-and-inversions",
+      "front": "What are Fmaj7 xx3210, Cmaj7 x32000, Cmaj7/E 032000, and Cmaj7/B x22010?",
+      "back": "Fmaj7 is root position F A C E. Cmaj7 is root position C E G B E. Cmaj7/E has open E (the third) in the bass. Cmaj7/B has B (the seventh) on string 5 fret 2 in the bass, with C on string 2 fret 1 above it."
+    },
+    {
+      "id": "g7-to-cmaj7-shell",
+      "front": "From G7 shell 3x34xx to Cmaj7 shell x3x45x, which note stays, and which voices move?",
+      "back": "B on string 3 fret 4 stays: third of G7 and seventh of Cmaj7. F (string 4 fret 3) falls to E (string 2 fret 5), the third of Cmaj7. The root moves G to C."
+    },
+    {
+      "id": "bm7-shell",
+      "front": "Build Bm7 as a string-6 shell. Frets and notes?",
+      "back": "Root at fret 7: 7x77xx. B (string 6 fret 7), A (string 4 fret 7), D (string 3 fret 7)."
+    },
+    {
+      "id": "a7-shell",
+      "front": "Build A7 with the root on string 6, fret 5. Frets and notes?",
+      "back": "5x56xx: A, G, C♯. ♭7 on string 4 at fret 5; major third on string 3 at fret 6."
+    },
+    {
+      "id": "same-upper-two-chords",
+      "front": "Strings 4–1 as 2010 are E G C E. Add open A vs C on string 5 fret 3. What are the two chords, and why?",
+      "back": "Open A underneath is Am7 (x02010). C on string 5 fret 3 is C major (x32010). Same upper notes; the bass note is the root you hear."
+    },
+    {
+      "id": "guide-tones-written",
+      "front": "Write root, third, and seventh of Dm7, G7, Cmaj7, F7, and B♭maj7.",
+      "back": "Dm7: D F C. G7: G B F. Cmaj7: C E B. F7: F A E♭. B♭maj7: B♭ D A."
+    },
+    {
+      "id": "shell-fingering",
+      "front": "For a string-6 G shell, which fingers and which mutes?",
+      "back": "Finger 1 on the root; finger 2 or 3 for the other notes. Fingertips mute strings 5, 2, and 1."
+    },
+    {
+      "id": "why-shells-matter",
+      "front": "Why are shells the working vocabulary of jazz, funk, soul, and blues rhythm guitar?",
+      "back": "They leave space for bass, keys, and melody, and they make harmonic motion obvious: you can see and hear exactly which voices move."
+    }
+  ]
+}

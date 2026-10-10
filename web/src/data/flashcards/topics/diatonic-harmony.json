@@ -1,0 +1,82 @@
+{
+  "id": "diatonic-harmony",
+  "title": "Diatonic seventh harmony",
+  "description": "Seven sevenths in major, natural-minor overview, and why the same 7 chord can have two jobs.",
+  "cards": [
+    {
+      "id": "diatonic-def",
+      "front": "What does diatonic harmony mean here?",
+      "back": "Chords built using only the notes of one key’s scale. Stack thirds on each degree and stay inside the scale."
+    },
+    {
+      "id": "rn-sevenths",
+      "front": "How are seventh Roman numerals written?",
+      "back": "Add 7 or maj7: V7, Imaj7, ii7. ° for diminished triads, ø for half-diminished sevenths (viiø7)."
+    },
+    {
+      "id": "c-sevenths",
+      "front": "List the seven seventh chords of C major with numerals.",
+      "back": "Imaj7 Cmaj7. ii7 Dm7. iii7 Em7. IVmaj7 Fmaj7. V7 G7. vi7 Am7. viiø7 Bm7♭5."
+    },
+    {
+      "id": "seventh-quality-pattern",
+      "front": "What seventh-quality pattern appears in every major key?",
+      "back": "maj7, m7, m7, maj7, 7, m7, m7♭5."
+    },
+    {
+      "id": "g-sevenths",
+      "front": "Write the diatonic sevenths of G major.",
+      "back": "Gmaj7 Am7 Bm7 Cmaj7 D7 Em7 F♯m7♭5."
+    },
+    {
+      "id": "d-bb-sevenths",
+      "front": "Write diatonic triads and sevenths of D major and B♭ major.",
+      "back": "D: D Em F♯m G A Bm C♯° and Dmaj7 Em7 F♯m7 Gmaj7 A7 Bm7 C♯m7♭5. B♭: B♭ Cm Dm E♭ F Gm A° and B♭maj7 Cm7 Dm7 E♭maj7 F7 Gm7 Am7♭5."
+    },
+    {
+      "id": "nat-minor-a",
+      "front": "Write A natural minor’s diatonic triads and sevenths with numerals.",
+      "back": "i Am / Am7. ii° B° / Bm7♭5. III C / Cmaj7. iv Dm / Dm7. v Em / Em7. VI F / Fmaj7. VII G / G7."
+    },
+    {
+      "id": "harmonic-v",
+      "front": "What does harmonic minor change on degree 5, and why?",
+      "back": "Raises 7 (G→G♯ in A minor) so degree 5 becomes E or E7. That restores a leading tone and a strong V to i. Typical cadence: i iv V7 i (Am Dm E7 Am)."
+    },
+    {
+      "id": "minor-family",
+      "front": "Should you memorize one fixed minor-chord list?",
+      "back": "No. Natural minor supplies the stable set, harmonic minor supplies major V, and melodic-minor ideas appear in melody and some chords."
+    },
+    {
+      "id": "same-7-two-jobs",
+      "front": "G7 is V7 in C major and VII7 in A natural minor. Same notes — same job?",
+      "back": "No. In C it pulls toward C. In A natural minor its natural pull is toward C (III), not Am. A dominant-seventh sound is not automatically the dominant of the key you are in."
+    },
+    {
+      "id": "open-c-sevenths",
+      "front": "Give open-position seventh grips for C major I ii iii IV V vi viiø.",
+      "back": "Cmaj7 x32000. Dm7 xx0211. Em7 022030. Fmaj7 xx3210. G7 320001. Am7 x02010. Bm7♭5 x2323x."
+    },
+    {
+      "id": "iviiv-two-keys",
+      "front": "Play I vi ii V in C, then in G.",
+      "back": "C: Cmaj7 Am7 Dm7 G7. G: Gmaj7 Em7 Am7 D7."
+    },
+    {
+      "id": "path-along-string",
+      "front": "In G major, root at string 6 fret 3. Where are ii, iii, and IV along that string?",
+      "back": "A (ii, minor) fret 5, B (iii, minor) fret 7, C (IV, major) fret 8. Chords as a path along one string."
+    },
+    {
+      "id": "e7-outside",
+      "front": "In Am Dm E7 Am, which note of E7 is outside A natural minor?",
+      "back": "G♯, the raised 7 from harmonic minor."
+    },
+    {
+      "id": "g7-two-resolutions",
+      "front": "Play G7 to C and G7 to Am. Which resolves convincingly as a dominant, and why do the numerals differ?",
+      "back": "G7 to C is V7–I. G7 to Am is VII7–i and is weaker as a close. Same chord, different job in the key."
+    }
+  ]
+}

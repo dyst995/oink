@@ -1,0 +1,112 @@
+{
+  "id": "interval-names-and-quality",
+  "title": "Interval names and quality",
+  "description": "Memorize interval number vs quality, the half-step table, and one-string fret offsets.",
+  "cards": [
+    {
+      "id": "interval-two-parts",
+      "front": "What is an interval, and what two parts does its name have?",
+      "back": "The distance between two notes. Number (size) from inclusive letter count, then quality from how wide that numbered interval is in half steps."
+    },
+    {
+      "id": "number-inclusive",
+      "front": "How do you find an interval’s number?",
+      "back": "Count letter names inclusively from the lower note to the upper. C to E is a 3rd (C D E). C to G is a 5th. The same note twice is a 1st (unison). C to the next C is an 8th (octave)."
+    },
+    {
+      "id": "qualities-list",
+      "front": "What are the five interval qualities?",
+      "back": "Perfect (P), major (M), minor (m), augmented (A), diminished (d)."
+    },
+    {
+      "id": "perfect-vs-mm",
+      "front": "Which interval numbers can be perfect? Which can be major or minor?",
+      "back": "Perfect: unisons, 4ths, 5ths, and octaves. Major and minor: 2nds, 3rds, 6ths, and 7ths."
+    },
+    {
+      "id": "aug-dim-rule",
+      "front": "How are augmented and diminished defined from perfect, major, and minor?",
+      "back": "Augmented is one half step wider than perfect or major. Diminished is one half step narrower than perfect or minor."
+    },
+    {
+      "id": "hs-p1-to-p5",
+      "front": "How many half steps are P1, m2, M2, m3, M3, P4, and P5?",
+      "back": "0, 1, 2, 3, 4, 5, and 7. The missing 6 is the tritone (A4 / d5)."
+    },
+    {
+      "id": "hs-m6-to-p8",
+      "front": "How many half steps are A4/d5, m6, M6, m7, M7, and P8?",
+      "back": "6, 8, 9, 10, 11, and 12."
+    },
+    {
+      "id": "above-c-table",
+      "front": "Name the note a m2, M2, m3, M3, P4, A4, d5, and P5 above C.",
+      "back": "D♭, D, E♭, E, F, F♯, G♭, G."
+    },
+    {
+      "id": "above-c-upper",
+      "front": "Name the note a m6, M6, m7, M7, and P8 above C.",
+      "back": "A♭, A, B♭, B, and C."
+    },
+    {
+      "id": "quality-reference",
+      "front": "What is the reference for deciding quality?",
+      "back": "The major scale built on the lower note. If the upper note is in that scale, 2nds, 3rds, 6ths, and 7ths are major; 4ths, 5ths, and octaves are perfect."
+    },
+    {
+      "id": "quality-adjust",
+      "front": "What happens when you lower or raise a major, minor, or perfect interval by a half step?",
+      "back": "Major down → minor. Minor down → diminished. Major up → augmented. Perfect down → diminished; perfect up → augmented. A diminished 7th is two half steps below the major 7th."
+    },
+    {
+      "id": "hs-are-check",
+      "front": "Are half-step counts the definition of an interval name?",
+      "back": "No. They are a check. Count letters first, then use half steps for quality. C to D♯ (A2) and C to E♭ (m3) are both 3 half steps but different names and functions."
+    },
+    {
+      "id": "why-not-m3",
+      "front": "Why is C to D♯ not a minor 3rd even though it is 3 half steps?",
+      "back": "The letters span C–D, a 2nd, so it is an augmented 2nd. A minor 3rd must use the letter E (C D E)."
+    },
+    {
+      "id": "tritone-two-names",
+      "front": "What two interval names share the tritone size?",
+      "back": "Augmented 4th (C to F♯) and diminished 5th (C to G♭). Both are 6 half steps. They sound identical on guitar; spelling depends on context. “Tritone” names the size, not a substitute for the proper name."
+    },
+    {
+      "id": "triad-recipes",
+      "front": "What interval pair makes a major triad? A minor triad?",
+      "back": "Major: root + major 3rd + perfect 5th. Minor: root + minor 3rd + perfect 5th. The 3rd’s quality is what changes."
+    },
+    {
+      "id": "seventh-recipes",
+      "front": "What 7th does a major 7th chord add? A dominant 7th?",
+      "back": "A major 7th chord adds a major 7th. A dominant 7th adds a minor 7th."
+    },
+    {
+      "id": "one-string-offsets",
+      "front": "On one string, what fret offsets from the lower note are m2, M2, m3, M3, P4, tritone, P5, m6, M6, m7, M7, P8?",
+      "back": "+1, +2, +3, +4, +5, +6, +7, +8, +9, +10, +11, +12."
+    },
+    {
+      "id": "g-string6-examples",
+      "front": "From G on string 6 fret 3, name fret 7, fret 6, fret 10, and fret 9 as intervals above G.",
+      "back": "Fret 7 is B, M3 (+4). Fret 6 is B♭, m3 (+3). Fret 10 is D, P5 (+7). Fret 9 is C♯, A4 (letters G A B C); the same fret is also D♭, a d5."
+    },
+    {
+      "id": "name-five-intervals",
+      "front": "Name each interval by letters and quality: C to E♭, C to G, D to F♯, D to C, A to E♭.",
+      "back": "Minor 3rd, perfect 5th, major 3rd, minor 7th, diminished 5th."
+    },
+    {
+      "id": "hs-counts-five",
+      "front": "Give the half-step count for P4, M6, m7, M2, and P5.",
+      "back": "5, 9, 10, 2, 7."
+    },
+    {
+      "id": "string5-c-intervals",
+      "front": "From C on string 5 fret 3, name the notes and intervals at frets 7, 8, and 10.",
+      "back": "E (M3), F (P4), G (P5)."
+    }
+  ]
+}

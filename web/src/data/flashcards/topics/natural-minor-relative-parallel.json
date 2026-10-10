@@ -1,0 +1,122 @@
+{
+  "id": "natural-minor-relative-parallel",
+  "title": "Natural minor; relative and parallel keys",
+  "description": "Memorize the natural-minor formula, relative vs parallel, and the one-string fret pattern.",
+  "cards": [
+    {
+      "id": "step-pattern",
+      "front": "What is the step pattern of the natural minor scale?",
+      "back": "W – H – W – W – H – W – W."
+    },
+    {
+      "id": "formula-vs-major",
+      "front": "What is the natural-minor formula against major on the same root?",
+      "back": "1 2 ♭3 4 5 ♭6 ♭7. Degrees 3, 6, and 7 are lowered."
+    },
+    {
+      "id": "minor-triad-from-scale",
+      "front": "Which lowered degree gives the minor triad?",
+      "back": "The lowered third. The minor triad is 1 ♭3 5."
+    },
+    {
+      "id": "relative-def",
+      "front": "What does relative mean for a major and a minor key?",
+      "back": "They share the same key signature and the same seven notes. Example: C major and A minor."
+    },
+    {
+      "id": "parallel-def",
+      "front": "What does parallel mean for a major and a minor key?",
+      "back": "Same tonic, different notes. Example: C major and C minor."
+    },
+    {
+      "id": "relative-from-degree-6",
+      "front": "Where does the relative minor start in its major scale?",
+      "back": "On degree 6 (a minor third below the major tonic). C major starting on A is A B C D E F G A."
+    },
+    {
+      "id": "same-notes-different-tonic",
+      "front": "Why is a white-key tune in A minor not “C major in disguise”?",
+      "back": "Same notes, different tonic. Home is A, Am is the home chord, and C is supporting."
+    },
+    {
+      "id": "c-parallel-changes",
+      "front": "Which three notes change from C major to C natural minor?",
+      "back": "E → E♭, A → A♭, B → B♭ (degrees 3, 6, and 7)."
+    },
+    {
+      "id": "c-minor-signature",
+      "front": "What is the key signature of C minor, and why?",
+      "back": "Three flats: B♭ E♭ A♭. That is the signature of E♭ major, C minor’s relative."
+    },
+    {
+      "id": "find-relatives",
+      "front": "How do you find the relative minor from a major tonic? The relative major from a minor tonic?",
+      "back": "Relative minor: down three half steps, spelled down a third. Relative major: up three half steps."
+    },
+    {
+      "id": "relative-pairs",
+      "front": "Name the relative minor of C, G, D, A, F, B♭, and E♭ major.",
+      "back": "A, E, B, F♯, D, G, C."
+    },
+    {
+      "id": "relative-majors-drill",
+      "front": "Name the relative major of E, F♯, D, G, and C minor.",
+      "back": "G, A, F, B♭, E♭."
+    },
+    {
+      "id": "weak-dominant",
+      "front": "Why is the dominant weaker in natural minor than in major?",
+      "back": "Degree 7 is a whole step below the tonic, so the chord on 5 is minor (v), not major V."
+    },
+    {
+      "id": "e-minor-string6",
+      "front": "On string 6 from open E, what frets are E natural minor? Name the notes.",
+      "back": "Frets 0 2 3 5 7 8 10 12: E F♯ G A B C D E."
+    },
+    {
+      "id": "e-major-vs-minor-frets",
+      "front": "E major on string 6 is frets 0 2 4 5 7 9 11 12. Which frets drop for E natural minor, and which degrees are those?",
+      "back": "Fret 4 → 3 (degree 3), 9 → 8 (degree 6), 11 → 10 (degree 7)."
+    },
+    {
+      "id": "a-minor-string5",
+      "front": "On string 5 from open A, what frets give A natural minor? Why is that the same pattern as E minor on string 6?",
+      "back": "Frets 0 2 3 5 7 8 10 12: A B C D E F G A. Both strings are tuned the same distance from their roots."
+    },
+    {
+      "id": "relative-on-neck",
+      "front": "A major root is at fret r on string 6. Where is the relative-minor root?",
+      "back": "Same string at fret r−3 (or an octave up). From C at string 6 fret 8, A is at fret 5."
+    },
+    {
+      "id": "a-minor-triads",
+      "front": "Name the seven natural-minor triads in A minor, stacked from each degree.",
+      "back": "Am (A C E), B° (B D F), C (C E G), Dm (D F A), Em (E G B), F (F A C), G (G B D)."
+    },
+    {
+      "id": "v-is-minor",
+      "front": "In natural minor, what quality is the chord on degree 5, and how is it written?",
+      "back": "Minor: Em in A minor, written v, not V."
+    },
+    {
+      "id": "spell-five-minors",
+      "front": "Spell natural minor from the formula for E, B, D, G, and C♯.",
+      "back": "E F♯ G A B C D; B C♯ D E F♯ G A; D E F G A B♭ C; G A B♭ C D E♭ F; C♯ D♯ E F♯ G♯ A B."
+    },
+    {
+      "id": "d-parallel-changes",
+      "front": "Write D major beside D natural minor. Which three notes change?",
+      "back": "F♯ → F, B → B♭, C♯ → C."
+    },
+    {
+      "id": "target-flat-3",
+      "front": "Over Am, which scale note makes the chord minor, and what happens if you land a fret higher?",
+      "back": "C (degree ♭3), string 5 fret 3. Raise it one fret to C♯ and the sound flips to major."
+    },
+    {
+      "id": "c-string5-compare",
+      "front": "On string 5 from fret 3, what frets are C major vs C natural minor?",
+      "back": "Major: 3 5 7 8 10 12 14 15. Minor: 3 5 6 8 10 11 13 15."
+    }
+  ]
+}

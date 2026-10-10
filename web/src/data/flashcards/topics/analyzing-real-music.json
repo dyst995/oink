@@ -1,0 +1,107 @@
+{
+  "id": "analyzing-real-music",
+  "title": "Analyzing real music",
+  "description": "Find the tonic, write numerals, justify each chord, and label melody against harmony.",
+  "cards": [
+    {
+      "id": "aim",
+      "front": "What is the aim of analysis?",
+      "back": "Turn what you hear or see into a description you can reuse: key, numerals, each chord’s job, and how the melody relates. Not labels for their own sake."
+    },
+    {
+      "id": "ambiguous",
+      "front": "What do you do when two analyses are both defensible?",
+      "back": "Give a reading, justify it with evidence (notes, bass, ending, ear), and say what would change your mind."
+    },
+    {
+      "id": "procedure",
+      "front": "List the eight-step analysis procedure.",
+      "back": "1. Find the tonic. 2. Write full chord names. 3. List key notes and mark outsiders. 4. Write Roman numerals. 5. Explain every chord. 6. Mark function and cadences. 7. Analyze strong-beat melody. 8. Test with your ear."
+    },
+    {
+      "id": "find-tonic",
+      "front": "How do you find the tonic?",
+      "back": "Listen for the note or chord that feels like home. Check the last chord, the first chord, where the bass settles, and the key signature if you have notation."
+    },
+    {
+      "id": "explain-each",
+      "front": "What categories can explain a chord that is not simply diatonic?",
+      "back": "Secondary dominant, borrowed from the parallel mode, a substitute (such as a tritone sub), a passing or chromatic chord, or part of a modulation."
+    },
+    {
+      "id": "chord-set-test",
+      "front": "What is the chord-set test for key?",
+      "back": "Ask which major key contains all the chords diatonically. G C D Em belong to G major (and E minor). If one chord does not fit, check secondary dominant or borrowed chord before you change the key."
+    },
+    {
+      "id": "bass-not-root",
+      "front": "Why is the lowest note not always the root?",
+      "back": "C/E is C major over an E bass. Am7 and C6 can share notes — decide from context and bass. Do not name quality from a third above the bass alone."
+    },
+    {
+      "id": "7-not-always-v",
+      "front": "Is a 7 chord always V7?",
+      "back": "No. A7 in a blues in A is I7. E7 in C major could be V7/vi. Function depends on what the chord does and where it goes."
+    },
+    {
+      "id": "em-c-g-d",
+      "front": "Em C G D can be vi IV I V in G or i bVI bIII bVII in E minor. What decides?",
+      "back": "If Em sounds like home, the E-minor reading is stronger. If G sounds like home and D pulls to it, G major. Melody and bass usually decide."
+    },
+    {
+      "id": "melody-f",
+      "front": "The same melody note F: what is it over G7, Cmaj7, and Fmaj7?",
+      "back": "Over G7: the seventh, a chord tone. Over Cmaj7: the fourth, a non-chord tone that usually wants to move to E. Over Fmaj7: the root."
+    },
+    {
+      "id": "worked-e7",
+      "front": "Analyze Gmaj7 E7 Am7 D7 in G.",
+      "back": "Imaj7 / V7/ii / ii7 / V7. E7 is a secondary dominant leading to Am7."
+    },
+    {
+      "id": "worked-fm",
+      "front": "Analyze C Am F Fm C G7 C.",
+      "back": "I / vi / IV / iv / I / V7 / I in C. Fm is borrowed from C minor; Ab falls to G."
+    },
+    {
+      "id": "worked-am",
+      "front": "Analyze Am Dm E7 Am.",
+      "back": "i / iv / V7 / i in A minor. E7 uses G# from harmonic minor."
+    },
+    {
+      "id": "blues-i7",
+      "front": "In an E blues, why aren’t E7 and A7 the dominants of E?",
+      "back": "They are I7 and IV7 — dominant-quality chords that do not act as V of E. B7 is V7."
+    },
+    {
+      "id": "ear-order",
+      "front": "Order for finding a chord by ear on the neck.",
+      "back": "1. Collect pitch classes (not only the bass). 2. Propose a root that makes a clear triad or seventh. 3. Name quality from intervals above that root. 4. Treat bass separately (slash if needed). 5. Identify any 7th by size and spelling, then function from context."
+    },
+    {
+      "id": "d-bm-g-a",
+      "front": "Analyze D | Bm | G | A.",
+      "back": "D major, I vi IV V."
+    },
+    {
+      "id": "dm-gm-a7",
+      "front": "Analyze Dm | Gm | A7 | Dm. Which note is outside D natural minor?",
+      "back": "i iv V7 i in D minor. C# in A7 comes from harmonic minor."
+    },
+    {
+      "id": "c-e7-am",
+      "front": "Analyze C | E7 | Am | F | G | C.",
+      "back": "I V7/vi vi IV V I. E7 tonicizes Am."
+    },
+    {
+      "id": "set-test-a",
+      "front": "Which major key contains Bm, E, F#m, and A?",
+      "back": "A major, as ii, V, vi, I."
+    },
+    {
+      "id": "melody-a-f-e",
+      "front": "Over Dm7 | G7 | Cmaj7, melody A F E on beat 1 of each bar. Label each.",
+      "back": "A is the fifth of Dm7. F is the seventh of G7. E is the third of Cmaj7."
+    }
+  ]
+}

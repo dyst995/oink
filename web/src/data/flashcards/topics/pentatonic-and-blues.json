@@ -1,0 +1,107 @@
+{
+  "id": "pentatonic-and-blues",
+  "title": "Pentatonic and blues",
+  "description": "Major/minor pentatonic as subsets, relatives, and the blues b5 as color.",
+  "cards": [
+    {
+      "id": "penta-def",
+      "front": "What is a pentatonic scale?",
+      "back": "A five-note-per-octave scale. The two common ones are subsets of seven-note scales you already know."
+    },
+    {
+      "id": "major-formula",
+      "front": "Give the major pentatonic formula and which degrees it omits.",
+      "back": "1 2 3 5 6. Major scale without 4 and 7."
+    },
+    {
+      "id": "minor-formula",
+      "front": "Give the minor pentatonic formula and two ways to derive it.",
+      "back": "1 b3 4 5 b7. Relative of major pentatonic (tonic on old degree 6). Also natural minor without 2 and b6."
+    },
+    {
+      "id": "blues-formula",
+      "front": "What is the blues-scale formula, and what is the extra note?",
+      "back": "1 b3 4 b5 5 b7. The b5 is a chromatic passing note between 4 and 5 — color, not a core scale tone. Do not park on it."
+    },
+    {
+      "id": "why-stable",
+      "front": "Why are pentatonic scales so stable?",
+      "back": "The omitted degrees are the ones that form half steps with their neighbours. Remove them and no two adjacent scale notes are a half step; gaps are whole steps or minor thirds."
+    },
+    {
+      "id": "major-half-steps",
+      "front": "In major, which half-step pairs disappear when you drop 4 and 7?",
+      "back": "4 sits a half step above 3; 7 sits a half step below 1."
+    },
+    {
+      "id": "minor-half-steps",
+      "front": "In natural minor, which degrees do you remove to get minor pentatonic, and why?",
+      "back": "Remove 2 and b6. Those sit in the half steps 2–b3 and 5–b6."
+    },
+    {
+      "id": "relatives",
+      "front": "Name the relative pair for A minor pentatonic and for A major pentatonic.",
+      "back": "A C D E G = C major pentatonic (C D E G A). A B C# E F# = F# minor pentatonic. Minor root is a minor third below its relative major."
+    },
+    {
+      "id": "not-every-chord",
+      "front": "Does “works over many chords” mean it works over every chord?",
+      "back": "No. Each note has a relationship to the chord under it. That relationship is what you hear."
+    },
+    {
+      "id": "a-min-over-chords",
+      "front": "Number A C D E G against Am, F, C, G, and E7. Which need care?",
+      "back": "Am: 1 b3 4 5 b7, all fit. F: 3 5 6 7 9, stress A and C. C: 6 1 9 3 5, fits. G: C is a half step above B — do not hold it. E7: G sits a half step below G#."
+    },
+    {
+      "id": "blue-third",
+      "front": "Why does b3 over a dominant 7 work in blues?",
+      "back": "The idiom sets it up as deliberate tension against the chord’s major third, often by bending b3 up toward 3. A7 D7 E7 with minor pentatonic is the standard 12-bar sound."
+    },
+    {
+      "id": "rule-of-thumb",
+      "front": "Outside the blues idiom, which pentatonic do you use over a major vs a minor chord?",
+      "back": "Major chord: major pentatonic of the chord’s root. Minor chord: minor pentatonic of its root. Hold only notes that are safe; a short passing note can touch almost anything."
+    },
+    {
+      "id": "a-min-box",
+      "front": "Give the familiar A minor pentatonic two-notes-per-string box, frets 5–8.",
+      "back": "6: A5 C8. 5: D5 E7. 4: G5 A7. 3: C5 D7. 2: E5 G8. 1: A5 C8."
+    },
+    {
+      "id": "blues-note-place",
+      "front": "Where is the A blues note (Eb) in that 5–8 region?",
+      "back": "Between D and E: string 5 fret 6, and string 3 fret 8. Play D to Eb to E."
+    },
+    {
+      "id": "a-maj-penta-s6",
+      "front": "A major pentatonic on string 6, and where is its root vs A minor pentatonic?",
+      "back": "E0 F#2 A5 B7 C#9 E12. Root A is still string 6 fret 5 — same place, different neighbors."
+    },
+    {
+      "id": "derive-minors",
+      "front": "Derive minor pentatonic for E, D, and G.",
+      "back": "E G A B D. D F G A C. G Bb C D F."
+    },
+    {
+      "id": "derive-majors",
+      "front": "Derive major pentatonic for G, D, and F.",
+      "back": "G A B D E. D E F# A B. F G A C D."
+    },
+    {
+      "id": "relative-of-g",
+      "front": "What is the relative minor pentatonic of G major pentatonic?",
+      "back": "E minor pentatonic: E G A B D."
+    },
+    {
+      "id": "e-blues",
+      "front": "Add the blues note to E minor pentatonic.",
+      "back": "E G A Bb B D. The b5 is Bb."
+    },
+    {
+      "id": "e-min-strings",
+      "front": "E minor pentatonic on string 6, then the same classes on string 5 from fret 2.",
+      "back": "String 6 frets 0 3 5 7 10 12 = E G A B D E. String 5 frets 2 5 7 10 12 = B D E G A."
+    }
+  ]
+}

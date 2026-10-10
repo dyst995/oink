@@ -1,0 +1,117 @@
+{
+  "id": "borrowed-chords",
+  "title": "Borrowed chords",
+  "description": "Memorize modal interchange from the parallel minor, the common borrowed numerals, and how they differ from secondary dominants.",
+  "cards": [
+    {
+      "id": "borrowed-def",
+      "front": "What is a borrowed (modal interchange) chord?",
+      "back": "A chord taken from a different mode or scale that shares the same tonic as the home key. The most common source is the parallel minor."
+    },
+    {
+      "id": "parallel-c",
+      "front": "In C major, what is the parallel minor scale?",
+      "back": "C minor, natural minor: C D E♭ F G A♭ B♭."
+    },
+    {
+      "id": "vs-secondary",
+      "front": "How do borrowed chords differ from secondary dominants?",
+      "back": "A secondary dominant adds a chromatic leading tone to aim at a diatonic target. A borrowed chord changes the scale color around the tonic."
+    },
+    {
+      "id": "natural-minor-chords-c",
+      "front": "List the natural-minor triads on C with their numerals relative to C major.",
+      "back": "Cm i; D° ii°; E♭ ♭III; Fm iv; Gm v; A♭ ♭VI; B♭ ♭VII. Sevenths: Cm7, Dm7♭5, E♭maj7, Fm7, Gm7, A♭maj7, B♭7."
+    },
+    {
+      "id": "flat-numerals",
+      "front": "What do ♭III, ♭VI, and ♭VII mean, and what does the case show?",
+      "back": "The root is a half step lower than the major-scale degree. The case still shows quality: ♭VII is major."
+    },
+    {
+      "id": "most-used",
+      "front": "Name the four most-used borrowed chords in major, with C-major examples.",
+      "back": "iv (Fm): minor on the fourth, contains A♭. ♭VII (B♭): major a whole step below the tonic. ♭VI (A♭): major whose root is a minor sixth above the tonic. ♭III (E♭): major a minor third above the tonic."
+    },
+    {
+      "id": "flat-vii-two-explanations",
+      "front": "What two explanations account for bVII, and how do you choose?",
+      "back": "Borrowed from parallel natural minor, or as a Mixolydian chord (major with lowered 7th: C D E F G A B♭). Prefer the first if it is a color inside major; prefer Mixolydian if much of the music has the lowered seventh."
+    },
+    {
+      "id": "iv-behavior",
+      "front": "What function does iv keep, and how does Fm behave toward C or G?",
+      "back": "Predominant. Its A♭ falls a half step to G (fifth of C, or the root of G). F to Fm to C sounds like major IV darkened."
+    },
+    {
+      "id": "flat-vii-voice-leading",
+      "front": "Where does ♭VII often go, and how can B♭ resolve?",
+      "back": "To I, or to IV first: ♭VII IV I or I ♭VII IV I. B♭ can fall a half step to A (third of F) or rise a whole step to C."
+    },
+    {
+      "id": "flat-vi-to-i",
+      "front": "How does ♭VI ♭VII I arrive on I, and where is it common?",
+      "back": "A♭ B♭ C. It arrives without a leading tone: B♭ to C is a whole step. Common in rock and film-style writing."
+    },
+    {
+      "id": "lowered-notes",
+      "front": "Why do borrowed chords in major sound colorful?",
+      "back": "Their lowered notes (E♭, A♭, B♭ in C) are not in the major scale."
+    },
+    {
+      "id": "major-into-minor",
+      "front": "Name three ways minor keys borrow toward major.",
+      "back": "Picardy third: end a minor piece on major I. Major IV in minor (i IV in A: Am D), a Dorian color. Major V in minor (harmonic minor), so standard it is usually not called borrowed."
+    },
+    {
+      "id": "mood-not-key",
+      "front": "Does a borrowed chord change the key?",
+      "back": "No. Each is a diatonic chord of a nearby scale. The key stays; the mood darkens, brightens, or expands."
+    },
+    {
+      "id": "parallel-three-keys",
+      "front": "Write the parallel-minor scales of C, G, and D.",
+      "back": "C D E♭ F G A♭ B♭; G A B♭ C D E♭ F; D E F G A B♭ C."
+    },
+    {
+      "id": "borrowed-in-g",
+      "front": "List borrowed iv, ♭III, ♭VI, and ♭VII in G major.",
+      "back": "Cm, B♭, E♭, F."
+    },
+    {
+      "id": "c-shapes",
+      "front": "Give barre/common shapes for Fm, A♭, B♭, and E♭.",
+      "back": "Fm 133111 (F C F A♭ C F); A♭ 466544; B♭ x13331; E♭ x68886."
+    },
+    {
+      "id": "compare-iv-ivm",
+      "front": "Play C F C then C Fm C. Which scale degree changes?",
+      "back": "The sixth degree: A versus A♭. That A♭ is the flavor of iv (and of ♭VI)."
+    },
+    {
+      "id": "progressions-to-play",
+      "front": "Spell I ♭VII IV I and I ♭VI ♭VII I in C.",
+      "back": "C B♭ F C; C A♭ B♭ C."
+    },
+    {
+      "id": "dorian-iv-a-minor",
+      "front": "In A minor, what is the major IV example to play?",
+      "back": "Am D Am, with D as xx0232. A Dorian color."
+    },
+    {
+      "id": "ab-on-string-1",
+      "front": "On string 1 in C, where are A and A♭, and what should you play to hear iv / ♭VI?",
+      "back": "A is fret 5; Ab is fret 4. Play the C major scale, then replace A with Ab: that lowered sixth is the flavor of iv and bVI."
+    },
+    {
+      "id": "d-flat-vii",
+      "front": "In D major, play I ♭VII IV I as D C G D. What is C natural doing?",
+      "back": "It is the lowered seventh against the D major scale (which has C♯)."
+    },
+    {
+      "id": "e-iv-ivm",
+      "front": "Write I IV iv I in E and name the borrowed note.",
+      "back": "E A Am E. Am contains C natural, which is not in E major (E major has C♯)."
+    }
+  ]
+}

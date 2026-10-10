@@ -1,0 +1,87 @@
+{
+  "id": "transposition-and-creation",
+  "title": "Transposition and musical creation",
+  "description": "Move music by semitones, numerals, or degrees — then write a short piece on purpose.",
+  "cards": [
+    {
+      "id": "transpose-def",
+      "front": "What is transposition?",
+      "back": "Moving music to a different pitch level while keeping internal relationships: the same intervals, scale degrees, and Roman numerals."
+    },
+    {
+      "id": "creation-def",
+      "front": "What does creation mean in this lesson?",
+      "back": "Using what you know deliberately: key, form, harmony, voice leading, melody, and feel — then revising."
+    },
+    {
+      "id": "by-semitones",
+      "front": "Transpose C Am F G7 up three semitones.",
+      "back": "Eb Cm Ab Bb7. Move every pitch class up n semitones along C C# D Eb E F F# G Ab A Bb B."
+    },
+    {
+      "id": "by-numerals",
+      "front": "Why is transposing by Roman numerals usually better than shifting each chord?",
+      "back": "Write I vi IV V once, then respell in the new key. Faster and less error-prone, and it works for any key you can spell."
+    },
+    {
+      "id": "iviiv-keys",
+      "front": "Spell I vi IV V in C, G, D, A, and E.",
+      "back": "C Am F G. G Em C D. D Bm G A. A F#m D E. E C#m A B."
+    },
+    {
+      "id": "melody-degrees",
+      "front": "E G A G in C major is degrees 3 5 6 5. What is it in G and in F?",
+      "back": "In G: B D E D. In F: A C D C. Keep scale degrees, not fret numbers."
+    },
+    {
+      "id": "slide-vs-gap",
+      "front": "When can you slide a melody to transpose, and when must you recheck notes?",
+      "back": "If it lies on one string set with no open strings, slide by the same number of frets. On a different string set the G–B gap changes the shape, so check the notes."
+    },
+    {
+      "id": "capo",
+      "front": "What does a capo at fret n do? What does G with capo 2 sound as?",
+      "back": "It raises every open string by n semitones. A G shape at fret 2 sounds as A major."
+    },
+    {
+      "id": "open-vs-barre",
+      "front": "Why can’t open shapes slide along the neck the way barre shapes can?",
+      "back": "Open strings stay the same pitch. Barre shapes and shells can move."
+    },
+    {
+      "id": "creation-order",
+      "front": "Give the eight-step creation order.",
+      "back": "1. Key and mood. 2. Form (8 or 12 bars). 3. Harmony with a function plan and one color. 4. Voice leading. 5. Feel and pulse. 6. Melody / motif. 7. Outline the changes. 8. Revise the weakest bar."
+    },
+    {
+      "id": "sample-plan",
+      "front": "In the sample G-major 8-bar plan, what are E7 and Cm7 doing?",
+      "back": "E7 is V7/ii, a secondary dominant aimed at Am7. Cm7 is iv7, borrowed from G minor, darkening the IV."
+    },
+    {
+      "id": "shells-slide",
+      "front": "Slide C-major ii V I shells (x5x56x, 3xx46x, x3x45x) up two frets.",
+      "back": "D major: Em7 x7x78x, A7 5xx68x, Dmaj7 x5x67x. Shape stays; roots move."
+    },
+    {
+      "id": "capo-g-loop",
+      "front": "Play G Em C D with capo 2. What key and chords sound?",
+      "back": "A major: A F#m D E."
+    },
+    {
+      "id": "ii-v-i-three-keys",
+      "front": "Transpose Dm7 G7 Cmaj7 to F, G, and Eb.",
+      "back": "Gm7 C7 Fmaj7. Am7 D7 Gmaj7. Fm7 Bb7 Ebmaj7."
+    },
+    {
+      "id": "blues-e-to-a",
+      "front": "Transpose E A B A (a blues fragment) from E to A.",
+      "back": "A D E D."
+    },
+    {
+      "id": "cafg7-two-keys",
+      "front": "C Am F G7 as numerals, then in A and in Eb.",
+      "back": "I vi IV V7. In A: A F#m D E7. In Eb: Eb Cm Ab Bb7."
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "intervals-on-the-neck",
+  "title": "Intervals on the neck",
+  "description": "Memorize same-string and next-string fret offsets, including the G-to-B adjustment.",
+  "cards": [
+    {
+      "id": "two-situations",
+      "front": "What two situations cover almost every interval location on guitar?",
+      "back": "On one string: frets equal half steps, so the interval is a fret offset. Across strings: the open-string gap (5 half steps, except 4 between strings 3 and 2) changes that offset."
+    },
+    {
+      "id": "derive-n-minus-gap",
+      "front": "How do you derive the next-string fret offset for an interval of n half steps?",
+      "back": "A same-fret note on the next thinner string is already 5 half steps higher (4 across strings 3–2). Offset is n − 5, or n − 4 across 3 to 2. Example: M3 is 4, so 4 − 5 = −1 (one fret lower)."
+    },
+    {
+      "id": "p4-same-fret",
+      "front": "Why is a P4 the same fret on the next string (except 3 to 2)?",
+      "back": "Standard tuning is built from P4s (5 half steps). Same fret on the next thinner string already is a P4. Across strings 3–2 the gap is only a M3, so a P4 is +1 fret."
+    },
+    {
+      "id": "same-string-offsets",
+      "front": "On the same string, what are the fret offsets for m2 through P8?",
+      "back": "+1 m2, +2 M2, +3 m3, +4 M3, +5 P4, +6 tritone, +7 P5, +8 m6, +9 M6, +10 m7, +11 M7, +12 P8."
+    },
+    {
+      "id": "next-string-offsets",
+      "front": "On the next string (not 3 to 2), what are the fret offsets for m2, M2, m3, M3, P4, tritone, P5, m6, M6, m7, M7, P8?",
+      "back": "−4, −3, −2, −1, 0, +1, +2, +3, +4, +5, +6, +7."
+    },
+    {
+      "id": "string32-offsets",
+      "front": "Across strings 3 to 2, what are the fret offsets for m2 through P8?",
+      "back": "−3, −2, −1, 0, +1, +2, +3, +4, +5, +6, +7, +8. Each is one fret higher than the normal next-string offset."
+    },
+    {
+      "id": "gap-changes-shapes",
+      "front": "What happens to a shape when you move it across strings 3 and 2?",
+      "back": "The offset changes by one fret. A shape that spans only the lower four strings does not look the same on the top strings. That is why the same chord shape changes when transposed across that gap."
+    },
+    {
+      "id": "pitch-not-string",
+      "front": "Does “next thinner string” always mean a higher pitch?",
+      "back": "No. Offsets measure pitch, not string number. A low fret on a thinner string can sit below a high fret on a thicker string. Check which note is higher before naming the interval; if the second note is lower, the interval is descending."
+    },
+    {
+      "id": "negative-fret",
+      "front": "What does a negative fret offset mean, and what if that fret is below 0?",
+      "back": "The note is on a lower fret of the next string. If that fret is below 0, it is not available there — find it on the same string or in another octave."
+    },
+    {
+      "id": "a-one-string",
+      "front": "Root A on string 6 fret 5. Where are the M3, P5, and m7 on the same string?",
+      "back": "M3: fret 9 (C♯). P5: fret 12 (E). m7: fret 15 (G), or use an octave lower if the neck does not reach."
+    },
+    {
+      "id": "a-across-strings",
+      "front": "Root A on string 6 fret 5. On string 5, where are P4, M3, m3, P5, and m7?",
+      "back": "P4: fret 5 (D). M3: fret 4 (C♯). m3: fret 3 (C). P5: fret 7 (E). m7: fret 10 (G)."
+    },
+    {
+      "id": "power-chord-g",
+      "front": "Play a G power chord from string 6 fret 3: root, P5, and octave.",
+      "back": "Root G string 6 fret 3, P5 D string 5 fret 5, octave G string 4 fret 5."
+    },
+    {
+      "id": "c-across-32",
+      "front": "Root C on string 3 fret 5. On string 2, where are the M3, P4, and P5?",
+      "back": "M3: fret 5 (E), same fret. P4: fret 6 (F). P5: fret 8 (G)."
+    },
+    {
+      "id": "two-p5s-gap",
+      "front": "Compare two P5s: from F on string 4 fret 3, and from A on string 3 fret 2. What offsets, and why do they differ?",
+      "back": "F to C is string 3 fret 5 (+2). A to E is string 2 fret 5 (+3). The extra fret comes from crossing the G-to-B gap."
+    },
+    {
+      "id": "from-a-string5",
+      "front": "From A on string 6 fret 5, find on string 5: M3, P5, M6, m7.",
+      "back": "Fret 4 (C♯), fret 7 (E), fret 9 (F♯), fret 10 (G)."
+    },
+    {
+      "id": "from-c-string4",
+      "front": "From C on string 5 fret 3, find m3 and M3 on string 4.",
+      "back": "String 4 fret 1 (E♭) and fret 2 (E)."
+    },
+    {
+      "id": "from-open-g",
+      "front": "From open string 3 (G), find P4, M3, and P5 on string 2.",
+      "back": "Fret 1 (C), fret 0 (B), fret 3 (D)."
+    },
+    {
+      "id": "tritone-derive",
+      "front": "Without the table, derive the fret offset for a tritone across a normal string pair and across strings 3 to 2.",
+      "back": "Tritone is 6 half steps. 6 − 5 = +1; 6 − 4 = +2."
+    },
+    {
+      "id": "c-triad-low-frets",
+      "front": "C major is C E G. With root on string 5 fret 3, find E on string 4 and G on string 3 within frets 0–5. Name the intervals.",
+      "back": "E at string 4 fret 2, G at string 3 fret 0 (open). Intervals above the root: M3 and P5."
+    }
+  ]
+}

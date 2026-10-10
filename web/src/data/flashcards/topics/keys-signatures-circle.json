@@ -1,0 +1,127 @@
+{
+  "id": "keys-signatures-circle",
+  "title": "Keys, key signatures, and the circle of fifths",
+  "description": "Memorize sharp and flat orders, signature-reading shortcuts, and fifth shapes on string 6 to 5.",
+  "cards": [
+    {
+      "id": "key-vs-tonality",
+      "front": "What is a key? What is tonality?",
+      "back": "A key is a set of pitch classes organized around one tonic — the note that feels like home. Tonality is that organization: some notes and chords resolve toward others, and the tonic is where they resolve."
+    },
+    {
+      "id": "signature-not-tonic",
+      "front": "What does a key signature tell you, and what does it not tell you by itself?",
+      "back": "It lists the sharps or flats every note of that name receives, so you know which seven-letter collection is in use. It does not, by itself, tell you the tonic: the same signature belongs to a major key and its relative minor."
+    },
+    {
+      "id": "circle-def",
+      "front": "What does the circle of fifths arrange, and how do neighbours differ?",
+      "back": "The twelve keys, so that neighbours differ by exactly one accidental."
+    },
+    {
+      "id": "tetrachord-c-to-g",
+      "front": "Using tetrachords, why does moving from C major to G major add only F♯?",
+      "back": "The upper tetrachord of C major is G A B C, which is the lower tetrachord of G major. The new upper tetrachord starts on D: D E F♯ G. The only change is F becoming F♯."
+    },
+    {
+      "id": "up-fifth-sharp",
+      "front": "What accidental is added when you move up a perfect fifth? Down a perfect fifth?",
+      "back": "Up a fifth (C to G) adds one sharp, always on the new key’s degree 7. Down a fifth (C to F) adds one flat, always on the new key’s degree 4. The two collections share six of seven notes."
+    },
+    {
+      "id": "order-of-sharps",
+      "front": "What is the order of sharps?",
+      "back": "F♯ C♯ G♯ D♯ A♯ E♯ B♯."
+    },
+    {
+      "id": "order-of-flats",
+      "front": "What is the order of flats, and how does it relate to the sharps?",
+      "back": "B♭ E♭ A♭ D♭ G♭ C♭ F♭ — the sharps order reversed."
+    },
+    {
+      "id": "sharp-keys-0-to-6",
+      "front": "List the major keys from 0 to 6 sharps and their accidentals.",
+      "back": "C none. G F♯. D F♯ C♯. A F♯ C♯ G♯. E F♯ C♯ G♯ D♯. B F♯ C♯ G♯ D♯ A♯. F♯ F♯ C♯ G♯ D♯ A♯ E♯."
+    },
+    {
+      "id": "flat-keys-1-to-6",
+      "front": "List the major keys from 1 to 6 flats and their accidentals.",
+      "back": "F B♭. B♭ B♭ E♭. E♭ B♭ E♭ A♭. A♭ B♭ E♭ A♭ D♭. D♭ B♭ E♭ A♭ D♭ G♭. G♭ B♭ E♭ A♭ D♭ G♭ C♭."
+    },
+    {
+      "id": "fsharp-gb",
+      "front": "How are F♯ major and G♭ major related?",
+      "back": "They sound identical but are spelled differently. Both are real keys with different signatures (six sharps vs six flats)."
+    },
+    {
+      "id": "read-sharps",
+      "front": "How do you read a sharp key from its signature?",
+      "back": "The last sharp in the order is degree 7. The tonic is a half step above it. Three sharps (last is G♯) means A."
+    },
+    {
+      "id": "read-flats",
+      "front": "How do you read a flat key from its signature?",
+      "back": "The second-to-last flat is the tonic. Three flats (B♭ E♭ A♭): second-to-last is E♭. Exception: one flat is F, which you memorize."
+    },
+    {
+      "id": "neighbours-iv-v",
+      "front": "Why are circle neighbours closely related, and what are C major’s neighbours as chords?",
+      "back": "Only one note changes. C major’s neighbours G and F supply its most important chords: G is V (dominant) and F is IV (subdominant). Most songs modulate to a neighbour first."
+    },
+    {
+      "id": "descending-fifths",
+      "front": "Why is the circle also a map of strong progressions?",
+      "back": "Descending-fifth motion (C → F, or A → D → G) is one of the most common root movements in tonal music."
+    },
+    {
+      "id": "guitar-fifth-shapes",
+      "front": "From a root on string 6 at fret r, where is a fifth up? A fifth down?",
+      "back": "Up a fifth: string 5, fret r+2. Down a fifth (same as up a fourth): string 5, fret r."
+    },
+    {
+      "id": "c-neighbours-neck",
+      "front": "From C at string 6 fret 8, where are G and F on string 5?",
+      "back": "G at string 5 fret 10 (fifth up). F at string 5 fret 8 (fifth down). Both are neighbours on the circle."
+    },
+    {
+      "id": "same-fret-fourth-break",
+      "front": "On which string pairs is “up a fourth” the same fret, and where does that rule break?",
+      "back": "Same fret one string toward string 1 for 6–5, 5–4, and 4–3 (E→A→D→G). The 3–2 pair (G→B) is only a major third, so do not extend the rule across that pair."
+    },
+    {
+      "id": "find-key-from-chords",
+      "front": "A song uses C, G, and D. Which is the likely tonic, and how do you confirm?",
+      "back": "They are three adjacent keys; the middle one, G, is the likely tonic, with C as IV and D as V. G, C, D, Em, and Am all use only G major (F♯). F or B♭ does not fit. Confirm by ear: the chord that settles is the tonic."
+    },
+    {
+      "id": "write-four-signatures",
+      "front": "Write the key signatures of A, E, B♭, and D♭ as lists of accidentals.",
+      "back": "F♯ C♯ G♯. F♯ C♯ G♯ D♯. B♭ E♭. B♭ E♭ A♭ D♭ G♭."
+    },
+    {
+      "id": "name-from-signature",
+      "front": "Name the major key: 4 flats, 2 sharps, 5 sharps, 1 flat.",
+      "back": "A♭, D, B, F."
+    },
+    {
+      "id": "circle-clockwise",
+      "front": "Name the circle of fifths clockwise from C for all 12 keys.",
+      "back": "C G D A E B F♯ D♭ A♭ E♭ B♭ F. (F♯ and G♭ are the enharmonic pair at six accidentals.)"
+    },
+    {
+      "id": "d-vs-a-one-note",
+      "front": "Which two notes differ between D major and A major?",
+      "back": "Only G (in D) versus G♯ (in A). The new sharp is degree 7 of the new key."
+    },
+    {
+      "id": "a-fifth-up-down",
+      "front": "Root A on string 6 fret 5. Find E (fifth up) and D (fifth down) on string 5.",
+      "back": "String 5 fret 7 and string 5 fret 5."
+    },
+    {
+      "id": "d-song-neighbours",
+      "front": "A song in D uses D G A Bm. Which chords are neighbours of D on the circle?",
+      "back": "G and A."
+    }
+  ]
+}

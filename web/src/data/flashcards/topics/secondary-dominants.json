@@ -1,0 +1,112 @@
+{
+  "id": "secondary-dominants",
+  "title": "Secondary dominants",
+  "description": "Memorize V7/x construction, the five targets in major, and tonicization versus a real key change.",
+  "cards": [
+    {
+      "id": "secondary-def",
+      "front": "What is a secondary dominant, and how is it written?",
+      "back": "A dominant seventh that points at a chord of the key other than the tonic. Written V7/x, “five of x”."
+    },
+    {
+      "id": "v7-of-ii-c",
+      "front": "In C major, why is A7 V7/ii?",
+      "back": "A is a fifth above D, the root of ii. A7 contains C♯, a note outside C major that acts as a leading tone to D."
+    },
+    {
+      "id": "tonicization",
+      "front": "What does it mean that the target is temporarily tonicized?",
+      "back": "For a moment the target feels like home, without the key actually changing."
+    },
+    {
+      "id": "build-steps",
+      "front": "How do you build V7/x?",
+      "back": "Choose a diatonic major or minor target (not the diminished chord). Find the note a perfect fifth above its root (or a fourth below). Build a dominant 7th on that note."
+    },
+    {
+      "id": "five-in-c",
+      "front": "Name all five secondary dominants of C major, their chords, targets, and chromatic notes.",
+      "back": "V7/ii A7 to Dm (C♯); V7/iii B7 to Em (D♯); V7/IV C7 to F (B♭); V7/V D7 to G (F♯); V7/vi E7 to Am (G♯)."
+    },
+    {
+      "id": "no-v7-viio",
+      "front": "Why is there no V7/vii°, and what is V7/I?",
+      "back": "A diminished target is unstable and not a convincing temporary home. V7/I is just V7."
+    },
+    {
+      "id": "a7-tritone-resolve",
+      "front": "In A7 (A C♯ E G) resolving to Dm, how does the tritone resolve?",
+      "back": "C♯ rises a half step to D, and G falls a half step to F. Both land on notes of Dm (D F A). The chromatic note is the leading tone of the target."
+    },
+    {
+      "id": "c7-as-v7-iv",
+      "front": "Why is C7 as V7/IV the subtle case?",
+      "back": "E rises to F, and B♭ falls to A (the third of F). B♭ is also the note that distinguishes C7 from Cmaj7 and from the plain C triad."
+    },
+    {
+      "id": "tonicization-vs-modulation",
+      "front": "How does tonicization differ from modulation?",
+      "back": "Tonicization is a single chord or short phrase aimed at a target. Modulation is confirmed by more material, such as a full cadence in the new key and a lasting return to its scale. Practical test: if the original key still feels like home after the target passes, it was a tonicization."
+    },
+    {
+      "id": "not-every-dom7",
+      "front": "Is every dominant 7 a secondary dominant?",
+      "back": "No. A D7 in C could be V7/V resolving to G, or a color/blues chord with no target. The label requires a resolution to the target, or a clear expectation that is then deceived."
+    },
+    {
+      "id": "turnaround-vi7",
+      "front": "How does I vi ii V often become a secondary-dominant chain?",
+      "back": "I VI7 ii V: vi is replaced by VI7 (which is V7/ii), creating VI7 to ii to V to I. In C that is C A7 Dm G7 C."
+    },
+    {
+      "id": "typical-uses",
+      "front": "Where are chains common, and what is a typical rock/folk use?",
+      "back": "Chains of secondary dominants are common in jazz standards and older popular songs. In rock and folk, a single V7/V (D7 in C) before G is typical."
+    },
+    {
+      "id": "five-in-g",
+      "front": "Write all five secondary dominants of G major with their targets.",
+      "back": "V7/ii E7 to Am; V7/iii F♯7 to Bm; V7/IV G7 to C; V7/V A7 to D; V7/vi B7 to Em."
+    },
+    {
+      "id": "i-vi7-ii-v-i-keys",
+      "front": "Write I VI7 ii V I in C, G, and F.",
+      "back": "C A7 Dm G7 C; G E7 Am D7 G; F D7 Gm C7 F."
+    },
+    {
+      "id": "c-shapes",
+      "front": "Give the open/common shapes for A7, B7, C7, D7, and E7 in C major.",
+      "back": "A7 x02020 (A E G C♯ E); B7 x21202 (B D♯ A B F♯); C7 x32310 (C E B♭ C E); D7 xx0212 (D A C F♯); E7 020100 (E B D G♯ B E)."
+    },
+    {
+      "id": "play-c-a7-dm",
+      "front": "What shapes play C A7 Dm G7 C?",
+      "back": "C x32010, A7 x02020, Dm xx0231, G 320001, C x32010."
+    },
+    {
+      "id": "a7-to-dm-half-steps",
+      "front": "From A7 x02020 to Dm xx0231, which two half-step motions are on the top strings?",
+      "back": "C♯ on string 2 fret 2 rises to D on fret 3 (leading tone to the target root). Open high E on string 1 rises to F on fret 1 (fifth of A7 becomes the third of Dm)."
+    },
+    {
+      "id": "shell-leading-tone",
+      "front": "In shells A7 x0x02x to Dm7 x5x56x, where does C♯ go, and what does that remind you?",
+      "back": "C♯ still leads to D, but across strings and registers. Leading-tone motion is about pitch classes, not staying on one string."
+    },
+    {
+      "id": "d7-target-note",
+      "front": "In C D7 G C, what is the target of D7, and what is its non-diatonic note?",
+      "back": "The target is G (V). The non-diatonic note in D7 is F♯."
+    },
+    {
+      "id": "e7-am-vs-f",
+      "front": "Why does C E7 Am resolve strongly while C E7 F does not?",
+      "back": "G♯ is the leading tone of Am and rises to A. F has no A as its root and does not receive that leading-tone resolution, so E7 is not pointing at F."
+    },
+    {
+      "id": "c-sharp-adds",
+      "front": "By ear, what does C♯ add when you compare C A7 Dm with C Am Dm?",
+      "back": "C♯ is the extra leading tone into D. A7 tonicizes Dm; Am stays diatonic and does not pull as hard."
+    }
+  ]
+}

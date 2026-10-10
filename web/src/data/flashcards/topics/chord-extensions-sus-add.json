@@ -1,0 +1,77 @@
+{
+  "id": "chord-extensions-sus-add",
+  "title": "Suspensions, added tones, and extensions",
+  "description": "Distinguish sus, add, 6, 9/maj9/m9, and alterations — and which symbols imply a 7th.",
+  "cards": [
+    {
+      "id": "sus-meaning",
+      "front": "What do sus2 and sus4 mean? Spell Csus2 and Csus4.",
+      "back": "The 3rd is replaced by the 2nd or 4th. Csus2 = C D G. Csus4 = C F G. Quality is suspended until it resolves or context supplies a third."
+    },
+    {
+      "id": "add9",
+      "front": "What is Cadd9, and does it imply a 7th?",
+      "back": "Triad plus the 9th (2nd): C E G D. No 7th implied."
+    },
+    {
+      "id": "add-vs-9",
+      "front": "Why is Cadd9 not the same as C9?",
+      "back": "C9 is a dominant 7 plus 9 (7th implied): C E G Bb D. Cadd9 has no Bb."
+    },
+    {
+      "id": "six",
+      "front": "Spell C6 and Cm6. Which other chord can share C6’s pitch classes?",
+      "back": "C6 = C E G A. Cm6 = C Eb G A. C6 often = Am7 as a pitch set; bass and context decide the name."
+    },
+    {
+      "id": "ninths",
+      "front": "Spell C9, Cmaj9, and Cm9. Which 7th does each imply?",
+      "back": "C9 = C E G Bb D (dominant 7 + 9). Cmaj9 = C E G B D (maj7 + 9). Cm9 = C Eb G Bb D (m7 + 9)."
+    },
+    {
+      "id": "eleven-thirteen",
+      "front": "What do 11 and 13 add, and what does guitar often omit?",
+      "back": "Further extensions (11 = 4, 13 = 6). On guitar often omit 5 or even the root. Keep guide tones (3 and 7) when the chord must speak."
+    },
+    {
+      "id": "altered",
+      "front": "What are altered tensions, and on which chord type do they usually sit?",
+      "back": "Chromatic tensions such as b9, #9, #11, b13, usually on dominant. Example: G7b9."
+    },
+    {
+      "id": "extension-degrees",
+      "front": "How do 9, 11, and 13 relate to 2, 4, and 6?",
+      "back": "They are the same pitch classes an octave up: 9 = 2, 11 = 4, 13 = 6, usually voiced above the core 3rd/7th."
+    },
+    {
+      "id": "sus-resolve",
+      "front": "How do suspensions typically resolve?",
+      "back": "They delay the third: sus4 to 3, or sus2 to 3."
+    },
+    {
+      "id": "g-spell",
+      "front": "Spell Gsus4, Gadd9, G9, Gmaj9, and G6. Which symbol requires F?",
+      "back": "Gsus4 = G C D. Gadd9 = G B D A. G9 = G B D F A. Gmaj9 = G B D F# A. G6 = G B D E. G9 requires F (the b7)."
+    },
+    {
+      "id": "am7-c6",
+      "front": "Why can Am7 and C6 share pitch classes? What decides the name?",
+      "back": "Both are A C E G / C E G A. Bass and context decide: A in the bass reads as Am7; C in the bass often reads as C6."
+    },
+    {
+      "id": "c-grips",
+      "front": "On 4–3–2, start from C = 10 9 8. How do you hint Csus2 vs Cadd9 vs C9?",
+      "back": "Csus2: replace E with D. Cadd9: keep E and add D above. C9: imply E + Bb (+ D) over a C bass; compare by including or omitting Bb."
+    },
+    {
+      "id": "g7b9",
+      "front": "Spell G7b9 and how might you play it into C?",
+      "back": "G B D F Ab. Play a shell plus Ab as a color tone, then resolve into C."
+    },
+    {
+      "id": "chart-trap",
+      "front": "Why does reading charts carefully matter for add9 vs 9?",
+      "back": "Playing a dominant 9 when the writer wanted a plain triad plus 9 adds an unwanted b7."
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "id": "harmonic-melodic-minor",
+  "title": "Harmonic and melodic minor",
+  "description": "Memorize raised 6 and 7, the augmented second, and leading-tone resolutions on guitar.",
+  "cards": [
+    {
+      "id": "three-formulas",
+      "front": "Give the formulas for natural, harmonic, and ascending melodic minor.",
+      "back": "Natural: 1 2 ♭3 4 5 ♭6 ♭7. Harmonic: 1 2 ♭3 4 5 ♭6 7 (raised 7). Melodic ascending: 1 2 ♭3 4 5 6 7 (raised 6 and 7)."
+    },
+    {
+      "id": "a-minor-three-scales",
+      "front": "Spell natural, harmonic, and ascending melodic minor in A.",
+      "back": "Natural: A B C D E F G. Harmonic: A B C D E F G♯. Melodic ascending: A B C D E F♯ G♯."
+    },
+    {
+      "id": "not-different-keys",
+      "front": "Do harmonic and melodic minor change the key signature?",
+      "back": "No. The signature stays natural minor (A minor has none). Raised notes appear as accidentals when needed."
+    },
+    {
+      "id": "why-raise-7",
+      "front": "Why raise degree 7 in minor?",
+      "back": "In natural minor, 7 is a whole step below the tonic and v is minor, so pull to i is weak. Raising 7 makes a leading tone and a major V."
+    },
+    {
+      "id": "raise-g-two-results",
+      "front": "In A minor, raise G to G♯. What two things happen?",
+      "back": "The V chord becomes major (E G♯ B), a stronger dominant. Degree 7 sits a half step below A and leads into it."
+    },
+    {
+      "id": "aug-second-cost",
+      "front": "What awkward interval does harmonic minor leave, and how large is it?",
+      "back": "An augmented second between ♭6 and 7. In A harmonic minor that is F to G♯: three half steps."
+    },
+    {
+      "id": "why-raise-6",
+      "front": "Why raise 6 as well in melodic minor?",
+      "back": "It closes the gap: F♯ to G♯ is a whole step, so E F♯ G♯ A is smooth and stepwise."
+    },
+    {
+      "id": "classical-vs-jazz",
+      "front": "How do classical and jazz typically treat melodic minor direction?",
+      "back": "Classical: ascending form going up, natural minor going down (A G F E). Jazz often uses the ascending form both ways — vocabulary, not a rule of minor keys."
+    },
+    {
+      "id": "a-harmonic-frets",
+      "front": "On string 5 from open A, what frets are harmonic minor? Where is the three-fret gap?",
+      "back": "Frets 0 2 3 5 7 8 11 12. The gap from fret 8 (F) to fret 11 (G♯) is the augmented second."
+    },
+    {
+      "id": "a-melodic-frets",
+      "front": "On string 5 from open A, what frets are ascending melodic minor? Name the notes.",
+      "back": "Frets 0 2 3 5 7 9 11 12: A B C D E F♯ G♯ A."
+    },
+    {
+      "id": "fret-interval-map",
+      "front": "On one string, how many frets are a whole step, a half step, and an augmented second?",
+      "back": "Whole step = 2 frets, half step = 1, augmented second = 3."
+    },
+    {
+      "id": "e7-to-am-lt",
+      "front": "In open E7 (020100) to Am (x02210), where is the leading-tone resolution?",
+      "back": "String 3: fret 1 is G♯, fret 2 is A. The leading tone resolves up a half step."
+    },
+    {
+      "id": "e7-am-common-tones",
+      "front": "Which open strings stay put from E7 to Am?",
+      "back": "Strings 2 and 1 stay open B and E. Those common tones hold still while string 3 moves G♯ → A."
+    },
+    {
+      "id": "a7-to-dm-lt",
+      "front": "In D minor, where does the leading tone of A7 (x02020) resolve into Dm (xx0231)?",
+      "back": "String 2: fret 2 is C♯ in A7; fret 3 is D in Dm. That is C♯ → D."
+    },
+    {
+      "id": "gsharp-against-am",
+      "front": "When does G♯ clash against a plain Am, and when is it the right note?",
+      "back": "Held against Am it is a major seventh above A and clashes, unless you want Am(maj7). Use it as a leading tone, a passing tone, or over E / E7, where it is the chord’s third."
+    },
+    {
+      "id": "spell-e-three",
+      "front": "Spell natural, harmonic, and ascending melodic minor for E.",
+      "back": "Natural: E F♯ G A B C D. Harmonic: E F♯ G A B C D♯. Melodic: E F♯ G A B C♯ D♯."
+    },
+    {
+      "id": "d-harmonic-aug2",
+      "front": "Spell D harmonic minor. Name the augmented second.",
+      "back": "D E F G A B♭ C♯. The augmented second is B♭ to C♯."
+    },
+    {
+      "id": "v-chords-three-keys",
+      "front": "Spell the V triad of A minor, D minor, and E minor from harmonic minor.",
+      "back": "E G♯ B, A C♯ E, B D♯ F♯."
+    },
+    {
+      "id": "v-vs-v-minor-ear",
+      "front": "Compare Am – Em – Am with Am – E – Am. What is the difference?",
+      "back": "Em (v) has no leading tone, so the arrival is weak. E (V) has G♯ leading to A, so the cadence is stronger."
+    },
+    {
+      "id": "e-from-harmonic",
+      "front": "In Am – Dm – E – Am, why is E major, and which scale supplies G♯?",
+      "back": "G♯ leads to A. The G♯ comes from harmonic minor; the key signature stays A minor."
+    },
+    {
+      "id": "use-raised-where-needed",
+      "front": "Does “minor uses harmonic minor” mean the whole tune switches scale?",
+      "back": "No. Raise 7, or 6 and 7, only where the music needs to lean into the tonic."
+    }
+  ]
+}

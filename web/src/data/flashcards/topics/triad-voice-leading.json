@@ -1,0 +1,97 @@
+{
+  "id": "triad-voice-leading",
+  "title": "Triad voice leading",
+  "description": "Common tones, smallest motion, and smooth paths on one string set.",
+  "cards": [
+    {
+      "id": "vl-def",
+      "front": "What is voice leading on a three-string triad?",
+      "back": "How each note of one chord moves to a note of the next. Treat each string as a voice. Motion on a string is the fret change in half steps."
+    },
+    {
+      "id": "smooth-means",
+      "front": "What does smooth voice leading mean?",
+      "back": "Notes stay put when the next chord contains them (common tones) and otherwise move by a half step or a whole step."
+    },
+    {
+      "id": "common-tone-def",
+      "front": "What is a common tone?",
+      "back": "A pitch class that belongs to both chords. Keep it on the same string and fret when you can."
+    },
+    {
+      "id": "roots-share",
+      "front": "When do two triads share notes?",
+      "back": "When their roots are a third apart (two common tones) or a fifth apart (one). Roots a step apart share none."
+    },
+    {
+      "id": "c-neighbors",
+      "front": "In C, name common tones: C–Am, C–Em, C–F, C–G, C–Dm, F–G.",
+      "back": "C–Am: C E. C–Em: E G. C–F: C. C–G: G. C–Dm: none. F–G: none."
+    },
+    {
+      "id": "method",
+      "front": "Give the four-step method for connecting two chords.",
+      "back": "1. Spell both. 2. Mark common tones and keep them. 3. Move remaining voices to the nearest new-chord note. 4. The inversion you land on is a consequence, not the target."
+    },
+    {
+      "id": "measure",
+      "front": "How do you measure smoothness on one set?",
+      "back": "Add the half steps each string moves. A guide, not a law — sometimes you accept a leap for a good bass or a melody note on top."
+    },
+    {
+      "id": "not-parallel",
+      "front": "Is sliding the whole shape the same as independent voice leading?",
+      "back": "No. If all three voices move the same amount the same way, that is a slide. Useful, but not the same as holding common tones."
+    },
+    {
+      "id": "tendencies",
+      "front": "Which tendency tones should you keep when you can?",
+      "back": "A leading tone goes up a half step to the tonic. A chord’s seventh goes down."
+    },
+    {
+      "id": "cafgc-path",
+      "front": "Give the smooth C–Am–F–G–C path on 4–3–2 (frets and notes).",
+      "back": "C 10 9 8 (C E G). Am 10 9 10 (C E A). F 10 10 10 (C F A). G 9 7 8 (B D G). C 10 9 8. Total motion 12; hand stays frets 7–10."
+    },
+    {
+      "id": "cafgc-voices",
+      "front": "In that smooth path, what do the bass and top voices do?",
+      "back": "Bass (string 4): C C C B C. Top (string 2): G A A G G."
+    },
+    {
+      "id": "root-hop-cost",
+      "front": "Same progression in root position each time: about how much more travel?",
+      "back": "C 10 9 8, Am 7 5 5, F 3 2 1, G 5 4 3, C 10 9 8. About 42 half steps vs 12 on the smooth path."
+    },
+    {
+      "id": "c-to-g-two-ways",
+      "front": "From C 10 9 8, compare G as 9 7 8 vs 12 12 12.",
+      "back": "9 7 8 = B D G, motion 1+2+0 = 3, keeps G. 12 12 12 = D G B, motion 2+3+4 = 9. First is smoother."
+    },
+    {
+      "id": "minor-path",
+      "front": "Give Am–Dm–E–Am on 4–3–2.",
+      "back": "Am 7 5 5 (A C E). Dm 7 7 6 (A D F). E 6 4 5 (G♯ B E). Am 7 5 5. Total 10. G♯ resolves up to A."
+    },
+    {
+      "id": "g-major-path",
+      "front": "In G major, start G as 9 7 8 (B D G). Smooth Em–C–D–G?",
+      "back": "Em 9 9 8 (B E G), C 10 9 8 (C E G), D 7 7 7 (A D F♯), G 9 7 8. Motion 2, 1, 6, 3."
+    },
+    {
+      "id": "smoothest-f",
+      "front": "Smoothest F after C E G (10 9 8) on 4–3–2?",
+      "back": "C F A as 10 10 10. Total motion 3: C stays, E→F up 1, G→A up 2."
+    },
+    {
+      "id": "dmg-path",
+      "front": "Smooth Dm–G–C from Dm 7 7 6, total motion at most 7.",
+      "back": "G as 9 7 8 (motion 4, common tone D), then C as 10 9 8 (motion 3). B resolves to C."
+    },
+    {
+      "id": "choose-path",
+      "front": "When would you pick a root-position hop instead of the smooth path?",
+      "back": "On purpose, for power or clarity. Same harmony, larger jumps, thicker less-connected sound."
+    }
+  ]
+}

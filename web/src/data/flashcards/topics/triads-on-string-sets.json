@@ -1,0 +1,102 @@
+{
+  "id": "triads-on-string-sets",
+  "title": "Triads on guitar string sets",
+  "description": "Build close triads from pitch classes on adjacent strings. Do not memorize a grid first.",
+  "cards": [
+    {
+      "id": "string-set-def",
+      "front": "What is a string set?",
+      "back": "The group of strings a voicing uses. For close three-note triads, start with three adjacent strings."
+    },
+    {
+      "id": "construction-goal",
+      "front": "What is this lesson’s goal — memorizing twelve shapes, or something else?",
+      "back": "Construction on the neck from notes. Generalized shape tables are optional after you can derive."
+    },
+    {
+      "id": "place-steps",
+      "front": "List the four steps to place a triad on a chosen set.",
+      "back": "1. Spell the triad. 2. Find those pitch classes on each string. 3. Pick one note per string in a compact span. 4. Name inversion from the lowest sounding note."
+    },
+    {
+      "id": "gb-break",
+      "front": "Most adjacent open strings are a P4 (5 frets). What is G→B, and why does it matter?",
+      "back": "Strings 3→2 are a major 3rd (4 frets). A pattern that works on D–G–B is not a blind copy on G–B–E."
+    },
+    {
+      "id": "open-432",
+      "front": "What are the open notes on strings 4–3–2?",
+      "back": "D, G, and B."
+    },
+    {
+      "id": "c-locations-432",
+      "front": "On strings 4–3–2 (frets 0–14), where is C? E? G?",
+      "back": "C: 10 / 5 / 1 or 13. E: 2 or 14 / 9 / 5. G: 5 / 0 or 12 / 8."
+    },
+    {
+      "id": "c-inversions-432",
+      "front": "Give compact C major voicings on 4–3–2 for all three inversions.",
+      "back": "Root 10 9 8 = C E G. First 14 12 13 or 2 0 1 = E G C. Second 5 5 5 = G C E."
+    },
+    {
+      "id": "count-check-c",
+      "front": "Check root-position C on 4–3–2 by counting from the opens.",
+      "back": "D+10 = C, G+9 = E, B+8 = G."
+    },
+    {
+      "id": "g-inversions-432",
+      "front": "Derive G major on 4–3–2 in all three inversions.",
+      "back": "Root 5 4 3 = G B D. First 9 7 8 = B D G. Second 0 0 0 or 12 12 12 = D G B."
+    },
+    {
+      "id": "major-to-minor",
+      "front": "How do you turn a major triad into minor on the same set?",
+      "back": "Lower only the string that carries the third by one fret. Leave root and fifth."
+    },
+    {
+      "id": "c-minor-from-c",
+      "front": "From C major on 4–3–2, make C minor in all three inversions.",
+      "back": "Root 10 8 8 (E on string 3 down). First 13 12 13 (E on string 4 down). Second 5 5 4 (E on string 2 down)."
+    },
+    {
+      "id": "c-on-543",
+      "front": "Give C major on strings 5–4–3: root and first inversion. Opens are A D G.",
+      "back": "Root 3 2 0 = C E G. First 7 5 5 = E G C. Verify first: A+7=E, D+5=G, G+5=C."
+    },
+    {
+      "id": "c-second-543",
+      "front": "What is second-inversion C major on strings 5–4–3?",
+      "back": "10 10 9 = G C E."
+    },
+    {
+      "id": "same-spacing-sets",
+      "front": "Which string sets share the same relative fret spacing? Which set does not?",
+      "back": "6–5–4 matches 5–4–3 (both P4 gaps). 3–2–1 crosses the G–B break, so rebuild from notes."
+    },
+    {
+      "id": "d-major-321",
+      "front": "Place D major (D F♯ A) on strings 3–2–1 in all three inversions.",
+      "back": "7 7 5, 11 10 10, and 2 3 2."
+    },
+    {
+      "id": "read-shapes",
+      "front": "Name chord + inversion: 3 2 0 on 5–4–3; 9 7 8 on 4–3–2; 7 8 7 on 3–2–1.",
+      "back": "C major root; G major first; G major second (D G B)."
+    },
+    {
+      "id": "g-on-top",
+      "front": "Melody note is G on top. Which C major inversion on 4–3–2 puts G highest?",
+      "back": "Root position 10 9 8 — top string fret 8 is G."
+    },
+    {
+      "id": "no-copy-555",
+      "front": "Why does copying 5 5 5 from 4–3–2 onto 3–2–1 not give the same chord?",
+      "back": "Open-string intervals differ (G–B is a major 3rd), so the same frets stack different pitch classes."
+    },
+    {
+      "id": "inversion-from-bass",
+      "front": "How do you name the inversion of a constructed voicing?",
+      "back": "From the lowest sounding note (bass), not from a shape nickname."
+    }
+  ]
+}

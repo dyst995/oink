@@ -1,0 +1,122 @@
+{
+  "id": "interval-spelling-and-inversion",
+  "title": "Interval spelling and inversion",
+  "description": "Drill letter-first spelling, compound reduction, and the invert-to-9 quality-flip rules.",
+  "cards": [
+    {
+      "id": "three-skills",
+      "front": "What three skills build on interval names?",
+      "back": "Spelling (write the correct upper note and letter), compound intervals (9ths, 10ths, and so on vs simple), and inversion (flip the interval by moving one note an octave)."
+    },
+    {
+      "id": "spelling-two-steps",
+      "front": "What are the two steps for spelling an interval above a lower note?",
+      "back": "1) Find the letter: for number n, the upper letter is n − 1 letters above the lower. 2) Choose the accidental so the half-step distance matches the quality."
+    },
+    {
+      "id": "fsharp-major3",
+      "front": "Spell a major 3rd above F♯, showing both steps.",
+      "back": "Letter two above F is A. F♯ to A is 3 half steps, but a major 3rd is 4, so the note is A♯."
+    },
+    {
+      "id": "wrong-letter-d4",
+      "front": "Why is a major 3rd above F♯ written A♯, not B♭?",
+      "back": "Same pitch class, wrong interval. F♯ to B♭ spans F G A B, a 4th, and at that width it is a diminished 4th, not a 3rd."
+    },
+    {
+      "id": "gsharp-bsharp",
+      "front": "Spell a major 3rd above G♯. Why not write C?",
+      "back": "B♯. Letters G A B; G♯ to B♯ is 4 half steps. B♯ is C on the guitar, but the spelling is correct in keys such as C♯ major or G♯ minor."
+    },
+    {
+      "id": "compound-def",
+      "front": "What is a compound interval, and how do you simplify it?",
+      "back": "An interval an octave or more. Subtract an octave to get the simple version and keep its quality. Number: subtract 7 (a 9th is a 2nd, a 13th is a 6th). Half steps: subtract 12."
+    },
+    {
+      "id": "compound-table",
+      "front": "Give the simple form and half steps for M9, m10, M10, P11, P12, and M13.",
+      "back": "M2 + octave (14), m3 + octave (15), M3 + octave (16), P4 + octave (17), P5 + octave (19), M6 + octave (21)."
+    },
+    {
+      "id": "inversion-numbers",
+      "front": "What do simple-interval numbers add to when inverted? List the pairs.",
+      "back": "They add to 9: 2nd ↔ 7th, 3rd ↔ 6th, 4th ↔ 5th, unison ↔ octave."
+    },
+    {
+      "id": "inversion-qualities",
+      "front": "How do qualities change under inversion?",
+      "back": "Major ↔ minor, augmented ↔ diminished, perfect stays perfect. Half steps add to 12."
+    },
+    {
+      "id": "why-inversion-works",
+      "front": "Why do inversion numbers sum to 9 and half steps to 12?",
+      "back": "An interval and its inversion span exactly one octave. If X up to Y uses n letters, Y up to the next X uses 9 − n letters. Wider intervals have narrower complements. Perfect intervals have no major/minor form, so they stay perfect."
+    },
+    {
+      "id": "invert-compound-first",
+      "front": "Can you invert a compound interval directly?",
+      "back": "No. Reduce it to a simple interval first, then invert."
+    },
+    {
+      "id": "inversion-pairs",
+      "front": "What does each invert to: P5, M3, m3, M2, m2, A4, d7?",
+      "back": "P4, m6, M6, m7, M7, d5, A2. Half steps: 7↔5, 4↔8, 3↔9, 2↔10, 1↔11, 6↔6, 9↔3."
+    },
+    {
+      "id": "fsharp-scale-letters",
+      "front": "Why is the 7th of F♯ major written E♯, not F?",
+      "back": "Seven-note scales use each letter once. F♯ G♯ A♯ B C♯ D♯ E♯. F is already the root’s letter."
+    },
+    {
+      "id": "inversion-keeps-chord",
+      "front": "C major is C E G. What interval is C up to G, and what is G up to the next C? What stays the same?",
+      "back": "C to G is a P5. G to C is a P4, the inversion. Pitch classes and chord identity stay the same; only the interval above the lowest note changes."
+    },
+    {
+      "id": "extended-chords-compound",
+      "front": "In extended chords, what are the 9th, 11th, and 13th?",
+      "back": "Simple intervals placed above the octave, same quality: a 9 is a 2nd plus an octave."
+    },
+    {
+      "id": "string6-fsharp-m3",
+      "front": "String 6 fret 2 is F♯. Where is the major 3rd on the same string, and how is it spelled?",
+      "back": "String 6 fret 6, spelled A♯ (letters F G A), not B♭."
+    },
+    {
+      "id": "invert-c-g-on-neck",
+      "front": "C on string 5 fret 3 up to G on string 4 fret 5 is which interval? Invert it on the next strings.",
+      "back": "A P5. G on string 4 fret 5 up to C on string 3 fret 5 is a P4. Same two pitch classes, inverted."
+    },
+    {
+      "id": "compound-c3-d4",
+      "front": "What interval is C3 on string 5 fret 3 up to D4 on string 2 fret 3?",
+      "back": "A major 9th: 14 half steps, which is a M2 plus an octave."
+    },
+    {
+      "id": "spell-major3",
+      "front": "Spell a major 3rd above A, E♭, F♯, B♭, and D♭.",
+      "back": "C♯, G, A♯, D, F."
+    },
+    {
+      "id": "spell-p5",
+      "front": "Spell a perfect 5th above B, F♯, E♭, D♭, and F.",
+      "back": "F♯, C♯, B♭, A♭, C."
+    },
+    {
+      "id": "spell-m3-m7-m7",
+      "front": "Spell a minor 3rd above C♯, B♭, E, and F. Then a minor 7th above G and a major 7th above F.",
+      "back": "E, D♭, G, A♭. Then F and E."
+    },
+    {
+      "id": "invert-five",
+      "front": "Invert each: M3, P4, m7, A4, d7.",
+      "back": "m6, P5, M2, d5, A2."
+    },
+    {
+      "id": "g3-major3-two-places",
+      "front": "Find a major 3rd above open string 3 (G3) in two places. Why are they the same pitch?",
+      "back": "String 3 fret 4, and open string 2 (B3). Between strings 3 and 2 the same fret is already a major 3rd."
+    }
+  ]
+}

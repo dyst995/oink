@@ -1,0 +1,87 @@
+{
+  "id": "voice-leading-guide-tones",
+  "title": "Voice leading and guide tones",
+  "description": "Hold common tones, move by step, and trace 3 and 7 through ii–V–I.",
+  "cards": [
+    {
+      "id": "vl-def",
+      "front": "What is voice leading?",
+      "back": "How the individual notes of one chord move into the next. Good voice leading keeps most notes common or close, even when roots jump."
+    },
+    {
+      "id": "guide-def",
+      "front": "What are guide tones, and why do they matter more than roots?",
+      "back": "The third and seventh of each chord. They carry quality and function, so tracing them shows the harmony more clearly than tracing roots."
+    },
+    {
+      "id": "three-steps",
+      "front": "Between two chords, apply which three steps in order?",
+      "back": "1. Hold common tones on the same string and fret. 2. Move remaining voices by the smallest step (half or whole). 3. Resolve tensions: leading tones usually rise, sevenths usually fall."
+    },
+    {
+      "id": "ii-v-i-guides-c",
+      "front": "In C major, give 3 and 7 of Dm7, G7, and Cmaj7.",
+      "back": "Dm7: F and C. G7: B and F. Cmaj7: E and B."
+    },
+    {
+      "id": "ii-v-i-lines-c",
+      "front": "Trace the two guide-tone lines of a major ii V I in C.",
+      "back": "C B B (7 of Dm7 falls a half step to 3 of G7, then stays as 7 of Cmaj7). F F E (3 of Dm7 stays as 7 of G7, then falls a half step to 3 of Cmaj7)."
+    },
+    {
+      "id": "same-any-key",
+      "front": "Does that ii V I guide-tone pattern hold in other keys?",
+      "back": "Yes, for a major ii V I with seventh chords: 7→3 down a half step, 3→7 common, then 7→3 down a half step."
+    },
+    {
+      "id": "minor-ii-v-i",
+      "front": "Trace guide tones of Dm7b5 – G7 – Cm7 in C minor.",
+      "back": "Thirds F, B, Eb. Sevenths C, F, Bb. Lines: C B Bb and F F Eb. First line moves by half step twice."
+    },
+    {
+      "id": "blues-a7-d7",
+      "front": "From A7 to D7, what happens to both guide tones?",
+      "back": "Both fall by half step: G (7 of A7) to F# (3 of D7), and C# (3 of A7) to C (7 of D7)."
+    },
+    {
+      "id": "bass-separate",
+      "front": "Does minimal motion apply to the bass the same way?",
+      "back": "No. Upper voices stay close; the bass usually carries roots and may jump. Voice leading and bass note are separate choices."
+    },
+    {
+      "id": "shells-c",
+      "front": "Give the ii V I shells in C (frets and the top two notes).",
+      "back": "Dm7 x5x56x (D, C, F). G7 3xx46x (G, B, F). Cmaj7 x3x45x (C, B, E). Strings 3 and 2: 5/6, 4/6, 4/5."
+    },
+    {
+      "id": "finger-motion",
+      "front": "Across that C ii V I, how far do the upper two fingers move?",
+      "back": "Only C to B (one fret) and F to E (one fret). The bass is free to jump because roots move in fifths."
+    },
+    {
+      "id": "d-shells",
+      "front": "Move those C shells up two frets for D major.",
+      "back": "Em7 x7x78x, A7 5xx68x, Dmaj7 x5x67x."
+    },
+    {
+      "id": "em7-a7-dmaj7",
+      "front": "Trace guide tones of Em7 A7 Dmaj7 (ii V I in D).",
+      "back": "Thirds G C# F#. Sevenths D G C#. Lines: D C# C# and G G F#."
+    },
+    {
+      "id": "am7-d7-gmaj7",
+      "front": "Trace guide tones of Am7 D7 Gmaj7 (in G).",
+      "back": "Thirds C F# B. Sevenths G C F#. Lines: G F# F# and C C B."
+    },
+    {
+      "id": "a7-d7-shells",
+      "front": "A7 shell 5x56xx to D7 shell x5x57x. Name each guide-tone move.",
+      "back": "G falls to F#, and C# falls to C. Track pitch classes, not frets — they sit on different strings."
+    },
+    {
+      "id": "i-vi-ii-v-common",
+      "front": "For Cmaj7 Am7 Dm7 G7, list notes shared by each neighboring pair.",
+      "back": "Cmaj7 to Am7 share C E G. Am7 to Dm7 share A C. Dm7 to G7 share F, and C falls to B."
+    }
+  ]
+}

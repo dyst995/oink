@@ -1,0 +1,82 @@
+{
+  "id": "caged-navigation",
+  "title": "CAGED as navigation",
+  "description": "Five overlapping chord/scale maps. A map, not a theory of which chords to play.",
+  "cards": [
+    {
+      "id": "caged-def",
+      "front": "What is CAGED?",
+      "back": "A navigation map from five open chord shapes: C, A, G, E, D. Each can move up the neck (barre for open strings) so one chord appears in five overlapping locations."
+    },
+    {
+      "id": "map-not-theory",
+      "front": "What does CAGED not tell you?",
+      "back": "Which chords to play or why. It does not replace note names, give every voicing, or name notes for you. It is one cut of the neck, not the only one."
+    },
+    {
+      "id": "shift-rule",
+      "front": "How do you play chord X with open shape S?",
+      "back": "Shift the open shape by the number of semitones from S to X, and use a barre where open strings would have been."
+    },
+    {
+      "id": "c-five-shapes",
+      "front": "List the five C major CAGED shapes in order up the neck (name + frets).",
+      "back": "C shape x32010. A shape x35553. G shape 875558. E shape 8 10 10 9 8 8. D shape xx 10 12 13 12. Then C again an octave higher."
+    },
+    {
+      "id": "c-root-strings",
+      "front": "Where are the roots in each C major CAGED shape?",
+      "back": "C: string 5 fret 3 and string 2 fret 1. A: 5/3 and 3/5. G: 6/8, 3/5, 1/8. E: 6/8, 4/10, 1/8. D: 4/10 and 2/13."
+    },
+    {
+      "id": "order",
+      "front": "What cyclic order do the shapes appear in going up the neck?",
+      "back": "C A G E D, then C again. Same cycle in every key; only the frets shift. Starting on a different open shape just rotates the cycle."
+    },
+    {
+      "id": "g-five",
+      "front": "Give the five G major shapes up the neck.",
+      "back": "Open G 320003, E shape at 3 (355433), D shape at 5 (xx5787), C shape at 7 (x10 9 7 8 7), A shape at 10 (x10 12 12 12 10), then G at 12. Order G E D C A."
+    },
+    {
+      "id": "d-shape-g-notes",
+      "front": "Name the notes of D-shape G: xx5787.",
+      "back": "String 4 fret 5 G, string 3 fret 7 D, string 2 fret 8 G, string 1 fret 7 B."
+    },
+    {
+      "id": "root-anchors",
+      "front": "Which shapes have their main barre-root on string 6, 5, and 4?",
+      "back": "E shape: string 6. A shape: string 5. D shape: string 4."
+    },
+    {
+      "id": "scale-around-e-c",
+      "front": "In the E-shape C box (frets 7–10), where are the C E G chord tones?",
+      "back": "C: 6/8, 4/10, 1/8. G: 5/10, 2/8. E: 3/9. The C major scale fills the notes between them."
+    },
+    {
+      "id": "minor-sevenths",
+      "front": "Does CAGED map minor and seventh chords automatically?",
+      "back": "It maps major triads most directly. Minor, seventh, and pentatonic versions exist (flatten 3, add 7) but each is a variation you learn deliberately."
+    },
+    {
+      "id": "pivot",
+      "front": "How do neighboring CAGED shapes connect without losing your place?",
+      "back": "They share notes. A-shape C (x35553) and G-shape C (875558) both contain C at string 3 fret 5 — use that as a pivot."
+    },
+    {
+      "id": "a-major-ed",
+      "front": "Using the shift rule, find E-shape and D-shape A major.",
+      "back": "E shape at fret 5: 577655. D shape at fret 7: xx7 9 10 9."
+    },
+    {
+      "id": "procedure",
+      "front": "Give the five-step procedure to place a major chord in CAGED.",
+      "back": "1. Choose the chord. 2. Find its root on strings 6, 5, and 4. 3. E / A / D shapes hang on those roots. 4. Shift open C and G by the distance to your root. 5. Check by naming notes on at least two strings."
+    },
+    {
+      "id": "same-classes",
+      "front": "What stays the same and what changes when you play one chord in five positions?",
+      "back": "Same pitch classes. Different register, tone color, and string group."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "cadences-and-harmonic-motion",
+  "title": "Cadences and harmonic motion",
+  "description": "Authentic, half, plagal, and deceptive cadences, plus tonic / predominant / dominant jobs.",
+  "cards": [
+    {
+      "id": "cadence-def",
+      "front": "What is a cadence?",
+      "back": "A harmonic (and usually melodic) arrival that creates a sense of pause or close — like punctuation."
+    },
+    {
+      "id": "four-types",
+      "front": "Name the four common tonal cadence types.",
+      "back": "Authentic (V→I, often V7→I), half (arrives on V), plagal (IV→I), deceptive (V→vi, not I)."
+    },
+    {
+      "id": "authentic",
+      "front": "What is an authentic cadence and how does it feel?",
+      "back": "V → I (often V7 → I). Strong arrival at tonic. Perfect/imperfect are subtypes."
+    },
+    {
+      "id": "half",
+      "front": "What is a half cadence?",
+      "back": "The phrase arrives on V. Open; expects continuation."
+    },
+    {
+      "id": "plagal",
+      "front": "What is a plagal cadence?",
+      "back": "IV → I. Amen-like close, softer than V–I."
+    },
+    {
+      "id": "deceptive",
+      "front": "What is a deceptive cadence?",
+      "back": "V → vi (not I). Surprise; postpones the tonic."
+    },
+    {
+      "id": "function-jobs",
+      "front": "What three jobs does harmonic function group chords into?",
+      "back": "Tonic (stability), predominant (prepares dominant), dominant (tension toward tonic). Cadences are where those jobs land."
+    },
+    {
+      "id": "not-a-law",
+      "front": "Is function a law every genre obeys?",
+      "back": "No. It is a powerful model for tonal music, not a universal rule."
+    },
+    {
+      "id": "why-v-conclusive",
+      "front": "Why do authentic cadences feel conclusive?",
+      "back": "V (especially V7) contains the leading tone and often the tritone that resolves into tonic chord tones."
+    },
+    {
+      "id": "half-vs-deceptive",
+      "front": "How do half and deceptive cadences treat dominant energy?",
+      "back": "A half cadence stops on that tension (on V). Deceptive motion keeps the energy but lands on vi instead of I."
+    },
+    {
+      "id": "vl-clarifies",
+      "front": "What voice-leading moves clarify an authentic close?",
+      "back": "Leading tone up to tonic, tendency tones resolving, bass motion by fifth."
+    },
+    {
+      "id": "g-examples",
+      "front": "In G major, give one example of each cadence type.",
+      "back": "Authentic: D | G. Half: G | C | D ending on D. Plagal: C | G. Deceptive: D | Em."
+    },
+    {
+      "id": "c-examples",
+      "front": "In C major, write RN + symbols for each cadence type.",
+      "back": "Authentic V–I: G (or G7) → C. Half: ends on G. Plagal IV–I: F → C. Deceptive V–vi: G → Am."
+    },
+    {
+      "id": "g7-two-landings",
+      "front": "Voice-lead G or G7 into C, then into Am. Name the cadence types.",
+      "back": "Into C is authentic (V–I). Into Am is deceptive (V–vi)."
+    },
+    {
+      "id": "form-use",
+      "front": "Why do improvisers care about cadential bars?",
+      "back": "They are places to resolve — or to deliberately delay resolution. Cadences also mark phrase endings."
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "chord-substitutions",
+  "title": "Chord substitutions",
+  "description": "Memorize relative and dominant substitutes, shared-note tests, and introductory tritone substitution.",
+  "cards": [
+    {
+      "id": "sub-def",
+      "front": "What is a chord substitution?",
+      "back": "Replacing one chord with another that does a similar job. The substitute keeps enough of the original’s notes, function, or voice leading that the progression still makes sense. Judge by ear and against the melody."
+    },
+    {
+      "id": "common-types",
+      "front": "Name the four common practical substitution types.",
+      "back": "Relative (I to vi or iii, IV to ii). Adding or changing quality (triad to seventh, V to V7, V7 to sus or ninth). Dominant substitution (V7 to viiø7, or a tritone sub). Same-function swap (another predominant instead of IV)."
+    },
+    {
+      "id": "shared-c-am-em",
+      "front": "In C major, which notes do C and Am share? C and Em?",
+      "back": "C (C E G) and Am (A C E) share C E: softer, more melancholy tonic. C and Em (E G B) share E G: lighter tonic, weaker arrival."
+    },
+    {
+      "id": "shared-f-dm",
+      "front": "Which notes do F and Dm share, and what typically changes?",
+      "back": "F (F A C) and Dm (D F A) share F A. Predominant function stays; the bass moves from F to D. Fmaj7 and Dm7 share F A C."
+    },
+    {
+      "id": "rootless-dominant",
+      "front": "How is Bm7♭5 a rootless G7, and when does it sound like G9?",
+      "back": "G7 is G B D F; Bm7♭5 is B D F A. They share B D F. Bm7♭5 is G7 without its root, plus A (the ninth of G). Over a G bass it sounds as G9; without G in the bass it is a separate chord."
+    },
+    {
+      "id": "function-survives",
+      "front": "When does function usually survive a substitution?",
+      "back": "When the chords share most notes, especially the notes that carry the pull (leading tone, or the third and seventh of a dominant), and the new chord does not suggest a different tonal center."
+    },
+    {
+      "id": "tritone-sub-idea",
+      "front": "Why can D♭7 replace G7?",
+      "back": "G7’s tritone is B and F. D♭7 (D♭ F A♭ C♭) contains the same two notes (C♭ sounds as B). Roots G and D♭ are a tritone apart (six semitones)."
+    },
+    {
+      "id": "tritone-resolve-to-c",
+      "front": "In D♭7 to Cmaj7 instead of G7 to Cmaj7, what happens to the bass and the tritone?",
+      "back": "The root moves a half step down (D♭ to C) instead of a fifth down (G to C). The tritone still resolves: B (as C♭) to C, and F to E."
+    },
+    {
+      "id": "tritone-cautions",
+      "front": "Name three cautions when using a tritone sub.",
+      "back": "It swaps the root, so melody notes that fit G7 may clash (D is a ♭9 over D♭7; G is a ♯11). It only replaces a dominant 7th that resolves down a fifth, not blues I7 or IV7. It works best when the next chord is a half step below the substitute’s root."
+    },
+    {
+      "id": "when-not",
+      "front": "When should you not substitute?",
+      "back": "When the melody holds the note you would remove or alter; when the original chord is the structural arrival of a cadence; when it makes the form unclear to other players."
+    },
+    {
+      "id": "cmaj7-am7-share",
+      "front": "Cmaj7 is C E G B and Am7 is A C E G. What is shared, added, and removed?",
+      "back": "Shared C E G. The substitute adds A and removes B."
+    },
+    {
+      "id": "d7-ab7-tritone",
+      "front": "Write the notes of D7 and A♭7 and name the shared tritone.",
+      "back": "D7 = D F♯ A C; A♭7 = A♭ C E♭ G♭. Shared tritone: F♯ (same sound as G♭) and C."
+    },
+    {
+      "id": "tritone-subs-written",
+      "front": "What is the tritone substitute for D7 going to Gmaj7, and for E7 going to Am7?",
+      "back": "A♭7 and B♭7."
+    },
+    {
+      "id": "compare-shapes",
+      "front": "Compare these C-major substitute pairs by shape.",
+      "back": "C x32010 and Am7 x02010 (only the bass C versus A differs). Fmaj7 xx3210 and Dm7 xx0211. G7 320001 and Bm7♭5 x2323x."
+    },
+    {
+      "id": "tritone-shells",
+      "front": "Give the shells for G7, D♭7, and Cmaj7 used in the tritone-sub example.",
+      "back": "G7 3x34xx (G F B), root on string 6. D♭7 x4x46x (D♭ B F), root on string 5. Cmaj7 x3x45x (C B E)."
+    },
+    {
+      "id": "db7-to-cmaj7-voices",
+      "front": "From D♭7 x4x46x to Cmaj7 x3x45x, which voices move?",
+      "back": "Root D♭ to C (string 5 fret 4 to 3). B stays on string 3 fret 4. F to E (string 2 fret 6 to 5). Only the root and F move, each by a half step."
+    },
+    {
+      "id": "ii-v-i-vs-tritone",
+      "front": "Compare bass motion in Dm7 G7 Cmaj7 versus Dm7 D♭7 Cmaj7.",
+      "back": "The first moves by fifths down. The second is a chromatic descent. In the second, F stays from Dm7 to D♭7 while the other two notes drop a fret; B stays from D♭7 to Cmaj7 while the other two drop a fret."
+    },
+    {
+      "id": "beginner-uses",
+      "front": "Which substitutions are the beginner-friendly starting points?",
+      "back": "I to vi in a loop, triads to sevenths, and V7 colored with extensions. Tritone subs and rootless voicings belong more to jazz, where the bass is often independent of the voicing."
+    }
+  ]
+}

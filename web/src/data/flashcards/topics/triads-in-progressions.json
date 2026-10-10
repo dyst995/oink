@@ -1,0 +1,87 @@
+{
+  "id": "triads-in-progressions",
+  "title": "Triads in progressions and improvisation",
+  "description": "Comping, outlining, and chord-tone melody from the same triad tones.",
+  "cards": [
+    {
+      "id": "three-jobs",
+      "front": "What three jobs can a triad do in a progression?",
+      "back": "Comping (short upper-string voicings over a bass). Outlining (arpeggio so a line states the harmony). Improvising (triad tones as strong targets, scale notes as connections)."
+    },
+    {
+      "id": "strong-notes",
+      "front": "Which notes agree with the chord at any moment?",
+      "back": "Root, third, and fifth. Other scale notes pass between them."
+    },
+    {
+      "id": "beats",
+      "front": "Where should chord tones vs passing notes sit?",
+      "back": "Strong beats hold chord tones; weak beats hold passing notes. Reverse that and the line sounds like it ignores the chords."
+    },
+    {
+      "id": "third-informative",
+      "front": "Why is the third the most informative chord tone?",
+      "back": "It decides major or minor. Landing on the third of each chord makes the changes audible."
+    },
+    {
+      "id": "g-em-c-d-tones",
+      "front": "List triad tones of G Em C D (I vi IV V in G).",
+      "back": "G B D, E G B, C E G, D F♯ A."
+    },
+    {
+      "id": "shared-neighbors",
+      "front": "In G–Em–C–D, which notes are shared with the next chord?",
+      "back": "G to Em: G B. Em to C: E G. C to D: none. D to G: D. Only D contains F♯, the leading tone."
+    },
+    {
+      "id": "approach-passing",
+      "front": "What is an approach tone vs a passing tone?",
+      "back": "Approach: a half step below or above a target, leading into it (F♯ or A into G). Passing: a scale tone between two chord tones on a weak beat (C between B and D)."
+    },
+    {
+      "id": "em-over-c",
+      "front": "What four pitch classes do you get from an Em triad over a C bass? What color is that?",
+      "back": "C E G B — a major-seventh color (Cmaj7). The triad’s meaning changes with the bass under it."
+    },
+    {
+      "id": "comp-path-321",
+      "front": "Give the smooth G–Em–C–D–G path on strings 3–2–1.",
+      "back": "G 7 8 7 (D G B). Em 9 8 7 (E G B). C 9 8 8 (E G C). D 7 7 5 (D F♯ A). Back to 7 8 7. Motion 2, 1, 6, 3. Frets 5–9."
+    },
+    {
+      "id": "bass-roots",
+      "front": "Where are the bass roots for G Em C D on the lower strings?",
+      "back": "G string 6 fret 3. Em string 6 open. C string 5 fret 3. D string 4 open."
+    },
+    {
+      "id": "comp-pattern",
+      "front": "Give the 4/4 eighths comping pattern, one chord per bar.",
+      "back": "Beat 1: bass root alone. And-of-2: short triad. Beat 3: bass root or its fifth. And-of-4: triad again."
+    },
+    {
+      "id": "outline-quarters",
+      "front": "Quarter-note outline of G Em C D on 3–2–1 (note names).",
+      "back": "G: D G B G. Em: E G B G. C: E G C G. D: D F♯ A F♯. G holds across the first three bars, then moves to F♯."
+    },
+    {
+      "id": "improv-steps",
+      "front": "What are the three improvisation steps over the same four chords?",
+      "back": "1. Chord tones only; land on the third on beat 1 (B, G, E, F♯). 2. Add G-major passing tones on weak beats. 3. Add a half-step approach on the beat before the target."
+    },
+    {
+      "id": "avoid-c-over-g",
+      "front": "Why avoid holding C over a G chord?",
+      "back": "C sits a half step above the chord’s B, so it clashes if you stay on it. Fine as a short passing tone; over the C chord it is the root."
+    },
+    {
+      "id": "amfcg-tones",
+      "front": "List triad tones of Am F C G.",
+      "back": "A C E, F A C, C E G, G B D."
+    },
+    {
+      "id": "cafg-with-bass",
+      "front": "C–Am–F–G on 4–3–2 with added bass roots. Give frets and bass locations.",
+      "back": "Shapes 10 9 8, 10 9 10, 10 10 10, 9 7 8. Bass: C string 5 fret 3; A string 5 open; F string 6 fret 1; G string 6 fret 3."
+    }
+  ]
+}

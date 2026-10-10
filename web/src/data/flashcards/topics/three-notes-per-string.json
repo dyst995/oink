@@ -1,0 +1,82 @@
+{
+  "id": "three-notes-per-string",
+  "title": "Three-notes-per-string scales",
+  "description": "3NPS as a seven-note grid: how it is built, what overlaps, and what it leaves out.",
+  "cards": [
+    {
+      "id": "3nps-def",
+      "front": "What is three notes per string (3NPS)?",
+      "back": "A way to organize a seven-note scale so each string carries exactly three consecutive scale notes. Six strings give 18 notes — about two and a half octaves."
+    },
+    {
+      "id": "not-theory",
+      "front": "Is 3NPS a theory of which notes to play?",
+      "back": "No. It is an organizational tool: a consistent grid you can pick evenly and slide between. It does not show chords or the key."
+    },
+    {
+      "id": "how-built",
+      "front": "How is a 3NPS grid built?",
+      "back": "Deal scale notes onto the strings from string 6 up, three per string. Start on a different degree on the lowest string and you get a different position. Seven starting degrees, seven patterns."
+    },
+    {
+      "id": "gb-spacing",
+      "front": "Why aren’t the seven 3NPS shapes interchangeable copies?",
+      "back": "Most strings are a fourth (5 frets) apart; G to B is a major third (4 frets). That changes the fret shape on strings 3 and 2."
+    },
+    {
+      "id": "g-pos-c",
+      "front": "C major 3NPS starting on G (frets 3–8): notes and frets per string.",
+      "back": "6 G A B 3 5 7. 5 C D E 3 5 7. 4 F G A 3 5 7. 3 B C D 4 5 7. 2 E F G 5 6 8. 1 A B C 5 7 8."
+    },
+    {
+      "id": "a-pos-c",
+      "front": "C major 3NPS starting on A (frets 5–10): notes and frets per string.",
+      "back": "6 A B C 5 7 8. 5 D E F 5 7 8. 4 G A B 5 7 9. 3 C D E 5 7 9. 2 F G A 6 8 10. 1 B C D 7 8 10."
+    },
+    {
+      "id": "overlap",
+      "front": "How do adjacent 3NPS positions connect?",
+      "back": "Each string drops its first note and adds the next scale note, so the two positions share two notes per string. On string 6, A B (frets 5 and 7) belong to both the G and A positions."
+    },
+    {
+      "id": "why-three",
+      "front": "Why organize by three notes per string?",
+      "back": "Even picking and legato, a five-to-six-fret hand span, and two-note overlaps for sliding into the next position."
+    },
+    {
+      "id": "not-pentatonic",
+      "front": "Does 3NPS apply to pentatonic scales?",
+      "back": "No. A five-note scale does not divide into threes; pentatonic patterns use two notes per string. Other seven-note scales get their own 3NPS grids built the same way."
+    },
+    {
+      "id": "c-start-pos",
+      "front": "Build the C major position starting on C (string 6 fret 8).",
+      "back": "6 C D E 8 10 12. 5 F G A 8 10 12. 4 B C D 9 10 12. 3 E F G 9 10 12. 2 A B C 10 12 13. 1 D E F 10 12 13."
+    },
+    {
+      "id": "g-major-g-pos",
+      "front": "Build 3NPS starting on G in G major (has F♯). What changed vs C major’s G position?",
+      "back": "6 G A B 3 5 7. 5 C D E 3 5 7. 4 F♯ G A 4 5 7. 3 B C D 4 5 7. 2 E F♯ G 5 7 8. 1 A B C 5 7 8. F became F♯ on strings 4 and 2 (up one fret)."
+    },
+    {
+      "id": "c-in-a-pos",
+      "front": "In the A position of C major, where do you pass C?",
+      "back": "String 6 fret 8, string 3 fret 5, string 1 fret 8."
+    },
+    {
+      "id": "c-in-g-pos",
+      "front": "In the G position of C major, where is the root C?",
+      "back": "String 5 fret 3, string 3 fret 5, string 1 fret 8."
+    },
+    {
+      "id": "link-caged",
+      "front": "Which CAGED C shapes sit inside the G-position 3NPS box (frets 3–8)?",
+      "back": "A-shape C (x35553) and G-shape C (875558). Chord tones inside the grid: 5/3 C, 5/7 E, 4/5 G."
+    },
+    {
+      "id": "grid-vs-mode",
+      "front": "Does the 3NPS grid itself decide whether a run sounds like C major or A minor?",
+      "back": "No. That depends on where you start, where you land, and which notes you stress against the chord."
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "id": "diatonic-triads",
+  "title": "Diatonic triads",
+  "description": "Harmonize the major scale, Roman numerals, function, and the 4–3–2 ladder.",
+  "cards": [
+    {
+      "id": "diatonic-def",
+      "front": "What is a diatonic triad?",
+      "back": "A triad built on a scale degree using only notes of the key. Harmonize by stacking thirds: degree, degree plus two, degree plus four."
+    },
+    {
+      "id": "c-seven",
+      "front": "List the seven diatonic triads of C major with numerals and qualities.",
+      "back": "I C major. ii Dm. iii Em. IV F. V G. vi Am. vii° Bdim."
+    },
+    {
+      "id": "rn-case",
+      "front": "How do Roman numerals show quality?",
+      "back": "Uppercase = major, lowercase = minor, ° = diminished. They stay the same in every key: I–IV–V is C F G in C and G C D in G."
+    },
+    {
+      "id": "quality-pattern",
+      "front": "What quality pattern appears in every major key?",
+      "back": "M m m M M m dim — three major (I IV V), three minor (ii iii vi), one diminished (vii°)."
+    },
+    {
+      "id": "why-qualities",
+      "front": "Why are some stacked thirds major and some minor in a major key?",
+      "back": "The scale’s half steps shrink the thirds that span them. In C: E–F and B–C. Thirds containing a half step are minor."
+    },
+    {
+      "id": "c-thirds-sizes",
+      "front": "In C major, which thirds are minor? Which are major?",
+      "back": "Minor: D–F, E–G, A–C, B–D. Major: C–E, F–A, G–B. Two minor thirds in a row (B–D, D–F) make vii°."
+    },
+    {
+      "id": "spell-from-key",
+      "front": "How must you spell diatonic chords — from a fixed chord, or from the key?",
+      "back": "From the key signature. In G major, vii° is F♯ A C, not F A C."
+    },
+    {
+      "id": "g-d-a-sets",
+      "front": "Write I through vii° in G, D, and A major.",
+      "back": "G: G Am Bm C D Em F♯dim. D: D Em F♯m G A Bm C♯dim. A: A Bm C♯m D E F♯m G♯dim."
+    },
+    {
+      "id": "f-bb-sets",
+      "front": "Write I through vii° in F and B♭ major.",
+      "back": "F: F Gm Am B♭ C Dm Edim. B♭: B♭ Cm Dm E♭ F Gm Adim."
+    },
+    {
+      "id": "natural-minor-a",
+      "front": "Harmonize A natural minor with numerals.",
+      "back": "i Am, ii° Bdim, III C, iv Dm, v Em, VI F, VII G. Same seven chords as C major, numbered from A."
+    },
+    {
+      "id": "v-in-minor-preview",
+      "front": "In natural minor, what quality is degree 5? What happens with a raised 7?",
+      "back": "Natural v is minor. Raised 7 (harmonic minor) makes it major V or V7."
+    },
+    {
+      "id": "function-groups",
+      "front": "Group I, ii, iii, IV, V, vi, vii° by function.",
+      "back": "Tonic (rest): I, with vi and sometimes iii as substitutes. Predominant: IV and ii. Dominant: V and vii°."
+    },
+    {
+      "id": "primary-triads",
+      "front": "Which are the primary triads, and what do they contain together?",
+      "back": "I, IV, and V. Together they contain every note of the major scale. In C: C E G, F A C, G B D."
+    },
+    {
+      "id": "vii-tritone",
+      "front": "Why does vii° pull toward I?",
+      "back": "It contains the leading tone and the 4, which form a tritone. In C: B→C and F→E. It behaves like V7 without a root."
+    },
+    {
+      "id": "ladder-shapes",
+      "front": "On 4–3–2, what fret recipes are major, minor, and diminished from bass fret r?",
+      "back": "Major r, r−1, r−2. Minor r, r−2, r−2. Diminished r, r−2, r−3."
+    },
+    {
+      "id": "c-ladder",
+      "front": "Give the C major ladder on 4–3–2 from F upward (chord, numeral, frets).",
+      "back": "F IV 3 2 1. G V 5 4 3. Am vi 7 5 5. Bdim vii° 9 7 6. C I 10 9 8. Dm ii 12 10 10. Em iii 14 12 12."
+    },
+    {
+      "id": "any-key-ladder",
+      "front": "How do you build the ladder in any key on string 4?",
+      "back": "Find the seven scale roots on string 4, then apply the quality pattern for each numeral."
+    },
+    {
+      "id": "g-ladder",
+      "front": "G major ladder on 4–3–2 from roots 5 7 9 10 12 14 16. Give the shapes.",
+      "back": "G 5 4 3, Am 7 5 5, Bm 9 7 7, C 10 9 8, D 12 11 10, Em 14 12 12, F♯dim 16 14 13."
+    },
+    {
+      "id": "lookup-numerals",
+      "front": "What is iii in A major? V in E? IV in B♭? vi in G?",
+      "back": "C♯m, B, E♭, Em."
+    },
+    {
+      "id": "transpose-iviiv",
+      "front": "C – Am – F – G as numerals, then in G and in D.",
+      "back": "I vi IV V. In G: G Em C D. In D: D Bm G A."
+    },
+    {
+      "id": "d-e-harmonize",
+      "front": "Harmonize D major and E major.",
+      "back": "D Em F♯m G A Bm C♯dim. E F♯m G♯m A B C♯m D♯dim."
+    },
+    {
+      "id": "d-natural-minor",
+      "front": "Harmonize D natural minor.",
+      "back": "Dm Edim F Gm Am B♭ C as i ii° III iv v VI VII."
+    }
+  ]
+}

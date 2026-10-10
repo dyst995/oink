@@ -1,0 +1,127 @@
+{
+  "id": "functional-progressions",
+  "title": "Functional progressions",
+  "description": "Memorize tonic, predominant, and dominant jobs, the core progressions, and how blues and cadences reuse them.",
+  "cards": [
+    {
+      "id": "three-functions",
+      "front": "Name the three harmonic functions and what each does.",
+      "back": "Tonic (T): home, rest, arrival. Predominant (PD): departure and preparation. Dominant (D): tension that wants to return home."
+    },
+    {
+      "id": "typical-chords",
+      "front": "Which diatonic chords typically fill T, PD, and D?",
+      "back": "Tonic: I; vi often substitutes; iii is a weaker tonic substitute. Predominant: IV and ii. Dominant: V, V7, and vii°."
+    },
+    {
+      "id": "classic-pattern",
+      "front": "What is the classic function order, and is it a rule?",
+      "back": "T to PD to D to T. It is a tendency, not a law. Popular music, blues, and modal writing often use other orders."
+    },
+    {
+      "id": "function-not-quality",
+      "front": "Do functions describe what a chord is made of?",
+      "back": "No. Functions describe what a chord tends to do in a key, not its quality. Context decides the job."
+    },
+    {
+      "id": "why-ii-iv",
+      "front": "In C major, why do ii and IV share predominant function?",
+      "back": "ii is D F A and IV is F A C. They share F and A, and both contain scale degree 4 (F), which wants to fall to E."
+    },
+    {
+      "id": "why-v-viio",
+      "front": "In C major, why do V and vii° share dominant function?",
+      "back": "V is G B D and vii° is B D F. They share B and D. Both contain degree 7 (B), which wants to rise to C."
+    },
+    {
+      "id": "why-vi-for-i",
+      "front": "Why can vi stand in for I?",
+      "back": "In C, I is C E G and vi is A C E. They share C and E, so vi can replace I without a large change in sound."
+    },
+    {
+      "id": "i-iv-v-i",
+      "front": "Spell I IV V I in C and label the functions.",
+      "back": "C F G C. Tonic, predominant, dominant, tonic."
+    },
+    {
+      "id": "ii-v-i-c",
+      "front": "Spell ii V I in C major, and how do the roots move?",
+      "back": "Dm7 G7 Cmaj7. Roots move down by a fifth each time."
+    },
+    {
+      "id": "guide-tones-ii-v-i",
+      "front": "In Dm7 G7 Cmaj7, how do the guide tones move?",
+      "back": "The seventh of Dm7 (C) falls a half step to the third of G7 (B). The third of Dm7 (F) is the seventh of G7 and holds, then falls a half step to the third of Cmaj7 (E). The B can stay as the major seventh of Cmaj7."
+    },
+    {
+      "id": "minor-ii-v-i",
+      "front": "Spell minor ii V i in C minor. Where does the B in G7 come from?",
+      "back": "Dm7♭5 G7 Cm7. The G7 carries B, borrowed from harmonic minor."
+    },
+    {
+      "id": "blues-form",
+      "front": "State a common 12-bar blues form with seventh chords (bars 1–12).",
+      "back": "I7 I7 (or IV7) I7 I7 | IV7 IV7 I7 I7 | V7 IV7 I7 I7 (or V7)."
+    },
+    {
+      "id": "blues-not-v",
+      "front": "In a blues, why is “a 7 chord is always V” misleading?",
+      "back": "I7 and IV7 are dominant-quality chords that are not functioning as dominants of the key. Neither is tension waiting to resolve. The V7 in bars 9 and 12 does lead back to I7."
+    },
+    {
+      "id": "retrogression",
+      "front": "What is a retrogression, and where is it common?",
+      "back": "V to IV. Common in rock and blues. It sounds like a deliberate step away from the dominant, not a mistake."
+    },
+    {
+      "id": "deceptive-plagal",
+      "front": "What does V to vi do? What does IV to I do?",
+      "back": "V to vi is a deceptive move: dominant expectation, tonic-substitute arrival. IV to I is a gentle plagal close."
+    },
+    {
+      "id": "patterns-in-g",
+      "front": "In G, spell I V vi IV, I vi IV V, I vi ii V, and I ♭VII IV I.",
+      "back": "G D Em C; G Em C D; Gmaj7 Em7 Am7 D7; G F C G. The last uses a borrowed ♭VII."
+    },
+    {
+      "id": "open-shapes-g",
+      "front": "In G, what open-position shapes play I IV V I and I vi IV V?",
+      "back": "I IV V I: G 320003, C x32010, D xx0232, G. I vi IV V: G, Em 022000, C, D."
+    },
+    {
+      "id": "ii-v-i-g-shapes",
+      "front": "What open shapes play ii V I in G?",
+      "back": "Am7 x02010, D7 xx0212, Gmaj7 320002."
+    },
+    {
+      "id": "shells-c",
+      "front": "Give the string-5/6 shells for Dm7 G7 Cmaj7 and their notes.",
+      "back": "Dm7 x5x56x (D C F). G7 3xx46x (G B F). Cmaj7 x3x45x (C B E)."
+    },
+    {
+      "id": "shell-guide-path",
+      "front": "On those C-major shells, how do the upper two notes travel?",
+      "back": "Strings 3 and 2 move C F, then B F, then B E (frets 5/6 to 4/6 to 4/5). The two guide tones travel at most one fret each time."
+    },
+    {
+      "id": "blues-in-a",
+      "front": "Write the 12-bar blues in A with seventh chords, bars 1–12, using V7 in bar 12.",
+      "back": "A7 A7 A7 A7 | D7 D7 A7 A7 | E7 D7 A7 E7. Shapes: A7 x02020, D7 xx0212, E7 020100."
+    },
+    {
+      "id": "label-functions",
+      "front": "Label T, PD, or D for C F G C; C Am Dm G; and C Em F G.",
+      "back": "T PD D T; T T PD D; T T PD D (iii is a weak tonic in the last)."
+    },
+    {
+      "id": "ii-v-i-three-keys",
+      "front": "Write ii V I in G, D, and F major.",
+      "back": "Am7 D7 Gmaj7; Em7 A7 Dmaj7; Gm7 C7 Fmaj7."
+    },
+    {
+      "id": "end-changed",
+      "front": "C F G C versus C F G F: what changed in how the phrase ends?",
+      "back": "The first ends D to T (V to I), a resolution. The second ends D to PD (V to IV), a retrogression that steps away from the dominant instead of going home."
+    }
+  ]
+}

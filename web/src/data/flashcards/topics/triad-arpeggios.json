@@ -1,0 +1,67 @@
+{
+  "id": "triad-arpeggios",
+  "title": "Triad arpeggios",
+  "description": "Unfold triad tones melodically across inversions and string sets.",
+  "cards": [
+    {
+      "id": "arp-def",
+      "front": "What is a triad arpeggio?",
+      "back": "The chord tones played one after another (R–3–5 or any order/inversion) instead of all at once. Same pitch classes, unfolded in time."
+    },
+    {
+      "id": "same-as-triad",
+      "front": "How is an arpeggio related to the triad you already spelled?",
+      "back": "It is that spelling performed melodically. Inversions of the arpeggio simply start on 3 or 5."
+    },
+    {
+      "id": "why-outline",
+      "front": "Why do arpeggios matter for a single-note line?",
+      "back": "They outline harmony so a line can state the chord without strumming. They bridge “I know the tones” to “I can play through changes.”"
+    },
+    {
+      "id": "c-block-to-arp",
+      "front": "C major root position on 4–3–2 is 10 9 8. How do you arpeggiate it?",
+      "back": "Play those frets in sequence ascending and descending, naming R / 3 / 5: C E G."
+    },
+    {
+      "id": "c-inv-starts",
+      "front": "What do first- and second-inversion C major arpeggios start on, and from which shapes?",
+      "back": "First starts on E from 14 12 13 or 2 0 1 (E G C). Second starts on G from 5 5 5 (G C E)."
+    },
+    {
+      "id": "connect-octaves",
+      "front": "How do you connect arpeggios across the neck?",
+      "back": "Ascend C E G in one area, then continue to the next higher C you know, still only chord tones. The same three pitch classes repeat in new octaves and sets."
+    },
+    {
+      "id": "ear-third",
+      "front": "How do you hear major vs minor from an arpeggio?",
+      "back": "Arpeggiate major then minor and listen for the third: C E G vs C E♭ G."
+    },
+    {
+      "id": "g-root-432",
+      "front": "Spell and start G major and G minor root-position arpeggios on 4–3–2.",
+      "back": "G major: G B D from 5 4 3. G minor: G B♭ D from 5 3 3. Name each tone as you play."
+    },
+    {
+      "id": "progression-outline",
+      "front": "Over | C | Am | F | G |, what should an eighth-note outline use?",
+      "back": "Nearby string-set chord tones only — one bar each. No non-chord tones until you add them on purpose."
+    },
+    {
+      "id": "d-two-sets",
+      "front": "Where can you find a one-octave D major arpeggio besides 4–3–2?",
+      "back": "On strings 3–2–1 and on 5–4–3. Same pitch classes D F♯ A, different register and fingering."
+    },
+    {
+      "id": "em-improv",
+      "front": "On a static Em, what is a first improvisation limit, then the next step?",
+      "back": "Use only E G B. Then allow one approach note that resolves to a chord tone."
+    },
+    {
+      "id": "skeleton",
+      "front": "Should arpeggios stay “exercises only”?",
+      "back": "No. Use them as melody skeletons: the strong notes of a line, not just a drill."
+    }
+  ]
+}
