@@ -1,97 +1,119 @@
-# Interval spelling and inversion
+# Interval spelling, compound intervals and inversion
 
-**Prerequisites:** Interval names and quality  
+**Prerequisites:** Interval names and quality; twelve pitch classes  
 **Next:** Intervals in music
 
-**Prerequisites:** Interval names and quality; the twelve pitch classes
+## Learning goals
+Spell any interval accurately, distinguish enharmonic spellings, recognize compound intervals, and invert simple intervals without confusing interval inversion with chord inversion.
 
-**Next:** Intervals in music
+## 1. Spell letters first, accidentals second
+Suppose you need a **major third above F♯**.
 
-## Concept
+1. Count **three letters**, inclusive: F–G–A. The answer must be **some kind of A**.
+2. A major third is **four semitones**. F♯ to A natural is only three.
+3. Raise A to A♯: **F♯–A♯ = M3**.
 
-Three skills build on interval names:
+Writing B♭ instead of A♯ would change the interval number: F♯–B♭ is a **diminished fourth** (four semitones), despite the identical guitar sound.
 
-1. **Spelling:** given a lower note and an interval, write the correct upper note, including its letter.
-2. **Compound intervals:** intervals larger than an octave (9ths, 10ths, and so on) and how they relate to simple intervals.
-3. **Inversion:** turning an interval upside down by moving the lower note above the upper, or the upper note below the lower.
+Other worked spellings:
+- **M3 above G♯**: letter B; G♯–B is 3 semitones; raise to **B♯** for 4.
+- **m3 above B♭**: letter D; B♭–D is 4 semitones; lower to **D♭** for 3.
+- **P5 above B**: letter F; B–F is 6 semitones; raise to **F♯** for 7.
+- **d5 above C**: letter G; C–G is 7 semitones; lower to **G♭** for 6.
+- **A2 above C**: letter D; C–D is 2 semitones; raise to **D♯** for 3.
 
-**Spelling method (two steps):**
+The correct spelling matters in scales, chords, notation and voice leading. A seven-letter diatonic scale ordinarily uses each letter once, even if a note such as E♯ or C♭ looks unfamiliar.
 
-1. Find the **letter** by counting. For an interval number `n`, the upper letter is `n - 1` letters above the lower letter. A 3rd above `F♯` uses the letter two above `F`, which is `A`.
-2. Choose the **accidental** so the half-step distance matches the quality. A major 3rd is 4 half steps; `F♯` to `A` is 3, so you need `A♯`.
+## 2. Enharmonic equivalence
+Two spellings can refer to the same sounding pitch in 12-tone equal temperament. Examples: C♯ = D♭, E♯ = F, B♯ = C. **Sounding equivalence does not imply identical interval names.**
 
-**Compound intervals** are an octave or more. Subtract an octave to get the simple version and keep its quality:
+Compare C–F♯ (**A4**) with C–G♭ (**d5**). Both are six semitones (the *tritone*). Their different spellings can reveal different harmonic behavior.
 
-| Compound | Simple + octave | Half steps |
-| --- | --- | --- |
+A half-step count alone is insufficient to name an interval correctly; letter count and pitch distance must both be known.
+
+## 3. Simple versus compound intervals
+A **simple interval** spans no more than an octave: P1 through P8. A **compound interval** is **larger than an octave**: ninth, tenth, eleventh and beyond.
+
+To reduce a compound interval, subtract **7** from its number for each octave removed, and **12 semitones** from its distance. The quality is retained for ordinary octave displacement.
+
+| Compound | Simple equivalent | Semitones |
+| --- | --- | ---: |
 | M9 | M2 + octave | 14 |
+| m9 | m2 + octave | 13 |
 | m10 | m3 + octave | 15 |
 | M10 | M3 + octave | 16 |
 | P11 | P4 + octave | 17 |
+| A11 | A4 + octave | 18 |
 | P12 | P5 + octave | 19 |
+| m13 | m6 + octave | 20 |
 | M13 | M6 + octave | 21 |
+| P15 | P8 + octave | 24 |
 
-To simplify a compound number, subtract 7 (a 9th is a 2nd, a 13th is a 6th). Half steps: subtract 12.
+**Example:** C3 to E4 spans 16 semitones and ten letter positions: **M10**. C3 to E3 is **M3**. Both share the same pitch-class relationship, but not the same exact interval.
 
-**Inversion rules** for simple intervals:
+**Chord language:** In a C chord, E may be called “the third” as a *chord member* even when the actual voicing places E an octave above C (a tenth). Keep harmonic function and literal voicing separate.
 
-- Numbers add to **9**: 2nd to 7th, 3rd to 6th, 4th to 5th, unison to octave.
-- Qualities flip: major to minor, minor to major, augmented to diminished, diminished to augmented, perfect stays perfect.
-- Half steps add to **12**.
+## 4. Inversion: what changes?
+To **invert an interval**, move the lower note *up one octave* past the upper, or move the upper note *down one octave* below the lower. For simple intervals, the new interval is the octave complement.
 
-| Interval | Inverts to |
+Example: C4–E4 = M3 (4 semitones). Move C4 to C5: E4–C5 = **m6** (8 semitones).
+
+Rules for simple interval inversion:
+- **Numbers sum to 9**: 3 ↔ 6, 2 ↔ 7, 4 ↔ 5, 1 ↔ 8.
+- **Semitones sum to 12** for ordinary octave complements.
+- **Major ↔ minor**; **augmented ↔ diminished**; **perfect ↔ perfect**.
+
+| Original | Inversion |
 | --- | --- |
-| P5 (7) | P4 (5) |
-| M3 (4) | m6 (8) |
-| m3 (3) | M6 (9) |
-| M2 (2) | m7 (10) |
-| m2 (1) | M7 (11) |
-| A4 (6) | d5 (6) |
-| d7 (9) | A2 (3) |
+| P1 | P8 |
+| m2 | M7 |
+| M2 | m7 |
+| m3 | M6 |
+| M3 | m6 |
+| P4 | P5 |
+| A4 | d5 |
+| d5 | A4 |
+| P5 | P4 |
+| m6 | M3 |
+| M6 | m3 |
+| m7 | M2 |
+| M7 | m2 |
 
-## Underlying logic
+**Critical distinction:** C4→E4 (up) and E4→C4 (down) are the *same interval in opposite directions*; E4→C5 is the **inversion** of C4→E4.
 
-**Why letters first.** The letter count fixes the interval's number, and the number matters for how music is written and read. A major 3rd above `F♯` is `A♯`, not `B♭`. They are the same pitch class (the same guitar fret), but `F♯` to `B♭` spans the letters `F G A B`, a 4th, and at that width it is a **diminished 4th**, not a 3rd. Wrong spelling gives the wrong interval name and the wrong function.
+For a compound interval, first reduce it to a simple interval to apply the standard complement rule. This is a teaching shortcut, not a claim that compound voicings cannot be rearranged.
 
-Sometimes the letter-first rule forces an unusual note. A major 3rd above `G♯` is `B♯` (letters `G A B`; `G♯` to `B♯` is 4 half steps). `B♯` is `C` on the guitar, but the spelling is correct in a key such as `C♯` major or `G♯` minor. Do not "fix" it to `C` without checking the context.
+## 5. Interval inversion is not chord inversion
+**Interval inversion** changes which of two notes is below the other. **Chord inversion** names a chord according to which *chord tone is in the bass*:
+- C–E–G: root position (C bass).
+- E–G–C: first inversion (E bass).
+- G–C–E: second inversion (G bass).
 
-**Why inversion works.** Together, an interval and its inversion span exactly one octave. If the interval from lower note `X` up to upper note `Y` is `n` letters, then moving `X` up an octave leaves a distance from `Y` up to `X` that takes the remaining `9 - n` letters. Half steps likewise add to 12. Quality flips because a wider interval's complement is narrower. The perfect intervals (P4, P5, P8, P1) have no major or minor form, so they stay perfect.
-
-Inversion works only on simple intervals. To invert a compound interval, reduce it first.
-
-## Musical significance
-
-Spelling is how music communicates function. The `F♯` major scale is `F♯ G♯ A♯ B C♯ D♯ E♯`: its 7th note is `E♯`, not `F`, so that each letter is used once. Seven-note scales, key signatures, and chord spellings all rely on this letter logic.
-
-Inversion explains why chords keep their identity when you rearrange notes. A `C` major triad (`C E G`) contains `C` up to `G` (a P5). If `G` is the lowest note instead, the `G` up to the next `C` is a P4, the inversion of that P5. The **pitch classes** and the chord's identity do not change; only the interval above the lowest note does. Interval inversion is the basis for chord inversion later on.
-
-Compound intervals matter for chord names. The 9th, 11th, and 13th in extended chords are simple intervals placed above the octave: a `9` is a 2nd plus an octave, with the same quality.
+The chord remains C major in each case; the intervals measured *above the bass* change. We develop this further in the triad lessons.
 
 ## Guitar application
-
-On one string, frets give half steps. The spelling must still be worked out in letters.
-
-- String 6 fret 2 is `F♯`. Four frets higher is string 6 fret 6, which you spell `A♯` as the major 3rd above `F♯` (a good check: `F♯` to `A♯`, letters `F G A`).
-- Inversion on strings: `C` on string 5 fret 3 up to `G` on string 4 fret 5 is a P5. `G` on string 4 fret 5 up to `C` on string 3 fret 5 is a P4. Same two pitch classes, inverted.
-- Compound: string 5 fret 3 (`C3`) up to string 2 fret 3 (`D4`)? `C3` to `D4` spans 14 half steps, a major 9th. Check: string 2 fret 3 is `D4`.
-
-Ear: play `C` up to `G` (P5), then `G` up to `C` (P4). Notice the two sounds are clearly related: the same two pitch classes, different direction. Then play `C` up to `E` (M3) followed by `E` up to `C` (m6). Do this every time you learn a new interval, and you will hear that every interval has an upside-down relative.
+- String 5 fret 3 = **C3**. String 4 fret 5 = **G3**: P5. String 3 fret 5 = **C4**: G3–C4 is P4, the inversion of C3–G3.
+- String 5 fret 3 = C3; string 2 fret 3 = D4: **M9** (14 semitones).
+- String 6 fret 8 = C3; string 2 fret 5 = E4: **M10**, not M3.
+- One fret location can have multiple enharmonic spellings; use the harmonic context to choose.
 
 ## Exercises
+1. Spell M3 above A, E♭, F♯, G♯.  
+2. Spell m3 above C♯, B♭, E, F.  
+3. Name F♯3–B♭3 and F♯3–A♯3.  
+4. Reduce M9, m10, P12, M13 to simple equivalents.  
+5. Invert M3, m7, A4, P5, d7.  
+6. Name the exact interval C3–E4, then move C3 to C4 and name the resulting simple interval.  
+7. Explain why descending C4 from E4 does not invert C4–E4.
 
-1. Spell a major 3rd above each: `A`, `E♭`, `F♯`, `B♭`, `D♭`. **Check:** `C♯`, `G`, `A♯`, `D`, `F`.
-2. Spell a perfect 5th above each: `B`, `F♯`, `E♭`, `D♭`, `F`. **Check:** `F♯`, `C♯`, `B♭`, `A♭`, `C`.
-3. Spell a minor 3rd above each: `C♯`, `B♭`, `E`, `F`. **Check:** `E`, `D♭`, `G`, `A♭`.
-4. Spell a minor 7th above `G` and a major 7th above `F`. **Check:** `F` and `E`.
-5. Invert each: M3, P4, m7, A4, d7. **Check:** m6, P5, M2, d5, A2.
-6. Simplify each compound interval and give its half steps: M9, m10, P12, M13. **Check:** M2 + octave (14), m3 + octave (15), P5 + octave (19), M6 + octave (21).
-7. Find a major 3rd above open string 3 (`G3`) in two places. **Check:** string 3 fret 4, and string 2 fret 0 (open `B3`). They are the same pitch, because between strings 3 and 2 the same fret is already a major 3rd.
+### Answers
+1. C♯, G, A♯, B♯.  
+2. E, D♭, G, A♭.  
+3. d4 and M3, both four semitones.  
+4. M2, m3, P5, M6.  
+5. m6, M2, d5, P4, A2.  
+6. M10; C4–E4 = M3.  
+7. Reversing the direction between the same two pitches preserves the interval's size; inversion requires octave displacement.
 
-## Mastery criteria
-
-- **Conceptual:** You can state why letters come before accidentals and why inversions of numbers sum to 9.
-- **Written:** You can spell any simple interval above any natural or accidental starting note, including cases that need `E♯`, `B♯`, or `C♭`.
-- **Written:** You can invert any simple interval and simplify any compound interval to its simple form.
-- **Fretboard:** You can find an interval on the guitar, name the upper note with the correct letter, and locate its inversion.
-- **Aural:** You can hear that an interval and its inversion share the same pair of pitch classes.
-- **Application:** You can use interval spelling to explain why a given chord tone in a key is written with a specific letter and accidental.
+## Mastery check
+Given any starting note and interval, you can derive the correct *letter*, then its *accidental*; distinguish exact compound intervals from simple chord-tone labels; and invert an interval while tracking both pitch and spelling.
