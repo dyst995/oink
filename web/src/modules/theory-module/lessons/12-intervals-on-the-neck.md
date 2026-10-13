@@ -1,97 +1,146 @@
-# Intervals on the neck
+# Intervals on the neck: derive, locate and use
 
-**Prerequisites:** Locating pitch classes; interval names  
-**Next:** Constructing the major scale
+**Prerequisites:** Open-string tuning; octaves; interval names, spelling and inversion  
+**Next:** Major scale construction
 
-**Prerequisites:** Interval names and quality; interval spelling and inversion; octaves on the neck; tuning and open strings
+## Learning goals
+Calculate intervals between **any two fretted notes**, not only adjacent strings; locate interval targets from a root; handle the G–B tuning exception; and connect shapes to real notes and chord tones.
 
-**Next:** The major scale
+## 1. Standard tuning is a pitch map
+Open strings, low to high:
+| String | Pitch | MIDI number |
+| --- | --- | ---: |
+| 6 | E2 | 40 |
+| 5 | A2 | 45 |
+| 4 | D3 | 50 |
+| 3 | G3 | 55 |
+| 2 | B3 | 59 |
+| 1 | E4 | 64 |
 
-## Concept
+Adjacent strings are **five semitones** apart except G3→B3 (strings 3→2), which is **four**. Each fret adds one semitone. The string number alone does **not** guarantee which played note is higher: high frets on thick strings can exceed low frets on thinner ones.
 
-Every interval has a **physical location** relative to a root on the guitar. Two situations cover almost everything:
+## 2. The universal calculation
+Assign each played note its pitch number:
 
-1. **On one string:** frets equal half steps, so an interval is a fret offset.
-2. **Across strings:** the gap between open strings (5 half steps, except 4 between strings 3 and 2) changes the fret offset.
+**pitch = open-string MIDI number + fret**
 
-Here are the fret offsets from a root to a note **higher in pitch**. "Next string" means the next thinner string (string 6 to 5, 5 to 4, 4 to 3, or 2 to 1).
+Then calculate:
 
-| Interval | Half steps | Same string | Next string (not 3 to 2) | String 3 to 2 |
-| --- | --- | --- | --- | --- |
-| m2 | 1 | +1 | -4 | -3 |
-| M2 | 2 | +2 | -3 | -2 |
-| m3 | 3 | +3 | -2 | -1 |
-| M3 | 4 | +4 | -1 | 0 |
-| P4 | 5 | +5 | 0 | +1 |
-| Tritone | 6 | +6 | +1 | +2 |
-| P5 | 7 | +7 | +2 | +3 |
-| m6 | 8 | +8 | +3 | +4 |
-| M6 | 9 | +9 | +4 | +5 |
-| m7 | 10 | +10 | +5 | +6 |
-| M7 | 11 | +11 | +6 | +7 |
-| P8 | 12 | +12 | +7 | +8 |
+**signed distance = second pitch − first pitch**.
 
-The table is a fast reference, but you should be able to rebuild it from two facts: **half steps = frets** and **the open-string gap**.
+Positive = ascending, negative = descending, zero = unison. The **absolute value** gives the semitone size. Finally, use the **spelled note letters** to determine the interval number and quality. Semitone distance alone cannot distinguish enharmonic interval names.
 
-## Underlying logic
+**Example A: sixth string fret 8 to second string fret 1.**
+- 6th open E2 = 40; +8 = **48 (C3)**.
+- 2nd open B3 = 59; +1 = **60 (C4)**.
+- 60 − 48 = **12**: **P8**, one octave.
 
-A note on the next thinner string at the same fret is already 5 half steps higher (4 for the string 3 to 2 pair). So to reach an interval of `n` half steps, you need `n - 5` frets of offset (or `n - 4` across strings 3 and 2). A P4 across strings is the same fret because the tuning is built from P4s.
+**Example B: sixth string fret 8 to second string fret 5.**
+- C3 = 48; B3 + 5 = **64 (E4)**.
+- 64 − 48 = **16**: **M10**, a major third plus one octave.
 
-Two ways to use this:
+**Example C: fifth string fret 3 to fourth string fret 2.**
+- A2 + 3 = **C3** (48).
+- D3 + 2 = **E3** (52).
+- 52 − 48 = **4**: **M3**.
 
-- **Derive.** "I want a major 3rd (4) on the next string. 4 minus 5 is -1: one fret lower." Fast, reliable, and works on any string pair, even in other tunings once you know the gaps.
-- **Recognize.** Familiar shapes (a power chord, an octave shape) are repeated fret offsets. They are consequences, not axioms.
+**Example D: sixth string fret 12 (E3) to first string open (E4).**
+- E2 + 12 = E3 (52); E4 = 64; difference **12** = P8.
 
-Important cautions:
+## 3. Adjacent-string shortcut
+For the next thinner string, let **g** be the gap between the open strings (5 normally; 4 from G to B). If your root is at fret **r**, and the target interval is **n** semitones above it, the target fret is:
 
-- **The offset changes when you cross strings 3 and 2.** A shape that spans only the lower four strings does not look the same when moved to the top strings. Moving it requires a one-fret adjustment, which is why the same chord shape changes when transposed across that gap.
-- **Offsets measure pitch, not string number.** A note on a thinner string can be lower in pitch than a note on a thicker string when the fret on the thinner string is low and the fret on the thicker string is high. Always check which note is higher before naming the interval. If the second note is lower, the interval is descending.
-- A negative fret offset means the note is on a lower fret of the next string. If that fret is below 0, the note is not available there. Find it on the same string or in another octave.
-- The same pitch can appear in several places. An interval has many locations; pick the one that suits the passage.
+**target fret = r + n − g**
 
-## Musical significance
+Thus **fret offset = n − g**.
 
-Players hear and play melodies as interval patterns. Knowing where each interval lives lets you transcribe by ear (find the next note by guessing the interval), improvise with chord tones, and build chords from the root without memorizing every shape. It also lets you move **one** pattern to any root.
+| Interval | Semitones | Normal adjacent pair: offset | G→B pair: offset |
+| --- | ---: | ---: | ---: |
+| m2 | 1 | −4 | −3 |
+| M2 | 2 | −3 | −2 |
+| m3 | 3 | −2 | −1 |
+| M3 | 4 | −1 | 0 |
+| P4 | 5 | 0 | +1 |
+| Tritone | 6 | +1 | +2 |
+| P5 | 7 | +2 | +3 |
+| m6 | 8 | +3 | +4 |
+| M6 | 9 | +4 | +5 |
+| m7 | 10 | +5 | +6 |
+| M7 | 11 | +6 | +7 |
+| P8 | 12 | +7 | +8 |
 
-Intervals on the neck are also how many standard chord shapes arise. A major triad contains M3 and P5 above the root; a minor triad contains m3 and P5. Each tone is a fret offset away from the root, and those offsets change if you change string pairs.
+**Example:** Root A2 at sixth-string fret 5. For a P5, n = 7 and g = 5, so fifth-string target fret = 5 + 7 − 5 = **7**, giving E3.
 
-## Guitar application
+**G→B exception:** Root A3 at third-string fret 2. P5 = E4; target on second string = 2 + 7 − 4 = **5**.
 
-**One string.** Root on string 6 fret 5 (`A`). Major 3rd: fret 9 (`C♯`). Perfect 5th: fret 12 (`E`). Minor 7th: fret 15 (`G`), if the neck has it, or use an octave lower.
+A negative offset is **relative to the root fret**, not a negative physical fret. If the calculated target is below fret zero, that fingering does not exist: change strings or octaves.
 
-**Across strings (not crossing 3 to 2).** Root on string 6 fret 5 (`A`):
+## 4. Nonadjacent strings: sum the tuning gaps
+The same formula works across *any* strings if you use the total gap between their open pitches:
 
-- P4: string 5 fret 5 (`D`).
-- M3: string 5 fret 4 (`C♯`).
-- m3: string 5 fret 3 (`C`).
-- P5: string 5 fret 7 (`E`).
-- m7: string 5 fret 10 (`G`).
+**target fret = root fret + desired semitones − total open-string gap**.
 
-Power chord check: root `G` on string 6 fret 3, P5 `D` on string 5 fret 5, and octave `G` on string 4 fret 5.
+Examples of total open-string gaps:
+- String 6→4: 10 semitones.
+- String 5→3: 10 semitones.
+- String 4→2: 9 semitones (crosses G→B).
+- String 6→2: 19 semitones.
+- String 6→1: 24 semitones.
 
-**Across strings 3 and 2.** Root on string 3 fret 5 (`C`):
+**Worked example: C3 on string 6 fret 8 → E4 on string 2.**
+Desired M10 = 16 semitones; gap from open string 6 to 2 = 19.
+Target fret = 8 + 16 − 19 = **5**. The note is E4, string 2 fret 5.
 
-- M3: string 2 fret 5 (`E`), the same fret.
-- P4: string 2 fret 6 (`F`).
-- P5: string 2 fret 8 (`G`).
+**Worked example: G2 on string 6 fret 3 → G3 on string 4.**
+Desired octave = 12; open-string gap = 10.
+Target fret = 3 + 12 − 10 = **5**: string 4 fret 5.
 
-Compare two perfect 5ths. From string 4 fret 3 (`F`), the P5 `C` is on string 3 fret 5: +2. From string 3 fret 2 (`A`), the P5 `E` is on string 2 fret 5: +3. The extra fret comes from crossing the G-to-B gap.
+This arithmetic describes pitch; still check note spelling to decide whether an enharmonic distance is, for example, A4 or d5.
 
-Ear: play each interval on one string (frets +3, +4, +7), then the same pitch classes across strings. The same-size intervals sound alike, with a difference in tone (strings differ in thickness and timbre). Practice naming the interval you hear first, then verify with the fret offset.
+## 5. Shape vocabulary: understand, don't merely memorize
+From sixth-string fret 3 (G2):
+- **M3**: fifth-string fret 2 (B2).
+- **m3**: fifth-string fret 1 (B♭2).
+- **P5**: fifth-string fret 5 (D3).
+- **P8**: fourth-string fret 5 (G3).
+- **m7**: fourth-string fret 3 (F3).
+
+From fifth-string fret 3 (C3):
+- **M3**: fourth-string fret 2 (E3).
+- **P5**: fourth-string fret 5 (G3).
+- **P8**: third-string fret 5 (C4).
+
+A power chord is a root plus fifth, often doubled with an octave. The familiar “two frets up, one string thinner” fifth shape is a consequence of tuning: 7 − 5 = 2.
+
+## 6. Multiple locations and octave displacement
+The **same pitch** can be played in multiple places: C3 is sixth-string fret 8 *and* fifth-string fret 3. These positions form a **unison**, not an octave. C4 is second-string fret 1, third-string fret 5, fourth-string fret 10, fifth-string fret 15 and sixth-string fret 20 (if available).
+
+When you relocate a note, ask: did its **pitch** stay the same, or did you shift it by an octave? Chord-tone identity (third, fifth, etc.) can stay the same while the exact interval above the bass changes.
+
+## 7. A practical interval routine
+1. Choose a root, such as C3 (string 5 fret 3).
+2. Name a target interval *before* touching the guitar: M3 = E; P5 = G; m7 = B♭.
+3. Find the note on the **same string**, then the next string, then a nonadjacent string using the gap formula.
+4. Say both the **note name** and **exact interval** (including compound number).
+5. Play root and target melodically, then together as a double-stop.
+6. Repeat from a different root and cross the G–B string pair deliberately.
+7. Finally, use the intervals to build a triad or a short melodic phrase.
 
 ## Exercises
+1. Identify notes and intervals: string 6 fret 8 → string 5 fret 3; string 6 fret 8 → string 2 fret 1; string 6 fret 8 → string 2 fret 5.  
+2. From fifth-string fret 3 (C3), find M3 and P5 on string 4.  
+3. From third-string fret 2 (A3), find M3 and P5 on string 2.  
+4. From sixth-string fret 3 (G2), find the octave on string 4.  
+5. Calculate the total open-string gap from string 5 to string 2.  
+6. Why can a note on a thinner string be *lower* than a note on a thicker string?
 
-1. Starting from string 6 fret 5 (`A`), find on string 5: M3, P5, M6, m7. **Check:** fret 4 (`C♯`), fret 7 (`E`), fret 9 (`F♯`), fret 10 (`G`).
-2. Starting from string 5 fret 3 (`C`), find on string 4: m3 and M3. **Check:** string 4 fret 1 (`E♭`) and fret 2 (`E`).
-3. Starting from open string 3 (`G`), find on string 2: P4, M3, P5. **Check:** fret 1 (`C`), fret 0 (`B`), fret 3 (`D`).
-4. Without checking the table, derive the fret offset for a tritone across a normal string pair and across string 3 to 2. **Check:** +1 and +2.
-5. A `C` major triad has the notes `C E G`. With the root on string 5 fret 3, find `E` on string 4 and `G` on string 3 within frets 0-5. **Check:** `E` at string 4 fret 2, `G` at string 3 fret 0 (open). Then name the intervals above the root: M3 and P5.
-6. Ear drill: with a partner (or a recording of yourself made earlier), have a root played on string 6 and a second note played on string 5 at a secret offset from the table. Name the interval by ear, then confirm with the fret offset. Do ten rounds, mixing M3, m3, P4, P5, and m7.
+### Answers
+1. C3→C3 = P1 (unison); C3→C4 = P8; C3→E4 = M10.  
+2. E3 at fret 2; G3 at fret 5.  
+3. C♯4 at fret 2; E4 at fret 5.  
+4. G3 at fourth-string fret 5.  
+5. 5 + 5 + 4 = **14** semitones.  
+6. Fretting can raise the thicker string's pitch enough to exceed the thinner string's low-fret pitch.
 
-## Mastery criteria
-
-- **Conceptual:** You can explain why the fret offset to the next string is `n - 5` (and `n - 4` across strings 3 and 2).
-- **Written:** You can fill in the offset table for same string, next string, and the string 3 to 2 pair, using derivation, not memory alone.
-- **Fretboard:** From any root, you can find each common interval (m3, M3, P4, P5, m7) on the same string and the next string.
-- **Aural:** You can identify an interval by ear on one string and then find the same interval on another string pair.
-- **Practical:** You can play power chords and major and minor triad shapes by thinking "root plus these intervals," and adjust them correctly when crossing strings 3 and 2.
+## Mastery check
+Without consulting a shape diagram, you can compute the semitone distance between arbitrary fretboard positions, name the notes and exact interval, find a requested interval on different strings, and explain the G–B tuning exception.
