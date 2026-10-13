@@ -1,91 +1,99 @@
-# Intervals in music
+# Intervals in music: melody, harmony and hearing
 
-**Prerequisites:** Interval spelling and inversion  
+**Prerequisites:** Interval names and quality; spelling and inversion  
 **Next:** Intervals on the neck
 
-**Prerequisites:** Interval names and quality; interval spelling and inversion
+## Learning goals
+Hear and describe melodic versus harmonic intervals, analyze intervals inside chords and scales, and practice recognizing them without relying exclusively on fret shapes.
 
-**Next:** Intervals on the neck
+## 1. Melodic and harmonic intervals
+A **melodic interval** connects two notes played one after the other: C4 then G4 is an ascending P5; G4 then C4 is a descending P5. A **harmonic interval** occurs when the pitches sound simultaneously, as in a double-stop or chord.
 
-## Concept
+Playing the same pitches consecutively and together changes what you perceive: sequential notes emphasize **motion**; simultaneous notes emphasize **blend and tension**. Neither changes the underlying pitch distance.
 
-Intervals are heard in two ways:
+An **arpeggio** plays chord notes sequentially, making harmonic material melodic. A guitar double-stop plays two notes together.
 
-- **Melodic** interval: two notes played one after the other. The ear follows motion, up or down.
-- **Harmonic** interval: two notes sounded together. The ear hears a blend.
+## 2. Intervals measured from a root
+The interval above a tonic or root explains the role of a note in a scale or chord.
 
-The same interval can appear both ways. A chord is a harmonic stack; an arpeggio plays the same chord melodically. A scale is a sequence of melodic intervals from a tonic.
-
-Every scale and chord is a set of intervals measured from a reference note.
-
-| Structure | Intervals above the root or tonic |
+| Structure | Intervals above root |
 | --- | --- |
-| Major scale | M2, M3, P4, P5, M6, M7 |
-| Natural minor scale | M2, m3, P4, P5, m6, m7 |
-| Major triad | M3, P5 |
-| Minor triad | m3, P5 |
-| Diminished triad | m3, d5 |
-| Augmented triad | M3, A5 |
-| Dominant 7th chord | M3, P5, m7 |
+| Major scale | 1, M2, M3, P4, P5, M6, M7, P8 |
+| Natural minor scale | 1, M2, m3, P4, P5, m6, m7, P8 |
+| Major triad | 1, M3, P5 |
+| Minor triad | 1, m3, P5 |
+| Diminished triad | 1, m3, d5 |
+| Augmented triad | 1, M3, A5 |
+| Dominant seventh | 1, M3, P5, m7 |
+| Major seventh | 1, M3, P5, M7 |
+| Minor seventh | 1, m3, P5, m7 |
 
-Triads are also stacks of **adjacent** thirds: a major triad is M3 then m3; a minor triad is m3 then M3.
+These are **pitch-class formulas** relative to the root. A literal guitar voicing can spread the notes across several octaves, so the *exact* bass-to-note intervals may be tenths, twelfths and fifteenths.
 
-## Underlying logic
+## 3. Intervals within a chord
+C major contains **C–E–G**:
+- C→E is M3; C→G is P5.
+- E→G is m3. Thus the adjacent notes stack **M3 then m3**.
 
-An interval's **sound** depends on size and also on **context**: the notes around it, the chord underneath, the key, the register, the timbre, and what the listener expects.
+C minor contains **C–E♭–G**:
+- C→E♭ is m3; C→G is P5.
+- E♭→G is M3. It stacks **m3 then M3**.
 
-Three facts keep expectations realistic:
+B diminished contains B–D–F: B→D m3, D→F m3, B→F d5.
 
-- **No interval has a fixed emotion.** Major 3rds are often described as "bright" and minor 3rds as "dark," but a major chord in a slow, heavy, distorted passage can sound ominous, and a minor chord in a fast, bouncy tune can sound cheerful. A mood word describes a common association in a given style, not a property of the interval.
-- **Consonance and dissonance are conventions with acoustic roots.** In traditional Western theory, unisons, P5s, P4s (depending on context), 3rds, 6ths, and octaves are treated as stable, and 2nds, 7ths, and the tritone as tense. Stability in practice depends on what the music does with the interval. A major 7th sounds smooth and open in a major 7th chord, but can sound tense when it appears alone in a melody against a bass note.
-- **Direction matters.** An ascending P5 and a descending P5 are the same size but they sound and feel different, as do a P4 up and a P4 down.
+G7 contains G–B–D–F. The B–F pair forms a **diminished fifth**. In a conventional G7→C resolution, B often rises to C while F falls to E. Those half-step motions help explain the pull of dominant harmony. In blues and other styles, dominant sevenths can be stable sonorities rather than always demanding resolution.
 
-Training your ear means learning to recognize **size** within context. Attach names to what you hear, not feelings.
+## 4. Consonance, dissonance and context
+In traditional tonal practice, unisons, octaves, fifths, thirds and sixths are often relatively consonant; seconds, sevenths and tritones relatively dissonant. A fourth can behave differently depending on bass and style.
 
-## Musical significance
+This is **not** a universal emotional ranking. Acoustics, musical training, timbre, register, harmonic context and cultural conventions all matter. A major third does not inherently mean “happy,” nor a minor third “sad.” Listen for how a pitch relates to the *current harmony* and how it moves.
 
-Interval vocabulary describes melodic style. Stepwise melodies move by 2nds; leaps of 3rds, 4ths, and 5ths create outline. Guitar riffs and licks often rely on specific interval patterns, for example repeated 4ths or octave jumps.
+**Example:** Over a C major chord, F is a fourth above C and may create a suspended sound, especially when it moves down to E. Over an F major chord, the same F may feel stable because it is the root.
 
-Intervals give chords their color:
+## 5. Interval motion in melodies
+- **Stepwise** motion uses seconds, e.g. C–D–E–F.
+- **Leaps** use larger intervals, e.g. C–G (P5), G–E (m3 descending).
+- A motif can be recognized by its interval pattern even after transposition.
 
-- The 3rd decides major or minor.
-- The 5th provides stability; flatting it (d5) creates a diminished sound, raising it (A5) creates an augmented sound.
-- The 7th adds extra color. In a dominant 7th chord such as `G7` (`G B D F`), the `B` and `F` form a d5 (a tritone). In traditional tonal music that tension often resolves inward, with `B` moving up to `C` and `F` moving down to `E` (a major 3rd), which is part of why `G7` pulls toward `C`. This is a learned convention, and many styles treat the chord differently.
+Compare C–D–E and G–A–B: both rise by two major seconds. Their pitches differ but their interval pattern is the same. This is one reason interval thinking helps you transpose riffs.
 
-Many players use familiar melodies as reference points. The first leap of "Twinkle, Twinkle, Little Star" (`C C G G`) is a perfect 5th up, and the two-note motif of the "Jaws" theme (`E` to `F`) is a minor 2nd up. Reference tunes are a useful aid, but treat them as one tool among several: the same interval sounds different in other contexts, and a melody you know well can mislead you about unfamiliar ones.
+## 6. Guitar example: open A major versus A minor
+Open A major, low to high (strings 5–1): A2, E3, A3, C♯4, E4.
 
-## Guitar application
+| Note | Exact interval above A2 | Chord-tone role |
+| --- | --- | --- |
+| A2 | P1 | root |
+| E3 | P5 | fifth |
+| A3 | P8 | root |
+| C♯4 | M10 | major third |
+| E4 | P12 | fifth |
 
-Intervals on the guitar can be heard in the open `A` major chord, from low to high:
+Lower C♯4 to C4 on string 2 (fret 2→1): M10 becomes **m10** and the chord becomes **A minor**. The root and fifth pitches remain unchanged. This is a clear example of how one interval changes chord quality.
 
-| String | Fret | Note | Interval above `A2` |
-| --- | --- | --- | --- |
-| 5 | 0 | `A2` | unison |
-| 4 | 2 | `E3` | P5 |
-| 3 | 2 | `A3` | P8 |
-| 2 | 2 | `C♯4` | M10 (M3 plus an octave) |
-| 1 | 0 | `E4` | P12 (P5 plus an octave) |
+## 7. A systematic ear-training method
+Do not merely memorize “song starts.” Use a reference note and **compare**:
+1. Play a root, sing it, then play and sing a target interval.
+2. Alternate **m3 versus M3**, **P4 versus P5**, **m6 versus M6**, **m7 versus M7**.
+3. Play each pair ascending, descending, then simultaneously. Name *direction* separately from *quality*.
+4. Keep the root fixed as a drone and sing 1–3–5–3–1, then 1–♭3–5–♭3–1.
+5. Move to new keys and registers. Randomize trials; score your accuracy rather than guessing from finger positions.
+6. Transcribe a short melody: find its first note, then identify each *successive* interval; finally identify each note's relation to the tonic.
 
-Playing the strings together gives harmonic intervals. Playing them one at a time gives melodic ones. Now move string 2 from fret 2 to fret 1 (`C♮`). You have changed the M3 into a m3 and the chord from `A` major to `A` minor, with every other interval unchanged. You can hear the entire change through a single interval.
-
-Ear practice with the guitar:
-
-1. Play a low root, then sing or hum the note you imagine a 5th above, then check. Do the same with a major 3rd and a minor 3rd.
-2. Play a root as a drone (let it ring or pick it repeatedly), then play a second note on a higher string. Listen to how the two notes blend in each of the intervals from the table above.
-3. Play the same two notes first melodically (ascending), then melodically (descending), then together, and describe how the identity changes.
+Start with two contrasting options, then expand to the full set of simple intervals. An 80% success rate across different keys is a useful practice target, not a scientific threshold.
 
 ## Exercises
+1. In D minor (D–F–A), name root→third, root→fifth, and third→fifth.  
+2. In C major, what interval connects E4 to G4? What if G4 sounds first and E4 second?  
+3. Explain why E4 is the **third** of a C major chord even when C3→E4 is a **tenth**.  
+4. Play C–G–A–G on one string; label successive melodic intervals and directions.  
+5. Play open A major and A minor, identify the changed note and exact bass-to-note interval.
 
-1. For the chord `A`, `C♯`, `E` (`A` major), give the intervals above `A` and the interval between `C♯` and `E`. **Check:** M3 and P5; `C♯` to `E` is a minor 3rd.
-2. Build a minor triad on `D` by intervals (root, m3, P5). **Check:** `D F A`.
-3. Name the two intervals in a diminished triad on `B`: `B D F`. **Check:** `B` to `D` is a minor 3rd; `D` to `F` is a minor 3rd; `B` to `F` is a diminished 5th.
-4. Open `E` minor: from `E2` on string 6 through `E4` on string 1, give the interval above `E2` of each note (strings 6, 5, 4, 3, 2, 1 as `E`, `B`, `E`, `G`, `B`, `E`). **Check:** unison, P5, P8, m10, P12, two octaves (P15).
-5. Ear: on one string, play a root, then a second note either 3 or 4 frets higher (a partner picks, or record yourself and listen later). Say whether the interval is a minor or major 3rd. Then play a root and a note 7 frets higher and sing the upper note before checking. **Check:** 3 frets is a minor 3rd, 4 frets is a major 3rd, 7 frets is a perfect 5th. Aim for 8 of 10 correct on the 3rds.
+### Answers
+1. m3, P5, M3.  
+2. m3; descending m3 if G4→E4.  
+3. “Third” names chord-tone function; “tenth” measures the actual octave-dependent pitch distance.  
+4. C→G ascending P5; G→A ascending M2; A→G descending M2.  
+5. C♯4→C4, M10→m10 above A2.
 
-## Mastery criteria
-
-- **Conceptual:** You can distinguish melodic from harmonic intervals and explain why an interval has no fixed emotional meaning.
-- **Written:** You can write the intervals above the root for a major scale, natural minor scale, and the main triads and a dominant 7th.
-- **Aural:** You can hear the difference between M3 and m3, and between P4 and P5, in context and when played melodically.
-- **Fretboard:** You can break a familiar open chord into its intervals above its lowest note.
-- **Application:** You can explain how changing one interval (such as the 3rd) changes the chord quality while the rest stays the same.
+## Mastery check
+You can distinguish melodic and harmonic intervals, name intervals inside real chord voicings, hear common contrasting qualities, and describe a melody by its interval motion rather than only by fret numbers.
