@@ -1,6 +1,8 @@
 import { TriadBoard } from './TriadBoard.tsx'
 import {
+  FINGER_NAMES,
   INVERSION_META,
+  fingeringForVoicing,
   roleWord,
   type InversionId,
   type StringSet,
@@ -75,10 +77,38 @@ export function InversionCard({
               Frets {voicing.frets.join(' – ')}
             </span>
           </p>
+          <FingeringRow frets={voicing.frets} stringLabels={stringSet.openLabels} />
         </>
       ) : (
         <p className="triad-empty">No close voicing on this string set within frets 0–24.</p>
       )}
     </article>
+  )
+}
+
+function FingeringRow({
+  frets,
+  stringLabels,
+}: {
+  frets: readonly [number, number, number]
+  stringLabels: readonly [string, string, string]
+}) {
+  const fingers = fingeringForVoicing(frets)
+  const words = fingers.map((finger) => FINGER_NAMES[finger])
+
+  return (
+    <div className="triad-fingering" aria-label={`Fingering ${words.join(', ')}`}>
+      <span className="triad-sounding-label">Fingering</span>
+      <div className="triad-fingering-grid">
+        {stringLabels.map((label, index) => (
+          <div key={label} className="triad-fingering-cell">
+            <span className="triad-fingering-string">{label}</span>
+            <span className="triad-fingering-num">{fingers[index]}</span>
+            <span className="triad-fingering-name">{FINGER_NAMES[fingers[index]]}</span>
+          </div>
+        ))}
+      </div>
+      <p className="triad-fingering-key">0 open · 1 index · 2 middle · 3 ring · 4 pinky</p>
+    </div>
   )
 }

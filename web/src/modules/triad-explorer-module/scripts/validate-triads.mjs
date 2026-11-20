@@ -189,4 +189,22 @@ assert.deepEqual(findVoicings(buildTriad('C', 'major'), 'dgb').root[0].frets, [1
 assert.deepEqual(findVoicings(buildTriad('C', 'major'), 'adg').root[0].frets, [3, 2, 0])
 assert.deepEqual(findVoicings(buildTriad('C', 'major'), 'ead').root[0].frets, [8, 7, 5])
 
+function fingeringForVoicing(frets) {
+  const fretted = frets
+    .map((fret, stringIndex) => ({ fret, stringIndex }))
+    .filter((note) => note.fret > 0)
+    .sort((a, b) => a.fret - b.fret || b.stringIndex - a.stringIndex)
+  const fingers = [0, 0, 0]
+  fretted.forEach((note, order) => {
+    fingers[note.stringIndex] = Math.min(order + 1, 4)
+  })
+  return fingers
+}
+
+assert.deepEqual(fingeringForVoicing([5, 5, 3]), [3, 2, 1])
+assert.deepEqual(fingeringForVoicing([9, 8, 8]), [3, 2, 1])
+assert.deepEqual(fingeringForVoicing([12, 13, 12]), [2, 3, 1])
+assert.deepEqual(fingeringForVoicing([0, 0, 0]), [0, 0, 0])
+assert.deepEqual(fingeringForVoicing([0, 1, 0]), [0, 1, 0])
+
 console.log('validate-triads: all checks passed')

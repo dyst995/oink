@@ -76,6 +76,38 @@ export type TriadVoicing = {
   bass: VoicingNote
 }
 
+/** 0 = open, 1 = index, 2 = middle, 3 = ring, 4 = pinky */
+export type FingerNumber = 0 | 1 | 2 | 3 | 4
+
+export const FINGER_NAMES: Record<FingerNumber, string> = {
+  0: 'open',
+  1: 'index',
+  2: 'middle',
+  3: 'ring',
+  4: 'pinky',
+}
+
+/**
+ * Suggested left-hand fingering for a close triad, low → high.
+ * Open strings stay 0. No barres: each fretted note gets its own finger.
+ * Lowest fret first (index), then ascending frets; on the same fret the
+ * higher (treble) string gets the lower finger number (e.g. 5–5–3 → 3–2–1).
+ */
+export function fingeringForVoicing(
+  frets: readonly [number, number, number],
+): [FingerNumber, FingerNumber, FingerNumber] {
+  const fretted = frets
+    .map((fret, stringIndex) => ({ fret, stringIndex }))
+    .filter((note) => note.fret > 0)
+    .sort((a, b) => a.fret - b.fret || b.stringIndex - a.stringIndex)
+
+  const fingers: [FingerNumber, FingerNumber, FingerNumber] = [0, 0, 0]
+  fretted.forEach((note, order) => {
+    fingers[note.stringIndex] = Math.min(order + 1, 4) as FingerNumber
+  })
+  return fingers
+}
+
 export const TRIAD_QUALITIES: readonly TriadQuality[] = [
   {
     id: 'major',
