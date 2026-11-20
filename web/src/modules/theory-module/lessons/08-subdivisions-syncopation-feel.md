@@ -1,7 +1,7 @@
 # Subdivisions, syncopation, and feel
 
 **Prerequisites:** Pulse, meter, and rhythmic notation  
-**Next:** Fretboard memorization (practice), then intervals
+**Next:** Working with the metronome
 
 ## Concept
 

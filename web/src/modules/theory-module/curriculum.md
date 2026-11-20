@@ -18,99 +18,100 @@ Principle: **theory, rhythm, ear, and guitar application develop together.** Rei
 6. Octave relationships on the neck  
 7. Pulse, meter, and rhythmic notation  
 8. Subdivisions, syncopation, and feel  
-9. Fretboard memorization (interactive practice)
+9. Working with the metronome (exercises + daily routine)  
+10. Fretboard memorization (interactive practice)
 
 ---
 
 ## Stage 2 — Intervals
 
-10. Interval names and quality  
-11. Interval spelling and inversion  
-12. Intervals in music (use + ear)  
-13. Intervals on the neck  
+11. Interval names and quality  
+12. Interval spelling and inversion  
+13. Intervals in music (use + ear)  
+14. Intervals on the neck  
 
 ---
 
 ## Stage 3 — Major scale and tonality
 
-14. Constructing the major scale  
-15. Scale degrees and formulas  
-16. Keys, signatures, and the circle of fifths  
-17. The major scale on the neck  
+15. Constructing the major scale  
+16. Scale degrees and formulas  
+17. Keys, signatures, and the circle of fifths  
+18. The major scale on the neck  
 
 ---
 
 ## Stage 4 — Triads and basic arpeggios
 
-18. Triad construction  
-19. Triad inversions  
-20. Triads on guitar string sets  
-21. Triad arpeggios  
+19. Triad construction  
+20. Triad inversions  
+21. Triads on guitar string sets  
+22. Triad arpeggios  
 
 ---
 
 ## Stage 5 — Diatonic harmony
 
-22. Diatonic triads  
-23. Triad voice leading  
-24. Cadences and harmonic motion  
-25. Triads in progressions and improvisation  
+23. Diatonic triads  
+24. Triad voice leading  
+25. Cadences and harmonic motion  
+26. Triads in progressions and improvisation  
 
 ---
 
 ## Stage 6 — Fretboard organization
 
-26. CAGED as navigation  
-27. Pentatonic and blues  
-28. Three-notes-per-string scales  
+27. CAGED as navigation  
+28. Pentatonic and blues  
+29. Three-notes-per-string scales  
 
 ---
 
 ## Stage 7 — Minor tonality
 
-29. Natural minor; relative and parallel keys  
-30. Harmonic and melodic minor  
-31. Minor-key harmony  
+30. Natural minor; relative and parallel keys  
+31. Harmonic and melodic minor  
+32. Minor-key harmony  
 
 ---
 
 ## Stage 8 — Seventh chords and extensions
 
-32. Seventh chords  
-33. Sevenths on the guitar  
-34. Diatonic seventh harmony  
-35. Suspensions, added tones, and extensions  
-36. Voice leading and guide tones  
+33. Seventh chords  
+34. Sevenths on the guitar  
+35. Diatonic seventh harmony  
+36. Suspensions, added tones, and extensions  
+37. Voice leading and guide tones  
 
 ---
 
 ## Stage 9 — Functional and chromatic harmony
 
-37. Functional progressions  
-38. Secondary dominants  
-39. Borrowed chords and modal interchange  
-40. Chord substitutions  
+38. Functional progressions  
+39. Secondary dominants  
+40. Borrowed chords and modal interchange  
+41. Chord substitutions  
 
 ---
 
 ## Stage 10 — Modes and modal harmony
 
-41. Modes in context  
+42. Modes in context  
 
 ---
 
 ## Stage 11 — Improvisation and melodic development
 
-42. Arpeggios and chord-tone targeting  
-43. Improvising through chord changes  
-44. Melody, motif, and phrasing  
+43. Arpeggios and chord-tone targeting  
+44. Improvising through chord changes  
+45. Melody, motif, and phrasing  
 
 ---
 
 ## Stage 12 — Musical analysis and creation
 
-45. Analyzing real music  
-46. Transposition and musical creation  
+46. Analyzing real music  
+47. Transposition and musical creation  
 
 ---
 

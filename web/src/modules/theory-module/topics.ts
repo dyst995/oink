@@ -82,6 +82,15 @@ export const THEORY_TOPICS: TheoryTopic[] = [
     lesson: '08-subdivisions-syncopation-feel.md',
   },
   {
+    id: 'working-with-the-metronome',
+    title: 'Working with the metronome',
+    unit: '1 — Musical foundations',
+    scope: 'Locking to a click; tempo ladders; sparse click; daily metronome routine.',
+    prerequisites: 'Pulse, meter, and rhythmic notation; subdivisions, syncopation, and feel.',
+    objectives: 'Build a steady internal pulse with progressive metronome exercises and a daily practice block.',
+    lesson: '08a-working-with-the-metronome.md',
+  },
+  {
     id: 'fretboard-memorization',
     title: 'Fretboard memorization',
     unit: '1 — Musical foundations',

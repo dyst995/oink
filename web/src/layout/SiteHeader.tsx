@@ -8,6 +8,7 @@ import { THEORY_TOPICS } from '../modules/theory-module/topics.ts'
 const TABS = [
   { to: '/theory', label: 'Theory' },
   { to: '/fretboard', label: 'Fretboard' },
+  { to: '/triads', label: 'Triads' },
 ] as const
 
 const THEME_LABEL: Record<ThemePreference, string> = {

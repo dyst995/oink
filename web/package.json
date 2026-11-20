@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "validate:theory": "node src/modules/theory-module/scripts/validate-fretboard.mjs",
     "validate:fretboard": "node src/modules/fretboard-module/scripts/validate-theory.mjs",
-    "validate:trainer": "node src/modules/memorization-module/scripts/validate-trainer.mjs"
+    "validate:trainer": "node src/modules/memorization-module/scripts/validate-trainer.mjs",
+    "validate:triads": "node src/modules/triad-explorer-module/scripts/validate-triads.mjs"
   },
   "dependencies": {
     "react": "^19.2.8",
