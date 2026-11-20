@@ -8,6 +8,25 @@ export const OPEN_MIDI = [40, 45, 50, 55, 59, 64] as const
 
 export const MAX_FRET = 24
 
+/** Frets shown on the whole-neck overview (0 = open). */
+export const NECK_FRET_COUNT = 22
+
+export const NECK_STRINGS = [
+  { number: 1, label: 'e', openMidi: 64 },
+  { number: 2, label: 'B', openMidi: 59 },
+  { number: 3, label: 'G', openMidi: 55 },
+  { number: 4, label: 'D', openMidi: 50 },
+  { number: 5, label: 'A', openMidi: 45 },
+  { number: 6, label: 'E', openMidi: 40 },
+] as const
+
+export type NeckNote = {
+  stringNumber: number
+  stringLabel: string
+  fret: number
+  tone: TriadTone
+}
+
 export type TriadQualityId = 'major' | 'minor' | 'diminished' | 'augmented'
 
 export type ChordDegreeRole = 'root' | 'third' | 'fifth'
@@ -332,4 +351,49 @@ export function fretWindow(voicing: TriadVoicing, pad = 1): { from: number; to: 
   const from = Math.max(0, min - pad)
   const to = Math.min(MAX_FRET, Math.max(max + pad, from + 4))
   return { from, to }
+}
+
+export function neckNotesForTriad(tones: readonly TriadTone[]): NeckNote[] {
+  const byPitch = new Map(tones.map((tone) => [tone.pitchClass, tone]))
+  const notes: NeckNote[] = []
+
+  for (const string of NECK_STRINGS) {
+    for (let fret = 0; fret <= NECK_FRET_COUNT; fret += 1) {
+      const tone = byPitch.get(mod12(string.openMidi + fret))
+      if (!tone) continue
+      notes.push({
+        stringNumber: string.number,
+        stringLabel: string.label,
+        fret,
+        tone,
+      })
+    }
+  }
+
+  return notes
+}
+
+/** Close voicings on the neck overview for the given string sets (frets 0–NECK_FRET_COUNT). */
+export function neckVoicings(
+  tones: readonly TriadTone[],
+  stringSets: readonly StringSet[],
+): Array<TriadVoicing & { stringSetId: StringSetId }> {
+  const results: Array<TriadVoicing & { stringSetId: StringSetId }> = []
+
+  for (const stringSet of stringSets) {
+    const buckets = findCloseVoicings(tones, stringSet)
+    for (const inversion of Object.keys(buckets) as InversionId[]) {
+      for (const voicing of buckets[inversion]) {
+        if (Math.max(...voicing.frets) > NECK_FRET_COUNT) continue
+        results.push({ ...voicing, stringSetId: stringSet.id })
+      }
+    }
+  }
+
+  return results.sort((left, right) => voicingScore(left.frets) - voicingScore(right.frets))
+}
+
+export function shortDegreeLabel(tone: TriadTone): string {
+  if (tone.role === 'root') return '1'
+  return tone.degreeLabel
 }

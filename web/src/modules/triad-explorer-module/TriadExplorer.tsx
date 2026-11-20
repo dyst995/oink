@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { QualitySection } from './QualitySection.tsx'
+import { WholeFretboardView } from './WholeFretboardView.tsx'
 import {
   ROOT_OPTIONS,
   STRING_SETS,
@@ -15,6 +16,7 @@ type StringSetFilter = 'all' | StringSetId
 export function TriadExplorer() {
   const [root, setRoot] = useState<string>('C')
   const [qualityFilter, setQualityFilter] = useState<QualityFilter>('all')
+  const [neckQualityId, setNeckQualityId] = useState<TriadQualityId>('major')
   const [stringSetFilter, setStringSetFilter] = useState<StringSetFilter>('gbe')
 
   const qualities = useMemo(
@@ -32,6 +34,11 @@ export function TriadExplorer() {
         : STRING_SETS.filter((set) => set.id === stringSetFilter),
     [stringSetFilter],
   )
+
+  const neckQuality =
+    qualityFilter === 'all'
+      ? (TRIAD_QUALITIES.find((quality) => quality.id === neckQualityId) ?? TRIAD_QUALITIES[0])
+      : qualities[0]
 
   return (
     <section className="triad-explorer" aria-label="Guitar triad explorer">
@@ -60,7 +67,11 @@ export function TriadExplorer() {
           <span>Quality</span>
           <select
             value={qualityFilter}
-            onChange={(event) => setQualityFilter(event.target.value as QualityFilter)}
+            onChange={(event) => {
+              const next = event.target.value as QualityFilter
+              setQualityFilter(next)
+              if (next !== 'all') setNeckQualityId(next)
+            }}
           >
             <option value="all">All four qualities</option>
             {TRIAD_QUALITIES.map((quality) => (
@@ -85,11 +96,27 @@ export function TriadExplorer() {
             ))}
           </select>
         </label>
+
+        {qualityFilter === 'all' ? (
+          <label className="triad-field">
+            <span>Neck quality</span>
+            <select
+              value={neckQualityId}
+              onChange={(event) => setNeckQualityId(event.target.value as TriadQualityId)}
+            >
+              {TRIAD_QUALITIES.map((quality) => (
+                <option key={quality.id} value={quality.id}>
+                  {quality.label}
+                </option>
+              ))}
+            </select>
+          </label>
+        ) : null}
       </div>
 
       <div className="triad-legend" aria-label="Degree colors">
         <span className="triad-legend-item">
-          <span className="triad-legend-swatch triad-dot-root" /> Root
+          <span className="triad-legend-swatch triad-dot-root" /> Root / 1
         </span>
         <span className="triad-legend-item">
           <span className="triad-legend-swatch triad-dot-third" /> Third
@@ -99,6 +126,8 @@ export function TriadExplorer() {
         </span>
         <span className="triad-legend-item triad-legend-bass">Bass note outlined</span>
       </div>
+
+      <WholeFretboardView root={root} quality={neckQuality} stringSets={stringSets} />
 
       <div className="triad-results">
         {stringSets.map((stringSet) =>
