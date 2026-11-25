@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { CompactMetronome } from '../rhythm-module/index.ts'
 import { FlashcardTrainer } from './trainer/FlashcardTrainer.tsx'
 import { FormulaEditor } from './FormulaEditor.tsx'
 import { Fretboard } from './Fretboard.tsx'
@@ -145,6 +146,7 @@ export function FretboardModule() {
         <FlashcardTrainer />
       ) : (
         <>
+      <CompactMetronome />
       <section className="fx-config" aria-label="Configuration">
         <div className="fx-config-row">
           <label className="fx-field fx-root">

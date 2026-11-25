@@ -8,6 +8,7 @@ import { THEORY_TOPICS } from '../modules/theory-module/topics.ts'
 const TABS = [
   { to: '/theory', label: 'Theory' },
   { to: '/fretboard', label: 'Fretboard' },
+  { to: '/metronome', label: 'Metronome' },
   { to: '/triads', label: 'Triads' },
 ] as const
 

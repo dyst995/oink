@@ -27,6 +27,9 @@ export function IndexPage() {
           <Link className="home-btn home-btn-secondary" to="/fretboard">
             Open fretboard
           </Link>
+          <Link className="home-btn home-btn-secondary" to="/metronome">
+            Metronome
+          </Link>
           <Link className="home-btn home-btn-secondary" to="/triads">
             Triad explorer
           </Link>
