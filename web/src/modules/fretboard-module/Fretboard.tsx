@@ -19,6 +19,12 @@ import type { SelectedNote } from './NoteInspector.tsx'
 
 const STRING_GAUGES = [1, 1.5, 2, 2.4, 2.8, 3.4]
 
+export type FretMarker = {
+  stringId: string
+  fret: number
+  kind: 'ask' | 'correct' | 'wrong'
+}
+
 type FretboardProps = {
   tones: readonly FormulaTone[]
   labelMode: LabelMode
@@ -34,6 +40,14 @@ type FretboardProps = {
   pairNotes: ReadonlySet<number> | null
   selected: SelectedNote | null
   onSelect: (note: SelectedNote) => void
+  /** Practice markers. Omitted in the explorer. */
+  markers?: readonly FretMarker[]
+  /** Frets outside the practice range. */
+  inactiveFrets?: ReadonlySet<number>
+  /** Strings outside the practice range. */
+  inactiveStringIds?: ReadonlySet<string>
+  /** When false, cells do not accept answers. */
+  interactive?: boolean
 }
 
 function inlayLeft(fret: number): string {
@@ -81,14 +95,21 @@ export function Fretboard({
   pairNotes,
   selected,
   onSelect,
+  markers,
+  inactiveFrets,
+  inactiveStringIds,
+  interactive = true,
 }: FretboardProps) {
   const toneByPitchClass = new Map(tones.map((tone) => [tone.pitchClass, tone]))
   const frets = Array.from({ length: FRET_COUNT + 1 }, (_, fret) => fret)
+  const markerMap = new Map(markers?.map((marker) => [`${marker.stringId}:${marker.fret}`, marker.kind]))
 
   return (
     <div className="board-scroll">
       <div
-        className={showShapes ? 'fretboard has-shapes' : 'fretboard'}
+        className={['fretboard', showShapes ? 'has-shapes' : '', interactive ? '' : 'is-static']
+          .filter(Boolean)
+          .join(' ')}
         role="group"
         aria-label="Guitar fretboard"
       >
@@ -106,7 +127,10 @@ export function Fretboard({
         <div className="board-body">
           <div className="headstock">
             {GUITAR_STRINGS.map((string) => (
-              <div className="string-label" key={string.id}>
+              <div
+                className={inactiveStringIds?.has(string.id) ? 'string-label is-inactive' : 'string-label'}
+                key={string.id}
+              >
                 {string.label}
               </div>
             ))}
@@ -156,7 +180,10 @@ export function Fretboard({
             ) : null}
 
             {GUITAR_STRINGS.map((string, index) => (
-              <div className="string-row" key={string.id}>
+              <div
+                className={inactiveStringIds?.has(string.id) ? 'string-row is-inactive' : 'string-row'}
+                key={string.id}
+              >
                 <div className="string-line" style={{ height: STRING_GAUGES[index] }} />
                 {frets.map((fret) => {
                   const pitchClass = pitchClassAt(string.openPitchClass, fret)
@@ -171,9 +198,27 @@ export function Fretboard({
                   const secondary = Boolean(showPatternNote && pairNotes && tone && !inPair)
                   const showGhost = (showNonPattern && !tone) || Boolean(tone && !focused)
                   const containing = showShapes ? shapesContainingFret(fret, shapes) : []
+                  const markerKind = markerMap.get(`${string.id}:${fret}`)
+                  const fretInactive = Boolean(inactiveFrets?.has(fret) || inactiveStringIds?.has(string.id))
+                  const canClick = interactive && !fretInactive
+                  const markerClass = markerKind ? `is-${markerKind}` : ''
+                  function selectHere() {
+                    onSelect({
+                      string,
+                      fret,
+                      tone,
+                      pitchClass,
+                      shapes: containing,
+                    })
+                  }
 
                   return (
-                    <div key={fret} className={fret === 0 ? 'fret fret-open' : 'fret'}>
+                    <div
+                      key={fret}
+                      className={[fret === 0 ? 'fret fret-open' : 'fret', fretInactive ? 'is-inactive' : '']
+                        .filter(Boolean)
+                        .join(' ')}
+                    >
                       {showPatternNote && tone ? (
                         <button
                           type="button"
@@ -185,6 +230,7 @@ export function Fretboard({
                             secondary ? 'is-secondary' : '',
                             isSelected ? 'is-selected' : '',
                             !showLabels ? 'is-unlabeled' : '',
+                            markerClass,
                           ]
                             .filter(Boolean)
                             .join(' ')}
@@ -194,16 +240,9 @@ export function Fretboard({
                           data-degree={tone.degreeLabel}
                           data-pair={pairNotes ? (inPair ? 'true' : 'false') : undefined}
                           aria-pressed={isSelected}
+                          tabIndex={canClick ? 0 : -1}
                           aria-label={`${string.label} string, fret ${fret}, ${tone.degreeLabel}, ${tone.name}, ${tone.intervalName}${inPair ? ', highlighted thirds pair' : ''}${containing.length ? `, shapes ${containing.map((s) => s.id).join(', ')}` : ''}`}
-                          onClick={() =>
-                            onSelect({
-                              string,
-                              fret,
-                              tone,
-                              pitchClass,
-                              shapes: containing,
-                            })
-                          }
+                          onClick={canClick ? selectHere : undefined}
                         >
                           {showLabels ? labelFor(tone, labelMode) : null}
                         </button>
@@ -213,37 +252,28 @@ export function Fretboard({
                           className={[
                             'note note-ghost',
                             isSelected ? 'is-selected' : '',
+                            markerClass,
                           ]
                             .filter(Boolean)
                             .join(' ')}
                           aria-pressed={isSelected}
+                          tabIndex={canClick ? 0 : -1}
                           aria-label={`${string.label} string, fret ${fret}${tone ? `, ${tone.name} (dimmed)` : ', outside pattern'}`}
-                          onClick={() =>
-                            onSelect({
-                              string,
-                              fret,
-                              tone,
-                              pitchClass,
-                              shapes: containing,
-                            })
-                          }
+                          onClick={canClick ? selectHere : undefined}
                         />
                       ) : (
                         <button
                           type="button"
-                          className={['note-hit', isSelected ? 'is-selected' : '']
+                          className={['note-hit', isSelected ? 'is-selected' : '', markerClass]
                             .filter(Boolean)
                             .join(' ')}
-                          aria-label={`${string.label} string, fret ${fret}, empty`}
-                          onClick={() =>
-                            onSelect({
-                              string,
-                              fret,
-                              tone: null,
-                              pitchClass,
-                              shapes: containing,
-                            })
+                          tabIndex={canClick ? 0 : -1}
+                          aria-label={
+                            markerKind === 'ask'
+                              ? `${string.label} string, fret ${fret}`
+                              : `${string.label} string, fret ${fret}, empty`
                           }
+                          onClick={canClick ? selectHere : undefined}
                         />
                       )}
                     </div>

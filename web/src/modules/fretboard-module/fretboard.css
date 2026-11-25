@@ -1065,6 +1065,298 @@
   }
 }
 
+.fx-setup,
+.fx-trainer-play,
+.fx-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.fx-setup-grid,
+.fx-setup-frets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.fx-setup-custom,
+.fx-setup-session,
+.fx-answer,
+.fx-stats,
+.fx-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fx-setup-session {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: end;
+}
+
+.fx-setup-session .fx-field {
+  width: min(160px, 100%);
+}
+
+.fx-scale-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin: 0;
+  color: var(--text-muted, var(--text));
+  font-family: var(--mono, ui-monospace, monospace);
+  font-size: 0.85rem;
+}
+
+.fx-scale-preview span:first-child {
+  color: var(--text-h);
+  font-family: var(--font-sans, inherit);
+  font-weight: 650;
+}
+
+.fx-answer .fx-field {
+  max-width: 220px;
+}
+
+.fx-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg-elevated, var(--code-bg));
+}
+
+.fx-card:focus {
+  outline: none;
+}
+
+.fx-card-kicker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  margin: 0;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.fx-card-kicker span {
+  color: var(--text-muted, var(--text));
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.fx-card-prompt {
+  margin: 0;
+  font-size: clamp(1.35rem, 2.4vw, 1.8rem);
+}
+
+.fx-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.fx-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-h);
+  font: inherit;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.fx-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.fx-btn-primary {
+  border-color: transparent;
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.fx-btn-primary:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.fx-btn-danger {
+  border-color: color-mix(in srgb, var(--danger) 35%, transparent);
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
+.fx-btn-ok {
+  border-color: color-mix(in srgb, var(--success) 35%, transparent);
+  background: var(--success-soft);
+  color: var(--success);
+}
+
+.fx-session-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.fx-stat-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin: 0;
+  color: var(--text);
+  font-size: 0.88rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.fx-stat-line .is-urgent {
+  color: var(--danger);
+  font-weight: 700;
+}
+
+.fx-progress {
+  height: 4px;
+  margin-top: 6px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--bg-muted);
+}
+
+.fx-progress span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+}
+
+.fx-feedback {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--bg-muted);
+  color: var(--text-h);
+}
+
+.fx-feedback.is-correct {
+  background: var(--success-soft);
+  color: var(--success);
+}
+
+.fx-feedback.is-wrong {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
+.fx-shortcuts {
+  margin: 4px 0 0;
+  color: var(--text-muted, var(--text));
+  font-size: 0.75rem;
+}
+
+.fx-stat-more,
+.fx-summary {
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg-elevated, var(--code-bg));
+}
+
+.fx-summary {
+  padding: 16px;
+}
+
+.fx-stat-more summary {
+  color: var(--text-h);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.fx-summary-head h2 {
+  font-size: 1.5rem;
+}
+
+.fx-miss-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fx-miss-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--text-h);
+  font-size: 0.9rem;
+}
+
+.fret.is-inactive,
+.string-row.is-inactive,
+.string-label.is-inactive {
+  opacity: 0.32;
+}
+
+.fretboard.is-static .note,
+.fretboard.is-static .note-hit,
+.fret.is-inactive .note,
+.fret.is-inactive .note-hit {
+  cursor: default;
+}
+
+.note-hit.is-ask {
+  background: radial-gradient(circle, #fff 0 6px, rgba(255, 255, 255, 0.2) 7px, transparent 12px);
+}
+
+.note.is-correct,
+.note-hit.is-correct,
+.note-ghost.is-correct {
+  outline: 2px solid #3dbe78;
+  outline-offset: 2px;
+}
+
+.note.is-wrong,
+.note-hit.is-wrong,
+.note-ghost.is-wrong {
+  outline: 2px solid #e15b55;
+  outline-offset: 2px;
+}
+
+.note-hit.is-wrong {
+  background: radial-gradient(circle, #e15b55 0 6px, transparent 7px);
+}
+
+.fx-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (max-width: 720px) {
+  .fx-session-bar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .fx-card-actions .fx-btn {
+    flex: 1 1 auto;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .note,
   .fx-chip,

@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { FlashcardTrainer } from './trainer/FlashcardTrainer.tsx'
 import { FormulaEditor } from './FormulaEditor.tsx'
 import { Fretboard } from './Fretboard.tsx'
 import {
@@ -50,6 +51,7 @@ export function FretboardModule() {
   const [showThirds, setShowThirds] = useState(false)
   const [selectedPairId, setSelectedPairId] = useState<string | null>(null)
   const [selected, setSelected] = useState<SelectedNote | null>(null)
+  const [view, setView] = useState<'explore' | 'practice'>('explore')
 
   const parsed = useMemo(() => {
     try {
@@ -107,16 +109,42 @@ export function FretboardModule() {
   }
 
   return (
-    <section className="fretboard-module" aria-label="Fretboard explorer">
+    <section className="fretboard-module" aria-label="Fretboard">
       <header className="fx-hero">
-        <p className="fx-kicker">Explorer</p>
+        <p className="fx-kicker">{view === 'practice' ? 'Practice' : 'Explorer'}</p>
         <h1>Fretboard</h1>
         <p>
-          Choose a root and pattern, then inspect notes on the neck. Standard tuning, low to high:
-          E A D G B e.
+          {view === 'practice'
+            ? 'Practice notes, degrees, and positions for any scale already on the neck.'
+            : 'Choose a root and pattern, then inspect notes on the neck. Standard tuning, low to high: E A D G B e.'}
         </p>
       </header>
 
+      <div className="fx-chip-row" role="tablist" aria-label="Fretboard views">
+        <button
+          type="button"
+          role="tab"
+          className={view === 'explore' ? 'fx-chip is-active' : 'fx-chip'}
+          aria-selected={view === 'explore'}
+          onClick={() => setView('explore')}
+        >
+          Explore
+        </button>
+        <button
+          type="button"
+          role="tab"
+          className={view === 'practice' ? 'fx-chip is-active' : 'fx-chip'}
+          aria-selected={view === 'practice'}
+          onClick={() => setView('practice')}
+        >
+          Practice
+        </button>
+      </div>
+
+      {view === 'practice' ? (
+        <FlashcardTrainer />
+      ) : (
+        <>
       <section className="fx-config" aria-label="Configuration">
         <div className="fx-config-row">
           <label className="fx-field fx-root">
@@ -271,6 +299,8 @@ export function FretboardModule() {
         <aside className="fx-theory is-empty" aria-label="Theory inspector">
           <p>Enter a valid formula to see theory details for the current selection.</p>
         </aside>
+      )}
+        </>
       )}
     </section>
   )

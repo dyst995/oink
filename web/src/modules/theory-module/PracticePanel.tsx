@@ -24,7 +24,7 @@ export function PracticePanel({ open, onClose, variant = 'dock' }: PracticePanel
         </button>
       </div>
       <p className="practice-lede">
-        Try the current idea on the neck. Change key and formula freely — this tool does not auto-grade
+        Try the current idea on the neck, or switch to Practice for flashcards. Exploring does not grade
         your playing.
       </p>
       <div className="practice-panel-body">
