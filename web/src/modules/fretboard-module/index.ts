@@ -16,6 +16,7 @@ export {
   parseFormula,
   parseKey,
   pitchClassAt,
+  scaleThirdPairs,
   stepsBetweenTones,
   toneRole,
   type FormulaKind,
@@ -24,5 +25,8 @@ export {
   type ParsedFormula,
   type ParsedKey,
   type PatternCategory,
+  type ThirdPair,
+  type ThirdsDirection,
+  type ThirdsPairs,
   type ToneRole,
 } from './theory.ts'

@@ -31,6 +31,7 @@ type FretboardProps = {
   focusMode: FocusMode
   focusDegree: string
   focusInterval: number
+  pairNotes: ReadonlySet<number> | null
   selected: SelectedNote | null
   onSelect: (note: SelectedNote) => void
 }
@@ -77,6 +78,7 @@ export function Fretboard({
   focusMode,
   focusDegree,
   focusInterval,
+  pairNotes,
   selected,
   onSelect,
 }: FretboardProps) {
@@ -165,7 +167,9 @@ export function Fretboard({
                   const isSelected =
                     selected?.string.id === string.id && selected.fret === fret
                   const showPatternNote = Boolean(tone && focused)
-                  const showGhost = showNonPattern && !tone
+                  const inPair = Boolean(showPatternNote && tone && pairNotes?.has(tone.pitchClass))
+                  const secondary = Boolean(showPatternNote && pairNotes && tone && !inPair)
+                  const showGhost = (showNonPattern && !tone) || Boolean(tone && !focused)
                   const containing = showShapes ? shapesContainingFret(fret, shapes) : []
 
                   return (
@@ -177,6 +181,8 @@ export function Fretboard({
                             'note',
                             `note-${tone.role}`,
                             showRoots && tone.isRoot ? 'note-root' : '',
+                            inPair ? 'is-pair' : '',
+                            secondary ? 'is-secondary' : '',
                             isSelected ? 'is-selected' : '',
                             !showLabels ? 'is-unlabeled' : '',
                           ]
@@ -186,8 +192,9 @@ export function Fretboard({
                           data-fret={fret}
                           data-note={tone.name}
                           data-degree={tone.degreeLabel}
+                          data-pair={pairNotes ? (inPair ? 'true' : 'false') : undefined}
                           aria-pressed={isSelected}
-                          aria-label={`${string.label} string, fret ${fret}, ${tone.degreeLabel}, ${tone.name}, ${tone.intervalName}${containing.length ? `, shapes ${containing.map((s) => s.id).join(', ')}` : ''}`}
+                          aria-label={`${string.label} string, fret ${fret}, ${tone.degreeLabel}, ${tone.name}, ${tone.intervalName}${inPair ? ', highlighted thirds pair' : ''}${containing.length ? `, shapes ${containing.map((s) => s.id).join(', ')}` : ''}`}
                           onClick={() =>
                             onSelect({
                               string,
@@ -200,7 +207,7 @@ export function Fretboard({
                         >
                           {showLabels ? labelFor(tone, labelMode) : null}
                         </button>
-                      ) : showGhost || (tone && !focused) ? (
+                      ) : showGhost ? (
                         <button
                           type="button"
                           className={[

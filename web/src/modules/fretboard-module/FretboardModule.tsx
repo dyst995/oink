@@ -9,19 +9,29 @@ import {
 import { NoteInspector, type SelectedNote } from './NoteInspector.tsx'
 import { PatternSelector } from './PatternSelector.tsx'
 import { TheoryInspector } from './TheoryInspector.tsx'
+import { ThirdsOption } from './ThirdsOption.tsx'
 import { buildScaleShapes, shapeRegions, shapesContainingFret } from './shapes.ts'
 import {
   KEY_OPTIONS,
   findPresetByFormula,
   parseFormula,
   parseKey,
+  scaleThirdPairs,
   type FormulaKind,
   type FormulaPreset,
+  type ThirdPair,
 } from './theory.ts'
 import './fretboard.css'
 
 const DEFAULT_KEY = 'C'
 const DEFAULT_FORMULA = '1 2 3 4 5 6 7'
+
+function thirdsDetail(pitchClass: number | undefined, pair: ThirdPair | null): string | null {
+  if (pitchClass === undefined || !pair) return null
+  if (pitchClass !== pair.from.pitchClass && pitchClass !== pair.to.pitchClass) return null
+  const way = pair.direction === 'ascending' ? 'ascending' : 'descending'
+  return `${pair.from.name}–${pair.to.name} · ${way} · sequence ${pair.step}`
+}
 
 export function FretboardModule() {
   const [keyId, setKeyId] = useState(DEFAULT_KEY)
@@ -37,6 +47,8 @@ export function FretboardModule() {
   const [focusMode, setFocusMode] = useState<FocusMode>('all')
   const [focusDegree, setFocusDegree] = useState('1')
   const [focusInterval, setFocusInterval] = useState(0)
+  const [showThirds, setShowThirds] = useState(false)
+  const [selectedPairId, setSelectedPairId] = useState<string | null>(null)
   const [selected, setSelected] = useState<SelectedNote | null>(null)
 
   const parsed = useMemo(() => {
@@ -51,6 +63,22 @@ export function FretboardModule() {
   }, [formula, formulaKind, keyId])
 
   const tones = parsed.result?.tones ?? []
+  const thirdPairs = useMemo(
+    () => scaleThirdPairs(parsed.result?.tones ?? []),
+    [parsed.result],
+  )
+  const selectedPair = useMemo(() => {
+    if (!showThirds || !selectedPairId) return null
+    return (
+      thirdPairs.ascending.find((pair) => pair.id === selectedPairId) ??
+      thirdPairs.descending.find((pair) => pair.id === selectedPairId) ??
+      null
+    )
+  }, [showThirds, selectedPairId, thirdPairs])
+  const pairNotes = useMemo(() => {
+    if (!selectedPair) return null
+    return new Set([selectedPair.from.pitchClass, selectedPair.to.pitchClass])
+  }, [selectedPair])
   const rootPitchClass = parsed.key?.pitchClass
   const shapes = useMemo(
     () => (rootPitchClass === undefined ? [] : buildScaleShapes(rootPitchClass)),
@@ -124,6 +152,15 @@ export function FretboardModule() {
           </p>
         ) : null}
 
+        <ThirdsOption
+          enabled={showThirds}
+          available={thirdPairs.ascending.length > 0}
+          pairs={thirdPairs}
+          selectedId={showThirds ? selectedPair?.id ?? null : null}
+          onEnabledChange={setShowThirds}
+          onSelectPair={setSelectedPairId}
+        />
+
         <FretboardControls
           labelMode={labelMode}
           onLabelModeChange={setLabelMode}
@@ -160,6 +197,7 @@ export function FretboardModule() {
           focusMode={focusMode}
           focusDegree={activeFocusDegree}
           focusInterval={activeFocusInterval}
+          pairNotes={pairNotes}
           selected={resolvedSelected}
           onSelect={(note) =>
             setSelected((current) =>
@@ -216,6 +254,7 @@ export function FretboardModule() {
           selected={resolvedSelected}
           keyName={parsed.key?.name ?? keyId}
           patternLabel={patternLabel}
+          thirdsDetail={thirdsDetail(resolvedSelected?.pitchClass, selectedPair)}
           onClear={() => setSelected(null)}
         />
       </section>

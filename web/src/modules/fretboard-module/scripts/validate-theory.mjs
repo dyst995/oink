@@ -147,4 +147,46 @@ assert(
   'shape window past octave must stay contiguous',
 )
 
+function thirdPairs(semitones) {
+  const count = semitones.length
+  const ascending = []
+  const descending = []
+  for (let index = 0; index < count; index += 1) {
+    ascending.push([semitones[index], semitones[(index + 2) % count]])
+  }
+  for (let step = 0; step < count; step += 1) {
+    const index = (count - step) % count
+    descending.push([semitones[index], semitones[(index - 2 + count) % count]])
+  }
+  return { ascending, descending }
+}
+
+function formatPairs(pairs) {
+  return pairs.map((pair) => pair.join('-')).join(',')
+}
+
+const majorSemitones = [0, 2, 4, 5, 7, 9, 11]
+const majorPairs = thirdPairs(majorSemitones)
+assert(
+  formatPairs(majorPairs.ascending) === '0-4,2-5,4-7,5-9,7-11,9-0,11-2',
+  'major ascending thirds pair each note with the note two degrees up',
+)
+assert(
+  formatPairs(majorPairs.descending) === '0-9,11-7,9-5,7-4,5-2,4-0,2-11',
+  'major descending thirds pair each note with the note two degrees down',
+)
+
+const minorSemitones = [0, 2, 3, 5, 7, 8, 10]
+assert(
+  formatPairs(thirdPairs(minorSemitones).ascending) === '0-3,2-5,3-7,5-8,7-10,8-0,10-2',
+  'natural minor ascending thirds skip one scale degree',
+)
+
+const bluesPairs = thirdPairs([0, 3, 5, 6, 7, 10])
+assert(bluesPairs.ascending.length === 6, 'blues thirds include one pair per scale note')
+assert(
+  bluesPairs.ascending[0].join('-') === '0-5',
+  'blues thirds ascending starts by skipping one scale note',
+)
+
 console.log('fretboard theory validation: ok')

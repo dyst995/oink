@@ -183,6 +183,11 @@
   font-weight: 600;
 }
 
+.fx-chip:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
 .fx-pattern-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -289,6 +294,32 @@
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
+}
+
+.fx-thirds {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.fx-thirds-run {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg-soft, transparent);
+}
+
+.fx-thirds-label {
+  color: var(--text-muted, var(--text));
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .fx-stage {
@@ -503,6 +534,26 @@
     0 0 0 2px rgba(255, 255, 255, 0.85),
     0 1px 2px rgba(0, 0, 0, 0.35),
     inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.note.is-secondary {
+  opacity: 0.38;
+}
+
+.note.note-root.is-secondary {
+  opacity: 0.72;
+}
+
+.note.is-pair {
+  position: relative;
+  z-index: 3;
+  opacity: 1;
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+.note.note-root.is-pair {
+  outline-color: #fff;
 }
 
 .shape-overlays {

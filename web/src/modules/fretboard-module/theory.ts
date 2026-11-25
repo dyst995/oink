@@ -549,3 +549,58 @@ export function isChordToneDegree(degreeLabel: string): boolean {
   const normalized = degreeLabel.replace(/♯/g, '#').replace(/♭/g, 'b')
   return /^(bb|##|b|#)?(1|3|5|7)$/.test(normalized)
 }
+
+export type ThirdsDirection = 'ascending' | 'descending'
+
+/**
+ * One exercise pair: two scale notes with one scale degree between them.
+ * `step` is the pair's place in the exercise. It is not a scale degree.
+ */
+export type ThirdPair = {
+  id: string
+  direction: ThirdsDirection
+  step: number
+  from: FormulaTone
+  to: FormulaTone
+}
+
+export type ThirdsPairs = {
+  ascending: ThirdPair[]
+  descending: ThirdPair[]
+}
+
+/**
+ * Every scale note paired with the note two degrees away.
+ * Ascending walks up the scale (G–B, A–C, …). Descending walks down from the tonic (G–E, F♯–D, …).
+ * The pair list wraps the scale, so the last notes still form a third.
+ */
+export function scaleThirdPairs(tones: readonly FormulaTone[]): ThirdsPairs {
+  const ordered = [...tones].sort((a, b) => a.semitones - b.semitones)
+  const count = ordered.length
+  if (count < 3) return { ascending: [], descending: [] }
+
+  const ascending: ThirdPair[] = []
+  for (let index = 0; index < count; index += 1) {
+    ascending.push({
+      id: `ascending-${index}`,
+      direction: 'ascending',
+      step: index + 1,
+      from: ordered[index],
+      to: ordered[(index + 2) % count],
+    })
+  }
+
+  const descending: ThirdPair[] = []
+  for (let step = 0; step < count; step += 1) {
+    const index = (count - step) % count
+    descending.push({
+      id: `descending-${index}`,
+      direction: 'descending',
+      step: step + 1,
+      from: ordered[index],
+      to: ordered[(index - 2 + count) % count],
+    })
+  }
+
+  return { ascending, descending }
+}

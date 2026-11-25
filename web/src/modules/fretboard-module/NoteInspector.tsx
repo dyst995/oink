@@ -13,6 +13,7 @@ type NoteInspectorProps = {
   selected: SelectedNote | null
   keyName: string
   patternLabel: string
+  thirdsDetail?: string | null
   onClear: () => void
 }
 
@@ -30,7 +31,13 @@ function roleLabel(role: FormulaTone['role']): string {
   return 'Color / scale tone'
 }
 
-export function NoteInspector({ selected, keyName, patternLabel, onClear }: NoteInspectorProps) {
+export function NoteInspector({
+  selected,
+  keyName,
+  patternLabel,
+  thirdsDetail = null,
+  onClear,
+}: NoteInspectorProps) {
   if (!selected) {
     return (
       <div className="fx-note-inspector is-empty">
@@ -86,6 +93,12 @@ export function NoteInspector({ selected, keyName, patternLabel, onClear }: Note
               <dt>Function</dt>
               <dd className={`fx-role fx-role-${tone.role}`}>{roleLabel(tone.role)}</dd>
             </div>
+            {thirdsDetail ? (
+              <div>
+                <dt>Thirds</dt>
+                <dd>{thirdsDetail}</dd>
+              </div>
+            ) : null}
           </>
         ) : (
           <div>
